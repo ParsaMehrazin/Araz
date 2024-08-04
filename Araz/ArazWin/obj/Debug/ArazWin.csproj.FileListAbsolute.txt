@@ -1,0 +1,9 @@
+D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\ArazWin.exe.config
+D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\ArazWin.exe
+D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\ArazWin.pdb
+D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.csproj.AssemblyReference.cache
+D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.Properties.Resources.resources
+D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.csproj.GenerateResource.cache
+D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.csproj.CoreCompileInputs.cache
+D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.exe
+D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.pdb
