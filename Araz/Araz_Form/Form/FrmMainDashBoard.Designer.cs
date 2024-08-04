@@ -38,7 +38,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1353, 628);
             this.Name = "frmMainDashboard";
-            this.Text = "FrmMainDashBoard";
+            this.Text = "داشبرد";
             ((System.ComponentModel.ISupportInitialize)(this.numericChartRangeControlClient1)).EndInit();
             this.ResumeLayout(false);
 
