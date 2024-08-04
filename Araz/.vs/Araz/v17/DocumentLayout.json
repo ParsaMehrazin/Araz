@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\Programming\\Win\\Araz\\Araz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|d:\\programming\\win\\araz\\araz\\arazwin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|solutionrelative:arazwin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|d:\\programming\\win\\araz\\araz\\arazwin\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|solutionrelative:arazwin\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|d:\\programming\\win\\araz\\araz\\arazwin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|solutionrelative:arazwin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 170,
-          "SelectedChildIndex": 23,
+          "SelectedChildIndex": 24,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\Program.cs",
+              "RelativeDocumentMoniker": "ArazWin\\Program.cs",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\Program.cs",
+              "RelativeToolTip": "ArazWin\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T08:32:50.107Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{46c60eb8-7d22-4e72-87e8-7cba8d8ffbdb}"
@@ -111,13 +128,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\Form1.cs",
-              "RelativeDocumentMoniker": "ArazWin\\Form1.cs",
-              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\Form1.cs [Design]",
-              "RelativeToolTip": "ArazWin\\Form1.cs [Design]",
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\MainForm.cs",
+              "RelativeDocumentMoniker": "ArazWin\\MainForm.cs",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\MainForm.cs [Design]",
+              "RelativeToolTip": "ArazWin\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T08:19:38.701Z",
+              "WhenOpened": "2024-08-04T08:32:40.233Z",
               "EditorCaption": " [Design]"
             }
           ]
