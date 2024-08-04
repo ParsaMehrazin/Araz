@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\Programming\\Win\\Araz\\Araz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|d:\\programming\\win\\araz\\araz\\arazwin\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|solutionrelative:arazwin\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|d:\\programming\\win\\araz\\araz\\arazwin\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|solutionrelative:arazwin\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|d:\\programming\\win\\araz\\araz\\arazwin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|d:\\programming\\win\\araz\\araz\\arazwin\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|solutionrelative:arazwin\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|D:\\Programming\\Win\\Araz\\Araz\\arazwin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|solutionrelative:arazwin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|d:\\programming\\win\\araz\\araz\\araz_form\\form\\frmmaindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\form\\frmmaindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|d:\\programming\\win\\araz\\araz\\arazwin\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|solutionrelative:arazwin\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 170,
-          "SelectedChildIndex": 24,
+          "SelectedChildIndex": 25,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\Program.cs",
-              "RelativeDocumentMoniker": "ArazWin\\Program.cs",
-              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\Program.cs",
-              "RelativeToolTip": "ArazWin\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T08:32:50.107Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{46c60eb8-7d22-4e72-87e8-7cba8d8ffbdb}"
@@ -126,8 +125,67 @@
               "Name": "ST:0:0:{9dd663cf-5df9-4ed0-9966-5929af2f3161}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6950e24b-b51d-4d49-b802-48f7b4e9e0a2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0f79b77c-6f01-4bb0-97ec-6c827086d468}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "ArazWin\\MainForm.Designer.cs",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\MainForm.Designer.cs",
+              "RelativeToolTip": "ArazWin\\MainForm.Designer.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAADwv3UAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T10:16:46.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\MainForm.cs",
+              "RelativeDocumentMoniker": "ArazWin\\MainForm.cs",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\MainForm.cs",
+              "RelativeToolTip": "ArazWin\\MainForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T09:32:39.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmMainDashBoard.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\FrmMainDashBoard.cs",
+              "RelativeDocumentMoniker": "Araz_Form\\Form\\FrmMainDashBoard.cs",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\FrmMainDashBoard.cs [Design]",
+              "RelativeToolTip": "Araz_Form\\Form\\FrmMainDashBoard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T09:30:13.69Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\Program.cs",
+              "RelativeDocumentMoniker": "ArazWin\\Program.cs",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\Program.cs",
+              "RelativeToolTip": "ArazWin\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T08:32:50.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\MainForm.cs",
               "RelativeDocumentMoniker": "ArazWin\\MainForm.cs",

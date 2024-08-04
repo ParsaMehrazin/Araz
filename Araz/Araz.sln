@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArazWin", "ArazWin\ArazWin.csproj", "{C86D8632-BDB9-4611-89E9-E580D7FACB89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Araz_Form", "Araz_Form\Araz_Form.csproj", "{F9D13464-5A7D-4C44-9821-5E9AA6060D70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C86D8632-BDB9-4611-89E9-E580D7FACB89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C86D8632-BDB9-4611-89E9-E580D7FACB89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C86D8632-BDB9-4611-89E9-E580D7FACB89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9D13464-5A7D-4C44-9821-5E9AA6060D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9D13464-5A7D-4C44-9821-5E9AA6060D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9D13464-5A7D-4C44-9821-5E9AA6060D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9D13464-5A7D-4C44-9821-5E9AA6060D70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
