@@ -4,7 +4,6 @@ using System;
 using System.Windows.Forms;
 using Araz_Form;
 
-
 namespace ArazWin
 {
     public partial class MainForm : DevExpress.XtraBars.Ribbon.RibbonForm
@@ -21,21 +20,6 @@ namespace ArazWin
 
             ApplyPermission();
             CheckDevMode();
-
-            //btnMyProfile.Caption = Utilities.ControlUnit.LoggedUser.EmployeeFullName;
-            //txtVersion.EditValue = "1.0.0.01";
-            //var sysSetting = DARepository.GetAllSetting("").ToList();
-            //if (sysSetting != null)
-            //{
-            //    if (sysSetting.Any(p => p.pkSetting == 2))
-            //        this.Text = sysSetting.Where(p => p.pkSetting == 2).First().SettingValue;
-            //}
-
-            //if (!CommonTools.AskQuestion())
-            //{
-            //    this.TopMost = true;
-            //    return;
-            //}
 
             if (SplashScreenManager.Default != null && SplashScreenManager.Default.IsSplashFormVisible)
                 SplashScreenManager.CloseForm();
@@ -281,16 +265,11 @@ namespace ArazWin
         }
 
         void GetDashboardData()
-        {
-            //int milliseconds = 5000;
-            //System.Threading.Thread.Sleep(milliseconds);
-            //if (VersionUpdated == false)
-            //    return;
-
-            //frmMainDashboard frm = new frmMainDashboard();
-            //frm.MdiParent = this;
-            //frm.ControlBox = false;
-            //frm.Show();
+        {      
+            frmMainDashboard frm = new frmMainDashboard();
+            frm.MdiParent = this;
+            frm.ControlBox = false;
+            frm.Show();
         }
 
         void Timer_Tick(object sender, EventArgs e)
@@ -321,13 +300,13 @@ namespace ArazWin
 
         private void xtraTabbedMdiManager_PageAdded(object sender, DevExpress.XtraTabbedMdi.MdiTabPageEventArgs e)
         {
-            //pictureEdit.Visible = false;
+            pictureEdit.Visible = false;
         }
 
         private void xtraTabbedMdiManager_PageRemoved(object sender, DevExpress.XtraTabbedMdi.MdiTabPageEventArgs e)
         {
-            //if (this.xtraTabbedMdiManager.Pages.Count == 0)
-            //    pictureEdit.Visible = true;
+            if (this.xtraTabbedMdiManager.Pages.Count == 0)
+                pictureEdit.Visible = true;
         }
 
         private void MainRibbonControl_Merge(object sender, RibbonMergeEventArgs e)

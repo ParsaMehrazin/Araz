@@ -1,6 +1,6 @@
 ﻿namespace Araz_Form
 {
-    partial class FrmMainDashBoard
+    partial class frmMainDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -32,12 +32,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericChartRangeControlClient1)).BeginInit();
             this.SuspendLayout();
             // 
-            // FrmMainDashBoard
+            // frmMainDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1353, 628);
-            this.Name = "FrmMainDashBoard";
+            this.Name = "frmMainDashboard";
             this.Text = "FrmMainDashBoard";
             ((System.ComponentModel.ISupportInitialize)(this.numericChartRangeControlClient1)).EndInit();
             this.ResumeLayout(false);

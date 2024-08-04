@@ -1,21 +1,32 @@
-﻿using DevExpress.XtraEditors;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using DevExpress.XtraSplashScreen;
 
 namespace Araz_Form
 {
-    public partial class FrmMainDashBoard : DevExpress.XtraEditors.XtraForm
+    public partial class frmMainDashboard : DevExpress.XtraEditors.XtraForm
     {
-        public FrmMainDashBoard()
+        public frmMainDashboard()
         {
             InitializeComponent();
+
+            if (SplashScreenManager.Default == null || !SplashScreenManager.Default.IsSplashFormVisible)
+                SplashScreenManager.ShowForm(typeof(WaitingForm));
+
+            ApplyPermission();
+            FillData();
+
+            if (SplashScreenManager.Default != null && SplashScreenManager.Default.IsSplashFormVisible)
+                SplashScreenManager.CloseForm();
         }
+
+        void ApplyPermission()
+        {
+
+        }
+
+        void FillData()
+        {
+
+        }
+
     }
 }
