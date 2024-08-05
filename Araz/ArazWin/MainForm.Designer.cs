@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.MainRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -69,9 +70,10 @@
             this.MainRibbonControl.ExpandCollapseItem.Id = 0;
             this.MainRibbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.MainRibbonControl.ExpandCollapseItem,
-            this.MainRibbonControl.SearchEditItem});
+            this.MainRibbonControl.SearchEditItem,
+            this.barButtonItem1});
             this.MainRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.MainRibbonControl.MaxItemId = 1;
+            this.MainRibbonControl.MaxItemId = 2;
             this.MainRibbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
             this.MainRibbonControl.Name = "MainRibbonControl";
             this.MainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -90,7 +92,7 @@
             this.MainRibbonControl.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.MainRibbonControl.ShowSearchItem = true;
             this.MainRibbonControl.ShowToolbarCustomizeItem = false;
-            this.MainRibbonControl.Size = new System.Drawing.Size(1452, 147);
+            this.MainRibbonControl.Size = new System.Drawing.Size(1452, 158);
             this.MainRibbonControl.StatusBar = this.ribbonStatusBar;
             this.MainRibbonControl.Toolbar.ShowCustomizeItem = false;
             this.MainRibbonControl.Merge += new DevExpress.XtraBars.Ribbon.RibbonMergeEventHandler(this.MainRibbonControl_Merge);
@@ -98,13 +100,19 @@
             // backstageViewControl1
             // 
             this.backstageViewControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.backstageViewControl1.Location = new System.Drawing.Point(0, 147);
+            this.backstageViewControl1.Location = new System.Drawing.Point(0, 158);
             this.backstageViewControl1.Name = "backstageViewControl1";
             this.backstageViewControl1.OwnerControl = this.MainRibbonControl;
-            this.backstageViewControl1.Size = new System.Drawing.Size(1452, 593);
+            this.backstageViewControl1.Size = new System.Drawing.Size(1452, 581);
             this.backstageViewControl1.TabIndex = 3;
             this.backstageViewControl1.Text = "backstageViewControl1";
             this.backstageViewControl1.VisibleInDesignTime = true;
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "تنظیمات";
+            this.barButtonItem1.Id = 1;
+            this.barButtonItem1.Name = "barButtonItem1";
             // 
             // ribbonPage1
             // 
@@ -187,8 +195,9 @@
             // 
             // ribbonPageGroup7
             // 
+            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
-            this.ribbonPageGroup7.Text = "ribbonPageGroup7";
+            this.ribbonPageGroup7.Text = "تنظیمات";
             // 
             // ribbonPage14
             // 
@@ -204,10 +213,10 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 740);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 739);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.MainRibbonControl;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1452, 23);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1452, 24);
             // 
             // xtraTabbedMdiManager
             // 
@@ -255,13 +264,13 @@
             // pictureEdit
             // 
             this.pictureEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureEdit.Location = new System.Drawing.Point(0, 147);
+            this.pictureEdit.Location = new System.Drawing.Point(0, 158);
             this.pictureEdit.MenuManager = this.MainRibbonControl;
             this.pictureEdit.Name = "pictureEdit";
             this.pictureEdit.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit.Size = new System.Drawing.Size(1452, 593);
+            this.pictureEdit.Size = new System.Drawing.Size(1452, 581);
             this.pictureEdit.TabIndex = 3;
             // 
             // MainForm
@@ -275,7 +284,6 @@
             this.Controls.Add(this.backstageViewControl1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.MainRibbonControl);
-            this.IconOptions.Image = global::ArazWin.Properties.Resources.LogoAraz;
             this.IsMdiContainer = true;
             this.Name = "MainForm";
             this.Ribbon = this.MainRibbonControl;
@@ -322,5 +330,6 @@
         private DevExpress.XtraBars.Ribbon.BackstageViewControl backstageViewControl1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit;
         internal DevExpress.XtraBars.Ribbon.RibbonControl MainRibbonControl;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
     }
 }
