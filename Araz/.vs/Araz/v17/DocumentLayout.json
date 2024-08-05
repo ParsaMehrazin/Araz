@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|solutionrelative:arazwin\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|d:\\programming\\win\\araz\\araz\\arazwin\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|D:\\Programming\\Win\\Araz\\Araz\\arazwin\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|solutionrelative:arazwin\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -175,8 +175,7 @@
               "RelativeToolTip": "Araz_Form\\WaitingForm.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T10:45:30.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-04T10:45:30.011Z"
             },
             {
               "$type": "Document",
@@ -200,8 +199,7 @@
               "RelativeToolTip": "ArazWin\\MainForm.cs",
               "ViewState": "AQIAAOgAAAAAAAAAAAAiwPsAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T09:32:39.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-04T09:32:39.727Z"
             },
             {
               "$type": "Document",

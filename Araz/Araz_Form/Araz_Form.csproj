@@ -62,7 +62,9 @@
       <DependentUpon>WaitingForm.cs</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form\FrmMainDashBoard.resx">
       <DependentUpon>FrmMainDashBoard.cs</DependentUpon>

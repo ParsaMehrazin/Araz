@@ -92,12 +92,6 @@
     <None Include="Resources\LogoAraz.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Araz_Form\Araz_Form.csproj">
-      <Project>{f9d13464-5a7d-4c44-9821-5e9aa6060d70}</Project>
-      <Name>Araz_Form</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\properties.svg" />
   </ItemGroup>
   <ItemGroup>
@@ -111,6 +105,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LogoAraz1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Araz_Form\Araz_Form.csproj">
+      <Project>{f9d13464-5a7d-4c44-9821-5e9aa6060d70}</Project>
+      <Name>Araz_Form</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
