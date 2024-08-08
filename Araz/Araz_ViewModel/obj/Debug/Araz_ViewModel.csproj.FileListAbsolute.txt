@@ -1,0 +1,6 @@
+D:\Programming\Win\Araz\Araz\Araz_ViewModel\bin\Debug\Araz_ViewModel.dll
+D:\Programming\Win\Araz\Araz\Araz_ViewModel\bin\Debug\Araz_ViewModel.pdb
+D:\Programming\Win\Araz\Araz\Araz_ViewModel\obj\Debug\Araz_ViewModel.csproj.AssemblyReference.cache
+D:\Programming\Win\Araz\Araz\Araz_ViewModel\obj\Debug\Araz_ViewModel.csproj.CoreCompileInputs.cache
+D:\Programming\Win\Araz\Araz\Araz_ViewModel\obj\Debug\Araz_ViewModel.dll
+D:\Programming\Win\Araz\Araz\Araz_ViewModel\obj\Debug\Araz_ViewModel.pdb

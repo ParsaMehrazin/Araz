@@ -355,5 +355,12 @@ namespace ArazWin
             //frm.MdiParent = this;
             //frm.Show();
         }
+
+        private void BuyButton_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmPurchaseInvoice frm = new frmPurchaseInvoice();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

@@ -63,6 +63,46 @@ namespace ArazWin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap addfooter_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("addfooter_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap addfooter_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("addfooter_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap addheader_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("addheader_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap addheader_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("addheader_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LogoAraz {
             get {
                 object obj = ResourceManager.GetObject("LogoAraz", resourceCulture);
@@ -76,6 +116,26 @@ namespace ArazWin.Properties {
         internal static System.Drawing.Bitmap LogoAraz1 {
             get {
                 object obj = ResourceManager.GetObject("LogoAraz1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap newtask_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("newtask_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap newtask_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("newtask_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
