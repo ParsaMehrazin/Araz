@@ -1,10 +1,9 @@
-D:\Programming\Win\Araz\Araz\Araz_Repository\obj\Debug\Araz_Repository.csproj.AssemblyReference.cache
-D:\Programming\Win\Araz\Araz\Araz_Repository\obj\Debug\Araz_Repository.csproj.CoreCompileInputs.cache
 D:\Programming\Win\Araz\Araz\Araz_Repository\bin\Debug\Araz_Repository.dll
 D:\Programming\Win\Araz\Araz\Araz_Repository\bin\Debug\Araz_Repository.pdb
 D:\Programming\Win\Araz\Araz\Araz_Repository\bin\Debug\Araz_ViewModel.dll
 D:\Programming\Win\Araz\Araz\Araz_Repository\bin\Debug\Araz_ViewModel.pdb
-D:\Programming\Win\Araz\Araz\Araz_Repository\bin\Debug\Newtonsoft.Json.xml
+D:\Programming\Win\Araz\Araz\Araz_Repository\obj\Debug\Araz_Repository.csproj.AssemblyReference.cache
+D:\Programming\Win\Araz\Araz\Araz_Repository\obj\Debug\Araz_Repository.csproj.CoreCompileInputs.cache
 D:\Programming\Win\Araz\Araz\Araz_Repository\obj\Debug\Araz_Rep.99F7E935.Up2Date
 D:\Programming\Win\Araz\Araz\Araz_Repository\obj\Debug\Araz_Repository.dll
 D:\Programming\Win\Araz\Araz\Araz_Repository\obj\Debug\Araz_Repository.pdb

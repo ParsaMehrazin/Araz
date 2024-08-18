@@ -1,6 +1,2 @@
-D:\Programming\Win\Araz\Araz\Araz_Utilities\bin\Debug\Araz_Utilities.dll
-D:\Programming\Win\Araz\Araz\Araz_Utilities\bin\Debug\Araz_Utilities.pdb
 D:\Programming\Win\Araz\Araz\Araz_Utilities\obj\Debug\Araz_Utilities.csproj.AssemblyReference.cache
 D:\Programming\Win\Araz\Araz\Araz_Utilities\obj\Debug\Araz_Utilities.csproj.CoreCompileInputs.cache
-D:\Programming\Win\Araz\Araz\Araz_Utilities\obj\Debug\Araz_Utilities.dll
-D:\Programming\Win\Araz\Araz\Araz_Utilities\obj\Debug\Araz_Utilities.pdb
