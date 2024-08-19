@@ -1,9 +1,8 @@
 ﻿//using DevExpress.CodeParser;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
-using Araz_Forms;
+
 using System.Diagnostics;
-//using System.Windows.Forms;
 using ViewModel.ViewModels;
 
 
