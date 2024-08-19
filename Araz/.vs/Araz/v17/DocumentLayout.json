@@ -7,11 +7,11 @@
       "RelativeMoniker": "D:0:0:{D6C711C6-B1F7-4033-A5C1-2F1D7408D843}|Araz_Utilities\\Araz_Utilities.csproj|solutionrelative:araz_utilities\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|d:\\programming\\win\\araz\\araz\\araz_form\\waitingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|D:\\Programming\\Win\\Araz\\Araz\\araz_form\\waitingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\waitingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|d:\\programming\\win\\araz\\araz\\araz_form\\waitingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|D:\\Programming\\Win\\Araz\\Araz\\araz_form\\waitingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\waitingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -174,8 +174,7 @@
               "RelativeToolTip": "Araz_Form\\WaitingForm.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T07:35:13.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-19T07:35:13.835Z"
             },
             {
               "$type": "Document",
@@ -186,8 +185,7 @@
               "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\WaitingForm.cs [Design]",
               "RelativeToolTip": "Araz_Form\\WaitingForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T07:35:11.692Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-08-19T07:35:11.692Z"
             },
             {
               "$type": "Document",
@@ -195,9 +193,9 @@
               "Title": "Utilities.cs",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Utilities\\Utilities.cs",
               "RelativeDocumentMoniker": "Araz_Utilities\\Utilities.cs",
-              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Utilities\\Utilities.cs*",
-              "RelativeToolTip": "Araz_Utilities\\Utilities.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA4AAAA",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Utilities\\Utilities.cs",
+              "RelativeToolTip": "Araz_Utilities\\Utilities.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-18T15:54:10.11Z",
               "EditorCaption": ""
