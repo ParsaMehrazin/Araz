@@ -46,14 +46,7 @@
     <Compile Include="Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Araz_Repository\Araz_Repository.csproj">
-      <Project>{ed1b5e81-b344-483a-8e97-bf568d76751d}</Project>
-      <Name>Araz_Repository</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Araz_ViewModel\Araz_ViewModel.csproj">
-      <Project>{3402047b-b73b-4db1-be7f-b49b93bbe5ae}</Project>
-      <Name>Araz_ViewModel</Name>
-    </ProjectReference>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

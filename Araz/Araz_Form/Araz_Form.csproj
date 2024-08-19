@@ -74,6 +74,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonTools.cs" />
     <Compile Include="Form\Account\frmPersonList.cs">
       <SubType>Form</SubType>
     </Compile>
