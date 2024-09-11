@@ -21,10 +21,7 @@ namespace Araz_Form.Form.Account
         }
         private void FillData()
         {
-           // treeListLookUpEdit1.Properties.DataSource = d;
-           // treeListLookUpEdit1.Properties.DisplayMember = "CarName";
-           // treeListLookUpEdit1.Properties.ValueMember = "Id";
-            //treeListLookUpEdit1.Properties.TreeList.ParentFieldName = "ParentId";
+           
         }
     }
 }

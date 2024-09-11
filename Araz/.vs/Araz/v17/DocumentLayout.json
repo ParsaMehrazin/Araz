@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\Programming\\Win\\Araz\\Araz\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|D:\\Programming\\Win\\Araz\\Araz\\araz_form\\waitingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\waitingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1B5E81-B344-483A-8E97-BF568D76751D}|Araz_Repository\\Araz_Repository.csproj|d:\\programming\\win\\araz\\araz\\araz_repository\\staticconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED1B5E81-B344-483A-8E97-BF568D76751D}|Araz_Repository\\Araz_Repository.csproj|solutionrelative:araz_repository\\staticconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1B5E81-B344-483A-8E97-BF568D76751D}|Araz_Repository\\Araz_Repository.csproj|D:\\Programming\\Win\\Araz\\Araz\\araz_repository\\darepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED1B5E81-B344-483A-8E97-BF568D76751D}|Araz_Repository\\Araz_Repository.csproj|solutionrelative:araz_repository\\darepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D6C711C6-B1F7-4033-A5C1-2F1D7408D843}|Araz_Utilities\\Araz_Utilities.csproj|d:\\programming\\win\\araz\\araz\\araz_utilities\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6C711C6-B1F7-4033-A5C1-2F1D7408D843}|Araz_Utilities\\Araz_Utilities.csproj|solutionrelative:araz_utilities\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|d:\\programming\\win\\araz\\araz\\araz_form\\commontools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|D:\\Programming\\Win\\Araz\\Araz\\araz_form\\commontools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\commontools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|D:\\Programming\\Win\\Araz\\Araz\\araz_form\\waitingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\waitingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|D:\\Programming\\Win\\Araz\\Araz\\araz_form\\waitingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -49,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|D:\\Programming\\Win\\Araz\\Araz\\arazwin\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|solutionrelative:arazwin\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED1B5E81-B344-483A-8E97-BF568D76751D}|Araz_Repository\\Araz_Repository.csproj|D:\\Programming\\Win\\Araz\\Araz\\araz_repository\\darepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED1B5E81-B344-483A-8E97-BF568D76751D}|Araz_Repository\\Araz_Repository.csproj|solutionrelative:araz_repository\\darepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 170,
-          "SelectedChildIndex": 30,
+          "SelectedChildIndex": 28,
           "Children": [
             {
               "$type": "Bookmark",
@@ -129,23 +133,6 @@
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CommonTools.cs",
-              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\CommonTools.cs",
-              "RelativeDocumentMoniker": "Araz_Form\\CommonTools.cs",
-              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\CommonTools.cs",
-              "RelativeToolTip": "Araz_Form\\CommonTools.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T08:28:46.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
@@ -187,7 +174,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "StaticConnection.cs",
+              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Repository\\StaticConnection.cs",
+              "RelativeDocumentMoniker": "Araz_Repository\\StaticConnection.cs",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Repository\\StaticConnection.cs*",
+              "RelativeToolTip": "Araz_Repository\\StaticConnection.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T09:09:05.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CommonTools.cs",
+              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\CommonTools.cs",
+              "RelativeDocumentMoniker": "Araz_Form\\CommonTools.cs",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\CommonTools.cs",
+              "RelativeToolTip": "Araz_Form\\CommonTools.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T08:28:46.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "WaitingForm.cs",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\WaitingForm.cs",
               "RelativeDocumentMoniker": "Araz_Form\\WaitingForm.cs",
@@ -200,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "WaitingForm.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\WaitingForm.cs",
               "RelativeDocumentMoniker": "Araz_Form\\WaitingForm.cs",
@@ -212,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Utilities.cs",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Utilities\\Utilities.cs",
               "RelativeDocumentMoniker": "Araz_Utilities\\Utilities.cs",
@@ -225,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "DARepository.cs",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Repository\\DARepository.cs",
               "RelativeDocumentMoniker": "Araz_Repository\\DARepository.cs",
@@ -233,11 +245,12 @@
               "RelativeToolTip": "Araz_Repository\\DARepository.cs",
               "ViewState": "AQIAABEBAAAAAAAAAAAiwCIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T12:09:21.057Z"
+              "WhenOpened": "2024-08-08T12:09:21.057Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "frmRolePerson.cs",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Account\\frmRolePerson.cs",
               "RelativeDocumentMoniker": "Araz_Form\\Form\\Account\\frmRolePerson.cs",
@@ -249,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "frmRolePerson.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Account\\frmRolePerson.cs",
               "RelativeDocumentMoniker": "Araz_Form\\Form\\Account\\frmRolePerson.cs",
@@ -260,7 +273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "frmRolePerson.Designer.cs",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Account\\frmRolePerson.Designer.cs",
               "RelativeDocumentMoniker": "Araz_Form\\Form\\Account\\frmRolePerson.Designer.cs",
@@ -272,7 +285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "frmPersonList.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Account\\frmPersonList.cs",
               "RelativeDocumentMoniker": "Araz_Form\\Form\\Account\\frmPersonList.cs",
@@ -283,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "frmPurchaseInvoice.cs",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Invoice\\frmPurchaseInvoice.cs",
               "RelativeDocumentMoniker": "Araz_Form\\Form\\Invoice\\frmPurchaseInvoice.cs",
@@ -295,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "frmPurchaseInvoice.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Invoice\\frmPurchaseInvoice.cs",
               "RelativeDocumentMoniker": "Araz_Form\\Form\\Invoice\\frmPurchaseInvoice.cs",
@@ -306,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\MainForm.cs",
               "RelativeDocumentMoniker": "ArazWin\\MainForm.cs",
@@ -317,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "MainForm.cs",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\MainForm.cs",
               "RelativeDocumentMoniker": "ArazWin\\MainForm.cs",
