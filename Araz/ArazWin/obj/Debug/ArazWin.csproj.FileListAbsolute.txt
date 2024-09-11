@@ -50,3 +50,4 @@ D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.Office.v22.2.Core.xml
 D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.csproj.Up2Date
 D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.exe
 D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.pdb
+D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\ICSharpCode.SharpZipLib.dll

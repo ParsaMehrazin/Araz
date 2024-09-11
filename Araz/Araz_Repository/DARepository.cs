@@ -484,6 +484,16 @@ namespace Repository
 
         #region ■ Get All/Single From View_...
 
+        #region ■ Get All/Single From View_...
+
+        public static IQueryable<T> GetAllFromView<T>(string select, string where) where T : new()
+        {
+            string _query = select + " " + where;
+            DataTable ds = DAL.SQLDataTable(_query, CNN);
+            return ds.DataTableToList<T>().AsQueryable();
+        }
+
+
         //public static List<View_SysSetting> GetAllSetting(string Where)
         //{
         //    string query = "SELECT * FROM View_SysSetting " + Where;
@@ -889,7 +899,7 @@ namespace Repository
         //}
     }
 
+    #endregion
 
-  
 }
 

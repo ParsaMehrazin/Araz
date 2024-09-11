@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnAdd = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
@@ -81,7 +81,7 @@
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
             this.ribbon.SearchEditItem,
-            this.barButtonItem1,
+            this.btnAdd,
             this.barButtonItem2,
             this.barButtonItem3,
             this.barButtonItem4,
@@ -94,13 +94,14 @@
             this.ribbon.Size = new System.Drawing.Size(1198, 158);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
-            // barButtonItem1
+            // btnAdd
             // 
-            this.barButtonItem1.Caption = "جدید";
-            this.barButtonItem1.Id = 1;
-            this.barButtonItem1.ImageOptions.Image = global::Araz_Form.Properties.Resources.addnewdatasource_16x16;
-            this.barButtonItem1.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.addnewdatasource_32x32;
-            this.barButtonItem1.Name = "barButtonItem1";
+            this.btnAdd.Caption = "جدید";
+            this.btnAdd.Id = 1;
+            this.btnAdd.ImageOptions.Image = global::Araz_Form.Properties.Resources.addnewdatasource_16x16;
+            this.btnAdd.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.addnewdatasource_32x32;
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAdd_ItemClick);
             // 
             // barButtonItem2
             // 
@@ -144,7 +145,7 @@
             // 
             // ribbonPageGroup1
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnAdd);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem3);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem5);
@@ -403,7 +404,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem btnAdd;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;

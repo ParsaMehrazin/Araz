@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraBars;
+﻿using Araz_Form.Form.Account;
+using DevExpress.XtraBars;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,8 +29,12 @@ namespace Araz_Form
             if (e.RowHandle >= 0)
                 e.Info.DisplayText = (e.RowHandle + 1).ToString();
         }
-        
 
+        private void btnAdd_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmRolePerson frm = new frmRolePerson();            
+            frm.ShowDialog();
 
+        }
     }
 }
