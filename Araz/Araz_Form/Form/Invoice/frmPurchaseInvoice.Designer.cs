@@ -243,6 +243,7 @@
             // gridColumn1
             // 
             this.gridColumn1.Caption = "گروه کالا";
+            this.gridColumn1.FieldName = "PersonName";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowEdit = false;
             this.gridColumn1.Visible = true;

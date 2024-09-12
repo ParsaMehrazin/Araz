@@ -23,7 +23,7 @@ namespace Repository
             SqlConnection conn = new SqlConnection(ConnectionString);
             try
             {
-                ConnectionString = ConnectionString.Replace("\\", @"\");
+       //         ConnectionString = ConnectionString.Replace("\\", @"\");
                 conn.Open();
                 SqlCommand sc = new SqlCommand(querry, conn);
                 sc.CommandTimeout = 0;
@@ -494,19 +494,19 @@ namespace Repository
         }
 
 
-        //public static List<View_SysSetting> GetAllSetting(string Where)
-        //{
-        //    string query = "SELECT * FROM View_SysSetting " + Where;
-        //    DataTable ds = DAL.SQLDataTable(query, CNN);
-        //    return ds.DataTableToList<View_SysSetting>();
-        //}
+        public static List<View_SysSetting> GetAllSetting(string Where)
+        {
+            string query = "SELECT * FROM View_SysSetting " + Where;
+            DataTable ds = DAL.SQLDataTable(query, CNN);
+            return ds.DataTableToList<View_SysSetting>();
+        }
 
-        //public static List<View_SysOption> GetAllOption(string Where)
-        //{
-        //    string query = "SELECT * FROM View_Option " + Where;
-        //    DataTable ds = DAL.SQLDataTable(query, CNN);
-        //    return ds.DataTableToList<View_SysOption>();
-        //}
+        public static List<View_SysOption> GetAllOption(string Where)
+        {
+            string query = "SELECT * FROM View_Option " + Where;
+            DataTable ds = DAL.SQLDataTable(query, CNN);
+            return ds.DataTableToList<View_SysOption>();
+        }
 
         //public static List<View_ProductionProcessMain> GetProductionProcessMain(string Where)
         //{

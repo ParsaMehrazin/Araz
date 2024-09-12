@@ -42,6 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account\View_Person.cs" />
+    <Compile Include="Common\BaseLogResponseViewModel.cs" />
+    <Compile Include="Common\BaseRepositoryResponseViewModel.cs" />
+    <Compile Include="Common\View_SysOption.cs" />
+    <Compile Include="Common\View_SysSetting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceOperatorParameter.cs" />
   </ItemGroup>
