@@ -18,15 +18,15 @@ namespace Araz_Form.Form.Account
     {
         public frmRolePerson()
         {
+            CommonTools.Loading(true);
             InitializeComponent();
             FillData();
-
+            CommonTools.Loading();
         }
         private void FillData()
-        {
-            CommonTools.Loading(true);
-            treeListLookUpEdit1.Properties.DataSource = DARepository.GetAllFromView<View_Person>("SELECT * FROM dbo.View_Person", "");
-            CommonTools.Loading();
+        {           
+            treeListLookUpEdit1.Properties.DataSource = DARepository.GetAllFromView<View_Person>("SELECT * FROM dbo.View_Person", "").ToList();
+          
         }
     }
 }

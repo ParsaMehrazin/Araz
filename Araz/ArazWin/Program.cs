@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Repository;
+using System;
 using System.Windows.Forms;
 
 namespace ArazWin
@@ -11,7 +12,7 @@ namespace ArazWin
         [STAThread]
         static void Main()
         {
-            //DARepository.CNN = StaticConnection.Connection;
+            DARepository.CNN = StaticConnection.Connection;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
