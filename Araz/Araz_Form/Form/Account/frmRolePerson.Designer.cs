@@ -31,9 +31,8 @@
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.treeListLookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.cmbRole = new DevExpress.XtraEditors.LookUpEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.treeListColumn1 = new DevExpress.XtraTreeList.Columns.TreeListColumn();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -65,11 +64,12 @@
             this.textEdit13 = new DevExpress.XtraEditors.MemoEdit();
             this.textEdit12 = new DevExpress.XtraEditors.LookUpEdit();
             this.textEdit11 = new DevExpress.XtraEditors.LookUpEdit();
+            this.treeListColumn1 = new DevExpress.XtraTreeList.Columns.TreeListColumn();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.treeListLookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbRole.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
@@ -112,7 +112,7 @@
             this.layoutControl1.Controls.Add(this.textEdit4);
             this.layoutControl1.Controls.Add(this.textEdit2);
             this.layoutControl1.Controls.Add(this.textEdit1);
-            this.layoutControl1.Controls.Add(this.treeListLookUpEdit1);
+            this.layoutControl1.Controls.Add(this.cmbRole);
             this.layoutControl1.Controls.Add(this.textEdit3);
             this.layoutControl1.Controls.Add(this.textEdit5);
             this.layoutControl1.Controls.Add(this.simpleButton1);
@@ -145,20 +145,20 @@
             this.textEdit1.StyleController = this.layoutControl1;
             this.textEdit1.TabIndex = 4;
             // 
-            // treeListLookUpEdit1
+            // cmbRole
             // 
-            this.treeListLookUpEdit1.Location = new System.Drawing.Point(314, 12);
-            this.treeListLookUpEdit1.Name = "treeListLookUpEdit1";
-            this.treeListLookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cmbRole.Location = new System.Drawing.Point(314, 12);
+            this.cmbRole.Name = "cmbRole";
+            this.cmbRole.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.treeListLookUpEdit1.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("PersonName", "نام")});
-            this.treeListLookUpEdit1.Properties.DisplayMember = "PersonName";
-            this.treeListLookUpEdit1.Properties.NullText = "انتخاب نشده";
-            this.treeListLookUpEdit1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.treeListLookUpEdit1.Size = new System.Drawing.Size(204, 20);
-            this.treeListLookUpEdit1.StyleController = this.layoutControl1;
-            this.treeListLookUpEdit1.TabIndex = 7;
+            this.cmbRole.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("RoleName", "نام")});
+            this.cmbRole.Properties.DisplayMember = "RoleName";
+            this.cmbRole.Properties.NullText = "انتخاب نشده";
+            this.cmbRole.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cmbRole.Size = new System.Drawing.Size(204, 20);
+            this.cmbRole.StyleController = this.layoutControl1;
+            this.cmbRole.TabIndex = 7;
             // 
             // Root
             // 
@@ -177,14 +177,6 @@
             this.Root.Name = "Root";
             this.Root.Size = new System.Drawing.Size(600, 228);
             this.Root.TextVisible = false;
-            // 
-            // treeListColumn1
-            // 
-            this.treeListColumn1.Caption = "سمت";
-            this.treeListColumn1.FieldName = "CarName";
-            this.treeListColumn1.Name = "treeListColumn1";
-            this.treeListColumn1.Visible = true;
-            this.treeListColumn1.VisibleIndex = 0;
             // 
             // layoutControlItem3
             // 
@@ -216,7 +208,7 @@
             // 
             // layoutControlItem4
             // 
-            this.layoutControlItem4.Control = this.treeListLookUpEdit1;
+            this.layoutControlItem4.Control = this.cmbRole;
             this.layoutControlItem4.Location = new System.Drawing.Point(302, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(278, 24);
@@ -475,20 +467,31 @@
             this.textEdit11.StyleController = this.layoutControl1;
             this.textEdit11.TabIndex = 15;
             // 
+            // treeListColumn1
+            // 
+            this.treeListColumn1.Caption = "سمت";
+            this.treeListColumn1.FieldName = "CarName";
+            this.treeListColumn1.Name = "treeListColumn1";
+            this.treeListColumn1.Visible = true;
+            this.treeListColumn1.VisibleIndex = 0;
+            // 
             // frmRolePerson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 228);
             this.Controls.Add(this.layoutControl1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmRolePerson";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ثبت شخص جدید";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.treeListLookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbRole.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
@@ -530,7 +533,7 @@
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private DevExpress.XtraEditors.TextEdit textEdit2;
         private DevExpress.XtraTreeList.Columns.TreeListColumn treeListColumn1;
-        private DevExpress.XtraEditors.LookUpEdit treeListLookUpEdit1;
+        private DevExpress.XtraEditors.LookUpEdit cmbRole;
         private DevExpress.XtraEditors.TextEdit textEdit10;
         private DevExpress.XtraEditors.TextEdit textEdit9;
         private DevExpress.XtraEditors.TextEdit textEdit8;

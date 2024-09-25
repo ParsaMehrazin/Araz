@@ -25,7 +25,7 @@ namespace Araz_Form.Form.Account
         }
         private void FillData()
         {           
-            treeListLookUpEdit1.Properties.DataSource = DARepository.GetAllFromView<View_Person>("SELECT * FROM dbo.View_Person", "").ToList();
+            cmbRole.Properties.DataSource = DARepository.GetAllFromView<View_Role>("SELECT * FROM dbo.View_Role", "").ToList();
           
         }
     }

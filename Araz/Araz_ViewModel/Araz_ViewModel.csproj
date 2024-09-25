@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account\View_Person.cs" />
+    <Compile Include="Account\View_Role.cs" />
     <Compile Include="Common\BaseLogResponseViewModel.cs" />
     <Compile Include="Common\BaseRepositoryResponseViewModel.cs" />
     <Compile Include="Common\View_SysOption.cs" />
