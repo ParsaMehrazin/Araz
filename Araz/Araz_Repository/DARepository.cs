@@ -226,6 +226,60 @@ namespace Repository
             {
             }
         }
+        public static BaseRepositoryResponseViewModel ExcuteOperationalSP_New(string schema, string procidureName, params ServiceOperatorParameter[] parameters)
+        {
+            try
+            {
+                string Result = "";
+                using (SqlConnection conn = new SqlConnection(CNN))
+                using (SqlCommand cmd = new SqlCommand(schema + "." + "sp_" + procidureName, conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandTimeout = 0;
+                    for (int i = 0; i < parameters.Length; i++)
+                    {
+                        string type = string.Empty;
+                        if (parameters[i].Name == "FileContent")
+                        {
+                            type = "varbinary(max)";
+                            cmd.Parameters.Add("@" + parameters[i].Name, GetSqlDbType(type));
+                            if (parameters[i].Value == null || parameters[i].Value == "")
+                                cmd.Parameters["@" + parameters[i].Name].Value = new byte[0];
+                        }
+                        else if (parameters[i].DataTable != null)
+                        {
+                            type = "Structured";
+
+                            SqlParameter tvp = new SqlParameter(parameters[i].Name, parameters[i].DataTable);
+                            tvp.SqlDbType = SqlDbType.Structured;
+                            tvp.TypeName = parameters[i].Value.ToString();
+                            cmd.Parameters.Add(tvp);
+                        }
+                        else
+                        {
+                            type = parameters[i].Value.GetType().ToString();
+                            cmd.Parameters.Add("@" + parameters[i].Name, GetSqlDbType(type));
+                            cmd.Parameters["@" + parameters[i].Name].Value = parameters[i].Value;
+                        }
+                    }
+                    cmd.Parameters.Add("@msg", SqlDbType.NVarChar, 1000).Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add("@Result", SqlDbType.Int).Direction = ParameterDirection.Output;
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    int res = Convert.ToInt32(cmd.Parameters["@Result"].Value);
+                    string mes = cmd.Parameters["@msg"].Value.ToString();
+                    conn.Close();
+                    return new BaseRepositoryResponseViewModel() { Result = res, msg = mes, ResponseMessages = null, Success = res > 0 };
+                }
+            }
+            catch (Exception ex)
+            {
+                return new BaseRepositoryResponseViewModel() { Result = 0, msg = ex.Message, ResponseMessages = null, Success = false };
+            }
+            finally
+            {
+            }
+        }
 
         public static int GetSingleValueFromFunction(string name, params ServiceOperatorParameter[] parameters)
         {

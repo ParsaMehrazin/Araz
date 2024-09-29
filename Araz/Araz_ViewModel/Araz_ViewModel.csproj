@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Region\View_City.cs" />
+    <Compile Include="Region\View_Province.cs" />
+    <Compile Include="Account\View_Education.cs" />
     <Compile Include="Account\View_Person.cs" />
     <Compile Include="Account\View_Role.cs" />
     <Compile Include="Common\BaseLogResponseViewModel.cs" />

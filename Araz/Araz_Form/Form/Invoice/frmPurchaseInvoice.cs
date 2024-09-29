@@ -38,8 +38,12 @@ namespace Araz_Form
 
         private void btnAdd_ItemClick(object sender, ItemClickEventArgs e)
         {
-            frmRolePerson frm = new frmRolePerson();            
-            frm.ShowDialog();
+            var _item = DARepository.GetAllFromView<View_Person>("SELECT * FROM dbo.View_Person", "where pkPersonID = 10").ToList().FirstOrDefault();
+            
+           
+                frmRolePerson frm = new frmRolePerson(2, _item);
+                frm.ShowDialog();
+                
 
         }
     }
