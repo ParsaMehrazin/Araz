@@ -9,7 +9,7 @@ namespace Araz_ViewModel
         public string PersonName { get; set; }                   //-----نام 
         public string PersonLastName { get; set; }               //-----نام خانوادگی
         public string FullName { get; set; }                     //-----نام و نام خانوادگی
-        public bool Sex { get; set; }                            //-----جنسیت
+        public string Sex { get; set; }                            //-----جنسیت
         public int? PersonAge { get; set; }                      //-----سن
         public long? fkEducationID { get; set; }                //-----اف کا تحصیلات
         public string Education {  get; set; }                   //-----تحصیلات
