@@ -143,6 +143,26 @@ namespace Araz_Form.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Form_Export_xls_16 {
+            get {
+                object obj = ResourceManager.GetObject("Form_Export_xls_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Form_Export_xls_32 {
+            get {
+                object obj = ResourceManager.GetObject("Form_Export_xls_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LogoAraz {
             get {
                 object obj = ResourceManager.GetObject("LogoAraz", resourceCulture);
@@ -156,6 +176,16 @@ namespace Araz_Form.Properties {
         internal static System.Drawing.Bitmap printer_16x16 {
             get {
                 object obj = ResourceManager.GetObject("printer_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap printer_16x161 {
+            get {
+                object obj = ResourceManager.GetObject("printer_16x161", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

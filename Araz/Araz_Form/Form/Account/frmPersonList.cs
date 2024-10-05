@@ -1,4 +1,6 @@
-﻿using DevExpress.XtraBars;
+﻿using Araz_ViewModel;
+using DevExpress.XtraBars;
+using Repository;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Utilities;
 
 namespace Araz_Form.Form.Account
 {
@@ -15,7 +18,19 @@ namespace Araz_Form.Form.Account
     {
         public frmPersonList()
         {
+            CommonTools.Loading(true);
             InitializeComponent();
+            FillData();
+            CommonTools.Loading();
+        }
+        public void FillData ()
+        {
+            gcPersonList.DataSource = DARepository.GetAllFromView<View_Person>("SELECT * FROM dbo.View_Person","").ToList();
+        }
+        private void btnAdd_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmPersonDefine frm = new frmPersonDefine(1, null);
+            frm.ShowDialog();
         }
     }
 }

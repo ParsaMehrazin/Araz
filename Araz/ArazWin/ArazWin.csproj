@@ -120,9 +120,6 @@
     <None Include="Resources\addfooter_32x32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\addfooter_16x16.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\newtask_32x32.png" />
   </ItemGroup>
   <ItemGroup>
@@ -145,6 +142,92 @@
       <Project>{3402047b-b73b-4db1-be7f-b49b93bbe5ae}</Project>
       <Name>Araz_ViewModel</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfooter_16x16.png" />
+    <None Include="Resources\apply_16x16.png" />
+    <None Include="Resources\Attach_01_False.png" />
+    <None Include="Resources\Attach_01_True.png" />
+    <None Include="Resources\Attach_02_False.png" />
+    <None Include="Resources\Attach_02_True.png" />
+    <None Include="Resources\bosale_16x16.png" />
+    <None Include="Resources\bosale_32x32.png" />
+    <None Include="Resources\buy_16x16.png" />
+    <None Include="Resources\buy_32x32.png" />
+    <None Include="Resources\buy_32x321.png" />
+    <None Include="Resources\cancel_16x16.png" />
+    <None Include="Resources\Cancel_F_49.png" />
+    <None Include="Resources\Cancel_F_80.png" />
+    <None Include="Resources\Cancel_T_49.png" />
+    <None Include="Resources\Cancel_T_80.png" />
+    <None Include="Resources\deletelist2_16x16.png" />
+    <None Include="Resources\deletelist2_32x32.png" />
+    <None Include="Resources\Form_Add_16.png" />
+    <None Include="Resources\Form_Add_32.png" />
+    <None Include="Resources\Form_Delete_16.png" />
+    <None Include="Resources\Form_Delete_32.png" />
+    <None Include="Resources\Form_Driving_16.png" />
+    <None Include="Resources\Form_Driving_32.png" />
+    <None Include="Resources\Form_Edit_16.png" />
+    <None Include="Resources\Form_Edit_32.png" />
+    <None Include="Resources\Form_Exit_16.png" />
+    <None Include="Resources\Form_Exit_32.png" />
+    <None Include="Resources\Form_Export_xls_16.png" />
+    <None Include="Resources\Form_Export_xls_32.png" />
+    <None Include="Resources\Form_PrintDetail_16.png" />
+    <None Include="Resources\Form_PrintDetail_32.png" />
+    <None Include="Resources\Form_Print_16.png" />
+    <None Include="Resources\Form_Print_32.png" />
+    <None Include="Resources\Form_Refresh_16.png" />
+    <None Include="Resources\Form_Refresh_32.png" />
+    <None Include="Resources\Form_Save_16.png" />
+    <None Include="Resources\Form_Save_32.png" />
+    <None Include="Resources\insert_16x16.png" />
+    <None Include="Resources\insert_32x32.png" />
+    <None Include="Resources\Message_16.png" />
+    <None Include="Resources\Message_32.png" />
+    <None Include="Resources\Metal_01.png" />
+    <None Include="Resources\PaasedPhase.png" />
+    <None Include="Resources\pie_16x16.png" />
+    <None Include="Resources\pie_32x32.png" />
+    <None Include="Resources\Priority_AOG.png" />
+    <None Include="Resources\Priority_Critical.png" />
+    <None Include="Resources\Priority_Routine.png" />
+    <None Include="Resources\RC_Copy_16.png" />
+    <None Include="Resources\RC_Copy_32.png" />
+    <None Include="Resources\RC_Paste_16.png" />
+    <None Include="Resources\RC_Paste_32.png" />
+    <None Include="Resources\security_security.svg" />
+    <None Include="Resources\send_16x16.png" />
+    <None Include="Resources\send_16x161.png" />
+    <None Include="Resources\send_32x32.png" />
+    <None Include="Resources\send_32x321.png" />
+    <None Include="Resources\Sex_Female.png" />
+    <None Include="Resources\Sex_Male.png" />
+    <None Include="Resources\shut_down.png" />
+    <None Include="Resources\Sign-Error.png" />
+    <None Include="Resources\snapemptytablerowseparator.svg" />
+    <None Include="Resources\Status_01_Lock.png" />
+    <None Include="Resources\Status_01_Unlock.png" />
+    <None Include="Resources\Status_02_Active.png" />
+    <None Include="Resources\Status_02_DActive.png" />
+    <None Include="Resources\Status_03_Apply_16.png" />
+    <None Include="Resources\Status_03_Apply_32.png" />
+    <None Include="Resources\Status_03_Cancel_16.png" />
+    <None Include="Resources\Status_03_Cancel_32.png" />
+    <None Include="Resources\Status_04_ApprovedItems.png" />
+    <None Include="Resources\Status_04_CarryForward.png" />
+    <None Include="Resources\Status_04_Checked-24.png" />
+    <None Include="Resources\Status_04_Progress.png" />
+    <None Include="Resources\Status_04_UnderStudy.png" />
+    <None Include="Resources\Status_04_UnpassedPhase.png" />
+    <None Include="Resources\trash_16x16.png" />
+    <None Include="Resources\trash_32x32.png" />
+    <None Include="Resources\travel_bus.svg" />
+    <None Include="Resources\valuecolorizermap_16x16.png" />
+    <None Include="Resources\valuecolorizermap_32x32.png" />
+    <None Include="Resources\View_01_16.png" />
+    <None Include="Resources\View_01_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

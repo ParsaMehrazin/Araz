@@ -31,6 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Accessibility" />
     <Reference Include="DevExpress.BonusSkins.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\DevExpress.BonusSkins.v22.2.dll</HintPath>
@@ -55,6 +56,7 @@
     <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraBars.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -66,9 +68,21 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
+    <Reference Include="PersianDatePickerControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PersianDatePickerControl.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -79,17 +93,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommonTools.cs" />
+    <Compile Include="Form\Account\frmPersonDefine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Account\frmPersonDefine.Designer.cs">
+      <DependentUpon>frmPersonDefine.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\Account\frmPersonList.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\Account\frmPersonList.Designer.cs">
       <DependentUpon>frmPersonList.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form\Account\frmRolePerson.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form\Account\frmRolePerson.Designer.cs">
-      <DependentUpon>frmRolePerson.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\FrmMainDashBoard.cs">
       <SubType>Form</SubType>
@@ -120,11 +134,11 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form\Account\frmPersonDefine.resx">
+      <DependentUpon>frmPersonDefine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\Account\frmPersonList.resx">
       <DependentUpon>frmPersonList.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\Account\frmRolePerson.resx">
-      <DependentUpon>frmRolePerson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FrmMainDashBoard.resx">
       <DependentUpon>FrmMainDashBoard.cs</DependentUpon>
@@ -142,6 +156,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\LogoAraz.png" />
   </ItemGroup>
   <ItemGroup>
@@ -187,6 +202,15 @@
       <Project>{3402047b-b73b-4db1-be7f-b49b93bbe5ae}</Project>
       <Name>Araz_ViewModel</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form_Export_xls_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form_Export_xls_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_16x161.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

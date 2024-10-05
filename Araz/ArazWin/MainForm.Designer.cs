@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.MainRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
@@ -35,6 +36,7 @@
             this.BuyButton = new DevExpress.XtraBars.BarButtonItem();
             this.SellButton = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnPerson = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -55,7 +57,7 @@
             this.ribbonPage14 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager();
+            this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPage7 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -82,9 +84,10 @@
             this.barButtonGroup1,
             this.BuyButton,
             this.SellButton,
-            this.barButtonItem4});
+            this.barButtonItem4,
+            this.btnPerson});
             this.MainRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.MainRibbonControl.MaxItemId = 6;
+            this.MainRibbonControl.MaxItemId = 7;
             this.MainRibbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
             this.MainRibbonControl.Name = "MainRibbonControl";
             this.MainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -157,6 +160,15 @@
             this.barButtonItem4.ImageOptions.Image = global::ArazWin.Properties.Resources.newtask_16x16;
             this.barButtonItem4.ImageOptions.LargeImage = global::ArazWin.Properties.Resources.newtask_32x32;
             this.barButtonItem4.Name = "barButtonItem4";
+            // 
+            // btnPerson
+            // 
+            this.btnPerson.Caption = "اشخاص";
+            this.btnPerson.Id = 6;
+            this.btnPerson.ImageOptions.Image = global::ArazWin.Properties.Resources.Sex_Male;
+            this.btnPerson.ImageOptions.LargeImage = global::ArazWin.Properties.Resources.Sex_Male;
+            this.btnPerson.Name = "btnPerson";
+            this.btnPerson.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPerson_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -234,8 +246,9 @@
             // ribbonPageGroup5
             // 
             this.ribbonPageGroup5.AllowTextClipping = false;
+            this.ribbonPageGroup5.ItemLinks.Add(this.btnPerson);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            this.ribbonPageGroup5.Text = "ribbonPageGroup5";
+            this.ribbonPageGroup5.Text = "منابع انسانی";
             // 
             // ribbonPage10
             // 
@@ -418,5 +431,6 @@
         private DevExpress.XtraBars.BarButtonItem BuyButton;
         private DevExpress.XtraBars.BarButtonItem SellButton;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem btnPerson;
     }
 }
