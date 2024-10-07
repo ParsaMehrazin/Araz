@@ -36,12 +36,12 @@ namespace Araz_Form.Form.Account
             CommonTools.Loading(true);
             InitializeComponent();
             LoadSex();
-            FillData();            
+            FillData();
             CommonTools.Loading();
         }
         public void FillData()
         {
-            cmbRolePerson.Properties.DataSource= DARepository.GetAllFromView<View_Role>("SELECT * FROM dbo.View_Role", "Where pkRoleID > 3").ToList();
+            cmbRolePerson.Properties.DataSource = DARepository.GetAllFromView<View_Role>("SELECT * FROM dbo.View_Role", "Where pkRoleID > 3").ToList();
             cmbRole.Properties.DataSource = DARepository.GetAllFromView<View_Role>("SELECT * FROM dbo.View_Role", "").ToList();
             cmbRole.EditValue = (cmbRole.Properties.DataSource as List<View_Role>).Where(p => p.pkRoleID == 1).FirstOrDefault();
             cmbProvince.Properties.DataSource = DARepository.GetAllFromView<View_City>("SELECT * FROM dbo.View_City", "WHERE PerentCityID IS NULL").ToList();
@@ -64,7 +64,11 @@ namespace Araz_Form.Form.Account
         {
             try
             {
-                this.Text = "ثبت اشخاص جدید";
+                CommonTools.Loading(true);
+                fpPersonDefine.OwnerControl = gcPersonList;
+                fpPersonDefine.ShowBeakForm(Control.MousePosition);
+                lcgPersonDefine.Text = "ثبت شخص جدید";
+                CommonTools.Loading();
                 return true;
             }
             catch
@@ -73,14 +77,18 @@ namespace Araz_Form.Form.Account
             }
         }
 
-        public bool modTwo()
+        public bool modTwo(View_Person model)
         {
             try
             {
                 CommonTools.Loading(true);
-                this.Text = "ویرایش شخص ";
+                _mod = 2;
+                _Person = model;
+                fpPersonDefine.OwnerControl = gcPersonList;
+                fpPersonDefine.ShowBeakForm(Control.MousePosition);
+                lcgPersonDefine.Text = "ویرایش شخص جدید";
                 this.pkpersonId = _Person.pkPersonID;
-                cmbRole.EditValue = (cmbRole.Properties.DataSource as List<View_Role>).Where(p => p.pkRoleID == _Person.fkRoleID).FirstOrDefault();
+                cmbRolePerson.EditValue = (cmbRolePerson.Properties.DataSource as List<View_Role>).Where(p => p.pkRoleID == _Person.fkRoleID).FirstOrDefault();
                 txtName.Text = _Person.PersonName;
                 txtLastName.Text = _Person.PersonLastName;
                 cmbSex.EditValue = _Sex.Where(p => p == _Person.Sex).FirstOrDefault();
@@ -105,6 +113,7 @@ namespace Araz_Form.Form.Account
             }
         }
 
+
         public void Clear()
         {
             //cmbRole.EditValue = null;
@@ -123,11 +132,9 @@ namespace Araz_Form.Form.Account
             txtAddress.Text = "";
         }
 
-
         private void btnAdd_ItemClick(object sender, ItemClickEventArgs e)
         {
-            fpPersonDefine.OwnerControl = gcPersonList;
-            fpPersonDefine.ShowBeakForm(Control.MousePosition);
+            modOne();
             if (_isSave)
                 btnRefresh_Click(null, null);
         }
@@ -137,9 +144,8 @@ namespace Araz_Form.Form.Account
             var item = gvPersonList.GetFocusedRow() as View_Person;
             if (item != null)
             {
-                frmPersonDefine frm = new frmPersonDefine(2, item);
-                frm.ShowDialog();
-                if (frm._isSave)
+                modTwo(item);
+                if (_isSave)
                     btnRefresh_Click(null, null);
             }
             else
@@ -156,9 +162,13 @@ namespace Araz_Form.Form.Account
             var item = gvPersonList.GetFocusedRow() as View_Person;
             if (item != null)
             {
-                frmPersonDefine frm = new frmPersonDefine(3, item);
-                if (frm._isSave)
+                if (CommonTools.AskQuestion($" آیا از حذف {item.Sex} {item.FullName} مطمئن هستید؟ "))
+                {
+                    pkpersonId = item.pkPersonID;
+                    _mod = 3;
+                    btnSave_Click(null, null);
                     btnRefresh_Click(null, null);
+                }
             }
             else
                 CommonTools.ShowMessage("ردیفی برای حذف انتخاب نشده ");
@@ -178,7 +188,7 @@ namespace Araz_Form.Form.Account
             {
                 var where = "";
                 var select = "SELECT * FROM dbo.View_Person";
-                if (_Roles.pkRoleID != 1 && _Roles.pkRoleID != 2)
+                if (_Roles.pkRoleID > 3)
                     where = "WHERE fkRoleID = " + _Roles.pkRoleID;
                 else if (_Roles.pkRoleID == 2)
                     where = "WHERE fkRoleID <>  " + 4;
@@ -312,6 +322,7 @@ namespace Araz_Form.Form.Account
             {
                 this._isSave = true;
                 fpPersonDefine.HideBeakForm();
+                btnRefresh_Click(null, null);
                 Clear();
             }
             else
@@ -320,7 +331,7 @@ namespace Araz_Form.Form.Account
                 this._isSave = false;
                 this.hasError = true;
             }
-     
+
             return;
         }
 
