@@ -5,12 +5,12 @@ namespace Araz_ViewModel
 {
     public class View_Person :BaseLogResponseViewModel
     {
-        public long? pkPersonID { get; set; }                    //-----آی دی مشتری
+        public long pkPersonID { get; set; }                    //-----آی دی مشتری
         public string PersonName { get; set; }                   //-----نام 
         public string PersonLastName { get; set; }               //-----نام خانوادگی
         public string FullName { get; set; }                     //-----نام و نام خانوادگی
         public string Sex { get; set; }                          //-----جنسیت
-        public DateTime? AgeDate { get; set; }                   //-----تاریخ تولد    
+        public DateTime AgeDate { get; set; }                   //-----تاریخ تولد    
         public int? PersonAge { get; set; }                      //-----سن
         public long? fkEducationID { get; set; }                 //-----اف کا تحصیلات
         public string Education {  get; set; }                   //-----تحصیلات

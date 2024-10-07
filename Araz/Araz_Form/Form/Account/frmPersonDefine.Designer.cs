@@ -33,7 +33,7 @@
             this.txtMobile = new DevExpress.XtraEditors.TextEdit();
             this.txtName = new DevExpress.XtraEditors.TextEdit();
             this.txtLastName = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
+            this.txtAgeDate = new DevExpress.XtraEditors.TextEdit();
             this.txtAge = new DevExpress.XtraEditors.TextEdit();
             this.txtNationalCode = new DevExpress.XtraEditors.TextEdit();
             this.txtTel = new DevExpress.XtraEditors.TextEdit();
@@ -70,7 +70,6 @@
             this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.splitterItem2 = new DevExpress.XtraLayout.SplitterItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.ErrorProvider = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
@@ -78,7 +77,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtMobile.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAgeDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAge.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNationalCode.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTel.Properties)).BeginInit();
@@ -113,7 +112,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.SuspendLayout();
@@ -123,7 +121,7 @@
             this.layoutControl1.Controls.Add(this.txtMobile);
             this.layoutControl1.Controls.Add(this.txtName);
             this.layoutControl1.Controls.Add(this.txtLastName);
-            this.layoutControl1.Controls.Add(this.textEdit6);
+            this.layoutControl1.Controls.Add(this.txtAgeDate);
             this.layoutControl1.Controls.Add(this.txtAge);
             this.layoutControl1.Controls.Add(this.txtNationalCode);
             this.layoutControl1.Controls.Add(this.txtTel);
@@ -143,7 +141,7 @@
             this.layoutControl1.OptionsView.RightToLeftMirroringApplied = true;
             this.layoutControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(641, 326);
+            this.layoutControl1.Size = new System.Drawing.Size(641, 314);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -162,6 +160,7 @@
             this.txtName.Size = new System.Drawing.Size(202, 20);
             this.txtName.StyleController = this.layoutControl1;
             this.txtName.TabIndex = 6;
+            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
             // txtLastName
             // 
@@ -170,14 +169,15 @@
             this.txtLastName.Size = new System.Drawing.Size(202, 20);
             this.txtLastName.StyleController = this.layoutControl1;
             this.txtLastName.TabIndex = 7;
+            this.txtLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLastName_KeyPress);
             // 
-            // textEdit6
+            // txtAgeDate
             // 
-            this.textEdit6.Location = new System.Drawing.Point(342, 141);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Size = new System.Drawing.Size(202, 20);
-            this.textEdit6.StyleController = this.layoutControl1;
-            this.textEdit6.TabIndex = 9;
+            this.txtAgeDate.Location = new System.Drawing.Point(342, 141);
+            this.txtAgeDate.Name = "txtAgeDate";
+            this.txtAgeDate.Size = new System.Drawing.Size(202, 20);
+            this.txtAgeDate.StyleController = this.layoutControl1;
+            this.txtAgeDate.TabIndex = 9;
             // 
             // txtAge
             // 
@@ -222,7 +222,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(114, 285);
+            this.btnExit.Location = new System.Drawing.Point(114, 275);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(96, 22);
             this.btnExit.StyleController = this.layoutControl1;
@@ -232,12 +232,13 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(17, 285);
+            this.btnSave.Location = new System.Drawing.Point(17, 275);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(93, 22);
             this.btnSave.StyleController = this.layoutControl1;
             this.btnSave.TabIndex = 21;
             this.btnSave.Text = "ذخیره";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // cmbRole
             // 
@@ -246,7 +247,7 @@
             this.cmbRole.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbRole.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("RoleName", "Name5")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("RoleName", "سمت")});
             this.cmbRole.Properties.DisplayMember = "RoleName";
             this.cmbRole.Properties.NullText = "انتخاب نشده";
             this.cmbRole.Size = new System.Drawing.Size(202, 20);
@@ -259,9 +260,6 @@
             this.cmbSex.Name = "cmbSex";
             this.cmbSex.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbSex.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Sex", "Name6")});
-            this.cmbSex.Properties.DisplayMember = "Sex";
             this.cmbSex.Properties.NullText = "انتخاب نشده";
             this.cmbSex.Size = new System.Drawing.Size(202, 20);
             this.cmbSex.StyleController = this.layoutControl1;
@@ -274,7 +272,7 @@
             this.cmbProvince.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbProvince.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CityName", "Name2")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CityName", "استان")});
             this.cmbProvince.Properties.DisplayMember = "CityName";
             this.cmbProvince.Properties.NullText = "انتخاب نشده";
             this.cmbProvince.Size = new System.Drawing.Size(207, 20);
@@ -289,7 +287,7 @@
             this.cmbCity.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbCity.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CityName", "Name9")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CityName", "شهر")});
             this.cmbCity.Properties.DisplayMember = "CityName";
             this.cmbCity.Properties.NullText = "انتخاب نشده";
             this.cmbCity.Size = new System.Drawing.Size(207, 20);
@@ -303,6 +301,7 @@
             this.txtAddress.Size = new System.Drawing.Size(207, 44);
             this.txtAddress.StyleController = this.layoutControl1;
             this.txtAddress.TabIndex = 18;
+            this.txtAddress.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAddress_KeyPress);
             // 
             // cmbEducation
             // 
@@ -311,7 +310,7 @@
             this.cmbEducation.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbEducation.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Education", "Name4")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Education", "تحصیلات")});
             this.cmbEducation.Properties.DisplayMember = "Education";
             this.cmbEducation.Properties.NullText = " انتخاب نشده";
             this.cmbEducation.Size = new System.Drawing.Size(202, 20);
@@ -326,10 +325,9 @@
             this.layoutControlGroup1,
             this.layoutControlItem20,
             this.splitterItem1,
-            this.layoutControlGroup3,
-            this.splitterItem2});
+            this.layoutControlGroup3});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(641, 326);
+            this.Root.Size = new System.Drawing.Size(641, 314);
             this.Root.TextVisible = false;
             // 
             // layoutControlGroup1
@@ -386,7 +384,7 @@
             // 
             // layoutControlItem6
             // 
-            this.layoutControlItem6.Control = this.textEdit6;
+            this.layoutControlItem6.Control = this.txtAgeDate;
             this.layoutControlItem6.Location = new System.Drawing.Point(0, 96);
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.Size = new System.Drawing.Size(279, 24);
@@ -512,10 +510,10 @@
             this.layoutControlItem17,
             this.emptySpaceItem1,
             this.layoutControlItem16});
-            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 247);
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 237);
             this.layoutControlGroup3.Name = "layoutControlGroup3";
             this.layoutControlGroup3.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
-            this.layoutControlGroup3.Size = new System.Drawing.Size(621, 59);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(621, 57);
             this.layoutControlGroup3.Text = "عملیات";
             // 
             // layoutControlItem17
@@ -523,7 +521,7 @@
             this.layoutControlItem17.Control = this.btnExit;
             this.layoutControlItem17.Location = new System.Drawing.Point(97, 0);
             this.layoutControlItem17.Name = "layoutControlItem17";
-            this.layoutControlItem17.Size = new System.Drawing.Size(100, 28);
+            this.layoutControlItem17.Size = new System.Drawing.Size(100, 26);
             this.layoutControlItem17.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem17.TextVisible = false;
             // 
@@ -532,7 +530,7 @@
             this.emptySpaceItem1.AllowHotTrack = false;
             this.emptySpaceItem1.Location = new System.Drawing.Point(197, 0);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(414, 28);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(414, 26);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem16
@@ -540,17 +538,9 @@
             this.layoutControlItem16.Control = this.btnSave;
             this.layoutControlItem16.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem16.Name = "layoutControlItem16";
-            this.layoutControlItem16.Size = new System.Drawing.Size(97, 28);
+            this.layoutControlItem16.Size = new System.Drawing.Size(97, 26);
             this.layoutControlItem16.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem16.TextVisible = false;
-            // 
-            // splitterItem2
-            // 
-            this.splitterItem2.AllowHotTrack = true;
-            this.splitterItem2.Location = new System.Drawing.Point(0, 237);
-            this.splitterItem2.Name = "splitterItem2";
-            this.splitterItem2.ShowSplitGlyph = DevExpress.Utils.DefaultBoolean.True;
-            this.splitterItem2.Size = new System.Drawing.Size(621, 10);
             // 
             // layoutControlItem2
             // 
@@ -566,17 +556,20 @@
             // 
             // frmPersonDefine
             // 
-            this.ClientSize = new System.Drawing.Size(641, 326);
+            this.ClientSize = new System.Drawing.Size(641, 314);
             this.Controls.Add(this.layoutControl1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmPersonDefine";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "اشخاص";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtMobile.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAgeDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAge.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNationalCode.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTel.Properties)).EndInit();
@@ -611,7 +604,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).EndInit();
             this.ResumeLayout(false);
@@ -630,11 +622,9 @@
         private DevExpress.XtraLayout.SplitterItem splitterItem1;
         private DevExpress.XtraEditors.TextEdit txtName;
         private DevExpress.XtraEditors.TextEdit txtLastName;
-        private DevExpress.XtraEditors.TextEdit textEdit6;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraEditors.TextEdit txtAge;
         private DevExpress.XtraEditors.TextEdit txtNationalCode;
         private DevExpress.XtraEditors.TextEdit txtTel;
@@ -655,7 +645,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem17;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
-        private DevExpress.XtraLayout.SplitterItem splitterItem2;
         private DevExpress.XtraEditors.LookUpEdit cmbRole;
         private DevExpress.XtraEditors.LookUpEdit cmbSex;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem19;
@@ -664,5 +653,7 @@
         private DevExpress.XtraEditors.MemoEdit txtAddress;
         private DevExpress.XtraEditors.LookUpEdit cmbEducation;
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider ErrorProvider;
+        private DevExpress.XtraEditors.TextEdit txtAgeDate;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
     }
 }

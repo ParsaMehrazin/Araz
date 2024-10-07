@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Araz_ViewModel.Region
+namespace Araz_ViewModel
 {
     public class View_City
     {
