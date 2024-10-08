@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Utilities;
 using ViewModel.ViewModels;
+using static Utilities.Enums;
 
 
 
@@ -23,9 +24,12 @@ namespace Araz_Form.Form.Account
     public partial class frmPersonList : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         Int64 pkpersonId = -1;
+        Int64 pkroleId = -1;
+        Int64 parentrole = -1;
         public bool _isSave = false;
         public bool hasError = false;
         int _mod = -1;
+        View_Role roles = new View_Role();
         private List<string> _Sex;
         View_Person _Person = new View_Person();
         List<View_Role> _Role = new List<View_Role>();
@@ -39,16 +43,21 @@ namespace Araz_Form.Form.Account
             FillData();
             CommonTools.Loading();
         }
+
         public void FillData()
         {
-            cmbRolePerson.Properties.DataSource = DARepository.GetAllFromView<View_Role>("SELECT * FROM dbo.View_Role", "Where pkRoleID > 3").ToList();
             cmbRole.Properties.DataSource = DARepository.GetAllFromView<View_Role>("SELECT * FROM dbo.View_Role", "").ToList();
             cmbRole.EditValue = (cmbRole.Properties.DataSource as List<View_Role>).Where(p => p.pkRoleID == 1).FirstOrDefault();
+        }
+        public void FillData_Person()
+        {
+            cmbRolePerson.Properties.DataSource = DARepository.GetAllFromView<View_Role>("SELECT * FROM dbo.View_Role", "Where pkRoleID > 3").ToList();
             cmbProvince.Properties.DataSource = DARepository.GetAllFromView<View_City>("SELECT * FROM dbo.View_City", "WHERE PerentCityID IS NULL").ToList();
             cmbEducation.Properties.DataSource = DARepository.GetAllFromView<View_Education>("SELECT * FROM dbo.View_Education", "").ToList();
             cmbCity.EditValue = null;
             cmbSex.Properties.DataSource = _Sex.ToList();
         }
+
         private void LoadSex()
         {
             _Sex = new List<string>
@@ -60,11 +69,15 @@ namespace Araz_Form.Form.Account
         {
             return (c >= '\u0600' && c <= '\u06FF') || c == ' ';
         }
+
+        #region FillMod Person 
         public bool modOne()
         {
             try
             {
                 CommonTools.Loading(true);
+                FillData_Person();
+                _mod = 1;
                 fpPersonDefine.OwnerControl = gcPersonList;
                 fpPersonDefine.ShowBeakForm(Control.MousePosition);
                 lcgPersonDefine.Text = "ثبت شخص جدید";
@@ -82,6 +95,7 @@ namespace Araz_Form.Form.Account
             try
             {
                 CommonTools.Loading(true);
+                FillData_Person();
                 _mod = 2;
                 _Person = model;
                 fpPersonDefine.OwnerControl = gcPersonList;
@@ -112,26 +126,9 @@ namespace Araz_Form.Form.Account
                 return false;
             }
         }
+        #endregion
 
-
-        public void Clear()
-        {
-            //cmbRole.EditValue = null;
-            txtName.Text = "";
-            cmbSex.Text = "";
-            cmbSex.EditValue = null;
-            txtAge.Text = "";
-            cmbEducation.EditValue = null;
-            txtNationalCode.Text = "";
-            layoutControlItem2.Text = "";
-            txtTel.Text = "";
-            txtPostalCode.Text = "";
-            txtEmail.Text = "";
-            cmbProvince.EditValue = null;
-            cmbCity.EditValue = null;
-            txtAddress.Text = "";
-        }
-
+        #region button ribbon
         private void btnAdd_ItemClick(object sender, ItemClickEventArgs e)
         {
             modOne();
@@ -174,6 +171,7 @@ namespace Araz_Form.Form.Account
                 CommonTools.ShowMessage("ردیفی برای حذف انتخاب نشده ");
 
         }
+        #endregion
 
         private void gvPersonList_CustomDrawRowIndicator(object sender, DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs e)
         {
@@ -195,6 +193,24 @@ namespace Araz_Form.Form.Account
                 gcPersonList.DataSource = DARepository.GetAllFromView<View_Person>(select, where).ToList();
             }
         }
+        public void ClearPerson()
+        {
+            txtName.Text = "";
+            cmbSex.Text = "";
+            cmbSex.EditValue = null;
+            txtAge.Text = "";
+            cmbEducation.EditValue = null;
+            txtNationalCode.Text = "";
+            layoutControlItem2.Text = "";
+            txtTel.Text = "";
+            txtPostalCode.Text = "";
+            txtEmail.Text = "";
+            cmbProvince.EditValue = null;
+            cmbCity.EditValue = null;
+            txtAddress.Text = "";
+        }
+
+        #region Button Grid Person
 
         private void btnPrintGridList_Click(object sender, EventArgs e)
         {
@@ -211,54 +227,167 @@ namespace Araz_Form.Form.Account
             btnEdit_ItemClick(null, null);
         }
 
+        #endregion
+
+        #region Code Flayout Role
         private void cmbRole_ButtonClick(object sender, ButtonPressedEventArgs e)
         {
             var item = cmbRole.EditValue as View_Role;
             if (e.Button.Kind == ButtonPredefines.Plus)
             {
-                frmRoleDefine frm = new frmRoleDefine(1,null);    
-                frm.ShowDialog();
-                if (frm._isSave)
+                FillDataRole();
+                modOneRole();                
+                if (this._isSave)
                     FillData();
             }
             else if (e.Button.Kind == ButtonPredefines.Glyph)
             {
-                if (item != null)
+                if (roles != null)
                 {
-                    frmRoleDefine frm = new frmRoleDefine(2, item);
-                    frm.ShowDialog();
-                    if (frm._isSave)
+                    FillDataRole();
+                    modTwoRole(item);                   
+                    if (this._isSave)
                         FillData();
                 }
             }
             if (e.Button.Kind == ButtonPredefines.Delete)
             {
-                if (item != null)
-                {              
-                        frmRoleDefine frm = new frmRoleDefine(3, item);
-                    if(frm._isSave)
-                    FillData();
+                if (roles != null)
+                {
+                    if (CommonTools.AskQuestion($" آیا از حذف {roles.RoleName} مطمئن هستید؟ "))
+                    {
+                        this.pkroleId = item.pkRoleID;
+                        _mod = 3;
+                        btnSaveRole_Click(null, null);
+                    }
+                    if (this._isSave)
+                        FillData();
                 }
                 else
                     CommonTools.ShowMessage("لطفا یک سمت رو انتخاب کنید ");
             }
-           
+
         }
+
+        public void FillDataRole()
+        {
+            cmbPersonRole.Properties.DataSource = DARepository.GetAllFromView<View_Role>("select * from dbo.View_Role", "Where pkRoleId <> 2").ToList();
+
+        }
+
+        public bool modOneRole()
+        {
+            try
+            {
+                CommonTools.Loading(true);
+                _mod = 1;
+                fpRoleDefine.OwnerControl = gcPersonList;
+                fpRoleDefine.ShowBeakForm(Control.MousePosition);
+                this.Text = "ثبت شخص جدید";
+                cmbPersonRole.EditValue = (cmbPersonRole.Properties.DataSource as List<View_Role>).Where(p => p.pkRoleID == 1).FirstOrDefault();
+                CommonTools.Loading();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool modTwoRole(View_Role model)
+        {
+            try
+            {
+                CommonTools.Loading(true);
+                _mod = 2;
+                var _Role = model;
+                fpRoleDefine.OwnerControl = gcPersonList;
+                fpRoleDefine.ShowBeakForm(Control.MousePosition);
+                this.Text = "ویرایش شخص جدید";
+                this.pkroleId = _Role.pkRoleID;
+                if (_Role.ParentRole != null && roles.ParentRole != 0)
+                    cmbPersonRole.EditValue = (cmbPersonRole.Properties.DataSource as List<View_Role>).Where(p => p.pkRoleID == _Role.ParentRole).FirstOrDefault();
+                else
+                    cmbPersonRole.EditValue = (cmbPersonRole.Properties.DataSource as List<View_Role>).Where(p => p.pkRoleID == 1).FirstOrDefault();
+                txtRole.Text = _Role.RoleName;
+                CommonTools.Loading();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        private void btnSaveRole_Click(object sender, EventArgs e)
+        {
+            ErrorProvider.ClearErrors();
+
+            if (_mod != 3)
+            {
+                if (string.IsNullOrEmpty(cmbPersonRole.Text) || cmbPersonRole.EditValue == null)
+                    ErrorProvider.SetError(cmbPersonRole, "لطفا یک سمت را انتخاب کنید ");
+
+                if (string.IsNullOrEmpty(txtRole.Text) || txtRole.Text == "")
+                    ErrorProvider.SetError(txtRole, "نمیتواند خالی باشد");
+            }
+
+            if (ErrorProvider.HasErrors)
+            {
+                return;
+            }
+
+            CommonTools.Loading(true);
+            BaseRepositoryResponseViewModel res = null;
+
+            res = DARepository.ExcuteOperationalSP_New("dbo", "CrudRole",
+             new ServiceOperatorParameter() { Name = "mod", Value = _mod },
+             new ServiceOperatorParameter() { Name = "pkRoleID", Value = _mod == 1 ? "-1" : this.pkroleId.ToString() },
+             new ServiceOperatorParameter() { Name = "ParentRole", Value = parentrole },
+            new ServiceOperatorParameter() { Name = "RoleName", Value = string.IsNullOrEmpty(txtRole.Text) ? "" : txtRole.Text });
+
+            CommonTools.Loading();
+
+            if (CommonTools.ShowMessage(res))
+            {
+                this._isSave = true;
+                FillData();
+                fpRoleDefine.HideBeakForm();
+            }
+            else
+            {
+                this._isSave = false;
+                this.hasError = true;
+            }
+            return;
+        }
+
+        private void cmbPersonRole_EditValueChanged(object sender, EventArgs e)
+        {
+            if (cmbPersonRole.EditValue != "-----تمام سمت ها-----")
+                parentrole = (cmbPersonRole.Properties.DataSource as List<View_Role>).FirstOrDefault().pkRoleID;
+        }
+
+        private void btnExitRole_Click(object sender, EventArgs e)
+        {
+            fpRoleDefine.HideBeakForm();
+        }
+        #endregion
 
         private void btnExitPerson_Click(object sender, EventArgs e)
         {
             fpPersonDefine.HideBeakForm();
-            Clear();
+            ClearPerson();
         }
-
+        #region Crud Person
         private void btnSave_Click(object sender, EventArgs e)
         {
             ErrorProvider.ClearErrors();
 
             if (_mod != 3)
             {
-                if (string.IsNullOrEmpty(cmbRole.Text) || cmbRole.EditValue == null)
-                    ErrorProvider.SetError(cmbRole, "لطفا یک سمت را انتخاب کنید ");
+                if (string.IsNullOrEmpty(cmbRolePerson.Text) || cmbRolePerson.EditValue == null)
+                    ErrorProvider.SetError(cmbRolePerson, "لطفا یک سمت را انتخاب کنید ");
 
                 if (string.IsNullOrEmpty(txtName.Text) || txtName.Text == "")
                     ErrorProvider.SetError(txtName, "نمیتواند خالی باشد");
@@ -300,7 +429,7 @@ namespace Araz_Form.Form.Account
             res = DARepository.ExcuteOperationalSP_New("dbo", "CrudPerson",
              new ServiceOperatorParameter() { Name = "mod", Value = _mod },
              new ServiceOperatorParameter() { Name = "pkPersonID", Value = _mod == 1 ? "-1" : this.pkpersonId.ToString() },
-             new ServiceOperatorParameter() { Name = "fkRoleID", Value = (cmbRole.EditValue as View_Role) == null ? -1 : (cmbRole.EditValue as View_Role).pkRoleID },
+             new ServiceOperatorParameter() { Name = "fkRoleID", Value = (cmbRolePerson.EditValue as View_Role) == null ? -1 : (cmbRolePerson.EditValue as View_Role).pkRoleID },
              new ServiceOperatorParameter() { Name = "PersonName", Value = string.IsNullOrEmpty(txtName.Text) ? "" : txtName.Text },
              new ServiceOperatorParameter() { Name = "PersonLastName", Value = string.IsNullOrEmpty(txtLastName.Text) ? "" : txtLastName.Text },
              new ServiceOperatorParameter() { Name = "Sex", Value = cmbSex.EditValue == null ? "آقا" : cmbSex.EditValue },
@@ -327,7 +456,7 @@ namespace Araz_Form.Form.Account
                 this._isSave = true;
                 fpPersonDefine.HideBeakForm();
                 btnRefresh_Click(null, null);
-                Clear();
+                ClearPerson();
             }
             else
 
@@ -338,7 +467,7 @@ namespace Araz_Form.Form.Account
 
             return;
         }
-
+        #endregion
         private void cmbProvince_EditValueChanged(object sender, EventArgs e)
         {
             var _province = cmbProvince.EditValue as View_City;
@@ -350,5 +479,6 @@ namespace Araz_Form.Form.Account
                 cmbCity.EditValue = null;
             }
         }
+
     }
 }
