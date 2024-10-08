@@ -98,3 +98,4 @@ D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.csproj.Up2Date
 D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.dll
 D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.pdb
 D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.Form.frmPersonDefine.resources
+D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.Form.Account.frmRoleDefine.resources

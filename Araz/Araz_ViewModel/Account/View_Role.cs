@@ -8,8 +8,8 @@ namespace Araz_ViewModel
 {
     public class View_Role
     {
-        public long? pkRoleID { get; set; }         //-----آی دی سمت 
-        public long? ParentRole { get; set; }       //-----
+        public long pkRoleID { get; set; }         //-----آی دی سمت 
+        public long ParentRole { get; set; }       //-----
         public string RoleName { get; set; }         //-----سمت
       
     }

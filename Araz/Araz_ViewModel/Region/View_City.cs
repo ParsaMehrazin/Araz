@@ -8,7 +8,7 @@ namespace Araz_ViewModel
 {
     public class View_City
     {
-        public long? pkCityID { get; set; }
+        public long pkCityID { get; set; }
         public long? PerentCityID { get; set; }
         public string CityName { get; set; }
 

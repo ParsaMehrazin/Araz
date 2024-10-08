@@ -214,31 +214,35 @@ namespace Araz_Form.Form.Account
         private void cmbRole_ButtonClick(object sender, ButtonPressedEventArgs e)
         {
             var item = cmbRole.EditValue as View_Role;
-            //if (e.Button.Kind == ButtonPredefines.Plus)
-            //{
-            //    //  FillModOneCar();
-            //}
-            //else if (e.Button.Kind == ButtonPredefines.Glyph)
-            //{
-            //    if (item != null)
-            //    {
-            //       // FillModTwoCar(item); ;
-            //    }
-            //}
-            if (e.Button.Kind == ButtonPredefines.Delete)
+            if (e.Button.Kind == ButtonPredefines.Plus)
+            {
+                frmRoleDefine frm = new frmRoleDefine(1,null);    
+                frm.ShowDialog();
+                if (frm._isSave)
+                    FillData();
+            }
+            else if (e.Button.Kind == ButtonPredefines.Glyph)
             {
                 if (item != null)
                 {
-                    if (CommonTools.AskQuestion($" مطمئن هستید؟ {item.RoleName}  آیا از حذف "))
-                    {
-                        // FillModThreeCar(item);
-                    }
+                    frmRoleDefine frm = new frmRoleDefine(2, item);
+                    frm.ShowDialog();
+                    if (frm._isSave)
+                        FillData();
+                }
+            }
+            if (e.Button.Kind == ButtonPredefines.Delete)
+            {
+                if (item != null)
+                {              
+                        frmRoleDefine frm = new frmRoleDefine(3, item);
+                    if(frm._isSave)
+                    FillData();
                 }
                 else
                     CommonTools.ShowMessage("لطفا یک سمت رو انتخاب کنید ");
             }
-            //if (this.issave)
-            //    FillData();
+           
         }
 
         private void btnExitPerson_Click(object sender, EventArgs e)
