@@ -79,6 +79,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -228,6 +229,12 @@
     <None Include="Resources\valuecolorizermap_32x32.png" />
     <None Include="Resources\View_01_16.png" />
     <None Include="Resources\View_01_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shapelabels_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shapelabels_16x16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -37,6 +37,7 @@
             this.SellButton = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.btnPerson = new DevExpress.XtraBars.BarButtonItem();
+            this.btnProvince = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -85,9 +86,10 @@
             this.BuyButton,
             this.SellButton,
             this.barButtonItem4,
-            this.btnPerson});
+            this.btnPerson,
+            this.btnProvince});
             this.MainRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.MainRibbonControl.MaxItemId = 7;
+            this.MainRibbonControl.MaxItemId = 8;
             this.MainRibbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
             this.MainRibbonControl.Name = "MainRibbonControl";
             this.MainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -169,6 +171,15 @@
             this.btnPerson.ImageOptions.LargeImage = global::ArazWin.Properties.Resources.Sex_Male;
             this.btnPerson.Name = "btnPerson";
             this.btnPerson.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPerson_ItemClick);
+            // 
+            // btnProvince
+            // 
+            this.btnProvince.Caption = "منطقه (استان - شهر )";
+            this.btnProvince.Id = 7;
+            this.btnProvince.ImageOptions.Image = global::ArazWin.Properties.Resources.shapelabels_16x16;
+            this.btnProvince.ImageOptions.LargeImage = global::ArazWin.Properties.Resources.shapelabels_32x32;
+            this.btnProvince.Name = "btnProvince";
+            this.btnProvince.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnProvince_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -279,8 +290,9 @@
             // 
             // ribbonPageGroup10
             // 
+            this.ribbonPageGroup10.ItemLinks.Add(this.btnProvince);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
-            this.ribbonPageGroup10.Text = "ribbonPageGroup10";
+            this.ribbonPageGroup10.Text = "منطقه";
             // 
             // ribbonPage14
             // 
@@ -432,5 +444,6 @@
         private DevExpress.XtraBars.BarButtonItem SellButton;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
         private DevExpress.XtraBars.BarButtonItem btnPerson;
+        private DevExpress.XtraBars.BarButtonItem btnProvince;
     }
 }

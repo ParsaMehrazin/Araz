@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "D:\\Programming\\Win\\Araz\\Araz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|D:\\Programming\\Win\\Araz\\Araz\\araz_form\\form\\account\\frmpersonlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|d:\\programming\\win\\araz\\araz\\araz_form\\form\\region\\frmcitydefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\form\\region\\frmcitydefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|D:\\Programming\\Win\\Araz\\Araz\\araz_form\\form\\account\\frmpersondefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\form\\account\\frmpersondefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|D:\\Programming\\Win\\Araz\\Araz\\araz_form\\form\\region\\frmregionlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\form\\region\\frmregionlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|d:\\programming\\win\\araz\\araz\\araz_form\\form\\account\\frmpersonlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\form\\account\\frmpersonlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|D:\\Programming\\Win\\Araz\\Araz\\araz_form\\form\\account\\frmpersonlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\form\\account\\frmpersonlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|D:\\Programming\\Win\\Araz\\Araz\\araz_form\\form\\region\\frmregionlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\form\\region\\frmregionlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|d:\\programming\\win\\araz\\araz\\araz_form\\form\\account\\frmroledefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\form\\account\\frmroledefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|D:\\Programming\\Win\\Araz\\Araz\\araz_form\\form\\account\\frmroledefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\form\\account\\frmroledefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3402047B-B73B-4DB1-BE7F-B49B93BBE5AE}|Araz_ViewModel\\Araz_ViewModel.csproj|D:\\Programming\\Win\\Araz\\Araz\\araz_viewmodel\\region\\view_city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3402047B-B73B-4DB1-BE7F-B49B93BBE5AE}|Araz_ViewModel\\Araz_ViewModel.csproj|solutionrelative:araz_viewmodel\\region\\view_city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 170,
-          "SelectedChildIndex": 29,
+          "SelectedChildIndex": 26,
           "Children": [
             {
               "$type": "Bookmark",
@@ -134,53 +142,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmRoleDefine.cs",
-              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Account\\frmRoleDefine.cs",
-              "RelativeDocumentMoniker": "Araz_Form\\Form\\Account\\frmRoleDefine.cs",
-              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Account\\frmRoleDefine.cs",
-              "RelativeToolTip": "Araz_Form\\Form\\Account\\frmRoleDefine.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAQwDYAAAAPAAAA",
+              "DocumentIndex": 0,
+              "Title": "frmCityDefine.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Region\\frmCityDefine.cs",
+              "RelativeDocumentMoniker": "Araz_Form\\Form\\Region\\frmCityDefine.cs",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Region\\frmCityDefine.cs [Design]",
+              "RelativeToolTip": "Araz_Form\\Form\\Region\\frmCityDefine.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T22:23:15.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmRoleDefine.cs [Design]",
-              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Account\\frmRoleDefine.cs",
-              "RelativeDocumentMoniker": "Araz_Form\\Form\\Account\\frmRoleDefine.cs",
-              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Account\\frmRoleDefine.cs [Design]",
-              "RelativeToolTip": "Araz_Form\\Form\\Account\\frmRoleDefine.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T22:08:34.477Z",
+              "WhenOpened": "2024-10-10T09:02:12.319Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmPersonList.cs [Design]",
-              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Account\\frmPersonList.cs",
-              "RelativeDocumentMoniker": "Araz_Form\\Form\\Account\\frmPersonList.cs",
-              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Account\\frmPersonList.cs [Design]",
-              "RelativeToolTip": "Araz_Form\\Form\\Account\\frmPersonList.cs [Design]",
+              "Title": "frmPersonDefine.cs",
+              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Account\\frmPersonDefine.cs",
+              "RelativeDocumentMoniker": "Araz_Form\\Form\\Account\\frmPersonDefine.cs",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Account\\frmPersonDefine.cs",
+              "RelativeToolTip": "Araz_Form\\Form\\Account\\frmPersonDefine.cs",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAwwJsAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T10:22:52.215Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-09T15:42:07.774Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "View_City.cs",
+              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_ViewModel\\Region\\View_City.cs",
+              "RelativeDocumentMoniker": "Araz_ViewModel\\Region\\View_City.cs",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_ViewModel\\Region\\View_City.cs",
+              "RelativeToolTip": "Araz_ViewModel\\Region\\View_City.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T13:10:12.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "frmPersonList.cs",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Account\\frmPersonList.cs",
               "RelativeDocumentMoniker": "Araz_Form\\Form\\Account\\frmPersonList.cs",
               "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Account\\frmPersonList.cs",
               "RelativeToolTip": "Araz_Form\\Form\\Account\\frmPersonList.cs",
-              "ViewState": "AQIAABwBAAAAAAAAAAApwDIBAAAlAAAA",
+              "ViewState": "AQIAAL0AAAAAAAAAAAAUwOMBAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T09:22:45.096Z",
+              "WhenOpened": "2024-10-09T12:48:13.147Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmRegionList.cs",
+              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Region\\frmRegionList.cs",
+              "RelativeDocumentMoniker": "Araz_Form\\Form\\Region\\frmRegionList.cs",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Region\\frmRegionList.cs",
+              "RelativeToolTip": "Araz_Form\\Form\\Region\\frmRegionList.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwC4AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T12:48:02.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmRegionList.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Region\\frmRegionList.cs",
+              "RelativeDocumentMoniker": "Araz_Form\\Form\\Region\\frmRegionList.cs",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Region\\frmRegionList.cs [Design]",
+              "RelativeToolTip": "Araz_Form\\Form\\Region\\frmRegionList.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T11:59:28.554Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

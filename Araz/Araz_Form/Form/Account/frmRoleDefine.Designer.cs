@@ -30,32 +30,32 @@
         {
             this.components = new System.ComponentModel.Container();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.txtRole = new DevExpress.XtraEditors.TextEdit();
             this.btnExit = new DevExpress.XtraEditors.SimpleButton();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
-            this.cmbPersonRole = new DevExpress.XtraEditors.LookUpEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.ErrorProvider = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.txtRole = new DevExpress.XtraEditors.TextEdit();
+            this.cmbPersonRole = new DevExpress.XtraEditors.LookUpEdit();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtRole.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbPersonRole.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRole.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbPersonRole.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -73,14 +73,6 @@
             this.layoutControl1.Size = new System.Drawing.Size(366, 184);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
-            // 
-            // txtRole
-            // 
-            this.txtRole.Location = new System.Drawing.Point(24, 69);
-            this.txtRole.Name = "txtRole";
-            this.txtRole.Size = new System.Drawing.Size(222, 20);
-            this.txtRole.StyleController = this.layoutControl1;
-            this.txtRole.TabIndex = 7;
             // 
             // btnExit
             // 
@@ -102,21 +94,6 @@
             this.btnSave.Text = "ذخیره";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // cmbPersonRole
-            // 
-            this.cmbPersonRole.Location = new System.Drawing.Point(24, 45);
-            this.cmbPersonRole.Name = "cmbPersonRole";
-            this.cmbPersonRole.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbPersonRole.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("RoleName", "سمت")});
-            this.cmbPersonRole.Properties.DisplayMember = "RoleName";
-            this.cmbPersonRole.Properties.NullText = "";
-            this.cmbPersonRole.Size = new System.Drawing.Size(222, 20);
-            this.cmbPersonRole.StyleController = this.layoutControl1;
-            this.cmbPersonRole.TabIndex = 4;
-            this.cmbPersonRole.EditValueChanged += new System.EventHandler(this.cmbPersonRole_EditValueChanged);
-            // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -137,24 +114,6 @@
             this.layoutControlGroup1.Name = "layoutControlGroup1";
             this.layoutControlGroup1.Size = new System.Drawing.Size(346, 93);
             this.layoutControlGroup1.Text = "سمت";
-            // 
-            // layoutControlItem1
-            // 
-            this.layoutControlItem1.Control = this.cmbPersonRole;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(322, 24);
-            this.layoutControlItem1.Text = "سمت";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(84, 13);
-            // 
-            // layoutControlItem4
-            // 
-            this.layoutControlItem4.Control = this.txtRole;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 24);
-            this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(322, 24);
-            this.layoutControlItem4.Text = "سمت زیر مجموعه";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(84, 13);
             // 
             // layoutControlGroup2
             // 
@@ -203,6 +162,47 @@
             // 
             this.ErrorProvider.ContainerControl = this;
             // 
+            // txtRole
+            // 
+            this.txtRole.Location = new System.Drawing.Point(24, 69);
+            this.txtRole.Name = "txtRole";
+            this.txtRole.Size = new System.Drawing.Size(222, 20);
+            this.txtRole.StyleController = this.layoutControl1;
+            this.txtRole.TabIndex = 7;
+            // 
+            // cmbPersonRole
+            // 
+            this.cmbPersonRole.Location = new System.Drawing.Point(24, 45);
+            this.cmbPersonRole.Name = "cmbPersonRole";
+            this.cmbPersonRole.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbPersonRole.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("RoleName", "سمت")});
+            this.cmbPersonRole.Properties.DisplayMember = "RoleName";
+            this.cmbPersonRole.Properties.NullText = "";
+            this.cmbPersonRole.Size = new System.Drawing.Size(222, 20);
+            this.cmbPersonRole.StyleController = this.layoutControl1;
+            this.cmbPersonRole.TabIndex = 4;
+            this.cmbPersonRole.EditValueChanged += new System.EventHandler(this.cmbPersonRole_EditValueChanged);
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.cmbPersonRole;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(322, 24);
+            this.layoutControlItem1.Text = "سمت";
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(84, 13);
+            // 
+            // layoutControlItem4
+            // 
+            this.layoutControlItem4.Control = this.txtRole;
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 24);
+            this.layoutControlItem4.Name = "layoutControlItem4";
+            this.layoutControlItem4.Size = new System.Drawing.Size(322, 24);
+            this.layoutControlItem4.Text = "سمت زیر مجموعه";
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(84, 13);
+            // 
             // frmRoleDefine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -216,17 +216,17 @@
             this.Text = "فرم سمت ها";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txtRole.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbPersonRole.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRole.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbPersonRole.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             this.ResumeLayout(false);
 
         }

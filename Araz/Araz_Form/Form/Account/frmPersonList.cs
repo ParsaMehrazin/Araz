@@ -52,7 +52,7 @@ namespace Araz_Form.Form.Account
         public void FillData_Person()
         {
             cmbRolePerson.Properties.DataSource = DARepository.GetAllFromView<View_Role>("SELECT * FROM dbo.View_Role", "Where pkRoleID > 3").ToList();
-            cmbProvince.Properties.DataSource = DARepository.GetAllFromView<View_City>("SELECT * FROM dbo.View_City", "WHERE PerentCityID IS NULL").ToList();
+            cmbProvince.Properties.DataSource = DARepository.GetAllFromView<View_City>("SELECT DISTINCT(ProvinceName) , ProvinceID FROM dbo.View_City", "WHERE ParentProvinceID IS NULL").ToList();
             cmbEducation.Properties.DataSource = DARepository.GetAllFromView<View_Education>("SELECT * FROM dbo.View_Education", "").ToList();
             cmbCity.EditValue = null;
             cmbSex.Properties.DataSource = _Sex.ToList();
@@ -115,8 +115,8 @@ namespace Araz_Form.Form.Account
                 txtTel.Text = _Person.Tel;
                 txtPostalCode.Text = _Person.PostalCode;
                 txtEmail.Text = _Person.Email;
-                cmbProvince.EditValue = (cmbProvince.Properties.DataSource as List<View_City>).Where(p => p.pkCityID == _Person.fkProvinceID).FirstOrDefault();
-                cmbCity.EditValue = (cmbProvince.EditValue == null) ? null : (cmbCity.Properties.DataSource as List<View_City>).Where(p => p.pkCityID == _Person.fkCityID).FirstOrDefault();
+                cmbProvince.EditValue = (cmbProvince.Properties.DataSource as List<View_City>).Where(p => p.ProvinceID == _Person.fkProvinceID).FirstOrDefault();
+                cmbCity.EditValue = (cmbProvince.EditValue == null) ? null : (cmbCity.Properties.DataSource as List<View_City>).Where(p => p.CityID == _Person.fkCityID).FirstOrDefault();
                 txtAddress.Text = _Person.Address;
                 CommonTools.Loading();
                 return true;
@@ -441,8 +441,8 @@ namespace Araz_Form.Form.Account
              new ServiceOperatorParameter() { Name = "Tel", Value = string.IsNullOrEmpty(txtTel.Text) ? "" : txtTel.Text },
              new ServiceOperatorParameter() { Name = "PostalCode", Value = string.IsNullOrEmpty(txtPostalCode.Text) ? "" : txtPostalCode.Text },
              new ServiceOperatorParameter() { Name = "Email", Value = string.IsNullOrEmpty(txtEmail.Text) ? "" : txtEmail.Text },
-             new ServiceOperatorParameter() { Name = "fkProvinceID", Value = (cmbProvince.EditValue as View_City) == null ? -1 : (cmbProvince.EditValue as View_City).pkCityID },
-             new ServiceOperatorParameter() { Name = "fkCityID", Value = (cmbCity.EditValue as View_City) == null ? -1 : (cmbCity.EditValue as View_City).pkCityID },
+             new ServiceOperatorParameter() { Name = "fkProvinceID", Value = (cmbProvince.EditValue as View_City) == null ? -1 : (cmbProvince.EditValue as View_City).ProvinceID },
+             new ServiceOperatorParameter() { Name = "fkCityID", Value = (cmbCity.EditValue as View_City) == null ? -1 : (cmbCity.EditValue as View_City).CityID },
              new ServiceOperatorParameter() { Name = "Address", Value = string.IsNullOrEmpty(txtAddress.Text) ? "" : txtAddress.Text },
              new ServiceOperatorParameter() { Name = "EditToken", Value = "" }, //Value = _mod == 1 && _Person == null ? "" : _Person.EditToken
                                                                                 // new ServiceOperatorParameter() { Name = "InsertUser", Value = Utilities.ControlUnit.LoggedUser.pkUser },
@@ -468,17 +468,17 @@ namespace Araz_Form.Form.Account
             return;
         }
         #endregion
+
         private void cmbProvince_EditValueChanged(object sender, EventArgs e)
         {
             var _province = cmbProvince.EditValue as View_City;
             if (_province != null)
             {
                 var select = "SELECT * FROM dbo.View_City";
-                var where = "where PerentCityID = " + _province.pkCityID;
+                var where = "where PerentCityID = " + _province.ProvinceID;
                 cmbCity.Properties.DataSource = DARepository.GetAllFromView<View_City>(select, where).ToList();
                 cmbCity.EditValue = null;
             }
         }
-
     }
 }

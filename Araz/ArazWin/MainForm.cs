@@ -4,6 +4,7 @@ using System;
 using System.Windows.Forms;
 using Araz_Form;
 using Araz_Form.Form.Account;
+using Araz_Form.Form.Region;
 
 namespace ArazWin
 {
@@ -136,6 +137,13 @@ namespace ArazWin
         private void btnPerson_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             frmPersonList frm = new frmPersonList();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void btnProvince_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmRegionList frm = new frmRegionList();
             frm.MdiParent = this;
             frm.Show();
         }

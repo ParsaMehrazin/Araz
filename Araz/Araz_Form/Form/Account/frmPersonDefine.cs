@@ -117,8 +117,8 @@ namespace Araz_Form.Form
                 txtTel.Text = _Person.Tel;
                 txtPostalCode.Text = _Person.PostalCode;
                 txtEmail.Text = _Person.Email;
-                cmbProvince.EditValue = (cmbProvince.Properties.DataSource as List<View_City>).Where(p => p.pkCityID == _Person.fkProvinceID).FirstOrDefault();
-                cmbCity.EditValue = (cmbProvince.EditValue == null) ? null : (cmbCity.Properties.DataSource as List<View_City>).Where(p => p.pkCityID == _Person.fkCityID).FirstOrDefault();
+                cmbProvince.EditValue = (cmbProvince.Properties.DataSource as List<View_City>).Where(p => p.ProvinceID == _Person.fkProvinceID).FirstOrDefault();
+                cmbCity.EditValue = (cmbProvince.EditValue == null) ? null : (cmbCity.Properties.DataSource as List<View_City>).Where(p => p.CityID == _Person.fkCityID).FirstOrDefault();
                 txtAddress.Text = _Person.Address;
                 CommonTools.Loading();
                 return true;
@@ -153,7 +153,7 @@ namespace Araz_Form.Form
             if (_province != null)
             {
                 var select = "SELECT * FROM dbo.View_City";
-                var where = "where PerentCityID = " + _province.pkCityID;
+                var where = "where PerentCityID = " + _province.ProvinceID;
                 cmbCity.Properties.DataSource = DARepository.GetAllFromView<View_City>(select, where).ToList();
                 cmbCity.EditValue = null;
             }
@@ -226,8 +226,8 @@ namespace Araz_Form.Form
              new ServiceOperatorParameter() { Name = "Tel", Value = string.IsNullOrEmpty(txtTel.Text) ? "" : txtTel.Text },
              new ServiceOperatorParameter() { Name = "PostalCode", Value = string.IsNullOrEmpty(txtPostalCode.Text) ? "" : txtPostalCode.Text },
              new ServiceOperatorParameter() { Name = "Email", Value = string.IsNullOrEmpty(txtEmail.Text) ? "" : txtEmail.Text },
-             new ServiceOperatorParameter() { Name = "fkProvinceID", Value = (cmbProvince.EditValue as View_City) == null ? -1 : (cmbProvince.EditValue as View_City).pkCityID },
-             new ServiceOperatorParameter() { Name = "fkCityID", Value = (cmbCity.EditValue as View_City) == null ? -1 : (cmbCity.EditValue as View_City).pkCityID },
+             new ServiceOperatorParameter() { Name = "fkProvinceID", Value = (cmbProvince.EditValue as View_City) == null ? -1 : (cmbProvince.EditValue as View_City).ProvinceID },
+             new ServiceOperatorParameter() { Name = "fkCityID", Value = (cmbCity.EditValue as View_City) == null ? -1 : (cmbCity.EditValue as View_City).CityID },
              new ServiceOperatorParameter() { Name = "Address", Value = string.IsNullOrEmpty(txtAddress.Text) ? "" : txtAddress.Text },
              new ServiceOperatorParameter() { Name = "EditToken", Value = "" }, //Value = _mod == 1 && _Person == null ? "" : _Person.EditToken
                                                                                 // new ServiceOperatorParameter() { Name = "InsertUser", Value = Utilities.ControlUnit.LoggedUser.pkUser },
