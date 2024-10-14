@@ -131,6 +131,7 @@ namespace Araz_Form.Form.Account
         #region button ribbon
         private void btnAdd_ItemClick(object sender, ItemClickEventArgs e)
         {
+           
             modOne();
             if (_isSave)
                 btnRefresh_Click(null, null);
@@ -151,6 +152,7 @@ namespace Araz_Form.Form.Account
 
         private void btnExit_ItemClick(object sender, ItemClickEventArgs e)
         {
+            
             this.Close();
         }
 
@@ -196,12 +198,14 @@ namespace Araz_Form.Form.Account
         public void ClearPerson()
         {
             txtName.Text = "";
+            txtLastName.Text = "";
             cmbSex.Text = "";
             cmbSex.EditValue = null;
             txtAge.Text = "";
+            txtAgeDate.Text = "";
             cmbEducation.EditValue = null;
             txtNationalCode.Text = "";
-            layoutControlItem2.Text = "";
+            txtMobile.Text = "";
             txtTel.Text = "";
             txtPostalCode.Text = "";
             txtEmail.Text = "";
@@ -377,6 +381,7 @@ namespace Araz_Form.Form.Account
         private void btnExitPerson_Click(object sender, EventArgs e)
         {
             fpPersonDefine.HideBeakForm();
+
             ClearPerson();
         }
         #region Crud Person

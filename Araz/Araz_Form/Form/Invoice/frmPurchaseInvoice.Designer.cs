@@ -137,7 +137,7 @@
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbon.Size = new System.Drawing.Size(1198, 158);
+            this.ribbon.Size = new System.Drawing.Size(1198, 162);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // btnAdd
@@ -186,7 +186,7 @@
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1});
             this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "ثبت فاکتور خرید";
+            this.ribbonPage1.Text = "عملیات";
             // 
             // ribbonPageGroup1
             // 
@@ -200,10 +200,10 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 875);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 873);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1198, 24);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1198, 26);
             // 
             // layoutControl1
             // 
@@ -213,18 +213,18 @@
             this.layoutControl1.Controls.Add(this.cmbNameGroup2);
             this.layoutControl1.Controls.Add(this.textEdit3);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(0, 158);
+            this.layoutControl1.Location = new System.Drawing.Point(0, 162);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1096, 315, 650, 400);
             this.layoutControl1.OptionsView.RightToLeftMirroringApplied = true;
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(1198, 717);
+            this.layoutControl1.Size = new System.Drawing.Size(1198, 711);
             this.layoutControl1.TabIndex = 2;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // gcProductList
             // 
-            this.gcProductList.Location = new System.Drawing.Point(24, 118);
+            this.gcProductList.Location = new System.Drawing.Point(24, 124);
             this.gcProductList.MainView = this.gvProductList;
             this.gcProductList.MenuManager = this.ribbon;
             this.gcProductList.Name = "gcProductList";
@@ -232,7 +232,7 @@
             this.btnGridEdit,
             this.btnGridPrint,
             this.btnGridDelete});
-            this.gcProductList.Size = new System.Drawing.Size(1150, 496);
+            this.gcProductList.Size = new System.Drawing.Size(1150, 480);
             this.gcProductList.TabIndex = 4;
             this.gcProductList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvProductList});
@@ -515,7 +515,7 @@
             // 
             // cmbNameGroup1
             // 
-            this.cmbNameGroup1.Location = new System.Drawing.Point(801, 45);
+            this.cmbNameGroup1.Location = new System.Drawing.Point(801, 49);
             this.cmbNameGroup1.MenuManager = this.ribbon;
             this.cmbNameGroup1.Name = "cmbNameGroup1";
             editorButtonImageOptions3.Image = global::Araz_Form.Properties.Resources.editdatasource_16x16;
@@ -528,14 +528,14 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NameGroup1", "گروه اصلی")});
             this.cmbNameGroup1.Properties.DisplayMember = "NameGroup1";
             this.cmbNameGroup1.Properties.NullText = "انتخاب نشده";
-            this.cmbNameGroup1.Size = new System.Drawing.Size(268, 24);
+            this.cmbNameGroup1.Size = new System.Drawing.Size(268, 20);
             this.cmbNameGroup1.StyleController = this.layoutControl1;
             this.cmbNameGroup1.TabIndex = 5;
             this.cmbNameGroup1.EditValueChanged += new System.EventHandler(this.cmbNameGroup1_EditValueChanged);
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(324, 45);
+            this.btnRefresh.Location = new System.Drawing.Point(324, 49);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(96, 22);
             this.btnRefresh.StyleController = this.layoutControl1;
@@ -545,7 +545,7 @@
             // 
             // cmbNameGroup2
             // 
-            this.cmbNameGroup2.Location = new System.Drawing.Point(424, 45);
+            this.cmbNameGroup2.Location = new System.Drawing.Point(424, 49);
             this.cmbNameGroup2.MenuManager = this.ribbon;
             this.cmbNameGroup2.Name = "cmbNameGroup2";
             editorButtonImageOptions4.Image = global::Araz_Form.Properties.Resources.editdatasource_16x16;
@@ -558,13 +558,13 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NameGroup2", "گروه فرعی")});
             this.cmbNameGroup2.Properties.DisplayMember = "NameGroup2";
             this.cmbNameGroup2.Properties.NullText = "انتخاب نشده";
-            this.cmbNameGroup2.Size = new System.Drawing.Size(268, 24);
+            this.cmbNameGroup2.Size = new System.Drawing.Size(268, 20);
             this.cmbNameGroup2.StyleController = this.layoutControl1;
             this.cmbNameGroup2.TabIndex = 6;
             // 
             // textEdit3
             // 
-            this.textEdit3.Location = new System.Drawing.Point(24, 673);
+            this.textEdit3.Location = new System.Drawing.Point(24, 667);
             this.textEdit3.MenuManager = this.ribbon;
             this.textEdit3.Name = "textEdit3";
             this.textEdit3.Size = new System.Drawing.Size(1045, 20);
@@ -581,7 +581,7 @@
             this.layoutControlGroup3,
             this.splitterItem1});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(1198, 717);
+            this.Root.Size = new System.Drawing.Size(1198, 711);
             this.Root.TextVisible = false;
             // 
             // layoutControlGroup1
@@ -594,7 +594,7 @@
             this.emptySpaceItem1});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1178, 73);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1178, 75);
             this.layoutControlGroup1.Text = "اطلاعات اشخاص";
             // 
             // layoutControlItem2
@@ -602,7 +602,7 @@
             this.layoutControlItem2.Control = this.cmbNameGroup1;
             this.layoutControlItem2.Location = new System.Drawing.Point(777, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(377, 28);
+            this.layoutControlItem2.Size = new System.Drawing.Size(377, 26);
             this.layoutControlItem2.Text = "گروه اصلی ";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(93, 13);
             // 
@@ -611,7 +611,7 @@
             this.layoutControlItem3.Control = this.cmbNameGroup2;
             this.layoutControlItem3.Location = new System.Drawing.Point(400, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(377, 28);
+            this.layoutControlItem3.Size = new System.Drawing.Size(377, 26);
             this.layoutControlItem3.Text = "گروه فرعی";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(93, 13);
             // 
@@ -622,7 +622,7 @@
             this.layoutControlItem5.MaxSize = new System.Drawing.Size(100, 26);
             this.layoutControlItem5.MinSize = new System.Drawing.Size(100, 26);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(100, 28);
+            this.layoutControlItem5.Size = new System.Drawing.Size(100, 26);
             this.layoutControlItem5.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
@@ -632,7 +632,7 @@
             this.emptySpaceItem1.AllowHotTrack = false;
             this.emptySpaceItem1.Location = new System.Drawing.Point(0, 0);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(300, 28);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(300, 26);
             this.emptySpaceItem1.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
@@ -642,9 +642,9 @@
             this.layoutControlGroup2.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1});
-            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 73);
+            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 75);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1178, 545);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(1178, 533);
             this.layoutControlGroup2.Text = "اطلاعات کالا ";
             // 
             // layoutControlItem1
@@ -652,7 +652,7 @@
             this.layoutControlItem1.Control = this.gcProductList;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(1154, 500);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1154, 484);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -662,9 +662,9 @@
             this.layoutControlGroup3.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem4});
-            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 628);
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 618);
             this.layoutControlGroup3.Name = "layoutControlGroup3";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(1178, 69);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(1178, 73);
             this.layoutControlGroup3.Text = "جزئیات";
             // 
             // layoutControlItem4
@@ -678,7 +678,7 @@
             // splitterItem1
             // 
             this.splitterItem1.AllowHotTrack = true;
-            this.splitterItem1.Location = new System.Drawing.Point(0, 618);
+            this.splitterItem1.Location = new System.Drawing.Point(0, 608);
             this.splitterItem1.Name = "splitterItem1";
             this.splitterItem1.ShowSplitGlyph = DevExpress.Utils.DefaultBoolean.True;
             this.splitterItem1.Size = new System.Drawing.Size(1178, 10);
@@ -693,15 +693,15 @@
             this.Controls.Add(this.ribbon);
             this.IconOptions.Image = global::Araz_Form.Properties.Resources.LogoAraz;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1200, 900);
-            this.MinimumSize = new System.Drawing.Size(1200, 900);
+            this.MaximumSize = new System.Drawing.Size(1198, 899);
+            this.MinimumSize = new System.Drawing.Size(1198, 899);
             this.Name = "frmProductList";
             this.Ribbon = this.ribbon;
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar;
-            this.Text = "ثبت فاکتور خرید";
+            this.Text = "لیست محصولات";
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);

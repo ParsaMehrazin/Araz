@@ -66,6 +66,7 @@ namespace Araz_Form.Form.Region
 
         private void btnAdd_ItemClick(object sender, ItemClickEventArgs e)
         {
+            Clear();
             modOneCity();
         }
 

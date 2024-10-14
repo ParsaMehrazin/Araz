@@ -108,7 +108,7 @@
             this.MainRibbonControl.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.MainRibbonControl.ShowSearchItem = true;
             this.MainRibbonControl.ShowToolbarCustomizeItem = false;
-            this.MainRibbonControl.Size = new System.Drawing.Size(1452, 158);
+            this.MainRibbonControl.Size = new System.Drawing.Size(1454, 162);
             this.MainRibbonControl.StatusBar = this.ribbonStatusBar;
             this.MainRibbonControl.Toolbar.ShowCustomizeItem = false;
             this.MainRibbonControl.Merge += new DevExpress.XtraBars.Ribbon.RibbonMergeEventHandler(this.MainRibbonControl_Merge);
@@ -116,10 +116,10 @@
             // backstageViewControl1
             // 
             this.backstageViewControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.backstageViewControl1.Location = new System.Drawing.Point(0, 158);
+            this.backstageViewControl1.Location = new System.Drawing.Point(0, 162);
             this.backstageViewControl1.Name = "backstageViewControl1";
             this.backstageViewControl1.OwnerControl = this.MainRibbonControl;
-            this.backstageViewControl1.Size = new System.Drawing.Size(1452, 581);
+            this.backstageViewControl1.Size = new System.Drawing.Size(1454, 576);
             this.backstageViewControl1.TabIndex = 3;
             this.backstageViewControl1.Text = "backstageViewControl1";
             this.backstageViewControl1.VisibleInDesignTime = true;
@@ -310,10 +310,10 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 739);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 738);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.MainRibbonControl;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1452, 24);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1454, 26);
             // 
             // xtraTabbedMdiManager
             // 
@@ -361,13 +361,13 @@
             // pictureEdit
             // 
             this.pictureEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureEdit.Location = new System.Drawing.Point(0, 158);
+            this.pictureEdit.Location = new System.Drawing.Point(0, 162);
             this.pictureEdit.MenuManager = this.MainRibbonControl;
             this.pictureEdit.Name = "pictureEdit";
             this.pictureEdit.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit.Size = new System.Drawing.Size(1452, 581);
+            this.pictureEdit.Size = new System.Drawing.Size(1454, 576);
             this.pictureEdit.TabIndex = 3;
             // 
             // ribbonPageGroup9
@@ -383,7 +383,7 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1452, 763);
+            this.ClientSize = new System.Drawing.Size(1454, 764);
             this.Controls.Add(this.pictureEdit);
             this.Controls.Add(this.backstageViewControl1);
             this.Controls.Add(this.ribbonStatusBar);

@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions5 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject17 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject18 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject19 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject20 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions6 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject21 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject22 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject23 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject24 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions7 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject25 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject26 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject27 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject28 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions8 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject29 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject30 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject31 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject32 = new DevExpress.Utils.SerializableAppearanceObject();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnAdd = new DevExpress.XtraBars.BarButtonItem();
             this.btnEdit = new DevExpress.XtraBars.BarButtonItem();
@@ -285,7 +285,7 @@
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbon.Size = new System.Drawing.Size(1165, 158);
+            this.ribbon.Size = new System.Drawing.Size(1165, 162);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // btnAdd
@@ -409,10 +409,10 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 707);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 705);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1165, 24);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1165, 26);
             // 
             // layoutControl1
             // 
@@ -421,18 +421,18 @@
             this.layoutControl1.Controls.Add(this.btnRefresh);
             this.layoutControl1.Controls.Add(this.cmbRole);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(0, 158);
+            this.layoutControl1.Location = new System.Drawing.Point(0, 162);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsView.RightToLeftMirroringApplied = true;
             this.layoutControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(1165, 549);
+            this.layoutControl1.Size = new System.Drawing.Size(1165, 543);
             this.layoutControl1.TabIndex = 2;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // gcPersonList
             // 
-            this.gcPersonList.Location = new System.Drawing.Point(24, 118);
+            this.gcPersonList.Location = new System.Drawing.Point(24, 124);
             this.gcPersonList.MainView = this.gvPersonList;
             this.gcPersonList.MenuManager = this.ribbon;
             this.gcPersonList.Name = "gcPersonList";
@@ -440,7 +440,7 @@
             this.btnPrintGridList,
             this.btnGridDelete,
             this.btnGridEdit});
-            this.gcPersonList.Size = new System.Drawing.Size(1117, 215);
+            this.gcPersonList.Size = new System.Drawing.Size(1117, 206);
             this.gcPersonList.TabIndex = 7;
             this.gcPersonList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvPersonList});
@@ -575,7 +575,6 @@
             this.gridColumn18.MinWidth = 100;
             this.gridColumn18.Name = "gridColumn18";
             this.gridColumn18.OptionsColumn.AllowEdit = false;
-            this.gridColumn18.OptionsColumn.AllowFocus = false;
             this.gridColumn18.Visible = true;
             this.gridColumn18.VisibleIndex = 6;
             this.gridColumn18.Width = 100;
@@ -692,9 +691,9 @@
             // btnGridEdit
             // 
             this.btnGridEdit.AutoHeight = false;
-            editorButtonImageOptions1.Image = global::Araz_Form.Properties.Resources.editdatasource_16x16;
+            editorButtonImageOptions5.Image = global::Araz_Form.Properties.Resources.editdatasource_16x16;
             this.btnGridEdit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.btnGridEdit.Name = "btnGridEdit";
             this.btnGridEdit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.btnGridEdit.Click += new System.EventHandler(this.btnGridEdit_Click);
@@ -715,9 +714,9 @@
             // btnPrintGridList
             // 
             this.btnPrintGridList.AutoHeight = false;
-            editorButtonImageOptions2.Image = global::Araz_Form.Properties.Resources.printer_16x16;
+            editorButtonImageOptions6.Image = global::Araz_Form.Properties.Resources.printer_16x16;
             this.btnPrintGridList.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions6, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, serializableAppearanceObject22, serializableAppearanceObject23, serializableAppearanceObject24, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.btnPrintGridList.Name = "btnPrintGridList";
             this.btnPrintGridList.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.btnPrintGridList.Click += new System.EventHandler(this.btnPrintGridList_Click);
@@ -738,16 +737,16 @@
             // btnGridDelete
             // 
             this.btnGridDelete.AutoHeight = false;
-            editorButtonImageOptions3.Image = global::Araz_Form.Properties.Resources.cancel_16x16;
+            editorButtonImageOptions7.Image = global::Araz_Form.Properties.Resources.cancel_16x16;
             this.btnGridDelete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions7, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject25, serializableAppearanceObject26, serializableAppearanceObject27, serializableAppearanceObject28, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.btnGridDelete.Name = "btnGridDelete";
             this.btnGridDelete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.btnGridDelete.Click += new System.EventHandler(this.btnGridDelete_Click);
             // 
             // textEdit3
             // 
-            this.textEdit3.Location = new System.Drawing.Point(24, 392);
+            this.textEdit3.Location = new System.Drawing.Point(24, 393);
             this.textEdit3.MenuManager = this.ribbon;
             this.textEdit3.Name = "textEdit3";
             this.textEdit3.Size = new System.Drawing.Size(1012, 20);
@@ -756,7 +755,7 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(696, 45);
+            this.btnRefresh.Location = new System.Drawing.Point(696, 49);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(96, 22);
             this.btnRefresh.StyleController = this.layoutControl1;
@@ -766,21 +765,21 @@
             // 
             // cmbRole
             // 
-            this.cmbRole.Location = new System.Drawing.Point(796, 45);
+            this.cmbRole.Location = new System.Drawing.Point(796, 49);
             this.cmbRole.MenuManager = this.ribbon;
             this.cmbRole.Name = "cmbRole";
-            editorButtonImageOptions4.Image = global::Araz_Form.Properties.Resources.editdatasource_16x16;
+            editorButtonImageOptions8.Image = global::Araz_Form.Properties.Resources.editdatasource_16x16;
             this.cmbRole.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete),
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions8, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject29, serializableAppearanceObject30, serializableAppearanceObject31, serializableAppearanceObject32, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.cmbRole.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("RoleName", "سمت")});
             this.cmbRole.Properties.DisplayMember = "RoleName";
             this.cmbRole.Properties.NullText = "";
             this.cmbRole.Properties.SelectFirstRowOnEnterKey = DevExpress.Utils.DefaultBoolean.True;
-            this.cmbRole.Size = new System.Drawing.Size(240, 24);
+            this.cmbRole.Size = new System.Drawing.Size(240, 20);
             this.cmbRole.StyleController = this.layoutControl1;
             this.cmbRole.TabIndex = 4;
             this.cmbRole.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.cmbRole_ButtonClick);
@@ -796,15 +795,15 @@
             this.layoutControlGroup3,
             this.splitterItem2});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(1165, 549);
+            this.Root.Size = new System.Drawing.Size(1165, 543);
             this.Root.TextVisible = false;
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 416);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 417);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(1145, 113);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(1145, 106);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroup1
@@ -816,7 +815,7 @@
             this.emptySpaceItem2});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1145, 73);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1145, 75);
             this.layoutControlGroup1.Text = "فیلتر پنل";
             // 
             // layoutControlItem1
@@ -824,7 +823,7 @@
             this.layoutControlItem1.Control = this.cmbRole;
             this.layoutControlItem1.Location = new System.Drawing.Point(772, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(349, 28);
+            this.layoutControlItem1.Size = new System.Drawing.Size(349, 26);
             this.layoutControlItem1.Text = "سمت";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(93, 13);
             // 
@@ -833,7 +832,7 @@
             this.layoutControlItem2.Control = this.btnRefresh;
             this.layoutControlItem2.Location = new System.Drawing.Point(672, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(100, 28);
+            this.layoutControlItem2.Size = new System.Drawing.Size(100, 26);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
@@ -842,7 +841,7 @@
             this.emptySpaceItem2.AllowHotTrack = false;
             this.emptySpaceItem2.Location = new System.Drawing.Point(0, 0);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(672, 28);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(672, 26);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroup2
@@ -851,9 +850,9 @@
             this.layoutControlGroup2.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem4});
-            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 73);
+            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 75);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1145, 264);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(1145, 259);
             this.layoutControlGroup2.Text = "لیست اشخاص";
             // 
             // layoutControlItem4
@@ -861,7 +860,7 @@
             this.layoutControlItem4.Control = this.gcPersonList;
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(1121, 219);
+            this.layoutControlItem4.Size = new System.Drawing.Size(1121, 210);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
@@ -871,9 +870,9 @@
             this.layoutControlGroup3.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem3});
-            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 347);
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 344);
             this.layoutControlGroup3.Name = "layoutControlGroup3";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(1145, 69);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(1145, 73);
             this.layoutControlGroup3.Text = "جزئیات";
             // 
             // layoutControlItem3
@@ -887,7 +886,7 @@
             // splitterItem2
             // 
             this.splitterItem2.AllowHotTrack = true;
-            this.splitterItem2.Location = new System.Drawing.Point(0, 337);
+            this.splitterItem2.Location = new System.Drawing.Point(0, 334);
             this.splitterItem2.Name = "splitterItem2";
             this.splitterItem2.ShowSplitGlyph = DevExpress.Utils.DefaultBoolean.True;
             this.splitterItem2.Size = new System.Drawing.Size(1145, 10);
@@ -902,7 +901,7 @@
             this.fpPersonDefine.Controls.Add(this.flyoutPanelControl1);
             this.fpPersonDefine.Location = new System.Drawing.Point(188, 65);
             this.fpPersonDefine.Name = "fpPersonDefine";
-            this.fpPersonDefine.Size = new System.Drawing.Size(575, 364);
+            this.fpPersonDefine.Size = new System.Drawing.Size(575, 375);
             this.fpPersonDefine.TabIndex = 5;
             // 
             // flyoutPanelControl1
@@ -913,7 +912,7 @@
             this.flyoutPanelControl1.Location = new System.Drawing.Point(0, 0);
             this.flyoutPanelControl1.Name = "flyoutPanelControl1";
             this.flyoutPanelControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.flyoutPanelControl1.Size = new System.Drawing.Size(575, 364);
+            this.flyoutPanelControl1.Size = new System.Drawing.Size(575, 375);
             this.flyoutPanelControl1.TabIndex = 0;
             // 
             // layoutControl2
@@ -942,13 +941,13 @@
             this.layoutControl2.OptionsView.RightToLeftMirroringApplied = true;
             this.layoutControl2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.layoutControl2.Root = this.layoutControlGroup4;
-            this.layoutControl2.Size = new System.Drawing.Size(571, 360);
+            this.layoutControl2.Size = new System.Drawing.Size(571, 371);
             this.layoutControl2.TabIndex = 1;
             this.layoutControl2.Text = "layoutControl2";
             // 
             // txtMobile
             // 
-            this.txtMobile.Location = new System.Drawing.Point(36, 78);
+            this.txtMobile.Location = new System.Drawing.Point(36, 86);
             this.txtMobile.Name = "txtMobile";
             this.txtMobile.Size = new System.Drawing.Size(183, 20);
             this.txtMobile.StyleController = this.layoutControl2;
@@ -956,7 +955,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(330, 102);
+            this.txtName.Location = new System.Drawing.Point(330, 110);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(132, 20);
             this.txtName.StyleController = this.layoutControl2;
@@ -964,7 +963,7 @@
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(330, 126);
+            this.txtLastName.Location = new System.Drawing.Point(330, 134);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(132, 20);
             this.txtLastName.StyleController = this.layoutControl2;
@@ -972,7 +971,7 @@
             // 
             // txtAgeDate
             // 
-            this.txtAgeDate.Location = new System.Drawing.Point(330, 174);
+            this.txtAgeDate.Location = new System.Drawing.Point(330, 182);
             this.txtAgeDate.Name = "txtAgeDate";
             this.txtAgeDate.Size = new System.Drawing.Size(132, 20);
             this.txtAgeDate.StyleController = this.layoutControl2;
@@ -981,7 +980,7 @@
             // txtAge
             // 
             this.txtAge.Enabled = false;
-            this.txtAge.Location = new System.Drawing.Point(330, 198);
+            this.txtAge.Location = new System.Drawing.Point(330, 206);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(132, 20);
             this.txtAge.StyleController = this.layoutControl2;
@@ -989,7 +988,7 @@
             // 
             // txtNationalCode
             // 
-            this.txtNationalCode.Location = new System.Drawing.Point(330, 246);
+            this.txtNationalCode.Location = new System.Drawing.Point(330, 254);
             this.txtNationalCode.Name = "txtNationalCode";
             this.txtNationalCode.Size = new System.Drawing.Size(132, 20);
             this.txtNationalCode.StyleController = this.layoutControl2;
@@ -997,7 +996,7 @@
             // 
             // txtTel
             // 
-            this.txtTel.Location = new System.Drawing.Point(36, 102);
+            this.txtTel.Location = new System.Drawing.Point(36, 110);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(183, 20);
             this.txtTel.StyleController = this.layoutControl2;
@@ -1005,7 +1004,7 @@
             // 
             // txtPostalCode
             // 
-            this.txtPostalCode.Location = new System.Drawing.Point(36, 126);
+            this.txtPostalCode.Location = new System.Drawing.Point(36, 134);
             this.txtPostalCode.Name = "txtPostalCode";
             this.txtPostalCode.Size = new System.Drawing.Size(183, 20);
             this.txtPostalCode.StyleController = this.layoutControl2;
@@ -1013,7 +1012,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(36, 150);
+            this.txtEmail.Location = new System.Drawing.Point(36, 158);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(183, 20);
             this.txtEmail.StyleController = this.layoutControl2;
@@ -1021,7 +1020,7 @@
             // 
             // btnExitPerson
             // 
-            this.btnExitPerson.Location = new System.Drawing.Point(103, 320);
+            this.btnExitPerson.Location = new System.Drawing.Point(103, 332);
             this.btnExitPerson.Name = "btnExitPerson";
             this.btnExitPerson.Size = new System.Drawing.Size(85, 22);
             this.btnExitPerson.StyleController = this.layoutControl2;
@@ -1031,7 +1030,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(17, 320);
+            this.btnSave.Location = new System.Drawing.Point(17, 332);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(82, 22);
             this.btnSave.StyleController = this.layoutControl2;
@@ -1041,7 +1040,7 @@
             // 
             // cmbRolePerson
             // 
-            this.cmbRolePerson.Location = new System.Drawing.Point(330, 78);
+            this.cmbRolePerson.Location = new System.Drawing.Point(330, 86);
             this.cmbRolePerson.Name = "cmbRolePerson";
             this.cmbRolePerson.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1055,7 +1054,7 @@
             // 
             // cmbSex
             // 
-            this.cmbSex.Location = new System.Drawing.Point(330, 150);
+            this.cmbSex.Location = new System.Drawing.Point(330, 158);
             this.cmbSex.Name = "cmbSex";
             this.cmbSex.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1066,7 +1065,7 @@
             // 
             // cmbCity
             // 
-            this.cmbCity.Location = new System.Drawing.Point(36, 198);
+            this.cmbCity.Location = new System.Drawing.Point(36, 206);
             this.cmbCity.Name = "cmbCity";
             this.cmbCity.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1080,7 +1079,7 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(36, 222);
+            this.txtAddress.Location = new System.Drawing.Point(36, 230);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(183, 44);
             this.txtAddress.StyleController = this.layoutControl2;
@@ -1088,7 +1087,7 @@
             // 
             // cmbEducation
             // 
-            this.cmbEducation.Location = new System.Drawing.Point(330, 222);
+            this.cmbEducation.Location = new System.Drawing.Point(330, 230);
             this.cmbEducation.Name = "cmbEducation";
             this.cmbEducation.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1102,7 +1101,7 @@
             // 
             // cmbProvince
             // 
-            this.cmbProvince.Location = new System.Drawing.Point(36, 174);
+            this.cmbProvince.Location = new System.Drawing.Point(36, 182);
             this.cmbProvince.Name = "cmbProvince";
             this.cmbProvince.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1123,7 +1122,7 @@
             this.layoutControlGroup6,
             this.lcgPersonDefine});
             this.layoutControlGroup4.Name = "Root";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(571, 360);
+            this.layoutControlGroup4.Size = new System.Drawing.Size(571, 371);
             this.layoutControlGroup4.TextVisible = false;
             // 
             // layoutControlGroup6
@@ -1133,10 +1132,10 @@
             this.layoutControlItem21,
             this.emptySpaceItem3,
             this.layoutControlItem22});
-            this.layoutControlGroup6.Location = new System.Drawing.Point(0, 282);
+            this.layoutControlGroup6.Location = new System.Drawing.Point(0, 290);
             this.layoutControlGroup6.Name = "layoutControlGroup3";
             this.layoutControlGroup6.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
-            this.layoutControlGroup6.Size = new System.Drawing.Size(551, 58);
+            this.layoutControlGroup6.Size = new System.Drawing.Size(551, 61);
             this.layoutControlGroup6.Text = "عملیات";
             // 
             // layoutControlItem21
@@ -1144,7 +1143,7 @@
             this.layoutControlItem21.Control = this.btnExitPerson;
             this.layoutControlItem21.Location = new System.Drawing.Point(86, 0);
             this.layoutControlItem21.Name = "layoutControlItem17";
-            this.layoutControlItem21.Size = new System.Drawing.Size(89, 27);
+            this.layoutControlItem21.Size = new System.Drawing.Size(89, 26);
             this.layoutControlItem21.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem21.TextVisible = false;
             // 
@@ -1153,7 +1152,7 @@
             this.emptySpaceItem3.AllowHotTrack = false;
             this.emptySpaceItem3.Location = new System.Drawing.Point(175, 0);
             this.emptySpaceItem3.Name = "emptySpaceItem1";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(366, 27);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(366, 26);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem22
@@ -1161,7 +1160,7 @@
             this.layoutControlItem22.Control = this.btnSave;
             this.layoutControlItem22.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem22.Name = "layoutControlItem16";
-            this.layoutControlItem22.Size = new System.Drawing.Size(86, 27);
+            this.layoutControlItem22.Size = new System.Drawing.Size(86, 26);
             this.layoutControlItem22.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem22.TextVisible = false;
             // 
@@ -1174,7 +1173,7 @@
             this.splitterItem1});
             this.lcgPersonDefine.Location = new System.Drawing.Point(0, 0);
             this.lcgPersonDefine.Name = "lcgPersonDefine";
-            this.lcgPersonDefine.Size = new System.Drawing.Size(551, 282);
+            this.lcgPersonDefine.Size = new System.Drawing.Size(551, 290);
             this.lcgPersonDefine.Text = "فرم اشخاص";
             // 
             // layoutControlGroup5
@@ -1191,7 +1190,7 @@
             this.layoutControlItem12});
             this.layoutControlGroup5.Location = new System.Drawing.Point(294, 0);
             this.layoutControlGroup5.Name = "layoutControlGroup1";
-            this.layoutControlGroup5.Size = new System.Drawing.Size(233, 237);
+            this.layoutControlGroup5.Size = new System.Drawing.Size(233, 241);
             this.layoutControlGroup5.Text = "اطلاعات هویتی ";
             // 
             // layoutControlItem5
@@ -1278,7 +1277,7 @@
             this.cmbProvinceperson});
             this.layoutControlItem20.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem20.Name = "layoutControlItem20";
-            this.layoutControlItem20.Size = new System.Drawing.Size(284, 237);
+            this.layoutControlItem20.Size = new System.Drawing.Size(284, 241);
             this.layoutControlItem20.Text = "آدرس و شماره تماس";
             // 
             // layoutControlItem19
@@ -1352,7 +1351,7 @@
             this.splitterItem1.Location = new System.Drawing.Point(284, 0);
             this.splitterItem1.Name = "splitterItem1";
             this.splitterItem1.ShowSplitGlyph = DevExpress.Utils.DefaultBoolean.True;
-            this.splitterItem1.Size = new System.Drawing.Size(10, 237);
+            this.splitterItem1.Size = new System.Drawing.Size(10, 241);
             // 
             // ErrorProvider
             // 
@@ -1363,7 +1362,7 @@
             this.fpRoleDefine.Controls.Add(this.flyoutPanelControl2);
             this.fpRoleDefine.Location = new System.Drawing.Point(91, 88);
             this.fpRoleDefine.Name = "fpRoleDefine";
-            this.fpRoleDefine.Size = new System.Drawing.Size(406, 261);
+            this.fpRoleDefine.Size = new System.Drawing.Size(406, 270);
             this.fpRoleDefine.TabIndex = 8;
             // 
             // flyoutPanelControl2
@@ -1373,7 +1372,7 @@
             this.flyoutPanelControl2.FlyoutPanel = this.fpRoleDefine;
             this.flyoutPanelControl2.Location = new System.Drawing.Point(0, 0);
             this.flyoutPanelControl2.Name = "flyoutPanelControl2";
-            this.flyoutPanelControl2.Size = new System.Drawing.Size(406, 261);
+            this.flyoutPanelControl2.Size = new System.Drawing.Size(406, 270);
             this.flyoutPanelControl2.TabIndex = 0;
             // 
             // layoutControl3
@@ -1384,7 +1383,7 @@
             this.layoutControl3.Name = "layoutControl3";
             this.layoutControl3.OptionsView.RightToLeftMirroringApplied = true;
             this.layoutControl3.Root = this.layoutControlGroup7;
-            this.layoutControl3.Size = new System.Drawing.Size(402, 257);
+            this.layoutControl3.Size = new System.Drawing.Size(402, 266);
             this.layoutControl3.TabIndex = 0;
             this.layoutControl3.Text = "layoutControl3";
             // 
@@ -1400,13 +1399,13 @@
             this.layoutControl4.OptionsView.RightToLeftMirroringApplied = true;
             this.layoutControl4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.layoutControl4.Root = this.layoutControlGroup8;
-            this.layoutControl4.Size = new System.Drawing.Size(378, 233);
+            this.layoutControl4.Size = new System.Drawing.Size(378, 242);
             this.layoutControl4.TabIndex = 4;
             this.layoutControl4.Text = "layoutControl4";
             // 
             // txtRole
             // 
-            this.txtRole.Location = new System.Drawing.Point(36, 102);
+            this.txtRole.Location = new System.Drawing.Point(36, 110);
             this.txtRole.Name = "txtRole";
             this.txtRole.Size = new System.Drawing.Size(210, 20);
             this.txtRole.StyleController = this.layoutControl4;
@@ -1414,7 +1413,7 @@
             // 
             // btnExitRole
             // 
-            this.btnExitRole.Location = new System.Drawing.Point(124, 183);
+            this.btnExitRole.Location = new System.Drawing.Point(124, 195);
             this.btnExitRole.Name = "btnExitRole";
             this.btnExitRole.Size = new System.Drawing.Size(99, 22);
             this.btnExitRole.StyleController = this.layoutControl4;
@@ -1424,7 +1423,7 @@
             // 
             // btnSaveRole
             // 
-            this.btnSaveRole.Location = new System.Drawing.Point(24, 183);
+            this.btnSaveRole.Location = new System.Drawing.Point(24, 195);
             this.btnSaveRole.Name = "btnSaveRole";
             this.btnSaveRole.Size = new System.Drawing.Size(96, 22);
             this.btnSaveRole.StyleController = this.layoutControl4;
@@ -1434,7 +1433,7 @@
             // 
             // cmbPersonRole
             // 
-            this.cmbPersonRole.Location = new System.Drawing.Point(36, 78);
+            this.cmbPersonRole.Location = new System.Drawing.Point(36, 86);
             this.cmbPersonRole.Name = "cmbPersonRole";
             this.cmbPersonRole.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1455,7 +1454,7 @@
             this.layoutControlGroup10,
             this.layoutControlGroup11});
             this.layoutControlGroup8.Name = "Root";
-            this.layoutControlGroup8.Size = new System.Drawing.Size(378, 233);
+            this.layoutControlGroup8.Size = new System.Drawing.Size(378, 242);
             this.layoutControlGroup8.TextVisible = false;
             // 
             // layoutControlGroup10
@@ -1465,9 +1464,9 @@
             this.layoutControlItem25,
             this.layoutControlItem26,
             this.emptySpaceItem4});
-            this.layoutControlGroup10.Location = new System.Drawing.Point(0, 138);
+            this.layoutControlGroup10.Location = new System.Drawing.Point(0, 146);
             this.layoutControlGroup10.Name = "layoutControlGroup2";
-            this.layoutControlGroup10.Size = new System.Drawing.Size(358, 75);
+            this.layoutControlGroup10.Size = new System.Drawing.Size(341, 75);
             this.layoutControlGroup10.Text = "عملیات";
             // 
             // layoutControlItem25
@@ -1477,7 +1476,7 @@
             this.layoutControlItem25.MaxSize = new System.Drawing.Size(100, 26);
             this.layoutControlItem25.MinSize = new System.Drawing.Size(100, 26);
             this.layoutControlItem25.Name = "layoutControlItem5";
-            this.layoutControlItem25.Size = new System.Drawing.Size(100, 30);
+            this.layoutControlItem25.Size = new System.Drawing.Size(100, 27);
             this.layoutControlItem25.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem25.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem25.TextVisible = false;
@@ -1489,7 +1488,7 @@
             this.layoutControlItem26.MaxSize = new System.Drawing.Size(103, 26);
             this.layoutControlItem26.MinSize = new System.Drawing.Size(103, 26);
             this.layoutControlItem26.Name = "layoutControlItem3";
-            this.layoutControlItem26.Size = new System.Drawing.Size(103, 30);
+            this.layoutControlItem26.Size = new System.Drawing.Size(103, 27);
             this.layoutControlItem26.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem26.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem26.TextVisible = false;
@@ -1499,7 +1498,7 @@
             this.emptySpaceItem4.AllowHotTrack = false;
             this.emptySpaceItem4.Location = new System.Drawing.Point(203, 0);
             this.emptySpaceItem4.Name = "emptySpaceItem1";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(131, 30);
+            this.emptySpaceItem4.Size = new System.Drawing.Size(114, 26);
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroup11
@@ -1509,7 +1508,7 @@
             this.layoutControlGroup9});
             this.layoutControlGroup11.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup11.Name = "layoutControlGroup11";
-            this.layoutControlGroup11.Size = new System.Drawing.Size(358, 138);
+            this.layoutControlGroup11.Size = new System.Drawing.Size(358, 146);
             this.layoutControlGroup11.Text = "فرم ثبت سمت ";
             // 
             // layoutControlGroup9
@@ -1520,7 +1519,7 @@
             this.layoutControlItem24});
             this.layoutControlGroup9.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup9.Name = "layoutControlGroup1";
-            this.layoutControlGroup9.Size = new System.Drawing.Size(334, 93);
+            this.layoutControlGroup9.Size = new System.Drawing.Size(334, 97);
             this.layoutControlGroup9.Text = "سمت";
             // 
             // layoutControlItem23
@@ -1548,7 +1547,7 @@
             this.layoutControlGroup7.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem27});
             this.layoutControlGroup7.Name = "layoutControlGroup7";
-            this.layoutControlGroup7.Size = new System.Drawing.Size(402, 257);
+            this.layoutControlGroup7.Size = new System.Drawing.Size(402, 266);
             this.layoutControlGroup7.TextVisible = false;
             // 
             // layoutControlItem27
@@ -1556,7 +1555,7 @@
             this.layoutControlItem27.Control = this.layoutControl4;
             this.layoutControlItem27.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem27.Name = "layoutControlItem27";
-            this.layoutControlItem27.Size = new System.Drawing.Size(382, 237);
+            this.layoutControlItem27.Size = new System.Drawing.Size(382, 246);
             this.layoutControlItem27.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem27.TextVisible = false;
             // 

@@ -69,13 +69,13 @@
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsView.RightToLeftMirroringApplied = true;
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(324, 184);
+            this.layoutControl1.Size = new System.Drawing.Size(324, 192);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(24, 138);
+            this.btnSave.Location = new System.Drawing.Point(24, 146);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(96, 22);
             this.btnSave.StyleController = this.layoutControl1;
@@ -85,7 +85,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(124, 138);
+            this.btnExit.Location = new System.Drawing.Point(124, 146);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(96, 22);
             this.btnExit.StyleController = this.layoutControl1;
@@ -95,7 +95,7 @@
             // 
             // txtCity
             // 
-            this.txtCity.Location = new System.Drawing.Point(24, 69);
+            this.txtCity.Location = new System.Drawing.Point(24, 73);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(236, 20);
             this.txtCity.StyleController = this.layoutControl1;
@@ -103,7 +103,7 @@
             // 
             // cmbProvince
             // 
-            this.cmbProvince.Location = new System.Drawing.Point(24, 45);
+            this.cmbProvince.Location = new System.Drawing.Point(24, 49);
             this.cmbProvince.Name = "cmbProvince";
             this.cmbProvince.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -123,7 +123,7 @@
             this.layoutControlGroup2,
             this.layoutControlGroup3});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(324, 184);
+            this.Root.Size = new System.Drawing.Size(324, 192);
             this.Root.TextVisible = false;
             // 
             // layoutControlGroup2
@@ -134,7 +134,7 @@
             this.layoutControlItem3});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(304, 93);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(304, 97);
             this.layoutControlGroup2.Text = "منطقه";
             // 
             // layoutControlItem2
@@ -162,9 +162,9 @@
             this.layoutControlItem5,
             this.layoutControlItem4,
             this.emptySpaceItem1});
-            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 93);
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 97);
             this.layoutControlGroup3.Name = "layoutControlGroup3";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(304, 71);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(304, 75);
             this.layoutControlGroup3.Text = "عملیات";
             // 
             // layoutControlItem5
@@ -212,7 +212,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(324, 184);
+            this.ClientSize = new System.Drawing.Size(324, 192);
             this.Controls.Add(this.layoutControl1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
