@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "D:\\Programming\\Win\\Araz\\Araz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|D:\\Programming\\Win\\Araz\\Araz\\arazwin\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|solutionrelative:arazwin\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|D:\\Programming\\Win\\Araz\\Araz\\arazwin\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C86D8632-BDB9-4611-89E9-E580D7FACB89}|ArazWin\\ArazWin.csproj|solutionrelative:arazwin\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|D:\\Programming\\Win\\Araz\\Araz\\araz_form\\form\\invoice\\frmpurchaseinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\form\\invoice\\frmpurchaseinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -46,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 170,
-          "SelectedChildIndex": 33,
+          "SelectedChildIndex": 34,
           "Children": [
             {
               "$type": "Bookmark",
@@ -162,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "packages.config",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\packages.config",
               "RelativeDocumentMoniker": "Araz_Form\\packages.config",
@@ -175,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "frmPersonList.cs",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Account\\frmPersonList.cs",
               "RelativeDocumentMoniker": "Araz_Form\\Form\\Account\\frmPersonList.cs",
@@ -188,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "frmRegionList.cs",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Region\\frmRegionList.cs",
               "RelativeDocumentMoniker": "Araz_Form\\Form\\Region\\frmRegionList.cs",
@@ -201,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "frmCityDefine.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Region\\frmCityDefine.cs",
               "RelativeDocumentMoniker": "Araz_Form\\Form\\Region\\frmCityDefine.cs",
@@ -213,32 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\MainForm.cs",
-              "RelativeDocumentMoniker": "ArazWin\\MainForm.cs",
-              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\MainForm.cs",
-              "RelativeToolTip": "ArazWin\\MainForm.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAswJoAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T08:57:19.383Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\MainForm.cs",
-              "RelativeDocumentMoniker": "ArazWin\\MainForm.cs",
-              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\MainForm.cs [Design]",
-              "RelativeToolTip": "ArazWin\\MainForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T08:56:04.284Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "View_Product.cs",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_ViewModel\\Invoice\\View_Product.cs",
               "RelativeDocumentMoniker": "Araz_ViewModel\\Invoice\\View_Product.cs",
@@ -251,12 +218,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "frmPurchaseInvoice.cs",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Invoice\\frmPurchaseInvoice.cs",
               "RelativeDocumentMoniker": "Araz_Form\\Form\\Invoice\\frmPurchaseInvoice.cs",
-              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Invoice\\frmPurchaseInvoice.cs",
-              "RelativeToolTip": "Araz_Form\\Form\\Invoice\\frmPurchaseInvoice.cs",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Invoice\\frmPurchaseInvoice.cs*",
+              "RelativeToolTip": "Araz_Form\\Form\\Invoice\\frmPurchaseInvoice.cs*",
               "ViewState": "AgIAAC4AAAAAAAAAAADwv0AAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-14T08:24:07.935Z",
@@ -264,12 +231,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "frmPurchaseInvoice.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Invoice\\frmPurchaseInvoice.cs",
               "RelativeDocumentMoniker": "Araz_Form\\Form\\Invoice\\frmPurchaseInvoice.cs",
-              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Invoice\\frmPurchaseInvoice.cs [Design]",
-              "RelativeToolTip": "Araz_Form\\Form\\Invoice\\frmPurchaseInvoice.cs [Design]",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Invoice\\frmPurchaseInvoice.cs [Design]*",
+              "RelativeToolTip": "Araz_Form\\Form\\Invoice\\frmPurchaseInvoice.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T15:48:29.547Z",
               "EditorCaption": " [Design]"

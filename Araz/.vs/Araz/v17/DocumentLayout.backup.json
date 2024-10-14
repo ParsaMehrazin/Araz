@@ -53,19 +53,6 @@
               "Name": "ST:0:0:{f3c6cd5b-c917-47cf-901f-795dd30186e2}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "packages.config",
-              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\packages.config",
-              "RelativeDocumentMoniker": "Araz_Form\\packages.config",
-              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\packages.config",
-              "RelativeToolTip": "Araz_Form\\packages.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-10-14T16:32:55.09Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{46c60eb8-7d22-4e72-87e8-7cba8d8ffbdb}"
             },
@@ -172,6 +159,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{59751e96-a88e-41b4-9765-1e33f24a1c52}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "packages.config",
+              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\packages.config",
+              "RelativeDocumentMoniker": "Araz_Form\\packages.config",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\packages.config",
+              "RelativeToolTip": "Araz_Form\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-10-14T16:32:55.09Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
