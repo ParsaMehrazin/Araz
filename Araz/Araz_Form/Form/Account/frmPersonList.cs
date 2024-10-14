@@ -480,5 +480,11 @@ namespace Araz_Form.Form.Account
                 cmbCity.EditValue = null;
             }
         }
+
+        private void btnPrintList_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmSearchPerson frm  = new frmSearchPerson();    
+            frm.ShowDialog();
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -38,15 +39,20 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnAdd = new DevExpress.XtraBars.BarButtonItem();
+            this.btnEdit = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDelete = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnExit = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
@@ -56,11 +62,11 @@
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.btnEdit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.btnGridEdit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.btnPrint = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.btnGridPrint = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.btnDelete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.btnGridDelete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.btnRefresh = new DevExpress.XtraEditors.SimpleButton();
             this.cmbProvince = new DevExpress.XtraEditors.LookUpEdit();
@@ -75,14 +81,33 @@
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ErrorProvider = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.fpCityDefine = new DevExpress.Utils.FlyoutPanel();
+            this.fpCityDefine1 = new DevExpress.Utils.FlyoutPanelControl();
+            this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
+            this.layoutControl3 = new DevExpress.XtraLayout.LayoutControl();
+            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
+            this.btnflExit = new DevExpress.XtraEditors.SimpleButton();
+            this.txtCity = new DevExpress.XtraEditors.TextEdit();
+            this.cmbflProvince = new DevExpress.XtraEditors.LookUpEdit();
+            this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.lcProvince = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lbCity = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup7 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcCityList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvCityList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGridEdit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGridPrint)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGridDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbProvince.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
@@ -94,6 +119,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fpCityDefine)).BeginInit();
+            this.fpCityDefine.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fpCityDefine1)).BeginInit();
+            this.fpCityDefine1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).BeginInit();
+            this.layoutControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).BeginInit();
+            this.layoutControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCity.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbflProvince.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcProvince)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbCity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -102,14 +148,14 @@
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
             this.ribbon.SearchEditItem,
-            this.barButtonItem1,
-            this.barButtonItem2,
-            this.barButtonItem3,
+            this.btnAdd,
+            this.btnEdit,
+            this.btnDelete,
             this.barButtonItem4,
             this.barButtonItem5,
             this.barButtonItem6,
             this.barButtonItem7,
-            this.barButtonItem8});
+            this.btnExit});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.MaxItemId = 9;
             this.ribbon.Name = "ribbon";
@@ -118,61 +164,72 @@
             this.ribbon.Size = new System.Drawing.Size(1116, 158);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
-            // barButtonItem1
+            // btnAdd
             // 
-            this.barButtonItem1.Caption = "جدید";
-            this.barButtonItem1.Id = 1;
-            this.barButtonItem1.ImageOptions.Image = global::Araz_Form.Properties.Resources.addnewdatasource_16x16;
-            this.barButtonItem1.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.addnewdatasource_32x32;
-            this.barButtonItem1.Name = "barButtonItem1";
+            this.btnAdd.Caption = "جدید";
+            this.btnAdd.Id = 1;
+            this.btnAdd.ImageOptions.Image = global::Araz_Form.Properties.Resources.addnewdatasource_16x16;
+            this.btnAdd.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.addnewdatasource_32x32;
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAdd_ItemClick);
             // 
-            // barButtonItem2
+            // btnEdit
             // 
-            this.barButtonItem2.Caption = "ویرایش";
-            this.barButtonItem2.Id = 2;
-            this.barButtonItem2.ImageOptions.Image = global::Araz_Form.Properties.Resources.editdatasource_16x16;
-            this.barButtonItem2.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.editdatasource_32x32;
-            this.barButtonItem2.Name = "barButtonItem2";
+            this.btnEdit.Caption = "ویرایش";
+            this.btnEdit.Id = 2;
+            this.btnEdit.ImageOptions.Image = global::Araz_Form.Properties.Resources.editdatasource_16x16;
+            this.btnEdit.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.editdatasource_32x32;
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEdit_ItemClick);
             // 
-            // barButtonItem3
+            // btnDelete
             // 
-            this.barButtonItem3.Caption = "حذف";
-            this.barButtonItem3.Id = 3;
-            this.barButtonItem3.ImageOptions.Image = global::Araz_Form.Properties.Resources.deletedatasource2_16x16;
-            this.barButtonItem3.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.deletedatasource2_32x32;
-            this.barButtonItem3.Name = "barButtonItem3";
+            this.btnDelete.Caption = "حذف";
+            this.btnDelete.Id = 3;
+            this.btnDelete.ImageOptions.Image = global::Araz_Form.Properties.Resources.deletedatasource2_16x16;
+            this.btnDelete.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.deletedatasource2_32x32;
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDelete_ItemClick);
             // 
             // barButtonItem4
             // 
-            this.barButtonItem4.Caption = "barButtonItem4";
+            this.barButtonItem4.Caption = "چاپ لیست شهر";
             this.barButtonItem4.Id = 4;
+            this.barButtonItem4.ImageOptions.Image = global::Araz_Form.Properties.Resources.printer_16x16;
+            this.barButtonItem4.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.printer_32x32;
             this.barButtonItem4.Name = "barButtonItem4";
             // 
             // barButtonItem5
             // 
-            this.barButtonItem5.Caption = "barButtonItem5";
+            this.barButtonItem5.Caption = "چاپ لیست جزئیات";
             this.barButtonItem5.Id = 5;
+            this.barButtonItem5.ImageOptions.Image = global::Araz_Form.Properties.Resources.printer_16x16;
+            this.barButtonItem5.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.printer_32x32;
             this.barButtonItem5.Name = "barButtonItem5";
             // 
             // barButtonItem6
             // 
-            this.barButtonItem6.Caption = "barButtonItem6";
+            this.barButtonItem6.Caption = "خروجی اکسل لیست شهر";
             this.barButtonItem6.Id = 6;
+            this.barButtonItem6.ImageOptions.Image = global::Araz_Form.Properties.Resources.Form_Export_xls_16;
+            this.barButtonItem6.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.Form_Export_xls_32;
             this.barButtonItem6.Name = "barButtonItem6";
             // 
             // barButtonItem7
             // 
-            this.barButtonItem7.Caption = "barButtonItem7";
+            this.barButtonItem7.Caption = "خروجی اکسل لیست جزئیات";
             this.barButtonItem7.Id = 7;
+            this.barButtonItem7.ImageOptions.Image = global::Araz_Form.Properties.Resources.Form_Export_xls_16;
+            this.barButtonItem7.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.Form_Export_xls_32;
             this.barButtonItem7.Name = "barButtonItem7";
             // 
-            // barButtonItem8
+            // btnExit
             // 
-            this.barButtonItem8.Caption = "خروج";
-            this.barButtonItem8.Id = 8;
-            this.barButtonItem8.ImageOptions.Image = global::Araz_Form.Properties.Resources.cancel_16x16;
-            this.barButtonItem8.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.cancel_32x32;
-            this.barButtonItem8.Name = "barButtonItem8";
+            this.btnExit.Caption = "خروج";
+            this.btnExit.Id = 8;
+            this.btnExit.ImageOptions.Image = global::Araz_Form.Properties.Resources.cancel_16x16;
+            this.btnExit.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.cancel_32x32;
+            this.btnExit.Name = "btnExit";
             // 
             // ribbonPage1
             // 
@@ -183,16 +240,16 @@
             // 
             // ribbonPageGroup1
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnAdd);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnEdit);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnDelete);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem4);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem5);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem6);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem7);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem8);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnExit);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "عملیات";
             // 
             // ribbonStatusBar
             // 
@@ -219,15 +276,15 @@
             // 
             // gcCityList
             // 
-            this.gcCityList.Location = new System.Drawing.Point(24, 116);
+            this.gcCityList.Location = new System.Drawing.Point(24, 118);
             this.gcCityList.MainView = this.gvCityList;
             this.gcCityList.MenuManager = this.ribbon;
             this.gcCityList.Name = "gcCityList";
             this.gcCityList.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.btnDelete,
-            this.btnPrint,
-            this.btnEdit});
-            this.gcCityList.Size = new System.Drawing.Size(1068, 293);
+            this.btnGridDelete,
+            this.btnGridPrint,
+            this.btnGridEdit});
+            this.gcCityList.Size = new System.Drawing.Size(1068, 291);
             this.gcCityList.TabIndex = 8;
             this.gcCityList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvCityList});
@@ -292,7 +349,7 @@
             // gridColumn3
             // 
             this.gridColumn3.Caption = "ویرایش";
-            this.gridColumn3.ColumnEdit = this.btnEdit;
+            this.gridColumn3.ColumnEdit = this.btnGridEdit;
             this.gridColumn3.MaxWidth = 60;
             this.gridColumn3.MinWidth = 60;
             this.gridColumn3.Name = "gridColumn3";
@@ -302,19 +359,20 @@
             this.gridColumn3.VisibleIndex = 2;
             this.gridColumn3.Width = 60;
             // 
-            // btnEdit
+            // btnGridEdit
             // 
-            this.btnEdit.AutoHeight = false;
+            this.btnGridEdit.AutoHeight = false;
             editorButtonImageOptions1.Image = global::Araz_Form.Properties.Resources.editdatasource_16x16;
-            this.btnEdit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.btnGridEdit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.btnGridEdit.Name = "btnGridEdit";
+            this.btnGridEdit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.btnGridEdit.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnGridEdit_ButtonClick);
             // 
             // gridColumn4
             // 
             this.gridColumn4.Caption = "چاپ";
-            this.gridColumn4.ColumnEdit = this.btnPrint;
+            this.gridColumn4.ColumnEdit = this.btnGridPrint;
             this.gridColumn4.MaxWidth = 60;
             this.gridColumn4.MinWidth = 60;
             this.gridColumn4.Name = "gridColumn4";
@@ -324,19 +382,19 @@
             this.gridColumn4.VisibleIndex = 3;
             this.gridColumn4.Width = 60;
             // 
-            // btnPrint
+            // btnGridPrint
             // 
-            this.btnPrint.AutoHeight = false;
+            this.btnGridPrint.AutoHeight = false;
             editorButtonImageOptions2.Image = global::Araz_Form.Properties.Resources.printer_16x16;
-            this.btnPrint.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.btnGridPrint.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.btnGridPrint.Name = "btnGridPrint";
+            this.btnGridPrint.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
             // gridColumn5
             // 
             this.gridColumn5.Caption = "حذف";
-            this.gridColumn5.ColumnEdit = this.btnDelete;
+            this.gridColumn5.ColumnEdit = this.btnGridDelete;
             this.gridColumn5.MaxWidth = 60;
             this.gridColumn5.MinWidth = 60;
             this.gridColumn5.Name = "gridColumn5";
@@ -346,13 +404,14 @@
             this.gridColumn5.VisibleIndex = 4;
             this.gridColumn5.Width = 60;
             // 
-            // btnDelete
+            // btnGridDelete
             // 
-            this.btnDelete.AutoHeight = false;
-            this.btnDelete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.btnGridDelete.AutoHeight = false;
+            this.btnGridDelete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete)});
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.btnGridDelete.Name = "btnGridDelete";
+            this.btnGridDelete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.btnGridDelete.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnGridDelete_ButtonClick);
             // 
             // textEdit3
             // 
@@ -378,15 +437,20 @@
             this.cmbProvince.Location = new System.Drawing.Point(789, 45);
             this.cmbProvince.MenuManager = this.ribbon;
             this.cmbProvince.Name = "cmbProvince";
+            editorButtonImageOptions3.Image = global::Araz_Form.Properties.Resources.editdatasource_16x16;
             this.cmbProvince.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus)});
             this.cmbProvince.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ProvinceName", "Name1")});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ProvinceName", "استان")});
             this.cmbProvince.Properties.DisplayMember = "ProvinceName";
             this.cmbProvince.Properties.NullText = "انتخاب نشده";
-            this.cmbProvince.Size = new System.Drawing.Size(198, 20);
+            this.cmbProvince.Size = new System.Drawing.Size(198, 24);
             this.cmbProvince.StyleController = this.layoutControl1;
             this.cmbProvince.TabIndex = 4;
+            this.cmbProvince.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.cmbProvince_ButtonClick);
             // 
             // Root
             // 
@@ -409,7 +473,7 @@
             this.emptySpaceItem1});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1096, 71);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1096, 73);
             this.layoutControlGroup1.Text = "فیلترپنل";
             // 
             // layoutControlItem1
@@ -417,7 +481,7 @@
             this.layoutControlItem1.Control = this.cmbProvince;
             this.layoutControlItem1.Location = new System.Drawing.Point(765, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(307, 26);
+            this.layoutControlItem1.Size = new System.Drawing.Size(307, 28);
             this.layoutControlItem1.Text = "استان";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(93, 13);
             // 
@@ -428,7 +492,7 @@
             this.layoutControlItem4.MaxSize = new System.Drawing.Size(100, 26);
             this.layoutControlItem4.MinSize = new System.Drawing.Size(100, 26);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(100, 26);
+            this.layoutControlItem4.Size = new System.Drawing.Size(100, 28);
             this.layoutControlItem4.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem4.Text = "جستجو";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
@@ -439,7 +503,7 @@
             this.emptySpaceItem1.AllowHotTrack = false;
             this.emptySpaceItem1.Location = new System.Drawing.Point(0, 0);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(665, 26);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(665, 28);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroup2
@@ -447,9 +511,9 @@
             this.layoutControlGroup2.ExpandButtonVisible = true;
             this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem5});
-            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 71);
+            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 73);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1096, 342);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(1096, 340);
             this.layoutControlGroup2.Text = "لیست شهر ها";
             // 
             // layoutControlItem5
@@ -457,7 +521,7 @@
             this.layoutControlItem5.Control = this.gcCityList;
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(1072, 297);
+            this.layoutControlItem5.Size = new System.Drawing.Size(1072, 295);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
@@ -488,11 +552,209 @@
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "عملیات";
             // 
+            // ErrorProvider
+            // 
+            this.ErrorProvider.ContainerControl = this;
+            // 
+            // fpCityDefine
+            // 
+            this.fpCityDefine.Controls.Add(this.fpCityDefine1);
+            this.fpCityDefine.Location = new System.Drawing.Point(188, 57);
+            this.fpCityDefine.Name = "fpCityDefine";
+            this.fpCityDefine.Size = new System.Drawing.Size(355, 213);
+            this.fpCityDefine.TabIndex = 5;
+            // 
+            // fpCityDefine1
+            // 
+            this.fpCityDefine1.Controls.Add(this.layoutControl2);
+            this.fpCityDefine1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fpCityDefine1.FlyoutPanel = this.fpCityDefine;
+            this.fpCityDefine1.Location = new System.Drawing.Point(0, 0);
+            this.fpCityDefine1.Name = "fpCityDefine1";
+            this.fpCityDefine1.Size = new System.Drawing.Size(355, 213);
+            this.fpCityDefine1.TabIndex = 0;
+            // 
+            // layoutControl2
+            // 
+            this.layoutControl2.Controls.Add(this.layoutControl3);
+            this.layoutControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutControl2.Location = new System.Drawing.Point(2, 2);
+            this.layoutControl2.Name = "layoutControl2";
+            this.layoutControl2.OptionsView.RightToLeftMirroringApplied = true;
+            this.layoutControl2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.layoutControl2.Root = this.layoutControlGroup4;
+            this.layoutControl2.Size = new System.Drawing.Size(351, 209);
+            this.layoutControl2.TabIndex = 0;
+            this.layoutControl2.Text = "layoutControl2";
+            // 
+            // layoutControl3
+            // 
+            this.layoutControl3.Controls.Add(this.btnSave);
+            this.layoutControl3.Controls.Add(this.btnflExit);
+            this.layoutControl3.Controls.Add(this.txtCity);
+            this.layoutControl3.Controls.Add(this.cmbflProvince);
+            this.layoutControl3.Location = new System.Drawing.Point(12, 12);
+            this.layoutControl3.Name = "layoutControl3";
+            this.layoutControl3.OptionsView.RightToLeftMirroringApplied = true;
+            this.layoutControl3.Root = this.layoutControlGroup5;
+            this.layoutControl3.Size = new System.Drawing.Size(327, 185);
+            this.layoutControl3.TabIndex = 4;
+            this.layoutControl3.Text = "layoutControl3";
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(24, 138);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(96, 22);
+            this.btnSave.StyleController = this.layoutControl3;
+            this.btnSave.TabIndex = 7;
+            this.btnSave.Text = "ذخیره";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnflExit
+            // 
+            this.btnflExit.Location = new System.Drawing.Point(124, 138);
+            this.btnflExit.Name = "btnflExit";
+            this.btnflExit.Size = new System.Drawing.Size(96, 22);
+            this.btnflExit.StyleController = this.layoutControl3;
+            this.btnflExit.TabIndex = 8;
+            this.btnflExit.Text = "خروج";
+            this.btnflExit.Click += new System.EventHandler(this.btnflExit_Click);
+            // 
+            // txtCity
+            // 
+            this.txtCity.Location = new System.Drawing.Point(24, 69);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(239, 20);
+            this.txtCity.StyleController = this.layoutControl3;
+            this.txtCity.TabIndex = 9;
+            // 
+            // cmbflProvince
+            // 
+            this.cmbflProvince.Location = new System.Drawing.Point(24, 45);
+            this.cmbflProvince.Name = "cmbflProvince";
+            this.cmbflProvince.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbflProvince.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ProvinceName", "Name1")});
+            this.cmbflProvince.Properties.DisplayMember = "ProvinceName";
+            this.cmbflProvince.Properties.NullText = "انتخاب نشده";
+            this.cmbflProvince.Size = new System.Drawing.Size(239, 20);
+            this.cmbflProvince.StyleController = this.layoutControl3;
+            this.cmbflProvince.TabIndex = 5;
+            // 
+            // layoutControlGroup5
+            // 
+            this.layoutControlGroup5.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup5.GroupBordersVisible = false;
+            this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.lcProvince,
+            this.layoutControlGroup7});
+            this.layoutControlGroup5.Name = "Root";
+            this.layoutControlGroup5.Size = new System.Drawing.Size(327, 185);
+            this.layoutControlGroup5.TextVisible = false;
+            // 
+            // lcProvince
+            // 
+            this.lcProvince.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem2,
+            this.lbCity});
+            this.lcProvince.Location = new System.Drawing.Point(0, 0);
+            this.lcProvince.Name = "lcProvince";
+            this.lcProvince.Size = new System.Drawing.Size(307, 93);
+            this.lcProvince.Text = "فرم ثبت استان و شهر";
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.Control = this.cmbflProvince;
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(283, 24);
+            this.layoutControlItem2.Text = "استان";
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(28, 13);
+            // 
+            // lbCity
+            // 
+            this.lbCity.Control = this.txtCity;
+            this.lbCity.Location = new System.Drawing.Point(0, 24);
+            this.lbCity.Name = "lbCity";
+            this.lbCity.Size = new System.Drawing.Size(283, 24);
+            this.lbCity.Text = "شهر";
+            this.lbCity.TextSize = new System.Drawing.Size(28, 13);
+            // 
+            // layoutControlGroup7
+            // 
+            this.layoutControlGroup7.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem7,
+            this.layoutControlItem8,
+            this.emptySpaceItem2});
+            this.layoutControlGroup7.Location = new System.Drawing.Point(0, 93);
+            this.layoutControlGroup7.Name = "layoutControlGroup3";
+            this.layoutControlGroup7.Size = new System.Drawing.Size(307, 72);
+            this.layoutControlGroup7.Text = "عملیات";
+            // 
+            // layoutControlItem7
+            // 
+            this.layoutControlItem7.Control = this.btnflExit;
+            this.layoutControlItem7.Location = new System.Drawing.Point(100, 0);
+            this.layoutControlItem7.MaxSize = new System.Drawing.Size(100, 26);
+            this.layoutControlItem7.MinSize = new System.Drawing.Size(100, 26);
+            this.layoutControlItem7.Name = "layoutControlItem5";
+            this.layoutControlItem7.Size = new System.Drawing.Size(100, 27);
+            this.layoutControlItem7.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem7.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem7.TextToControlDistance = 0;
+            this.layoutControlItem7.TextVisible = false;
+            // 
+            // layoutControlItem8
+            // 
+            this.layoutControlItem8.Control = this.btnSave;
+            this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem8.MaxSize = new System.Drawing.Size(100, 26);
+            this.layoutControlItem8.MinSize = new System.Drawing.Size(100, 26);
+            this.layoutControlItem8.Name = "layoutControlItem4";
+            this.layoutControlItem8.Size = new System.Drawing.Size(100, 27);
+            this.layoutControlItem8.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem8.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem8.TextToControlDistance = 0;
+            this.layoutControlItem8.TextVisible = false;
+            // 
+            // emptySpaceItem2
+            // 
+            this.emptySpaceItem2.AllowHotTrack = false;
+            this.emptySpaceItem2.Location = new System.Drawing.Point(200, 0);
+            this.emptySpaceItem2.Name = "emptySpaceItem1";
+            this.emptySpaceItem2.Size = new System.Drawing.Size(83, 27);
+            this.emptySpaceItem2.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // layoutControlGroup4
+            // 
+            this.layoutControlGroup4.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup4.GroupBordersVisible = false;
+            this.layoutControlGroup4.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem9});
+            this.layoutControlGroup4.Name = "layoutControlGroup4";
+            this.layoutControlGroup4.Size = new System.Drawing.Size(351, 209);
+            this.layoutControlGroup4.TextVisible = false;
+            // 
+            // layoutControlItem9
+            // 
+            this.layoutControlItem9.Control = this.layoutControl3;
+            this.layoutControlItem9.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem9.Name = "layoutControlItem9";
+            this.layoutControlItem9.Size = new System.Drawing.Size(331, 189);
+            this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem9.TextVisible = false;
+            // 
             // frmRegionList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1116, 684);
+            this.Controls.Add(this.fpCityDefine);
             this.Controls.Add(this.layoutControl1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
@@ -506,9 +768,9 @@
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gcCityList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvCityList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGridEdit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGridPrint)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGridDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbProvince.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
@@ -520,6 +782,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fpCityDefine)).EndInit();
+            this.fpCityDefine.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fpCityDefine1)).EndInit();
+            this.fpCityDefine1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).EndInit();
+            this.layoutControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).EndInit();
+            this.layoutControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtCity.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbflProvince.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcProvince)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbCity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -541,14 +824,14 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem btnAdd;
+        private DevExpress.XtraBars.BarButtonItem btnEdit;
+        private DevExpress.XtraBars.BarButtonItem btnDelete;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
+        private DevExpress.XtraBars.BarButtonItem btnExit;
         private DevExpress.XtraEditors.SimpleButton btnRefresh;
         private DevExpress.XtraEditors.LookUpEdit cmbProvince;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
@@ -558,11 +841,30 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnEdit;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnGridEdit;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnPrint;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnGridPrint;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnDelete;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnGridDelete;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider ErrorProvider;
+        private DevExpress.Utils.FlyoutPanel fpCityDefine;
+        private DevExpress.Utils.FlyoutPanelControl fpCityDefine1;
+        private DevExpress.XtraLayout.LayoutControl layoutControl2;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup4;
+        private DevExpress.XtraLayout.LayoutControl layoutControl3;
+        private DevExpress.XtraEditors.SimpleButton btnSave;
+        private DevExpress.XtraEditors.SimpleButton btnflExit;
+        private DevExpress.XtraEditors.TextEdit txtCity;
+        private DevExpress.XtraEditors.LookUpEdit cmbflProvince;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup5;
+        private DevExpress.XtraLayout.LayoutControlGroup lcProvince;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
+        private DevExpress.XtraLayout.LayoutControlItem lbCity;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup7;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
     }
 }

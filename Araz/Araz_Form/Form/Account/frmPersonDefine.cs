@@ -71,7 +71,7 @@ namespace Araz_Form.Form
         private void FillData()
         {
             cmbRole.Properties.DataSource = DARepository.GetAllFromView<View_Role>("SELECT * FROM dbo.View_Role", "where pkRoleID > 3 ").ToList();
-            cmbProvince.Properties.DataSource = DARepository.GetAllFromView<View_City>("SELECT * FROM dbo.View_City", "WHERE PerentCityID IS NULL").ToList();
+            cmbProvince.Properties.DataSource = DARepository.GetAllFromView<View_City>("SELECT DISTINCT(ProvinceName) , ProvinceID FROM dbo.View_City", "WHERE ParentProvinceID IS NULL").ToList();
             cmbEducation.Properties.DataSource = DARepository.GetAllFromView<View_Education>("SELECT * FROM dbo.View_Education", "").ToList();
             cmbCity.EditValue = null;
             cmbSex.Properties.DataSource = _Sex.ToList();

@@ -107,6 +107,12 @@
     <Compile Include="Form\Account\frmRoleDefine.Designer.cs">
       <DependentUpon>frmRoleDefine.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\Account\frmSearchPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Account\frmSearchPerson.Designer.cs">
+      <DependentUpon>frmSearchPerson.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\FrmMainDashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Account\frmRoleDefine.resx">
       <DependentUpon>frmRoleDefine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Account\frmSearchPerson.resx">
+      <DependentUpon>frmSearchPerson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FrmMainDashBoard.resx">
       <DependentUpon>FrmMainDashBoard.cs</DependentUpon>

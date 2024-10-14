@@ -147,5 +147,12 @@ namespace ArazWin
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void btnProduct_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmProductList frm = new frmProductList();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

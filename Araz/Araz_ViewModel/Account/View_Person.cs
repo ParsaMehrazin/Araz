@@ -5,6 +5,7 @@ namespace Araz_ViewModel
 {
     public class View_Person :BaseLogResponseViewModel
     {
+        public bool Selected { get; set; }
         public long pkPersonID { get; set; }                    //-----آی دی مشتری
         public string PersonName { get; set; }                   //-----نام 
         public string PersonLastName { get; set; }               //-----نام خانوادگی

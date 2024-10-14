@@ -35,7 +35,7 @@
             this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
             this.BuyButton = new DevExpress.XtraBars.BarButtonItem();
             this.SellButton = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnProduct = new DevExpress.XtraBars.BarButtonItem();
             this.btnPerson = new DevExpress.XtraBars.BarButtonItem();
             this.btnProvince = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -85,7 +85,7 @@
             this.barButtonGroup1,
             this.BuyButton,
             this.SellButton,
-            this.barButtonItem4,
+            this.btnProduct,
             this.btnPerson,
             this.btnProvince});
             this.MainRibbonControl.Location = new System.Drawing.Point(0, 0);
@@ -155,13 +155,14 @@
             this.SellButton.ImageOptions.LargeImage = global::ArazWin.Properties.Resources.addfooter_32x32;
             this.SellButton.Name = "SellButton";
             // 
-            // barButtonItem4
+            // btnProduct
             // 
-            this.barButtonItem4.Caption = "انتخاب کالا";
-            this.barButtonItem4.Id = 5;
-            this.barButtonItem4.ImageOptions.Image = global::ArazWin.Properties.Resources.newtask_16x16;
-            this.barButtonItem4.ImageOptions.LargeImage = global::ArazWin.Properties.Resources.newtask_32x32;
-            this.barButtonItem4.Name = "barButtonItem4";
+            this.btnProduct.Caption = "محصولات";
+            this.btnProduct.Id = 5;
+            this.btnProduct.ImageOptions.Image = global::ArazWin.Properties.Resources.newtask_16x16;
+            this.btnProduct.ImageOptions.LargeImage = global::ArazWin.Properties.Resources.newtask_32x32;
+            this.btnProduct.Name = "btnProduct";
+            this.btnProduct.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnProduct_ItemClick);
             // 
             // btnPerson
             // 
@@ -243,7 +244,7 @@
             // ribbonPageGroup12
             // 
             this.ribbonPageGroup12.AllowTextClipping = false;
-            this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem4);
+            this.ribbonPageGroup12.ItemLinks.Add(this.btnProduct);
             this.ribbonPageGroup12.Name = "ribbonPageGroup12";
             this.ribbonPageGroup12.Text = "ثبت کالای جدید";
             // 
@@ -442,7 +443,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
         private DevExpress.XtraBars.BarButtonItem BuyButton;
         private DevExpress.XtraBars.BarButtonItem SellButton;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem btnProduct;
         private DevExpress.XtraBars.BarButtonItem btnPerson;
         private DevExpress.XtraBars.BarButtonItem btnProvince;
     }

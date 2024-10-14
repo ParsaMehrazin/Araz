@@ -322,6 +322,7 @@
             this.btnPrintList.ImageOptions.Image = global::Araz_Form.Properties.Resources.printer_16x16;
             this.btnPrintList.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.printer_32x32;
             this.btnPrintList.Name = "btnPrintList";
+            this.btnPrintList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPrintList_ItemClick);
             // 
             // btnPrintDetails
             // 
@@ -808,6 +809,7 @@
             // 
             // layoutControlGroup1
             // 
+            this.layoutControlGroup1.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1,
             this.layoutControlItem2,
@@ -846,6 +848,7 @@
             // layoutControlGroup2
             // 
             this.layoutControlGroup2.ExpandButtonVisible = true;
+            this.layoutControlGroup2.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem4});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 73);
@@ -865,6 +868,7 @@
             // layoutControlGroup3
             // 
             this.layoutControlGroup3.ExpandButtonVisible = true;
+            this.layoutControlGroup3.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem3});
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 347);
@@ -896,7 +900,7 @@
             // fpPersonDefine
             // 
             this.fpPersonDefine.Controls.Add(this.flyoutPanelControl1);
-            this.fpPersonDefine.Location = new System.Drawing.Point(535, 88);
+            this.fpPersonDefine.Location = new System.Drawing.Point(188, 65);
             this.fpPersonDefine.Name = "fpPersonDefine";
             this.fpPersonDefine.Size = new System.Drawing.Size(575, 364);
             this.fpPersonDefine.TabIndex = 5;
@@ -1124,6 +1128,7 @@
             // 
             // layoutControlGroup6
             // 
+            this.layoutControlGroup6.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup6.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem21,
             this.emptySpaceItem3,
@@ -1162,6 +1167,7 @@
             // 
             // lcgPersonDefine
             // 
+            this.lcgPersonDefine.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.lcgPersonDefine.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup5,
             this.layoutControlItem20,
@@ -1173,6 +1179,7 @@
             // 
             // layoutControlGroup5
             // 
+            this.layoutControlGroup5.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem5,
             this.layoutControlItem6,
@@ -1453,6 +1460,7 @@
             // 
             // layoutControlGroup10
             // 
+            this.layoutControlGroup10.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup10.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem25,
             this.layoutControlItem26,
@@ -1496,6 +1504,7 @@
             // 
             // layoutControlGroup11
             // 
+            this.layoutControlGroup11.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup11.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup9});
             this.layoutControlGroup11.Location = new System.Drawing.Point(0, 0);
@@ -1505,6 +1514,7 @@
             // 
             // layoutControlGroup9
             // 
+            this.layoutControlGroup9.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup9.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem23,
             this.layoutControlItem24});
