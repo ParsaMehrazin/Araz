@@ -119,11 +119,11 @@
     <Compile Include="Form\FrmMainDashBoard.Designer.cs">
       <DependentUpon>FrmMainDashBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\Invoice\frmPurchaseInvoice.cs">
+    <Compile Include="Form\Invoice\frmProductList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Invoice\frmPurchaseInvoice.Designer.cs">
-      <DependentUpon>frmPurchaseInvoice.cs</DependentUpon>
+    <Compile Include="Form\Invoice\frmProductList.Designer.cs">
+      <DependentUpon>frmProductList.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\Region\frmCityDefine.cs">
       <SubType>Form</SubType>
@@ -169,8 +169,8 @@
     <EmbeddedResource Include="Form\FrmMainDashBoard.resx">
       <DependentUpon>FrmMainDashBoard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Invoice\frmPurchaseInvoice.resx">
-      <DependentUpon>frmPurchaseInvoice.cs</DependentUpon>
+    <EmbeddedResource Include="Form\Invoice\frmProductList.resx">
+      <DependentUpon>frmProductList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Region\frmCityDefine.resx">
       <DependentUpon>frmCityDefine.cs</DependentUpon>

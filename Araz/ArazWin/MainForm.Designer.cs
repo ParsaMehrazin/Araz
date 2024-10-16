@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.MainRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
             this.BuyButton = new DevExpress.XtraBars.BarButtonItem();
             this.SellButton = new DevExpress.XtraBars.BarButtonItem();
-            this.btnProduct = new DevExpress.XtraBars.BarButtonItem();
+            this.btnProduct2 = new DevExpress.XtraBars.BarButtonItem();
             this.btnPerson = new DevExpress.XtraBars.BarButtonItem();
             this.btnProvince = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -58,7 +57,7 @@
             this.ribbonPage14 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPage7 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -68,6 +67,7 @@
             this.ribbonPage15 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.pictureEdit = new DevExpress.XtraEditors.PictureEdit();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.btnProduct = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.MainRibbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
@@ -85,11 +85,12 @@
             this.barButtonGroup1,
             this.BuyButton,
             this.SellButton,
-            this.btnProduct,
+            this.btnProduct2,
             this.btnPerson,
-            this.btnProvince});
+            this.btnProvince,
+            this.btnProduct});
             this.MainRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.MainRibbonControl.MaxItemId = 8;
+            this.MainRibbonControl.MaxItemId = 9;
             this.MainRibbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
             this.MainRibbonControl.Name = "MainRibbonControl";
             this.MainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -108,7 +109,7 @@
             this.MainRibbonControl.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.MainRibbonControl.ShowSearchItem = true;
             this.MainRibbonControl.ShowToolbarCustomizeItem = false;
-            this.MainRibbonControl.Size = new System.Drawing.Size(1454, 162);
+            this.MainRibbonControl.Size = new System.Drawing.Size(1454, 158);
             this.MainRibbonControl.StatusBar = this.ribbonStatusBar;
             this.MainRibbonControl.Toolbar.ShowCustomizeItem = false;
             this.MainRibbonControl.Merge += new DevExpress.XtraBars.Ribbon.RibbonMergeEventHandler(this.MainRibbonControl_Merge);
@@ -116,10 +117,10 @@
             // backstageViewControl1
             // 
             this.backstageViewControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.backstageViewControl1.Location = new System.Drawing.Point(0, 162);
+            this.backstageViewControl1.Location = new System.Drawing.Point(0, 158);
             this.backstageViewControl1.Name = "backstageViewControl1";
             this.backstageViewControl1.OwnerControl = this.MainRibbonControl;
-            this.backstageViewControl1.Size = new System.Drawing.Size(1454, 576);
+            this.backstageViewControl1.Size = new System.Drawing.Size(1454, 582);
             this.backstageViewControl1.TabIndex = 3;
             this.backstageViewControl1.Text = "backstageViewControl1";
             this.backstageViewControl1.VisibleInDesignTime = true;
@@ -155,14 +156,13 @@
             this.SellButton.ImageOptions.LargeImage = global::ArazWin.Properties.Resources.addfooter_32x32;
             this.SellButton.Name = "SellButton";
             // 
-            // btnProduct
+            // btnProduct2
             // 
-            this.btnProduct.Caption = "محصولات";
-            this.btnProduct.Id = 5;
-            this.btnProduct.ImageOptions.Image = global::ArazWin.Properties.Resources.newtask_16x16;
-            this.btnProduct.ImageOptions.LargeImage = global::ArazWin.Properties.Resources.newtask_32x32;
-            this.btnProduct.Name = "btnProduct";
-            this.btnProduct.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnProduct_ItemClick);
+            this.btnProduct2.Caption = "محصولات";
+            this.btnProduct2.Id = 5;
+            this.btnProduct2.ImageOptions.Image = global::ArazWin.Properties.Resources.newtask_16x16;
+            this.btnProduct2.ImageOptions.LargeImage = global::ArazWin.Properties.Resources.newtask_32x32;
+            this.btnProduct2.Name = "btnProduct2";
             // 
             // btnPerson
             // 
@@ -244,7 +244,7 @@
             // ribbonPageGroup12
             // 
             this.ribbonPageGroup12.AllowTextClipping = false;
-            this.ribbonPageGroup12.ItemLinks.Add(this.btnProduct);
+            this.ribbonPageGroup12.ItemLinks.Add(this.btnProduct2);
             this.ribbonPageGroup12.Name = "ribbonPageGroup12";
             this.ribbonPageGroup12.Text = "ثبت کالای جدید";
             // 
@@ -271,8 +271,9 @@
             // 
             // ribbonPageGroup6
             // 
+            this.ribbonPageGroup6.ItemLinks.Add(this.btnProduct);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
-            this.ribbonPageGroup6.Text = "ribbonPageGroup6";
+            this.ribbonPageGroup6.Text = "محصولات";
             // 
             // ribbonPage12
             // 
@@ -310,10 +311,10 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 738);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 740);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.MainRibbonControl;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1454, 26);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1454, 24);
             // 
             // xtraTabbedMdiManager
             // 
@@ -361,13 +362,13 @@
             // pictureEdit
             // 
             this.pictureEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureEdit.Location = new System.Drawing.Point(0, 162);
+            this.pictureEdit.Location = new System.Drawing.Point(0, 158);
             this.pictureEdit.MenuManager = this.MainRibbonControl;
             this.pictureEdit.Name = "pictureEdit";
             this.pictureEdit.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit.Size = new System.Drawing.Size(1454, 576);
+            this.pictureEdit.Size = new System.Drawing.Size(1454, 582);
             this.pictureEdit.TabIndex = 3;
             // 
             // ribbonPageGroup9
@@ -376,6 +377,15 @@
             this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
             this.ribbonPageGroup9.Text = "تنظیمات";
+            // 
+            // btnProduct
+            // 
+            this.btnProduct.Caption = "لیست محصولات";
+            this.btnProduct.Id = 8;
+            this.btnProduct.ImageOptions.Image = global::ArazWin.Properties.Resources.newtask_16x161;
+            this.btnProduct.ImageOptions.LargeImage = global::ArazWin.Properties.Resources.newtask_32x32;
+            this.btnProduct.Name = "btnProduct";
+            this.btnProduct.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnProduct_ItemClick);
             // 
             // MainForm
             // 
@@ -443,8 +453,9 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
         private DevExpress.XtraBars.BarButtonItem BuyButton;
         private DevExpress.XtraBars.BarButtonItem SellButton;
-        private DevExpress.XtraBars.BarButtonItem btnProduct;
+        private DevExpress.XtraBars.BarButtonItem btnProduct2;
         private DevExpress.XtraBars.BarButtonItem btnPerson;
         private DevExpress.XtraBars.BarButtonItem btnProvince;
+        private DevExpress.XtraBars.BarButtonItem btnProduct;
     }
 }
