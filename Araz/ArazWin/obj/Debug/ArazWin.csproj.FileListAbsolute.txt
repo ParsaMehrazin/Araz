@@ -1,3 +1,9 @@
+D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.csproj.AssemblyReference.cache
+D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.MainForm.resources
+D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.Properties.Resources.resources
+D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.csproj.GenerateResource.cache
+D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.exe.licenses
+D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.csproj.CoreCompileInputs.cache
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\ArazWin.exe.config
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\ArazWin.exe
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\ArazWin.pdb
@@ -14,7 +20,6 @@ D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraBars.v22.2.dll
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraEditors.v22.2.dll
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraLayout.v22.2.dll
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraGrid.v22.2.dll
-D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraTreeList.v22.2.dll
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\ICSharpCode.SharpZipLib.dll
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.Drawing.v22.2.dll
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
@@ -22,6 +27,7 @@ D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.Sparkline.v22.2.Core.dll
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraPrinting.v22.2.dll
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.RichEdit.v22.2.Core.dll
+D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraTreeList.v22.2.dll
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.Office.v22.2.Core.dll
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\Araz_Form.pdb
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\Araz_Repository.pdb
@@ -35,19 +41,13 @@ D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraBars.v22.2.xml
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraEditors.v22.2.xml
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraLayout.v22.2.xml
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraGrid.v22.2.xml
-D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraTreeList.v22.2.xml
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.Sparkline.v22.2.Core.xml
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraPrinting.v22.2.xml
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.RichEdit.v22.2.Core.xml
+D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraTreeList.v22.2.xml
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.Office.v22.2.Core.xml
-D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.csproj.AssemblyReference.cache
-D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.MainForm.resources
-D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.Properties.Resources.resources
-D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.csproj.GenerateResource.cache
-D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.exe.licenses
-D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.csproj.CoreCompileInputs.cache
 D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.csproj.Up2Date
 D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.exe
 D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.pdb

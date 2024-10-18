@@ -1,4 +1,4 @@
-﻿namespace Araz_Form.Form.Account
+﻿namespace Araz_Form.Form
 {
     partial class frmPersonList
     {

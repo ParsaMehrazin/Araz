@@ -9,13 +9,13 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Windows;
 using System.Xml.Linq;
 using Utilities;
 using ViewModel.ViewModels;
 using static DevExpress.Data.Helpers.SyncHelper.ZombieContextsDetector;
 
-namespace Araz_Form.Form.Account
+namespace Araz_Form.Form
 {
     public partial class frmRoleDefine : DevExpress.XtraEditors.XtraForm
     {

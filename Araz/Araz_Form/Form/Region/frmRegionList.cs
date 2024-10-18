@@ -1,4 +1,4 @@
-﻿using Araz_Form.Form.Account;
+﻿using Araz_Form.Form;
 using Araz_ViewModel;
 using DevExpress.CodeParser;
 using DevExpress.Utils.VisualEffects;

@@ -53,7 +53,7 @@
             this.btnAdd = new DevExpress.XtraBars.BarButtonItem();
             this.btnEdit = new DevExpress.XtraBars.BarButtonItem();
             this.btnDelete = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnPrintProduct = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -233,7 +233,7 @@
             this.btnAdd,
             this.btnEdit,
             this.btnDelete,
-            this.barButtonItem4,
+            this.btnPrintProduct,
             this.barButtonItem5});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.MaxItemId = 6;
@@ -270,13 +270,14 @@
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDelete_ItemClick);
             // 
-            // barButtonItem4
+            // btnPrintProduct
             // 
-            this.barButtonItem4.Caption = "چاپ فاکتور خرید";
-            this.barButtonItem4.Id = 4;
-            this.barButtonItem4.ImageOptions.Image = global::Araz_Form.Properties.Resources.printer_16x16;
-            this.barButtonItem4.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.printer_32x32;
-            this.barButtonItem4.Name = "barButtonItem4";
+            this.btnPrintProduct.Caption = "چاپ محصولات";
+            this.btnPrintProduct.Id = 4;
+            this.btnPrintProduct.ImageOptions.Image = global::Araz_Form.Properties.Resources.printer_16x16;
+            this.btnPrintProduct.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.printer_32x32;
+            this.btnPrintProduct.Name = "btnPrintProduct";
+            this.btnPrintProduct.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPrintProduct_ItemClick);
             // 
             // barButtonItem5
             // 
@@ -298,7 +299,7 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.btnAdd);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnEdit);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnDelete);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem4);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnPrintProduct);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem5);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "عملیات";
@@ -1472,7 +1473,7 @@
         private DevExpress.XtraBars.BarButtonItem btnAdd;
         private DevExpress.XtraBars.BarButtonItem btnEdit;
         private DevExpress.XtraBars.BarButtonItem btnDelete;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem btnPrintProduct;
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.XtraLayout.LayoutControlGroup Root;

@@ -1,4 +1,4 @@
-﻿using Araz_Form.Form.Account;
+﻿using Araz_Form.Form;
 using Araz_ViewModel;
 using DevExpress.CodeParser;
 using DevExpress.XtraBars;
@@ -49,7 +49,7 @@ namespace Araz_Form
         {
 
             cmbNameGroup1.Properties.DataSource = DARepository.GetAllFromView<View_Product>("SELECT DISTINCT(NameGroup1),pkGroup1,ParentGroup1 FROM dbo.View_Product ", "").ToList();
-
+            //cmbNameGroup2.EditValue = null;
         }
         public void FillDataProduct()
         {
@@ -113,7 +113,8 @@ namespace Araz_Form
             {
                 _mod = 1;
                 fpGroup.OwnerControl = gcProductList;
-                fpGroup.ShowBeakForm(Control.MousePosition);               
+                fpGroup.ShowBeakForm(Control.MousePosition);
+                parentproduct = null;
                 cmbflGroupName.Enabled = false;
                 txtGroupLabel.Text = "گروه اصلی";
                 lcGroup.Text = "ثبت گروه اصلی جدید";
@@ -133,6 +134,7 @@ namespace Araz_Form
                 fpGroup.ShowBeakForm(Control.MousePosition);
                 product = model;
                 pkproductid = product.pkGroup1;
+                parentproduct = null;
                 txtGroup.Text = product.NameGroup1;
                 cmbflGroupName.Enabled = false;
                 txtGroupLabel.Text = "گروه اصلی";
@@ -172,7 +174,8 @@ namespace Araz_Form
                 product = model;
                 cmbflGroupName.EditValue = (cmbflGroupName.Properties.DataSource as List<View_Product>).Where(p => p.pkGroup1 == product.pkGroup1).FirstOrDefault();
                 pkproductid = model1.pkGroup2;
-                txtGroup.Text = model1.NameGroup2;               
+                txtGroup.Text = model1.NameGroup2;   
+                parentproduct=model1.ParentGroup2.ToString();
                 txtGroupLabel.Text = "گروه فرعی";
                 lcGroup.Text = "ثبت گروه فرعی جدید";
                 return true;
@@ -205,12 +208,13 @@ namespace Araz_Form
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
+         
             var item = cmbNameGroup1.EditValue as View_Product;
             var item2 = cmbNameGroup2.EditValue as View_Product;
             if (item == null || item2 == null || cmbNameGroup2.Text == "" || item.pkGroup1 == 1)
             {
                 select = "SELECT DISTINCT(ProductName),* FROM dbo.View_Product";
-                where = "WHERE parentProductID > (SELECT MAX(pkProductID) FROM dbo.Product WHERE parentProductID IS NULL )";
+                where = "WHERE parentProductID  IS NOT NULL";
             }
             else if (item != null && item2 != null)
             {
@@ -218,13 +222,15 @@ namespace Araz_Form
                 where = "WHERE ParentProductID = " + item2.pkGroup2;
             }
             gcProductList.DataSource = DARepository.GetAllFromView<View_Product>(select, where).ToList();
-            cmbNameGroup1.EditValue = null;
-            cmbNameGroup2.EditValue = null;
+      
+
         }
         public void ClearProduct()
         {
             cmbflNameGroup1.EditValue = null;
-            cmbflNameGroup2.EditValue = null;
+            //cmbflNameGroup2.EditValue = null;            
+            //cmbNameGroup1.EditValue = null;
+           // cmbNameGroup2.EditValue = null;
             txtProductName.Text = "";
             txtBarCode.Text = "";
             cmbType.EditValue = null;
@@ -378,8 +384,7 @@ namespace Araz_Form
         }
 
         private void cmbNameGroup1_Properties_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
-        {
-            ClearGroup();
+        {           
             var item = cmbNameGroup1.EditValue as View_Product;
             if (e.Button.Kind == ButtonPredefines.Plus)
             {
@@ -437,7 +442,7 @@ namespace Araz_Form
                 res = DARepository.ExcuteOperationalSP_New("dbo", "CrudProductGroup",
                    new ServiceOperatorParameter() { Name = "mod", Value = _mod },
                    new ServiceOperatorParameter() { Name = "pkProductID", Value = _mod == 1 ? "-1" : this.pkproductid.ToString() },
-                   new ServiceOperatorParameter() { Name = "parentProductID", Value = (cmbflGroupName.EditValue as View_Product) == null ? -1 : (cmbflGroupName.EditValue as View_Product).pkGroup2 },
+                   new ServiceOperatorParameter() { Name = "parentProductID", Value = parentproduct == null ? -1 : (cmbflGroupName.EditValue as View_Product).pkGroup1 },
                    new ServiceOperatorParameter() { Name = "BarCode", Value = -1 },
                    new ServiceOperatorParameter() { Name = "ProductName", Value = string.IsNullOrEmpty(txtGroup.Text) ? "" : txtGroup.Text },
                    new ServiceOperatorParameter() { Name = "fkTypeID", Value = -1 },
@@ -448,8 +453,7 @@ namespace Araz_Form
                 if (CommonTools.ShowMessage(res))
                 {
                     this._isSave = true;
-                    FillData();
-                    ClearGroup();
+                    FillData();                  
                     btnRefresh_Click(null, null);
                     fpGroup.HideBeakForm();
                 }
@@ -472,7 +476,7 @@ namespace Araz_Form
 
             if (e.Button.Kind == ButtonPredefines.Plus)
             {
-                ClearGroup();
+              
                 FillDataGroup();
                 ModOneGroup2();
                 if (this._isSave)
@@ -482,7 +486,7 @@ namespace Araz_Form
             {
                 if (e.Button.Kind == ButtonPredefines.Glyph)
                 {
-                    ClearGroup();
+                   
                     FillDataGroup();
                     ModTwoGroup2(item , item2);
                     if (this._isSave)
@@ -502,6 +506,12 @@ namespace Araz_Form
             }
             else
                 CommonTools.ShowMessage("لطفا یک گروه فرعی رو انتخاب کنید ");
+        }
+
+        private void btnPrintProduct_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmProductSearch frm = new frmProductSearch();
+            frm.ShowDialog();
         }
     }
 }

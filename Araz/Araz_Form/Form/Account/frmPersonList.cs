@@ -11,6 +11,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Forms;
 using Utilities;
 using ViewModel.ViewModels;
@@ -19,7 +20,7 @@ using static Utilities.Enums;
 
 
 
-namespace Araz_Form.Form.Account
+namespace Araz_Form.Form
 {
     public partial class frmPersonList : DevExpress.XtraBars.Ribbon.RibbonForm
     {

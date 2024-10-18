@@ -119,11 +119,17 @@
     <Compile Include="Form\FrmMainDashBoard.Designer.cs">
       <DependentUpon>FrmMainDashBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\Invoice\frmProductList.cs">
+    <Compile Include="Form\Product\frmProductList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Invoice\frmProductList.Designer.cs">
+    <Compile Include="Form\Product\frmProductList.Designer.cs">
       <DependentUpon>frmProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Product\frmProductSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Product\frmProductSearch.Designer.cs">
+      <DependentUpon>frmProductSearch.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\Region\frmCityDefine.cs">
       <SubType>Form</SubType>
@@ -169,8 +175,11 @@
     <EmbeddedResource Include="Form\FrmMainDashBoard.resx">
       <DependentUpon>FrmMainDashBoard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Invoice\frmProductList.resx">
+    <EmbeddedResource Include="Form\Product\frmProductList.resx">
       <DependentUpon>frmProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Product\frmProductSearch.resx">
+      <DependentUpon>frmProductSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Region\frmCityDefine.resx">
       <DependentUpon>frmCityDefine.cs</DependentUpon>
@@ -243,6 +252,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\printer_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Form\Invoice\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form_Refresh_16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
