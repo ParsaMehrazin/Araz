@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "D:\\Programming\\Win\\Araz\\Araz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|d:\\programming\\win\\araz\\araz\\araz_form\\form\\product\\frmproductsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\form\\product\\frmproductsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|D:\\Programming\\Win\\Araz\\Araz\\araz_form\\form\\product\\frmsearchproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\form\\product\\frmsearchproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|d:\\programming\\win\\araz\\araz\\araz_form\\form\\product\\frmsearchproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\form\\product\\frmsearchproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|D:\\Programming\\Win\\Araz\\Araz\\araz_form\\form\\product\\frmproductlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\form\\product\\frmproductlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|d:\\programming\\win\\araz\\araz\\araz_form\\form\\product\\frmproductsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\form\\product\\frmproductsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|d:\\programming\\win\\araz\\araz\\araz_form\\form\\product\\frmproductlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|D:\\Programming\\Win\\Araz\\Araz\\araz_form\\form\\product\\frmproductlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\form\\product\\frmproductlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|d:\\programming\\win\\araz\\araz\\araz_form\\form\\product\\frmproductsearch.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\form\\product\\frmproductsearch.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|d:\\programming\\win\\araz\\araz\\araz_form\\form\\product\\frmproductdefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\form\\product\\frmproductdefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|d:\\programming\\win\\araz\\araz\\araz_form\\form\\product\\frmproductdefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F9D13464-5A7D-4C44-9821-5E9AA6060D70}|Araz_Form\\Araz_Form.csproj|solutionrelative:araz_form\\form\\product\\frmproductdefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 170,
-          "SelectedChildIndex": 31,
+          "SelectedChildIndex": 32,
           "Children": [
             {
               "$type": "Bookmark",
@@ -147,15 +151,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "frmProductSearch.Designer.cs",
-              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Product\\frmProductSearch.Designer.cs",
-              "RelativeDocumentMoniker": "Araz_Form\\Form\\Product\\frmProductSearch.Designer.cs",
-              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Product\\frmProductSearch.Designer.cs",
-              "RelativeToolTip": "Araz_Form\\Form\\Product\\frmProductSearch.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
+              "Title": "frmProductDefine.cs",
+              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Product\\frmProductDefine.cs",
+              "RelativeDocumentMoniker": "Araz_Form\\Form\\Product\\frmProductDefine.cs",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Product\\frmProductDefine.cs",
+              "RelativeToolTip": "Araz_Form\\Form\\Product\\frmProductDefine.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAIwK8AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T13:56:00.661Z",
+              "WhenOpened": "2024-10-19T15:16:11.7Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmProductDefine.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Product\\frmProductDefine.cs",
+              "RelativeDocumentMoniker": "Araz_Form\\Form\\Product\\frmProductDefine.cs",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Product\\frmProductDefine.cs [Design]",
+              "RelativeToolTip": "Araz_Form\\Form\\Product\\frmProductDefine.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T15:15:48.978Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -165,46 +181,46 @@
               "RelativeDocumentMoniker": "Araz_Form\\Form\\Product\\frmProductList.cs",
               "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Product\\frmProductList.cs",
               "RelativeToolTip": "Araz_Form\\Form\\Product\\frmProductList.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAECAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAALkAAAAAAAAAAAAiwAACAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:43:11.872Z",
+              "WhenOpened": "2024-10-19T06:00:16.838Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmProductSearch.cs",
-              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Product\\frmProductSearch.cs",
-              "RelativeDocumentMoniker": "Araz_Form\\Form\\Product\\frmProductSearch.cs",
-              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Product\\frmProductSearch.cs",
-              "RelativeToolTip": "Araz_Form\\Form\\Product\\frmProductSearch.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "frmSearchProduct.cs [Design]",
+              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Product\\frmSearchProduct.cs",
+              "RelativeDocumentMoniker": "Araz_Form\\Form\\Product\\frmSearchProduct.cs",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Product\\frmSearchProduct.cs [Design]",
+              "RelativeToolTip": "Araz_Form\\Form\\Product\\frmSearchProduct.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T05:41:39.497Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmSearchProduct.cs",
+              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Product\\frmSearchProduct.cs",
+              "RelativeDocumentMoniker": "Araz_Form\\Form\\Product\\frmSearchProduct.cs",
+              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Product\\frmSearchProduct.cs",
+              "RelativeToolTip": "Araz_Form\\Form\\Product\\frmSearchProduct.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAwwHsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T10:42:03.325Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmProductSearch.cs [Design]",
-              "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Product\\frmProductSearch.cs",
-              "RelativeDocumentMoniker": "Araz_Form\\Form\\Product\\frmProductSearch.cs",
-              "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Product\\frmProductSearch.cs [Design]",
-              "RelativeToolTip": "Araz_Form\\Form\\Product\\frmProductSearch.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:27:20.986Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "frmProductList.cs [Design]",
               "DocumentMoniker": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Product\\frmProductList.cs",
               "RelativeDocumentMoniker": "Araz_Form\\Form\\Product\\frmProductList.cs",
               "ToolTip": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Form\\Product\\frmProductList.cs [Design]",
               "RelativeToolTip": "Araz_Form\\Form\\Product\\frmProductList.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:25:12.552Z",
+              "WhenOpened": "2024-10-19T06:00:15.188Z",
               "EditorCaption": " [Design]"
             }
           ]

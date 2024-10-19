@@ -31,8 +31,6 @@ D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraTreeList.v22.2.dll
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.Office.v22.2.Core.dll
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\Araz_Form.pdb
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\Araz_Repository.pdb
-D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\Araz_Utilities.pdb
-D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\Araz_ViewModel.pdb
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.Data.v22.2.xml
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.Printing.v22.2.Core.xml
@@ -51,3 +49,5 @@ D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.Office.v22.2.Core.xml
 D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.csproj.Up2Date
 D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.exe
 D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.pdb
+D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\Araz_Utilities.pdb
+D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\Araz_ViewModel.pdb

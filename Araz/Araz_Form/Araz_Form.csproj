@@ -119,17 +119,23 @@
     <Compile Include="Form\FrmMainDashBoard.Designer.cs">
       <DependentUpon>FrmMainDashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\Product\frmProductDefine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Product\frmProductDefine.Designer.cs">
+      <DependentUpon>frmProductDefine.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\Product\frmProductList.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\Product\frmProductList.Designer.cs">
       <DependentUpon>frmProductList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\Product\frmProductSearch.cs">
+    <Compile Include="Form\Product\frmSearchProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Product\frmProductSearch.Designer.cs">
-      <DependentUpon>frmProductSearch.cs</DependentUpon>
+    <Compile Include="Form\Product\frmSearchProduct.Designer.cs">
+      <DependentUpon>frmSearchProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\Region\frmCityDefine.cs">
       <SubType>Form</SubType>
@@ -175,11 +181,14 @@
     <EmbeddedResource Include="Form\FrmMainDashBoard.resx">
       <DependentUpon>FrmMainDashBoard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\Product\frmProductDefine.resx">
+      <DependentUpon>frmProductDefine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\Product\frmProductList.resx">
       <DependentUpon>frmProductList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Product\frmProductSearch.resx">
-      <DependentUpon>frmProductSearch.cs</DependentUpon>
+    <EmbeddedResource Include="Form\Product\frmSearchProduct.resx">
+      <DependentUpon>frmSearchProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Region\frmCityDefine.resx">
       <DependentUpon>frmCityDefine.cs</DependentUpon>

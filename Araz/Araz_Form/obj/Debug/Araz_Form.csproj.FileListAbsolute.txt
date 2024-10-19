@@ -59,8 +59,6 @@ D:\Programming\Win\Araz\Araz\Araz_Form\bin\Debug\DevExpress.XtraDiagram.v22.2.dl
 D:\Programming\Win\Araz\Araz\Araz_Form\bin\Debug\DevExpress.Diagram.v22.2.Core.dll
 D:\Programming\Win\Araz\Araz\Araz_Form\bin\Debug\DevExpress.Images.v22.2.dll
 D:\Programming\Win\Araz\Araz\Araz_Form\bin\Debug\Araz_Repository.pdb
-D:\Programming\Win\Araz\Araz\Araz_Form\bin\Debug\Araz_Utilities.pdb
-D:\Programming\Win\Araz\Araz\Araz_Form\bin\Debug\Araz_ViewModel.pdb
 D:\Programming\Win\Araz\Araz\Araz_Form\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
 D:\Programming\Win\Araz\Araz\Araz_Form\bin\Debug\DevExpress.Data.v22.2.xml
 D:\Programming\Win\Araz\Araz\Araz_Form\bin\Debug\DevExpress.Printing.v22.2.Core.xml
@@ -102,4 +100,7 @@ D:\Programming\Win\Araz\Araz\Araz_Form\bin\Debug\DevExpress.Diagram.v22.2.Core.x
 D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.csproj.Up2Date
 D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.dll
 D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.pdb
-D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.frmProductSearch.resources
+D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.frmSearchProduct.resources
+D:\Programming\Win\Araz\Araz\Araz_Form\bin\Debug\Araz_Utilities.pdb
+D:\Programming\Win\Araz\Araz\Araz_Form\bin\Debug\Araz_ViewModel.pdb
+D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.Form.Product.frmProductDefine.resources

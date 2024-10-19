@@ -510,7 +510,7 @@ namespace Araz_Form
 
         private void btnPrintProduct_ItemClick(object sender, ItemClickEventArgs e)
         {
-            frmProductSearch frm = new frmProductSearch();
+            frmSearchProduct frm = new frmSearchProduct(false);
             frm.ShowDialog();
         }
     }
