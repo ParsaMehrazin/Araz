@@ -21,12 +21,15 @@ namespace Araz_Form
     {
         
         public List<View_Product> SelectedProducts = new List<View_Product>();
+        View_Product product = new View_Product();
         private bool singleSelect = false;
 
-        public frmSearchProduct(bool SingleSelect)
+        public frmSearchProduct(bool SingleSelect )
         {
             InitializeComponent();
+           // product = model;
             FillData();        
+            
             singleSelect = SingleSelect;
             if (singleSelect)
             {
@@ -43,7 +46,15 @@ namespace Araz_Form
                lcgSelectedProduct.ExpandButtonVisible = true;
             }
         }
-
+        private void FillData()
+        {
+            var select = "";
+            var where = " Where 1 = 1 ";
+            select = "SELECT DISTINCT(NameGroup2),NameGroup1,pkGroup1,pkGroup2 FROM dbo.View_Product";
+            where = "WHERE pkGroup1 = ParentGroup2 OR pkGroup1=1";
+            cmbGroup.Properties.DataSource = DARepository.GetAllFromView<View_Product>(select, where).ToList();
+       
+        }
 
 
 
@@ -96,15 +107,7 @@ namespace Araz_Form
         }
 
 
-        private void FillData()
-        {
-            var select = "";
-            var where = " Where 1 = 1 ";
-            select = "SELECT DISTINCT(NameGroup2),NameGroup1,pkGroup1,pkGroup2 FROM dbo.View_Product";
-            where = "WHERE pkGroup1 = ParentGroup2 OR pkGroup1=1";
-            cmbGroup.Properties.DataSource = DARepository.GetAllFromView<View_Product>(select, where).ToList();
 
-        }
 
         private void treeListLookUpEdit1TreeList_CustomDrawNodeIndicator_1(object sender, DevExpress.XtraTreeList.CustomDrawNodeIndicatorEventArgs e)
         {

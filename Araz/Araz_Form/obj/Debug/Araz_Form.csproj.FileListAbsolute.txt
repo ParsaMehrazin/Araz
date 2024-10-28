@@ -1,6 +1,5 @@
 D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.csproj.AssemblyReference.cache
 D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.Form.frmPersonDefine.resources
-D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.Form.frmPersonList.resources
 D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.Form.frmRoleDefine.resources
 D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.Form.frmSearchPerson.resources
 D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.frmMainDashboard.resources
@@ -104,3 +103,6 @@ D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.frmSearchProduct.reso
 D:\Programming\Win\Araz\Araz\Araz_Form\bin\Debug\Araz_Utilities.pdb
 D:\Programming\Win\Araz\Araz\Araz_Form\bin\Debug\Araz_ViewModel.pdb
 D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.Form.Product.frmProductDefine.resources
+D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.Form.Invoice.frmInvoiceBuyDefine.resources
+D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.frmPersonList.resources
+D:\Programming\Win\Araz\Araz\Araz_Form\obj\Debug\Araz_Form.Form.frmInvoiceList.resources

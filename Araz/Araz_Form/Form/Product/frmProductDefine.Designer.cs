@@ -30,35 +30,44 @@
         {
             this.components = new System.ComponentModel.Container();
             this.layoutControl3 = new DevExpress.XtraLayout.LayoutControl();
-            this.txtCountOne = new DevExpress.XtraEditors.TextEdit();
-            this.txtProductName = new DevExpress.XtraEditors.TextEdit();
-            this.txtBarCode = new DevExpress.XtraEditors.TextEdit();
-            this.txtBuy = new DevExpress.XtraEditors.TextEdit();
-            this.txtSell = new DevExpress.XtraEditors.TextEdit();
             this.btnExit = new DevExpress.XtraEditors.SimpleButton();
             this.btnSaveProduct = new DevExpress.XtraEditors.SimpleButton();
-            this.cmbNameGroup1 = new DevExpress.XtraEditors.LookUpEdit();
-            this.cmbNameGroup2 = new DevExpress.XtraEditors.LookUpEdit();
-            this.cmbType = new DevExpress.XtraEditors.LookUpEdit();
             this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup7 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtProductName1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup8 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.txtCountOne1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup9 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem22 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem23 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.splitterItem2 = new DevExpress.XtraLayout.SplitterItem();
             this.ErrorProvider = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.txtCountOne = new DevExpress.XtraEditors.TextEdit();
+            this.txtProductName = new DevExpress.XtraEditors.TextEdit();
+            this.txtBarCode = new DevExpress.XtraEditors.TextEdit();
+            this.txtBuy = new DevExpress.XtraEditors.TextEdit();
+            this.txtSell = new DevExpress.XtraEditors.TextEdit();
+            this.cmbNameGroup1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.cmbNameGroup2 = new DevExpress.XtraEditors.LookUpEdit();
+            this.cmbType = new DevExpress.XtraEditors.LookUpEdit();
+            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txtProductName1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txtCountOne1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).BeginInit();
             this.layoutControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCountOne.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtProductName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBarCode.Properties)).BeginInit();
@@ -67,23 +76,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbNameGroup1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbNameGroup2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbType.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtProductName1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCountOne1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl3
@@ -108,46 +108,6 @@
             this.layoutControl3.TabIndex = 5;
             this.layoutControl3.Text = "layoutControl3";
             // 
-            // txtCountOne
-            // 
-            this.txtCountOne.Location = new System.Drawing.Point(24, 69);
-            this.txtCountOne.Name = "txtCountOne";
-            this.txtCountOne.Size = new System.Drawing.Size(192, 20);
-            this.txtCountOne.StyleController = this.layoutControl3;
-            this.txtCountOne.TabIndex = 5;
-            // 
-            // txtProductName
-            // 
-            this.txtProductName.Location = new System.Drawing.Point(347, 93);
-            this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(209, 20);
-            this.txtProductName.StyleController = this.layoutControl3;
-            this.txtProductName.TabIndex = 7;
-            // 
-            // txtBarCode
-            // 
-            this.txtBarCode.Location = new System.Drawing.Point(347, 117);
-            this.txtBarCode.Name = "txtBarCode";
-            this.txtBarCode.Size = new System.Drawing.Size(209, 20);
-            this.txtBarCode.StyleController = this.layoutControl3;
-            this.txtBarCode.TabIndex = 9;
-            // 
-            // txtBuy
-            // 
-            this.txtBuy.Location = new System.Drawing.Point(24, 93);
-            this.txtBuy.Name = "txtBuy";
-            this.txtBuy.Size = new System.Drawing.Size(192, 20);
-            this.txtBuy.StyleController = this.layoutControl3;
-            this.txtBuy.TabIndex = 13;
-            // 
-            // txtSell
-            // 
-            this.txtSell.Location = new System.Drawing.Point(24, 117);
-            this.txtSell.Name = "txtSell";
-            this.txtSell.Size = new System.Drawing.Size(192, 20);
-            this.txtSell.StyleController = this.layoutControl3;
-            this.txtSell.TabIndex = 14;
-            // 
             // btnExit
             // 
             this.btnExit.Location = new System.Drawing.Point(124, 186);
@@ -167,49 +127,6 @@
             this.btnSaveProduct.TabIndex = 20;
             this.btnSaveProduct.Text = "ذخیره";
             this.btnSaveProduct.Click += new System.EventHandler(this.btnSaveProduct_Click);
-            // 
-            // cmbNameGroup1
-            // 
-            this.cmbNameGroup1.Location = new System.Drawing.Point(347, 45);
-            this.cmbNameGroup1.Name = "cmbNameGroup1";
-            this.cmbNameGroup1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbNameGroup1.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NameGroup1", "گروه اصلی")});
-            this.cmbNameGroup1.Properties.DisplayMember = "NameGroup1";
-            this.cmbNameGroup1.Properties.NullText = "انتخاب نشده";
-            this.cmbNameGroup1.Size = new System.Drawing.Size(209, 20);
-            this.cmbNameGroup1.StyleController = this.layoutControl3;
-            this.cmbNameGroup1.TabIndex = 4;
-            this.cmbNameGroup1.EditValueChanged += new System.EventHandler(this.cmbNameGroup1_EditValueChanged);
-            // 
-            // cmbNameGroup2
-            // 
-            this.cmbNameGroup2.Location = new System.Drawing.Point(347, 69);
-            this.cmbNameGroup2.Name = "cmbNameGroup2";
-            this.cmbNameGroup2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbNameGroup2.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NameGroup2", "گروه فرعی")});
-            this.cmbNameGroup2.Properties.DisplayMember = "NameGroup2";
-            this.cmbNameGroup2.Properties.NullText = "انتخاب نشده";
-            this.cmbNameGroup2.Size = new System.Drawing.Size(209, 20);
-            this.cmbNameGroup2.StyleController = this.layoutControl3;
-            this.cmbNameGroup2.TabIndex = 8;
-            // 
-            // cmbType
-            // 
-            this.cmbType.Location = new System.Drawing.Point(24, 45);
-            this.cmbType.Name = "cmbType";
-            this.cmbType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbType.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("TypeName", "واحد")});
-            this.cmbType.Properties.DisplayMember = "TypeName";
-            this.cmbType.Properties.NullText = "انتخاب نشده";
-            this.cmbType.Size = new System.Drawing.Size(192, 20);
-            this.cmbType.StyleController = this.layoutControl3;
-            this.cmbType.TabIndex = 10;
             // 
             // layoutControlGroup6
             // 
@@ -237,42 +154,6 @@
             this.layoutControlGroup7.Size = new System.Drawing.Size(330, 141);
             this.layoutControlGroup7.Text = "مشخصات محصول";
             // 
-            // layoutControlItem7
-            // 
-            this.layoutControlItem7.Control = this.cmbNameGroup1;
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(306, 24);
-            this.layoutControlItem7.Text = "گروه اصلی";
-            this.layoutControlItem7.TextSize = new System.Drawing.Size(81, 13);
-            // 
-            // txtProductName1
-            // 
-            this.txtProductName1.Control = this.txtProductName;
-            this.txtProductName1.Location = new System.Drawing.Point(0, 48);
-            this.txtProductName1.Name = "txtProductName1";
-            this.txtProductName1.Size = new System.Drawing.Size(306, 24);
-            this.txtProductName1.Text = "نام کالا";
-            this.txtProductName1.TextSize = new System.Drawing.Size(81, 13);
-            // 
-            // layoutControlItem11
-            // 
-            this.layoutControlItem11.Control = this.cmbNameGroup2;
-            this.layoutControlItem11.Location = new System.Drawing.Point(0, 24);
-            this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.Size = new System.Drawing.Size(306, 24);
-            this.layoutControlItem11.Text = "گروه فرعی";
-            this.layoutControlItem11.TextSize = new System.Drawing.Size(81, 13);
-            // 
-            // layoutControlItem12
-            // 
-            this.layoutControlItem12.Control = this.txtBarCode;
-            this.layoutControlItem12.Location = new System.Drawing.Point(0, 72);
-            this.layoutControlItem12.Name = "layoutControlItem12";
-            this.layoutControlItem12.Size = new System.Drawing.Size(306, 24);
-            this.layoutControlItem12.Text = "بارکد";
-            this.layoutControlItem12.TextSize = new System.Drawing.Size(81, 13);
-            // 
             // layoutControlGroup8
             // 
             this.layoutControlGroup8.GroupStyle = DevExpress.Utils.GroupStyle.Light;
@@ -285,43 +166,6 @@
             this.layoutControlGroup8.Name = "layoutControlGroup8";
             this.layoutControlGroup8.Size = new System.Drawing.Size(313, 141);
             this.layoutControlGroup8.Text = "قیمت";
-            // 
-            // txtCountOne1
-            // 
-            this.txtCountOne1.Control = this.txtCountOne;
-            this.txtCountOne1.Location = new System.Drawing.Point(0, 24);
-            this.txtCountOne1.Name = "txtCountOne1";
-            this.txtCountOne1.Size = new System.Drawing.Size(289, 24);
-            this.txtCountOne1.Text = "تعداد اولیه";
-            this.txtCountOne1.TextSize = new System.Drawing.Size(81, 13);
-            // 
-            // layoutControlItem16
-            // 
-            this.layoutControlItem16.Control = this.txtBuy;
-            this.layoutControlItem16.CustomizationFormText = "قیمت خرید ";
-            this.layoutControlItem16.Location = new System.Drawing.Point(0, 48);
-            this.layoutControlItem16.Name = "layoutControlItem16";
-            this.layoutControlItem16.Size = new System.Drawing.Size(289, 24);
-            this.layoutControlItem16.Text = "قیمت خرید اولیه";
-            this.layoutControlItem16.TextSize = new System.Drawing.Size(81, 13);
-            // 
-            // layoutControlItem17
-            // 
-            this.layoutControlItem17.Control = this.txtSell;
-            this.layoutControlItem17.Location = new System.Drawing.Point(0, 72);
-            this.layoutControlItem17.Name = "layoutControlItem17";
-            this.layoutControlItem17.Size = new System.Drawing.Size(289, 24);
-            this.layoutControlItem17.Text = "قیمت فروش اولیه";
-            this.layoutControlItem17.TextSize = new System.Drawing.Size(81, 13);
-            // 
-            // layoutControlItem13
-            // 
-            this.layoutControlItem13.Control = this.cmbType;
-            this.layoutControlItem13.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem13.Name = "layoutControlItem13";
-            this.layoutControlItem13.Size = new System.Drawing.Size(289, 24);
-            this.layoutControlItem13.Text = "واحد";
-            this.layoutControlItem13.TextSize = new System.Drawing.Size(81, 13);
             // 
             // layoutControlGroup9
             // 
@@ -380,6 +224,162 @@
             // 
             this.ErrorProvider.ContainerControl = this;
             // 
+            // txtCountOne
+            // 
+            this.txtCountOne.Location = new System.Drawing.Point(24, 69);
+            this.txtCountOne.Name = "txtCountOne";
+            this.txtCountOne.Size = new System.Drawing.Size(192, 20);
+            this.txtCountOne.StyleController = this.layoutControl3;
+            this.txtCountOne.TabIndex = 5;
+            // 
+            // txtProductName
+            // 
+            this.txtProductName.Location = new System.Drawing.Point(347, 93);
+            this.txtProductName.Name = "txtProductName";
+            this.txtProductName.Size = new System.Drawing.Size(209, 20);
+            this.txtProductName.StyleController = this.layoutControl3;
+            this.txtProductName.TabIndex = 7;
+            // 
+            // txtBarCode
+            // 
+            this.txtBarCode.Location = new System.Drawing.Point(347, 117);
+            this.txtBarCode.Name = "txtBarCode";
+            this.txtBarCode.Size = new System.Drawing.Size(209, 20);
+            this.txtBarCode.StyleController = this.layoutControl3;
+            this.txtBarCode.TabIndex = 9;
+            // 
+            // txtBuy
+            // 
+            this.txtBuy.Location = new System.Drawing.Point(24, 93);
+            this.txtBuy.Name = "txtBuy";
+            this.txtBuy.Size = new System.Drawing.Size(192, 20);
+            this.txtBuy.StyleController = this.layoutControl3;
+            this.txtBuy.TabIndex = 13;
+            // 
+            // txtSell
+            // 
+            this.txtSell.Location = new System.Drawing.Point(24, 117);
+            this.txtSell.Name = "txtSell";
+            this.txtSell.Size = new System.Drawing.Size(192, 20);
+            this.txtSell.StyleController = this.layoutControl3;
+            this.txtSell.TabIndex = 14;
+            // 
+            // cmbNameGroup1
+            // 
+            this.cmbNameGroup1.Location = new System.Drawing.Point(347, 45);
+            this.cmbNameGroup1.Name = "cmbNameGroup1";
+            this.cmbNameGroup1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbNameGroup1.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NameGroup1", "گروه اصلی")});
+            this.cmbNameGroup1.Properties.DisplayMember = "NameGroup1";
+            this.cmbNameGroup1.Properties.NullText = "انتخاب نشده";
+            this.cmbNameGroup1.Size = new System.Drawing.Size(209, 20);
+            this.cmbNameGroup1.StyleController = this.layoutControl3;
+            this.cmbNameGroup1.TabIndex = 4;
+            this.cmbNameGroup1.EditValueChanged += new System.EventHandler(this.cmbNameGroup1_EditValueChanged);
+            // 
+            // cmbNameGroup2
+            // 
+            this.cmbNameGroup2.Location = new System.Drawing.Point(347, 69);
+            this.cmbNameGroup2.Name = "cmbNameGroup2";
+            this.cmbNameGroup2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbNameGroup2.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NameGroup2", "گروه فرعی")});
+            this.cmbNameGroup2.Properties.DisplayMember = "NameGroup2";
+            this.cmbNameGroup2.Properties.NullText = "انتخاب نشده";
+            this.cmbNameGroup2.Size = new System.Drawing.Size(209, 20);
+            this.cmbNameGroup2.StyleController = this.layoutControl3;
+            this.cmbNameGroup2.TabIndex = 8;
+            // 
+            // cmbType
+            // 
+            this.cmbType.Location = new System.Drawing.Point(24, 45);
+            this.cmbType.Name = "cmbType";
+            this.cmbType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbType.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("TypeName", "واحد")});
+            this.cmbType.Properties.DisplayMember = "TypeName";
+            this.cmbType.Properties.NullText = "انتخاب نشده";
+            this.cmbType.Size = new System.Drawing.Size(192, 20);
+            this.cmbType.StyleController = this.layoutControl3;
+            this.cmbType.TabIndex = 10;
+            // 
+            // layoutControlItem7
+            // 
+            this.layoutControlItem7.Control = this.cmbNameGroup1;
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem7.Name = "layoutControlItem7";
+            this.layoutControlItem7.Size = new System.Drawing.Size(306, 24);
+            this.layoutControlItem7.Text = "گروه اصلی";
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(81, 13);
+            // 
+            // txtProductName1
+            // 
+            this.txtProductName1.Control = this.txtProductName;
+            this.txtProductName1.Location = new System.Drawing.Point(0, 48);
+            this.txtProductName1.Name = "txtProductName1";
+            this.txtProductName1.Size = new System.Drawing.Size(306, 24);
+            this.txtProductName1.Text = "نام کالا";
+            this.txtProductName1.TextSize = new System.Drawing.Size(81, 13);
+            // 
+            // layoutControlItem11
+            // 
+            this.layoutControlItem11.Control = this.cmbNameGroup2;
+            this.layoutControlItem11.Location = new System.Drawing.Point(0, 24);
+            this.layoutControlItem11.Name = "layoutControlItem11";
+            this.layoutControlItem11.Size = new System.Drawing.Size(306, 24);
+            this.layoutControlItem11.Text = "گروه فرعی";
+            this.layoutControlItem11.TextSize = new System.Drawing.Size(81, 13);
+            // 
+            // layoutControlItem12
+            // 
+            this.layoutControlItem12.Control = this.txtBarCode;
+            this.layoutControlItem12.Location = new System.Drawing.Point(0, 72);
+            this.layoutControlItem12.Name = "layoutControlItem12";
+            this.layoutControlItem12.Size = new System.Drawing.Size(306, 24);
+            this.layoutControlItem12.Text = "بارکد";
+            this.layoutControlItem12.TextSize = new System.Drawing.Size(81, 13);
+            // 
+            // txtCountOne1
+            // 
+            this.txtCountOne1.Control = this.txtCountOne;
+            this.txtCountOne1.Location = new System.Drawing.Point(0, 24);
+            this.txtCountOne1.Name = "txtCountOne1";
+            this.txtCountOne1.Size = new System.Drawing.Size(289, 24);
+            this.txtCountOne1.Text = "تعداد اولیه";
+            this.txtCountOne1.TextSize = new System.Drawing.Size(81, 13);
+            // 
+            // layoutControlItem16
+            // 
+            this.layoutControlItem16.Control = this.txtBuy;
+            this.layoutControlItem16.CustomizationFormText = "قیمت خرید ";
+            this.layoutControlItem16.Location = new System.Drawing.Point(0, 48);
+            this.layoutControlItem16.Name = "layoutControlItem16";
+            this.layoutControlItem16.Size = new System.Drawing.Size(289, 24);
+            this.layoutControlItem16.Text = "قیمت خرید اولیه";
+            this.layoutControlItem16.TextSize = new System.Drawing.Size(81, 13);
+            // 
+            // layoutControlItem17
+            // 
+            this.layoutControlItem17.Control = this.txtSell;
+            this.layoutControlItem17.Location = new System.Drawing.Point(0, 72);
+            this.layoutControlItem17.Name = "layoutControlItem17";
+            this.layoutControlItem17.Size = new System.Drawing.Size(289, 24);
+            this.layoutControlItem17.Text = "قیمت فروش اولیه";
+            this.layoutControlItem17.TextSize = new System.Drawing.Size(81, 13);
+            // 
+            // layoutControlItem13
+            // 
+            this.layoutControlItem13.Control = this.cmbType;
+            this.layoutControlItem13.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem13.Name = "layoutControlItem13";
+            this.layoutControlItem13.Size = new System.Drawing.Size(289, 24);
+            this.layoutControlItem13.Text = "واحد";
+            this.layoutControlItem13.TextSize = new System.Drawing.Size(81, 13);
+            // 
             // frmProductDefine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -395,6 +395,15 @@
             this.Text = "فرم ثبت و ویرایش محصولات";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl3)).EndInit();
             this.layoutControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCountOne.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtProductName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBarCode.Properties)).EndInit();
@@ -403,23 +412,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbNameGroup1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbNameGroup2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbType.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtProductName1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCountOne1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).EndInit();
             this.ResumeLayout(false);
 
         }

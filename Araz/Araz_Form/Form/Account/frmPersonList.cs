@@ -20,7 +20,7 @@ using static Utilities.Enums;
 
 
 
-namespace Araz_Form.Form
+namespace Araz_Form
 {
     public partial class frmPersonList : DevExpress.XtraBars.Ribbon.RibbonForm
     {

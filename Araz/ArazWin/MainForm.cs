@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using Araz_Form;
 using Araz_Form.Form;
 using Araz_Form.Form.Region;
+using Araz_Form.Form.Invoice;
 
 namespace ArazWin
 {
@@ -101,6 +102,7 @@ namespace ArazWin
 
         }
 
+
         void ApplyPermission()
         {
 
@@ -131,7 +133,9 @@ namespace ArazWin
 
         private void BuyButton_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-          
+            frmInvoiceBuyDefine frm = new frmInvoiceBuyDefine();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void btnPerson_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -151,6 +155,13 @@ namespace ArazWin
         private void btnProduct_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             frmProductList frm = new frmProductList();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void btnMoeen_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmInvoiceList frm = new frmInvoiceList();
             frm.MdiParent = this;
             frm.Show();
         }

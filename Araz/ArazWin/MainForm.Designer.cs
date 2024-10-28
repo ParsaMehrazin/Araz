@@ -33,12 +33,13 @@
             this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
-            this.BuyButton = new DevExpress.XtraBars.BarButtonItem();
+            this.btnInvoiceList = new DevExpress.XtraBars.BarButtonItem();
             this.SellButton = new DevExpress.XtraBars.BarButtonItem();
             this.btnProduct2 = new DevExpress.XtraBars.BarButtonItem();
             this.btnPerson = new DevExpress.XtraBars.BarButtonItem();
             this.btnProvince = new DevExpress.XtraBars.BarButtonItem();
             this.btnProduct = new DevExpress.XtraBars.BarButtonItem();
+            this.btnMoeen = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -83,14 +84,15 @@
             this.MainRibbonControl.SearchEditItem,
             this.barButtonItem1,
             this.barButtonGroup1,
-            this.BuyButton,
+            this.btnInvoiceList,
             this.SellButton,
             this.btnProduct2,
             this.btnPerson,
             this.btnProvince,
-            this.btnProduct});
+            this.btnProduct,
+            this.btnMoeen});
             this.MainRibbonControl.Location = new System.Drawing.Point(0, 0);
-            this.MainRibbonControl.MaxItemId = 9;
+            this.MainRibbonControl.MaxItemId = 10;
             this.MainRibbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
             this.MainRibbonControl.Name = "MainRibbonControl";
             this.MainRibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -109,7 +111,7 @@
             this.MainRibbonControl.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.MainRibbonControl.ShowSearchItem = true;
             this.MainRibbonControl.ShowToolbarCustomizeItem = false;
-            this.MainRibbonControl.Size = new System.Drawing.Size(1454, 162);
+            this.MainRibbonControl.Size = new System.Drawing.Size(1456, 162);
             this.MainRibbonControl.StatusBar = this.ribbonStatusBar;
             this.MainRibbonControl.Toolbar.ShowCustomizeItem = false;
             this.MainRibbonControl.Merge += new DevExpress.XtraBars.Ribbon.RibbonMergeEventHandler(this.MainRibbonControl_Merge);
@@ -120,7 +122,7 @@
             this.backstageViewControl1.Location = new System.Drawing.Point(0, 162);
             this.backstageViewControl1.Name = "backstageViewControl1";
             this.backstageViewControl1.OwnerControl = this.MainRibbonControl;
-            this.backstageViewControl1.Size = new System.Drawing.Size(1454, 576);
+            this.backstageViewControl1.Size = new System.Drawing.Size(1456, 577);
             this.backstageViewControl1.TabIndex = 3;
             this.backstageViewControl1.Text = "backstageViewControl1";
             this.backstageViewControl1.VisibleInDesignTime = true;
@@ -139,14 +141,14 @@
             this.barButtonGroup1.Id = 2;
             this.barButtonGroup1.Name = "barButtonGroup1";
             // 
-            // BuyButton
+            // btnInvoiceList
             // 
-            this.BuyButton.Caption = "ثبت فاکتور خرید";
-            this.BuyButton.Id = 3;
-            this.BuyButton.ImageOptions.Image = global::ArazWin.Properties.Resources.addheader_16x16;
-            this.BuyButton.ImageOptions.LargeImage = global::ArazWin.Properties.Resources.addheader_32x32;
-            this.BuyButton.Name = "BuyButton";
-            this.BuyButton.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BuyButton_ItemClick);
+            this.btnInvoiceList.Caption = "ثبت فاکتور خرید";
+            this.btnInvoiceList.Id = 3;
+            this.btnInvoiceList.ImageOptions.Image = global::ArazWin.Properties.Resources.addheader_16x16;
+            this.btnInvoiceList.ImageOptions.LargeImage = global::ArazWin.Properties.Resources.addheader_32x32;
+            this.btnInvoiceList.Name = "btnInvoiceList";
+            this.btnInvoiceList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BuyButton_ItemClick);
             // 
             // SellButton
             // 
@@ -191,6 +193,13 @@
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnProduct_ItemClick);
             // 
+            // btnMoeen
+            // 
+            this.btnMoeen.Caption = "معین حساب";
+            this.btnMoeen.Id = 9;
+            this.btnMoeen.Name = "btnMoeen";
+            this.btnMoeen.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMoeen_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -225,6 +234,7 @@
             // 
             // ribbonPageGroup3
             // 
+            this.ribbonPageGroup3.ItemLinks.Add(this.btnMoeen);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "ribbonPageGroup3";
             // 
@@ -239,7 +249,7 @@
             // ribbonPageGroupn
             // 
             this.ribbonPageGroupn.AllowTextClipping = false;
-            this.ribbonPageGroupn.ItemLinks.Add(this.BuyButton);
+            this.ribbonPageGroupn.ItemLinks.Add(this.btnInvoiceList);
             this.ribbonPageGroupn.Name = "ribbonPageGroupn";
             this.ribbonPageGroupn.Text = "خرید";
             // 
@@ -312,10 +322,10 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 738);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 739);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.MainRibbonControl;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1454, 26);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1456, 26);
             // 
             // xtraTabbedMdiManager
             // 
@@ -369,7 +379,7 @@
             this.pictureEdit.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit.Size = new System.Drawing.Size(1454, 576);
+            this.pictureEdit.Size = new System.Drawing.Size(1456, 577);
             this.pictureEdit.TabIndex = 3;
             // 
             // ribbonPageGroup9
@@ -383,13 +393,15 @@
             // 
             this.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.Appearance.Options.UseBackColor = true;
+            this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1454, 764);
+            this.ClientSize = new System.Drawing.Size(1456, 765);
             this.Controls.Add(this.pictureEdit);
             this.Controls.Add(this.backstageViewControl1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.MainRibbonControl);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IconOptions.Image = global::ArazWin.Properties.Resources.LogoAraz;
             this.IsMdiContainer = true;
             this.Name = "MainForm";
@@ -442,11 +454,12 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
-        private DevExpress.XtraBars.BarButtonItem BuyButton;
+        private DevExpress.XtraBars.BarButtonItem btnInvoiceList;
         private DevExpress.XtraBars.BarButtonItem SellButton;
         private DevExpress.XtraBars.BarButtonItem btnProduct2;
         private DevExpress.XtraBars.BarButtonItem btnPerson;
         private DevExpress.XtraBars.BarButtonItem btnProvince;
         private DevExpress.XtraBars.BarButtonItem btnProduct;
+        private DevExpress.XtraBars.BarButtonItem btnMoeen;
     }
 }

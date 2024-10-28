@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions9 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject33 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject34 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject35 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject36 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions10 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject37 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject38 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject39 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject40 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions11 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject41 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject42 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject43 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject44 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions12 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject45 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject46 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject47 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject48 = new DevExpress.Utils.SerializableAppearanceObject();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.gcSelection = new DevExpress.XtraGrid.GridControl();
             this.gvSelection = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridView();
@@ -176,13 +176,13 @@
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1058, 316, 650, 400);
             this.layoutControl1.OptionsView.RightToLeftMirroringApplied = true;
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(1115, 728);
+            this.layoutControl1.Size = new System.Drawing.Size(1117, 730);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // gcSelection
             // 
-            this.gcSelection.Location = new System.Drawing.Point(24, 381);
+            this.gcSelection.Location = new System.Drawing.Point(24, 386);
             this.gcSelection.MainView = this.gvSelection;
             this.gcSelection.Name = "gcSelection";
             this.gcSelection.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
@@ -190,7 +190,7 @@
             this.repositoryItemButtonEdit6,
             this.repositoryItemButtonEdit7,
             this.btnDelete});
-            this.gcSelection.Size = new System.Drawing.Size(1067, 252);
+            this.gcSelection.Size = new System.Drawing.Size(1069, 245);
             this.gcSelection.TabIndex = 18;
             this.gcSelection.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvSelection});
@@ -472,18 +472,18 @@
             // repositoryItemButtonEdit5
             // 
             this.repositoryItemButtonEdit5.AutoHeight = false;
-            editorButtonImageOptions1.Image = global::Araz_Form.Properties.Resources.editdatasource_16x16;
+            editorButtonImageOptions9.Image = global::Araz_Form.Properties.Resources.editdatasource_16x16;
             this.repositoryItemButtonEdit5.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions9, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject33, serializableAppearanceObject34, serializableAppearanceObject35, serializableAppearanceObject36, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEdit5.Name = "repositoryItemButtonEdit5";
             this.repositoryItemButtonEdit5.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
             // repositoryItemButtonEdit6
             // 
             this.repositoryItemButtonEdit6.AutoHeight = false;
-            editorButtonImageOptions2.Image = global::Araz_Form.Properties.Resources.printer_16x16;
+            editorButtonImageOptions10.Image = global::Araz_Form.Properties.Resources.printer_16x16;
             this.repositoryItemButtonEdit6.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions10, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject37, serializableAppearanceObject38, serializableAppearanceObject39, serializableAppearanceObject40, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEdit6.Name = "repositoryItemButtonEdit6";
             this.repositoryItemButtonEdit6.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
@@ -497,7 +497,7 @@
             // 
             // gcProductList
             // 
-            this.gcProductList.Location = new System.Drawing.Point(24, 45);
+            this.gcProductList.Location = new System.Drawing.Point(24, 49);
             this.gcProductList.MainView = this.gvProductList;
             this.gcProductList.Name = "gcProductList";
             this.gcProductList.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
@@ -505,7 +505,7 @@
             this.btnGridPrint,
             this.btnGridDelete,
             this.btnSelectProductGrid});
-            this.gcProductList.Size = new System.Drawing.Size(1067, 277);
+            this.gcProductList.Size = new System.Drawing.Size(1069, 274);
             this.gcProductList.TabIndex = 5;
             this.gcProductList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvProductList});
@@ -788,18 +788,18 @@
             // btnGridEdit
             // 
             this.btnGridEdit.AutoHeight = false;
-            editorButtonImageOptions3.Image = global::Araz_Form.Properties.Resources.editdatasource_16x16;
+            editorButtonImageOptions11.Image = global::Araz_Form.Properties.Resources.editdatasource_16x16;
             this.btnGridEdit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions11, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject41, serializableAppearanceObject42, serializableAppearanceObject43, serializableAppearanceObject44, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.btnGridEdit.Name = "btnGridEdit";
             this.btnGridEdit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
             // btnGridPrint
             // 
             this.btnGridPrint.AutoHeight = false;
-            editorButtonImageOptions4.Image = global::Araz_Form.Properties.Resources.printer_16x16;
+            editorButtonImageOptions12.Image = global::Araz_Form.Properties.Resources.printer_16x16;
             this.btnGridPrint.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions12, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject45, serializableAppearanceObject46, serializableAppearanceObject47, serializableAppearanceObject48, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.btnGridPrint.Name = "btnGridPrint";
             this.btnGridPrint.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
@@ -815,7 +815,7 @@
             // 
             this.btnClearSelection.ImageOptions.Image = global::Araz_Form.Properties.Resources.clear_16x16;
             this.btnClearSelection.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnClearSelection.Location = new System.Drawing.Point(124, 682);
+            this.btnClearSelection.Location = new System.Drawing.Point(125, 684);
             this.btnClearSelection.Name = "btnClearSelection";
             this.btnClearSelection.Size = new System.Drawing.Size(96, 22);
             this.btnClearSelection.StyleController = this.layoutControl1;
@@ -827,7 +827,7 @@
             // 
             this.btnExit.ImageOptions.Image = global::Araz_Form.Properties.Resources.close_16x16;
             this.btnExit.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnExit.Location = new System.Drawing.Point(324, 682);
+            this.btnExit.Location = new System.Drawing.Point(325, 684);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(96, 22);
             this.btnExit.StyleController = this.layoutControl1;
@@ -839,7 +839,7 @@
             // 
             this.btnAddProduct.ImageOptions.Image = global::Araz_Form.Properties.Resources.add_16x16;
             this.btnAddProduct.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnAddProduct.Location = new System.Drawing.Point(224, 682);
+            this.btnAddProduct.Location = new System.Drawing.Point(225, 684);
             this.btnAddProduct.Name = "btnAddProduct";
             this.btnAddProduct.Size = new System.Drawing.Size(96, 22);
             this.btnAddProduct.StyleController = this.layoutControl1;
@@ -851,7 +851,7 @@
             // 
             this.btnRefresh.ImageOptions.Image = global::Araz_Form.Properties.Resources.Form_Refresh_16;
             this.btnRefresh.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnRefresh.Location = new System.Drawing.Point(448, 682);
+            this.btnRefresh.Location = new System.Drawing.Point(449, 684);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(96, 22);
             this.btnRefresh.StyleController = this.layoutControl1;
@@ -861,7 +861,7 @@
             // 
             // txtProductName
             // 
-            this.txtProductName.Location = new System.Drawing.Point(548, 682);
+            this.txtProductName.Location = new System.Drawing.Point(549, 684);
             this.txtProductName.Name = "txtProductName";
             this.txtProductName.Size = new System.Drawing.Size(224, 20);
             this.txtProductName.StyleController = this.layoutControl1;
@@ -871,9 +871,9 @@
             // 
             this.btnSelectProduct.ImageOptions.Image = global::Araz_Form.Properties.Resources.checkbox_16x16;
             this.btnSelectProduct.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnSelectProduct.Location = new System.Drawing.Point(24, 682);
+            this.btnSelectProduct.Location = new System.Drawing.Point(24, 684);
             this.btnSelectProduct.Name = "btnSelectProduct";
-            this.btnSelectProduct.Size = new System.Drawing.Size(96, 22);
+            this.btnSelectProduct.Size = new System.Drawing.Size(97, 22);
             this.btnSelectProduct.StyleController = this.layoutControl1;
             this.btnSelectProduct.TabIndex = 19;
             this.btnSelectProduct.Text = "انتخاب و خروج";
@@ -882,14 +882,14 @@
             // cmbGroup
             // 
             this.cmbGroup.EditValue = "انتخاب نشده";
-            this.cmbGroup.Location = new System.Drawing.Point(826, 682);
+            this.cmbGroup.Location = new System.Drawing.Point(827, 684);
             this.cmbGroup.Name = "cmbGroup";
             this.cmbGroup.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbGroup.Properties.DisplayMember = "NameGroup2";
             this.cmbGroup.Properties.NullText = "";
             this.cmbGroup.Properties.TreeList = this.treeListLookUpEdit1TreeList;
-            this.cmbGroup.Size = new System.Drawing.Size(215, 20);
+            this.cmbGroup.Size = new System.Drawing.Size(216, 20);
             this.cmbGroup.StyleController = this.layoutControl1;
             this.cmbGroup.TabIndex = 10;
             this.cmbGroup.EditValueChanged += new System.EventHandler(this.cmbGroup_EditValueChanged);
@@ -934,7 +934,7 @@
             this.layoutControlGroup4,
             this.splitterItem1});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(1115, 728);
+            this.Root.Size = new System.Drawing.Size(1117, 730);
             this.Root.TextVisible = false;
             // 
             // lcgSelectedProduct
@@ -945,7 +945,7 @@
             this.layoutControlItem1});
             this.lcgSelectedProduct.Location = new System.Drawing.Point(0, 0);
             this.lcgSelectedProduct.Name = "lcgSelectedProduct";
-            this.lcgSelectedProduct.Size = new System.Drawing.Size(1095, 326);
+            this.lcgSelectedProduct.Size = new System.Drawing.Size(1097, 327);
             this.lcgSelectedProduct.Text = "لیست محصولات";
             // 
             // layoutControlItem1
@@ -953,7 +953,7 @@
             this.layoutControlItem1.Control = this.gcProductList;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(1071, 281);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1073, 278);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -965,15 +965,15 @@
             this.layoutControlItem7,
             this.layoutControlItem5,
             this.layoutControlItem4});
-            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 637);
+            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 635);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(424, 71);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(425, 75);
             this.layoutControlGroup2.Text = "عملیات";
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.btnClearSelection;
-            this.layoutControlItem2.Location = new System.Drawing.Point(100, 0);
+            this.layoutControlItem2.Location = new System.Drawing.Point(101, 0);
             this.layoutControlItem2.MaxSize = new System.Drawing.Size(100, 26);
             this.layoutControlItem2.MinSize = new System.Drawing.Size(100, 26);
             this.layoutControlItem2.Name = "layoutControlItem2";
@@ -987,7 +987,7 @@
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.btnAddProduct;
-            this.layoutControlItem7.Location = new System.Drawing.Point(200, 0);
+            this.layoutControlItem7.Location = new System.Drawing.Point(201, 0);
             this.layoutControlItem7.MaxSize = new System.Drawing.Size(100, 26);
             this.layoutControlItem7.MinSize = new System.Drawing.Size(100, 26);
             this.layoutControlItem7.Name = "layoutControlItem7";
@@ -1001,7 +1001,7 @@
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btnExit;
-            this.layoutControlItem5.Location = new System.Drawing.Point(300, 0);
+            this.layoutControlItem5.Location = new System.Drawing.Point(301, 0);
             this.layoutControlItem5.MaxSize = new System.Drawing.Size(100, 26);
             this.layoutControlItem5.MinSize = new System.Drawing.Size(100, 26);
             this.layoutControlItem5.Name = "layoutControlItem5";
@@ -1017,7 +1017,7 @@
             this.layoutControlItem4.Control = this.btnSelectProduct;
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(100, 26);
+            this.layoutControlItem4.Size = new System.Drawing.Size(101, 26);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
@@ -1028,9 +1028,9 @@
             this.layoutControlItem3,
             this.layoutControlItem8,
             this.layoutControlItem9});
-            this.layoutControlGroup3.Location = new System.Drawing.Point(424, 637);
+            this.layoutControlGroup3.Location = new System.Drawing.Point(425, 635);
             this.layoutControlGroup3.Name = "layoutControlGroup3";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(671, 71);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(672, 75);
             this.layoutControlGroup3.Text = "جستجو";
             // 
             // layoutControlItem3
@@ -1038,7 +1038,7 @@
             this.layoutControlItem3.Control = this.cmbGroup;
             this.layoutControlItem3.Location = new System.Drawing.Point(378, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(269, 26);
+            this.layoutControlItem3.Size = new System.Drawing.Size(270, 26);
             this.layoutControlItem3.Text = "گروه کالا";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(38, 13);
             // 
@@ -1071,9 +1071,9 @@
             this.layoutControlGroup4.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup4.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem10});
-            this.layoutControlGroup4.Location = new System.Drawing.Point(0, 336);
+            this.layoutControlGroup4.Location = new System.Drawing.Point(0, 337);
             this.layoutControlGroup4.Name = "layoutControlGroup4";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(1095, 301);
+            this.layoutControlGroup4.Size = new System.Drawing.Size(1097, 298);
             this.layoutControlGroup4.Text = "لیست انتخاب شده";
             // 
             // layoutControlItem10
@@ -1081,17 +1081,17 @@
             this.layoutControlItem10.Control = this.gcSelection;
             this.layoutControlItem10.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem10.Name = "layoutControlItem10";
-            this.layoutControlItem10.Size = new System.Drawing.Size(1071, 256);
+            this.layoutControlItem10.Size = new System.Drawing.Size(1073, 249);
             this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem10.TextVisible = false;
             // 
             // splitterItem1
             // 
             this.splitterItem1.AllowHotTrack = true;
-            this.splitterItem1.Location = new System.Drawing.Point(0, 326);
+            this.splitterItem1.Location = new System.Drawing.Point(0, 327);
             this.splitterItem1.Name = "splitterItem1";
             this.splitterItem1.ShowSplitGlyph = DevExpress.Utils.DefaultBoolean.True;
-            this.splitterItem1.Size = new System.Drawing.Size(1095, 10);
+            this.splitterItem1.Size = new System.Drawing.Size(1097, 10);
             // 
             // ErrorProvider
             // 
@@ -1101,7 +1101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1115, 728);
+            this.ClientSize = new System.Drawing.Size(1117, 730);
             this.Controls.Add(this.layoutControl1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

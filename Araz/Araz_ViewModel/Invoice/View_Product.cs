@@ -21,16 +21,16 @@ namespace Araz_ViewModel
         public string ProductName { get; set; }
         public long? fkTypeID { get; set; }
         public string TypeName { get; set; }
-        public float? PriceSell { get; set; }
-        public float? PriceBuy { get; set; }
-        public float? PriceSellOne { get; set; }
-        public float? PriceBuyOne { get; set; }
-        public float? CountSell { get; set; }
-        public float? CountBuy { get; set; }
-        public float? AllPriceSell { get; set; }
-        public float? AllPriceBuy { get;set; }
-        public float? Count {  get; set; }
-        public float? CountOne { get; set; }
+        public decimal? PriceSell { get; set; }
+        public decimal? PriceBuy { get; set; }
+        public decimal? PriceSellOne { get; set; }
+        public decimal? PriceBuyOne { get; set; }
+        public decimal? CountSell { get; set; }
+        public decimal? CountBuy { get; set; }
+        public decimal? AllPriceSell { get; set; }
+        public decimal? AllPriceBuy { get;set; }
+        public decimal? Count {  get; set; }
+        public decimal? CountOne { get; set; }
         public long? pkPriceID { get; set; }
         public string Invoice { get; set; }
     }

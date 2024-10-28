@@ -119,6 +119,18 @@
     <Compile Include="Form\FrmMainDashBoard.Designer.cs">
       <DependentUpon>FrmMainDashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\Invoice\frmInvoiceBuyDefine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Invoice\frmInvoiceBuyDefine.Designer.cs">
+      <DependentUpon>frmInvoiceBuyDefine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Invoice\frmInvoiceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Invoice\frmInvoiceList.Designer.cs">
+      <DependentUpon>frmInvoiceList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\Product\frmProductDefine.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +192,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FrmMainDashBoard.resx">
       <DependentUpon>FrmMainDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Invoice\frmInvoiceBuyDefine.resx">
+      <DependentUpon>frmInvoiceBuyDefine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Invoice\frmInvoiceList.resx">
+      <DependentUpon>frmInvoiceList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Product\frmProductDefine.resx">
       <DependentUpon>frmProductDefine.cs</DependentUpon>
@@ -263,7 +281,7 @@
     <None Include="Resources\printer_16x161.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Form\Invoice\" />
+    <None Include="Resources\formatastable_16x16.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\add_32x32.png" />

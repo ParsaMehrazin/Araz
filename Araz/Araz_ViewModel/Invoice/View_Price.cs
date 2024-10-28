@@ -10,9 +10,11 @@ namespace Araz_ViewModel
     {
         public long pkPriceID { get; set; }
         public long? fkProductID { get; set; }
-        public float PriceSell { get; set; }
-        public float PriceBuy {  get; set; }    
+        public decimal PriceSell { get; set; }
+        public decimal PriceBuy {  get; set; }    
         public long? Invoice {  get; set; }
- 
+        public decimal CountBuy { get; set; }
+        public decimal CountSell { get; set; }
+
     }
 }
