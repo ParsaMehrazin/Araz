@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Utilities;
 
-namespace Araz_Form.Form
+namespace Araz_Form
 {
     public partial class frmInvoiceList : DevExpress.XtraBars.Ribbon.RibbonForm
     {

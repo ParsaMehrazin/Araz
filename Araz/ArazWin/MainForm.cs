@@ -3,9 +3,7 @@ using DevExpress.XtraSplashScreen;
 using System;
 using System.Windows.Forms;
 using Araz_Form;
-using Araz_Form.Form;
-using Araz_Form.Form.Region;
-using Araz_Form.Form.Invoice;
+
 
 namespace ArazWin
 {

@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>ArazWin</RootNamespace>
     <AssemblyName>ArazWin</AssemblyName>
-    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +34,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Araz_Form">
+      <HintPath>..\Araz_Form\bin\Debug\Araz_Form.dll</HintPath>
+    </Reference>
+    <Reference Include="Araz_Repository">
+      <HintPath>..\Araz_Repository\bin\Debug\Araz_Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="Araz_Utilities">
+      <HintPath>..\Araz_Utilities\bin\Debug\Araz_Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Araz_ViewModel">
+      <HintPath>..\Araz_ViewModel\bin\Debug\Araz_ViewModel.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.BonusSkins.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -125,24 +138,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\newtask_16x16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Araz_Form\Araz_Form.csproj">
-      <Project>{f9d13464-5a7d-4c44-9821-5e9aa6060d70}</Project>
-      <Name>Araz_Form</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Araz_Repository\Araz_Repository.csproj">
-      <Project>{ed1b5e81-b344-483a-8e97-bf568d76751d}</Project>
-      <Name>Araz_Repository</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Araz_Utilities\Araz_Utilities.csproj">
-      <Project>{d6c711c6-b1f7-4033-a5c1-2f1d7408d843}</Project>
-      <Name>Araz_Utilities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Araz_ViewModel\Araz_ViewModel.csproj">
-      <Project>{3402047b-b73b-4db1-be7f-b49b93bbe5ae}</Project>
-      <Name>Araz_ViewModel</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\addfooter_16x16.png" />

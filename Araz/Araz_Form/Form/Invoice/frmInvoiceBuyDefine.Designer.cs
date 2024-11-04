@@ -1,4 +1,4 @@
-﻿namespace Araz_Form.Form.Invoice
+﻿namespace Araz_Form
 {
     partial class frmInvoiceBuyDefine
     {

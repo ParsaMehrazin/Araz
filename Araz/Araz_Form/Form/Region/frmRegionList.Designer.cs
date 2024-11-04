@@ -1,4 +1,4 @@
-﻿namespace Araz_Form.Form.Region
+﻿namespace Araz_Form
 {
     partial class frmRegionList
     {

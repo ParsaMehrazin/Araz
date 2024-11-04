@@ -1,4 +1,4 @@
-﻿namespace Araz_Form.Form
+﻿namespace Araz_Form
 {
     partial class frmInvoiceList
     {

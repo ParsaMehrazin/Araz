@@ -15,7 +15,7 @@ using System.Windows.Forms;
 using Utilities;
 //using static DevExpress.Data.Utils.AsyncDownloader<Value>.LifeTime;
 
-namespace Araz_Form.Form.Invoice
+namespace Araz_Form
 {
     public partial class frmInvoiceBuyDefine : DevExpress.XtraBars.Ribbon.RibbonForm
     {

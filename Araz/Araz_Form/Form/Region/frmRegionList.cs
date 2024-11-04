@@ -18,7 +18,7 @@ using Utilities;
 using ViewModel.ViewModels;
 using static Utilities.Enums;
 
-namespace Araz_Form.Form.Region
+namespace Araz_Form
 {
     public partial class frmRegionList : DevExpress.XtraBars.Ribbon.RibbonForm
     {
