@@ -1,4 +1,5 @@
 ﻿using Araz_ViewModel;
+using DevExpress.CodeParser;
 using DevExpress.XtraBars;
 using DevExpress.XtraGrid.Views.Grid;
 using Repository;
@@ -18,8 +19,15 @@ namespace Araz_Form.Form.Invoice
 {
     public partial class frmInvoiceBuyDefine : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+        string select = "";
+        string where = "";
         decimal _percent = 0;
+        decimal _discount = 0;
+        decimal _amount = 0;
+        decimal totalPrice = 0;
         List<View_Product> product = new List<View_Product>();
+        List<View_InvoiceBuyNumber> _invoiceBuyNumbers = new List<View_InvoiceBuyNumber>();
+        View_InvoiceBuyNumber invoice;
         //View_Product products = new View_Product();
         View_Product products;
         public frmInvoiceBuyDefine()
@@ -33,6 +41,12 @@ namespace Araz_Form.Form.Invoice
         public void FillData()
         {
             cmbPersonList.Properties.DataSource = DARepository.GetAllFromView<View_Person>("SELECT * FROM dbo.View_Person", "").ToList();
+            select = "SELECT  TOP 1   *   FROM dbo.View_InvoiceBuy1403 AS i";
+            where = "WHERE (SELECT MAX(CAST(InvoiceBuyNumber AS INT)) FROM dbo.InvoiceBuy1403 ) = i.InvoiceBuyNumber";
+            invoice = DARepository.GetAllFromView<View_InvoiceBuyNumber>(select,where).ToList().FirstOrDefault();
+            txtInvoiceBuyNumber.Text = invoice.ComputedInvoiceBuyNumber.ToString()+(Convert.ToInt32(invoice.InvoiceBuyNumber) + 1).ToString();
+      
+            
         }
 
         private void btnSelectProduct_Click(object sender, EventArgs e)
@@ -51,7 +65,7 @@ namespace Araz_Form.Form.Invoice
                     {
                         product.Add(new View_Product()
                         {
-                            pkProductID = -1,
+                            pkProductID = item.pkProductID,
                             parentProductID = item.parentProductID,
                             pkGroup1 = item.pkGroup1,
                             ParentGroup1 = item.ParentGroup1,
@@ -124,16 +138,20 @@ namespace Araz_Form.Form.Invoice
         }
         public void Total()
         {
-            decimal totalPrice = 0;
 
+            totalPrice = 0;
             for (int i = 0; i < gvProduct.DataRowCount; i++)
             {
                 totalPrice += Convert.ToDecimal(gvProduct.GetRowCellValue(i, "AllPriceBuy"));
             }
-            if (_percent.ToString() != null || _percent > 0)
+            if (!string.IsNullOrEmpty(txtPercent.Text))
                 txtPrice.Text = (totalPrice - ((totalPrice * _percent) / 100)).ToString("N0");
+            else if (!string.IsNullOrEmpty(txtdiscount.Text))
+                txtPrice.Text = (totalPrice - _discount).ToString("N0");
             else
                 txtPrice.Text = totalPrice.ToString("N0");
+            _amount = Convert.ToDecimal(txtPrice.Text);
+            txtPrice.Text = txtPrice.Text + " ریال";
 
         }
 
@@ -144,10 +162,33 @@ namespace Araz_Form.Form.Invoice
 
         private void txtPercent_EditValueChanged(object sender, EventArgs e)
         {
-            if (txtPercent != null && txtPercent.Text != "")
+            if ( !string.IsNullOrEmpty(txtPercent.Text)) 
+            {
+                txtdiscount.Enabled = false;
+               
                 _percent = decimal.Parse(txtPercent.Text);
+            }
             else
+            {
+                txtdiscount.Enabled = true;
                 _percent = 0;
+            }          
+            Total();
+        }
+
+        private void txtdiscount_EditValueChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtdiscount.Text)) 
+            {               
+                txtPercent.Enabled = false;
+                _discount = decimal.Parse(txtdiscount.Text);
+            }
+            else
+            {
+                txtPercent.Enabled = true;
+                _discount = 0;
+            }
+            
             Total();
         }
     }

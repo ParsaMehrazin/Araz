@@ -68,8 +68,9 @@ namespace Araz_Form
             if (grp != null)
             {
                 select = "SELECT DISTINCT(ProductName),* FROM dbo.View_Product";
-                var columns = DARepository.GetAllFromView<View_Product>(select, "Where ParentProductID = " + grp.pkGroup2).ToList();
-               // where += " AND fkGroup_1 = " + (grp.fkGroup1 > 0 ? grp.fkGroup_1.ToString() : "-1");
+                where = "Where ParentProductID = " + grp.pkGroup2;
+                var columns = DARepository.GetAllFromView<View_Product>(select, where).ToList();
+             
                 if (columns != null && grp.ParentGroup1!=null)
                 {
                     foreach (var item in gvProductList.Columns.Where(p => p.Name.StartsWith("Check_")))
@@ -82,8 +83,7 @@ namespace Araz_Form
                     item.Visible = true;
             }
 
-            //if (!string.IsNullOrEmpty(txtProductName.Text))
-            //where = " AND ProductName LIKE '%" + txtProductName.Text + "%'" + " AND  ParentProductID = " + grp.pkGroup2;
+            if (!string.IsNullOrEmpty(txtProductName.Text))          
                 where = "Where ParentProductID = " + grp.pkGroup2 + " AND ProductName LIKE '%" + txtProductName.Text + "%'";
             gcProductList.DataSource = DARepository.GetAllFromView<View_Product>(select,where).ToList();
             CommonTools.Loading();

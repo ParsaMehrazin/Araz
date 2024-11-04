@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Araz_ViewModel
+{
+    public class View_InvoiceBuyNumber
+    {
+        public long pkInvoiceBuyID { get; set; }
+        public long fkFinnantialYear { get; set; }
+        public long FinnantialYear { get; set; }
+        public string InvoiceBuyNumber { get; set; }
+        public string PurchaseInvoiceNumber { get; set; }
+        public string ComputedInvoiceBuyNumber { get; set; }
+        public long fkPersonID { get; set; }
+        public long fkProductID { get; set; }
+        public long fkPrice { get; set; }
+        public decimal BuyInvoice { get; set; }
+        public decimal Buyquantity { get; set; }
+        public string Description { get; set; }
+        public string EditToken { get; set; }
+        public long InsertUser { get; set; }
+        public DateTime InsertDate { get; set; }
+        public string InsertIP { get; set; }
+    }
+}
