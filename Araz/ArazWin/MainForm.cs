@@ -131,7 +131,7 @@ namespace ArazWin
 
         private void BuyButton_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            frmInvoiceBuyDefine frm = new frmInvoiceBuyDefine();
+            frmInvoiceBuyDefine frm = new frmInvoiceBuyDefine(1,null);
             frm.MdiParent = this;
             frm.Show();
         }

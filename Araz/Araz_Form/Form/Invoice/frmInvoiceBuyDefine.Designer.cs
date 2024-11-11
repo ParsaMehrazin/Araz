@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.u = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.dtpLoadingDate = new System.Windows.Forms.PersianDatePicker();
             this.gcProduct = new DevExpress.XtraGrid.GridControl();
             this.gvProduct = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -50,7 +52,6 @@
             this.btnSelectProduct = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.txtInvoiceBuyNumber = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
             this.cmbPersonList = new DevExpress.XtraEditors.LookUpEdit();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.txtPrice = new DevExpress.XtraEditors.TextEdit();
@@ -70,12 +71,13 @@
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.ErrorProvider = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -85,7 +87,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtPercent.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtdiscount.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtInvoiceBuyNumber.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPersonList.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrice.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPercent1.Properties)).BeginInit();
@@ -104,12 +105,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -147,6 +149,7 @@
             // 
             // layoutControl1
             // 
+            this.layoutControl1.Controls.Add(this.dtpLoadingDate);
             this.layoutControl1.Controls.Add(this.gcProduct);
             this.layoutControl1.Controls.Add(this.txtPercent);
             this.layoutControl1.Controls.Add(this.txtdiscount);
@@ -154,7 +157,6 @@
             this.layoutControl1.Controls.Add(this.btnSelectProduct);
             this.layoutControl1.Controls.Add(this.simpleButton3);
             this.layoutControl1.Controls.Add(this.txtInvoiceBuyNumber);
-            this.layoutControl1.Controls.Add(this.textEdit5);
             this.layoutControl1.Controls.Add(this.cmbPersonList);
             this.layoutControl1.Controls.Add(this.simpleButton4);
             this.layoutControl1.Controls.Add(this.txtPrice);
@@ -168,6 +170,21 @@
             this.layoutControl1.Size = new System.Drawing.Size(1274, 523);
             this.layoutControl1.TabIndex = 2;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // dtpLoadingDate
+            // 
+            this.dtpLoadingDate.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.dtpLoadingDate.BackColor = System.Drawing.Color.White;
+            this.dtpLoadingDate.GeorgianDate = null;
+            this.dtpLoadingDate.Location = new System.Drawing.Point(24, 45);
+            this.dtpLoadingDate.Margin = new System.Windows.Forms.Padding(0);
+            this.dtpLoadingDate.Name = "dtpLoadingDate";
+            this.dtpLoadingDate.PersianDate.Day = 0;
+            this.dtpLoadingDate.PersianDate.Month = 0;
+            this.dtpLoadingDate.PersianDate.Year = 0;
+            this.dtpLoadingDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dtpLoadingDate.Size = new System.Drawing.Size(247, 20);
+            this.dtpLoadingDate.TabIndex = 19;
             // 
             // gcProduct
             // 
@@ -388,7 +405,7 @@
             // 
             // txtInvoiceBuyNumber
             // 
-            this.txtInvoiceBuyNumber.Location = new System.Drawing.Point(182, 45);
+            this.txtInvoiceBuyNumber.Location = new System.Drawing.Point(351, 45);
             this.txtInvoiceBuyNumber.MenuManager = this.ribbon;
             this.txtInvoiceBuyNumber.Name = "txtInvoiceBuyNumber";
             this.txtInvoiceBuyNumber.Properties.Appearance.BackColor = System.Drawing.Color.White;
@@ -398,22 +415,13 @@
             this.txtInvoiceBuyNumber.Properties.Appearance.Options.UseTextOptions = true;
             this.txtInvoiceBuyNumber.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.txtInvoiceBuyNumber.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.txtInvoiceBuyNumber.Size = new System.Drawing.Size(77, 20);
+            this.txtInvoiceBuyNumber.Size = new System.Drawing.Size(153, 20);
             this.txtInvoiceBuyNumber.StyleController = this.layoutControl1;
             this.txtInvoiceBuyNumber.TabIndex = 15;
             // 
-            // textEdit5
-            // 
-            this.textEdit5.Location = new System.Drawing.Point(24, 45);
-            this.textEdit5.MenuManager = this.ribbon;
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(73, 20);
-            this.textEdit5.StyleController = this.layoutControl1;
-            this.textEdit5.TabIndex = 16;
-            // 
             // cmbPersonList
             // 
-            this.cmbPersonList.Location = new System.Drawing.Point(882, 45);
+            this.cmbPersonList.Location = new System.Drawing.Point(990, 45);
             this.cmbPersonList.MenuManager = this.ribbon;
             this.cmbPersonList.Name = "cmbPersonList";
             this.cmbPersonList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -424,7 +432,7 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("FullName", "نام و نام خانوادگی")});
             this.cmbPersonList.Properties.DisplayMember = "FullName";
             this.cmbPersonList.Properties.NullText = "انتخاب نشده";
-            this.cmbPersonList.Size = new System.Drawing.Size(287, 20);
+            this.cmbPersonList.Size = new System.Drawing.Size(179, 20);
             this.cmbPersonList.StyleController = this.layoutControl1;
             this.cmbPersonList.TabIndex = 4;
             // 
@@ -653,40 +661,43 @@
             // 
             this.layoutControlGroup5.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem10,
             this.layoutControlItem9,
+            this.layoutControlItem13,
             this.emptySpaceItem1});
             this.layoutControlGroup5.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup5.Name = "layoutControlGroup5";
-            this.layoutControlGroup5.Size = new System.Drawing.Size(632, 69);
+            this.layoutControlGroup5.Size = new System.Drawing.Size(880, 69);
             this.layoutControlGroup5.Text = "تاریخ و شماره فاکتور";
-            // 
-            // layoutControlItem10
-            // 
-            this.layoutControlItem10.Control = this.textEdit5;
-            this.layoutControlItem10.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem10.Name = "layoutControlItem10";
-            this.layoutControlItem10.Size = new System.Drawing.Size(158, 24);
-            this.layoutControlItem10.Text = "تاریخ";
-            this.layoutControlItem10.TextSize = new System.Drawing.Size(69, 13);
             // 
             // layoutControlItem9
             // 
+            this.layoutControlItem9.AppearanceItemCaption.ForeColor = System.Drawing.Color.Black;
+            this.layoutControlItem9.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem9.Control = this.txtInvoiceBuyNumber;
             this.layoutControlItem9.Enabled = false;
-            this.layoutControlItem9.Location = new System.Drawing.Point(158, 0);
+            this.layoutControlItem9.Location = new System.Drawing.Point(325, 0);
+            this.layoutControlItem9.MaxSize = new System.Drawing.Size(240, 24);
+            this.layoutControlItem9.MinSize = new System.Drawing.Size(240, 24);
             this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(162, 24);
+            this.layoutControlItem9.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 2, 2, 2);
+            this.layoutControlItem9.Size = new System.Drawing.Size(240, 24);
+            this.layoutControlItem9.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem9.Text = "شماره فاکتور";
             this.layoutControlItem9.TextSize = new System.Drawing.Size(69, 13);
             // 
-            // emptySpaceItem1
+            // layoutControlItem13
             // 
-            this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(320, 0);
-            this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(288, 24);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem13.Control = this.dtpLoadingDate;
+            this.layoutControlItem13.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem13.MaxSize = new System.Drawing.Size(325, 24);
+            this.layoutControlItem13.MinSize = new System.Drawing.Size(325, 24);
+            this.layoutControlItem13.Name = "layoutControlItem13";
+            this.layoutControlItem13.Size = new System.Drawing.Size(325, 24);
+            this.layoutControlItem13.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem13.Text = "تاریخ";
+            this.layoutControlItem13.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem13.TextSize = new System.Drawing.Size(69, 13);
+            this.layoutControlItem13.TextToControlDistance = 5;
             // 
             // layoutControlGroup1
             // 
@@ -694,17 +705,20 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1,
             this.emptySpaceItem3});
-            this.layoutControlGroup1.Location = new System.Drawing.Point(632, 0);
+            this.layoutControlGroup1.Location = new System.Drawing.Point(754, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(622, 69);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(500, 69);
             this.layoutControlGroup1.Text = "لیست اشخاص";
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.cmbPersonList;
-            this.layoutControlItem1.Location = new System.Drawing.Point(226, 0);
+            this.layoutControlItem1.Location = new System.Drawing.Point(86, 0);
+            this.layoutControlItem1.MaxSize = new System.Drawing.Size(264, 24);
+            this.layoutControlItem1.MinSize = new System.Drawing.Size(264, 24);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(372, 24);
+            this.layoutControlItem1.Size = new System.Drawing.Size(264, 24);
+            this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.Text = "لیست اشخاص";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(69, 13);
             // 
@@ -713,8 +727,20 @@
             this.emptySpaceItem3.AllowHotTrack = false;
             this.emptySpaceItem3.Location = new System.Drawing.Point(0, 0);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(226, 24);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(138, 24);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // ErrorProvider
+            // 
+            this.ErrorProvider.ContainerControl = this;
+            // 
+            // emptySpaceItem1
+            // 
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.Location = new System.Drawing.Point(577, 0);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(10, 24);
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // frmInvoiceBuyDefine
             // 
@@ -738,7 +764,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtPercent.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtdiscount.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtInvoiceBuyNumber.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPersonList.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrice.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPercent1.Properties)).EndInit();
@@ -757,12 +782,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -796,10 +822,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraEditors.TextEdit txtInvoiceBuyNumber;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup5;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraEditors.LookUpEdit cmbPersonList;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
@@ -818,5 +841,9 @@
         private DevExpress.XtraEditors.TextEdit txtPercent1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
+        private System.Windows.Forms.PersianDatePicker dtpLoadingDate;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider ErrorProvider;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
     }
 }

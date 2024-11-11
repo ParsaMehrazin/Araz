@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ViewModel.ViewModels;
 
 namespace Araz_ViewModel
 {
-    public class View_InvoiceBuyNumber
+    public class View_InvoiceBuyNumber : BaseLogResponseViewModel
     {
         public long pkInvoiceBuyID { get; set; }
         public long fkFinnantialYear { get; set; }

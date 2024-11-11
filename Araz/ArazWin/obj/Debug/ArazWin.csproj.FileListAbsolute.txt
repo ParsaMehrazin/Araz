@@ -20,6 +20,7 @@ D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraBars.v22.2.dll
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraEditors.v22.2.dll
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraLayout.v22.2.dll
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraGrid.v22.2.dll
+D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\PersianDatePickerControl.dll
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraTreeList.v22.2.dll
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\ICSharpCode.SharpZipLib.dll
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.Drawing.v22.2.dll
