@@ -50,7 +50,7 @@
             this.txtdiscount = new DevExpress.XtraEditors.TextEdit();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnSelectProduct = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSaveAndPrint = new DevExpress.XtraEditors.SimpleButton();
             this.txtInvoiceBuyNumber = new DevExpress.XtraEditors.TextEdit();
             this.cmbPersonList = new DevExpress.XtraEditors.LookUpEdit();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
@@ -155,7 +155,7 @@
             this.layoutControl1.Controls.Add(this.txtdiscount);
             this.layoutControl1.Controls.Add(this.simpleButton1);
             this.layoutControl1.Controls.Add(this.btnSelectProduct);
-            this.layoutControl1.Controls.Add(this.simpleButton3);
+            this.layoutControl1.Controls.Add(this.btnSaveAndPrint);
             this.layoutControl1.Controls.Add(this.txtInvoiceBuyNumber);
             this.layoutControl1.Controls.Add(this.cmbPersonList);
             this.layoutControl1.Controls.Add(this.simpleButton4);
@@ -393,15 +393,16 @@
             this.btnSelectProduct.Text = "انتخاب کالا";
             this.btnSelectProduct.Click += new System.EventHandler(this.btnSelectProduct_Click);
             // 
-            // simpleButton3
+            // btnSaveAndPrint
             // 
-            this.simpleButton3.ImageOptions.Image = global::Araz_Form.Properties.Resources.checkbox_16x16;
-            this.simpleButton3.Location = new System.Drawing.Point(24, 477);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(96, 22);
-            this.simpleButton3.StyleController = this.layoutControl1;
-            this.simpleButton3.TabIndex = 13;
-            this.simpleButton3.Text = "ثبت و چاپ";
+            this.btnSaveAndPrint.ImageOptions.Image = global::Araz_Form.Properties.Resources.checkbox_16x16;
+            this.btnSaveAndPrint.Location = new System.Drawing.Point(24, 477);
+            this.btnSaveAndPrint.Name = "btnSaveAndPrint";
+            this.btnSaveAndPrint.Size = new System.Drawing.Size(96, 22);
+            this.btnSaveAndPrint.StyleController = this.layoutControl1;
+            this.btnSaveAndPrint.TabIndex = 13;
+            this.btnSaveAndPrint.Text = "ثبت و چاپ";
+            this.btnSaveAndPrint.Click += new System.EventHandler(this.btnSaveAndPrint_Click);
             // 
             // txtInvoiceBuyNumber
             // 
@@ -555,7 +556,7 @@
             // 
             // layoutControlItem8
             // 
-            this.layoutControlItem8.Control = this.simpleButton3;
+            this.layoutControlItem8.Control = this.btnSaveAndPrint;
             this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem8.MaxSize = new System.Drawing.Size(100, 26);
             this.layoutControlItem8.MinSize = new System.Drawing.Size(100, 26);
@@ -705,9 +706,9 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1,
             this.emptySpaceItem3});
-            this.layoutControlGroup1.Location = new System.Drawing.Point(754, 0);
+            this.layoutControlGroup1.Location = new System.Drawing.Point(880, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(500, 69);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(374, 69);
             this.layoutControlGroup1.Text = "لیست اشخاص";
             // 
             // layoutControlItem1
@@ -727,7 +728,7 @@
             this.emptySpaceItem3.AllowHotTrack = false;
             this.emptySpaceItem3.Location = new System.Drawing.Point(0, 0);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(138, 24);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(86, 24);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // ErrorProvider
@@ -737,9 +738,9 @@
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(577, 0);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(565, 0);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(10, 24);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(291, 24);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // frmInvoiceBuyDefine
@@ -818,7 +819,7 @@
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton btnSaveAndPrint;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraEditors.TextEdit txtInvoiceBuyNumber;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;

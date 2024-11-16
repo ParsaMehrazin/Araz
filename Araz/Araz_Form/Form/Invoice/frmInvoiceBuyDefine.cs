@@ -3,6 +3,7 @@ using DevExpress.CodeParser;
 using DevExpress.DashboardCommon.Viewer;
 using DevExpress.XtraBars;
 using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraPrinting.Native;
 using DevExpress.XtraSplashScreen;
 using Repository;
 using System;
@@ -16,13 +17,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Utilities;
+using ViewModel.ViewModels;
 //using static DevExpress.Data.Utils.AsyncDownloader<Value>.LifeTime;
 
 namespace Araz_Form
 {
     public partial class frmInvoiceBuyDefine : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        int mod = 1;
+        int _mod = -1;
         Int64 pkinvoice = -1;
         string select = "";
         string where = "";
@@ -31,12 +33,13 @@ namespace Araz_Form
         decimal _amount = 0;
         decimal totalPrice = 0;
         bool hasError = false;
+        bool _isSave = false;
         List<View_Product> product = new List<View_Product>();
         List<View_InvoiceBuyNumber> _invoiceBuyNumbers = new List<View_InvoiceBuyNumber>();
         View_InvoiceBuyNumber invoice;
         View_Product products;
 
-        public frmInvoiceBuyDefine(int _mod, View_InvoiceBuyNumber invoicebuynumber)
+        public frmInvoiceBuyDefine(int mod, View_InvoiceBuyNumber invoicebuynumber)
         {
 
 
@@ -48,14 +51,14 @@ namespace Araz_Form
             {
                 if (!ModOne())
                 {
-                    this.hasError = true;                   
+                    this.hasError = true;
                 }
             }
             else if (_mod == 2)
             {
                 if (!ModTwo(invoice))
                 {
-                    this.hasError = true;                  
+                    this.hasError = true;
                 }
             }
             else if (mod == 3)
@@ -98,7 +101,7 @@ namespace Araz_Form
             try
             {
                 this.Text = "ثبت فاکتور خرید";
-                
+
                 dtpLoadingDate.GeorgianDate = DateTime.Now;
 
                 return true;
@@ -263,6 +266,94 @@ namespace Araz_Form
             }
 
             Total();
+        }
+
+        private void btnSaveAndPrint_Click(object sender, EventArgs e)
+        {
+            ErrorProvider.ClearErrors();
+
+           
+
+            if (_mod != 3)
+            {
+                if (string.IsNullOrEmpty(cmbPersonList.Text) || cmbPersonList.EditValue == null)
+                    ErrorProvider.SetError(cmbPersonList, "لطفا یک شخص را انتخاب کنید ");
+
+                if (!dtpLoadingDate.GeorgianDate.HasValue || dtpLoadingDate.GeorgianDate.Value == null )
+                {
+                    ErrorProvider.SetError(dtpLoadingDate, "تاریخ را انتخاب کنید ");
+                    return;
+                }
+
+                if (gcProduct.DataSource  == null)
+                
+                    CommonTools.ShowMessage( "لیست محصولات نمیتواند خالی باشد");
+                else 
+                    gcProduct.DataSource = product;
+                //if (string.IsNullOrEmpty(txtBarCode.Text) || txtBarCode.Text == "")
+                //    ErrorProvider.SetError(txtBarCode, "نمیتواند خالی باشد");
+
+                //if (string.IsNullOrEmpty(cmbType.Text) || cmbType.EditValue == null)
+                //    ErrorProvider.SetError(cmbType, "لطفا یک سمت را انتخاب کنید ");
+
+                //if (string.IsNullOrEmpty(txtCountOne.Text) || txtCountOne.Text == "")
+                //    ErrorProvider.SetError(txtCountOne, "نمیتواند خالی باشد");
+
+                //if (string.IsNullOrEmpty(txtBuy.Text) || txtBuy.Text == "")
+                //    ErrorProvider.SetError(txtBuy, "نمیتواند خالی باشد");
+
+                //if (string.IsNullOrEmpty(txtSell.Text) || txtSell.Text == "")
+                //    ErrorProvider.SetError(txtSell, "نمیتواند خالی باشد");
+            }
+
+            if (ErrorProvider.HasErrors)
+            {
+                return;
+            }
+
+            CommonTools.Loading(true);
+            //BaseRepositoryResponseViewModel res = null;
+
+
+            //res = DARepository.ExcuteOperationalSP_New("dbo", "CrudProduct",
+            //   new ServiceOperatorParameter() { Name = "mod", Value = _mod },
+            //   new ServiceOperatorParameter() { Name = "pkInvoiceBuyID", Value = _mod == 1 ? "-1" : this.pkinvoice.ToString() },
+            //   new ServiceOperatorParameter() { Name = "fkFinnantialYear", Value = (cmbNameGroup2.EditValue as View_Product) == null ? -1 : (cmbNameGroup2.EditValue as View_Product).pkGroup2 },
+            //   new ServiceOperatorParameter() { Name = "InvoiceBuyNumber", Value = string.IsNullOrEmpty(txtBarCode.Text) ? "" : txtBarCode.Text },
+            //   new ServiceOperatorParameter() { Name = "PurchaseInvoiceNumber", Value = string.IsNullOrEmpty(txtProductName.Text) ? "" : txtProductName.Text },
+            //   new ServiceOperatorParameter() { Name = "fkPersonID", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
+            //   new ServiceOperatorParameter() { Name = "fkProductID", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
+            //   new ServiceOperatorParameter() { Name = "fkPrice", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
+            //   new ServiceOperatorParameter() { Name = "DateInvoice", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
+            //   new ServiceOperatorParameter() { Name = "BuyInvoice", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
+            //   new ServiceOperatorParameter() { Name = "Buyquantity", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
+            //   new ServiceOperatorParameter() { Name = "Description", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
+            //   new ServiceOperatorParameter() { Name = "EditToken", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
+            //   new ServiceOperatorParameter() { Name = "InsertUser", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
+            //   new ServiceOperatorParameter() { Name = "InsertDate", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
+            //   new ServiceOperatorParameter() { Name = "InsertIP", Value = string.IsNullOrEmpty(txtCountOne.Text) ? 0 : Convert.ToInt16(txtCountOne.Text) });
+
+
+
+
+
+
+
+            CommonTools.Loading();
+
+            //if (CommonTools.ShowMessage(res))
+            //{
+            //    this._isSave = true;
+            //  //  FillDataProduct();
+            //   // ClearProduct();
+            //    this.Close();
+            //}
+            //else
+            //{
+            //    this._isSave = false;
+            //    this.hasError = true;
+            //}
+            return;
         }
     }
 }
