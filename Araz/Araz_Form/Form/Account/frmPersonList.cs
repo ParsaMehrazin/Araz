@@ -52,7 +52,7 @@ namespace Araz_Form
         }
         public void FillData_Person()
         {
-            cmbRolePerson.Properties.DataSource = DARepository.GetAllFromView<View_Role>("SELECT * FROM dbo.View_Role", "Where pkRoleID > 3").ToList();
+            cmbRolePerson.Properties.DataSource = DARepository.GetAllFromView<View_Role>("SELECT * FROM dbo.View_Role", "").ToList();
             cmbProvince.Properties.DataSource = DARepository.GetAllFromView<View_City>("SELECT DISTINCT(ProvinceName) , ProvinceID FROM dbo.View_City", "WHERE ParentProvinceID IS NULL").ToList();
             cmbEducation.Properties.DataSource = DARepository.GetAllFromView<View_Education>("SELECT * FROM dbo.View_Education", "").ToList();
             cmbCity.EditValue = null;
@@ -247,36 +247,50 @@ namespace Araz_Form
             }
             else if (e.Button.Kind == ButtonPredefines.Glyph)
             {
-                if (roles != null)
+                if (item != null)
                 {
-                    FillDataRole();
-                    modTwoRole(item);                   
-                    if (this._isSave)
-                        FillData();
+                    if (item.pkRoleID > 2)
+                    {
+                        FillDataRole();
+                        modTwoRole(item);
+                        if (this._isSave)
+                            FillData();                        
+                    }
+                    else
+                        CommonTools.ShowMessage("این سمت رو نمی توانید ویرایش کنید  ");
+                   
                 }
             }
             if (e.Button.Kind == ButtonPredefines.Delete)
             {
-                if (roles != null)
+                if (item.pkRoleID > 2)
                 {
-                    if (CommonTools.AskQuestion($" آیا از حذف {roles.RoleName} مطمئن هستید؟ "))
+                    if (roles != null)
                     {
-                        this.pkroleId = item.pkRoleID;
-                        _mod = 3;
-                        btnSaveRole_Click(null, null);
+                        if (CommonTools.AskQuestion($"  آیا از حذف سمت {item.RoleName} مطمئن هستید؟ "))
+                        {
+                            this.pkroleId = item.pkRoleID;
+                            _mod = 3;
+                            btnSaveRole_Click(null, null);
+                        }
+                        if (this._isSave)
+                            FillData();
                     }
-                    if (this._isSave)
-                        FillData();
+                    else
+                        CommonTools.ShowMessage("لطفا یک سمت رو انتخاب کنید ");
                 }
+
                 else
-                    CommonTools.ShowMessage("لطفا یک سمت رو انتخاب کنید ");
+                    CommonTools.ShowMessage("این سمت رو نمی توانید حذف کنید  ");
             }
+            
+          
 
         }
 
         public void FillDataRole()
         {
-            cmbPersonRole.Properties.DataSource = DARepository.GetAllFromView<View_Role>("select * from dbo.View_Role", "Where pkRoleId <> 2").ToList();
+            cmbPersonRole.Properties.DataSource = DARepository.GetAllFromView<View_Role>("select * from dbo.View_Role", "").ToList();
 
         }
 
@@ -286,6 +300,7 @@ namespace Araz_Form
             {
                 CommonTools.Loading(true);
                 _mod = 1;
+                
                 fpRoleDefine.OwnerControl = gcPersonList;
                 fpRoleDefine.ShowBeakForm(Control.MousePosition);
                 this.Text = "ثبت شخص جدید";
@@ -309,12 +324,13 @@ namespace Araz_Form
                 fpRoleDefine.OwnerControl = gcPersonList;
                 fpRoleDefine.ShowBeakForm(Control.MousePosition);
                 this.Text = "ویرایش شخص جدید";
-                this.pkroleId = _Role.pkRoleID;
-                if (_Role.ParentRole != null && roles.ParentRole != 0)
+                this.pkroleId = _Role.pkRoleID;                
+                if (_Role.ParentRole != null && _Role.ParentRole >0 )
                     cmbPersonRole.EditValue = (cmbPersonRole.Properties.DataSource as List<View_Role>).Where(p => p.pkRoleID == _Role.ParentRole).FirstOrDefault();
                 else
                     cmbPersonRole.EditValue = (cmbPersonRole.Properties.DataSource as List<View_Role>).Where(p => p.pkRoleID == 1).FirstOrDefault();
                 txtRole.Text = _Role.RoleName;
+               
                 CommonTools.Loading();
                 return true;
             }
@@ -348,7 +364,7 @@ namespace Araz_Form
             res = DARepository.ExcuteOperationalSP_New("dbo", "CrudRole",
              new ServiceOperatorParameter() { Name = "mod", Value = _mod },
              new ServiceOperatorParameter() { Name = "pkRoleID", Value = _mod == 1 ? "-1" : this.pkroleId.ToString() },
-             new ServiceOperatorParameter() { Name = "ParentRole", Value = parentrole },
+             new ServiceOperatorParameter() { Name = "ParentRole", Value =( parentrole == 0) ? parentrole : (cmbPersonRole.EditValue as View_Role).ParentRole },
             new ServiceOperatorParameter() { Name = "RoleName", Value = string.IsNullOrEmpty(txtRole.Text) ? "" : txtRole.Text });
 
             CommonTools.Loading();

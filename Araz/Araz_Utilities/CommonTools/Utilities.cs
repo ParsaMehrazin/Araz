@@ -50,5 +50,10 @@ namespace Utilities
             DateTime miladiDateTime = persianCalendar.ToDateTime(year, month, day, 0, 0, 0, 0);
             return miladiDateTime;
         }
+        public static int ToPersianYear(this DateTime dateTime)
+        {
+            PersianCalendar persianCalendar = new PersianCalendar();
+            return persianCalendar.GetYear(dateTime); // فقط سال را برمی‌گرداند  
+        }
     }
 }

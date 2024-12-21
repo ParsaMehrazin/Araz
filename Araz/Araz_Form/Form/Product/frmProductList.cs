@@ -211,12 +211,17 @@ namespace Araz_Form
          
             var item = cmbNameGroup1.EditValue as View_Product;
             var item2 = cmbNameGroup2.EditValue as View_Product;
-            if (item == null || item2 == null || cmbNameGroup2.Text == "" || item.pkGroup1 == 1)
+            if (item == null || item.pkGroup1 == 1)
             {
                 select = "SELECT DISTINCT(ProductName),* FROM dbo.View_Product";
                 where = "WHERE parentProductID  IS NOT NULL";
             }
-            else if (item != null && item2 != null)
+            else if (item != null && item2 == null)
+            {
+                select = "SELECT DISTINCT(ProductName),* FROM dbo.View_Product";
+                where = "WHERE pkGroup1 = " + item.pkGroup1;
+            }
+            else if ( item2 != null)
             {
                 select = "SELECT DISTINCT(ProductName),* FROM dbo.View_Product";
                 where = "WHERE ParentProductID = " + item2.pkGroup2;
@@ -514,5 +519,24 @@ namespace Araz_Form
             frmSearchProduct frm = new frmSearchProduct(false);
             frm.ShowDialog();
         }
+
+        private void gcProductList_Click(object sender, EventArgs e)
+        {
+            var t = gvProductList.GetFocusedRow() as View_Product;
+            if (t != null)
+            {
+                select = "SELECT * FROM dbo.View_PersonDetails";
+                where = "where pkPersonID = " + t.pkPersonID;
+                gcPersonDetail.DataSource = DARepository.GetAllFromView<View_PersonDetails>(select, where).ToList();
+            }
+
+        }
+
+        private void gcProductList_EmbeddedNavigator_Click(object sender, EventArgs e)
+        {
+
+        }
+
+    
     }
 }

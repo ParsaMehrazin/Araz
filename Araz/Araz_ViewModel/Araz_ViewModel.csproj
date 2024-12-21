@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account\View_PersonDetails.cs" />
     <Compile Include="Invoice\View_InvoiceBuyNumber.cs" />
     <Compile Include="Invoice\View_Price.cs" />
     <Compile Include="Invoice\View_Product.cs" />

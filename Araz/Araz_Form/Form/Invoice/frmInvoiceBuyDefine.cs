@@ -18,6 +18,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Utilities;
 using ViewModel.ViewModels;
+
+
+
 //using static DevExpress.Data.Utils.AsyncDownloader<Value>.LifeTime;
 
 namespace Araz_Form
@@ -28,14 +31,17 @@ namespace Araz_Form
         Int64 pkinvoice = -1;
         string select = "";
         string where = "";
-        decimal _percent = 0;
-        decimal _discount = 0;
-        decimal _amount = 0;
-        decimal totalPrice = 0;
+        double _percent = 0;
+        double _discount = 0;
+        double _amount = 0;
+        double totalPrice = 0;
+        
+        int invoicebuyNumber = 0;
+        int fkfinancialYearNumber = 0;
         bool hasError = false;
         bool _isSave = false;
         List<View_Product> product = new List<View_Product>();
-        List<View_InvoiceBuyNumber> _invoiceBuyNumbers = new List<View_InvoiceBuyNumber>();
+        View_InvoiceBuyNumber _invoiceBuyNumbers = new View_InvoiceBuyNumber();
         View_InvoiceBuyNumber invoice;
         View_Product products;
 
@@ -84,8 +90,12 @@ namespace Araz_Form
             select = "SELECT  TOP 1   *   FROM dbo.View_InvoiceBuy1403 AS i";
             where = "WHERE (SELECT MAX(CAST(InvoiceBuyNumber AS INT)) FROM dbo.InvoiceBuy1403 ) = i.InvoiceBuyNumber";
             invoice = DARepository.GetAllFromView<View_InvoiceBuyNumber>(select, where).ToList().FirstOrDefault();
-            txtInvoiceBuyNumber.Text = invoice.ComputedInvoiceBuyNumber.ToString() + (Convert.ToInt32(invoice.InvoiceBuyNumber) + 1).ToString();
+            invoicebuyNumber = Convert.ToInt16(invoice.InvoiceBuyNumber) + 1;
+            txtInvoiceBuyNumber.Text = invoice.ComputedInvoiceBuyNumber.ToString() + (invoicebuyNumber).ToString();
 
+
+            _invoiceBuyNumbers = DARepository.GetAllFromView<View_InvoiceBuyNumber>("SELECT MAX(pkInvoiceBuyID) AS pkInvoiceBuyID FROM dbo.InvoiceBuy1403", "").FirstOrDefault();
+            pkinvoice = _invoiceBuyNumbers.pkInvoiceBuyID + 1;
 
             CommonTools.Loading();
         }
@@ -103,6 +113,8 @@ namespace Araz_Form
                 this.Text = "ثبت فاکتور خرید";
 
                 dtpLoadingDate.GeorgianDate = DateTime.Now;
+           
+              
 
                 return true;
             }
@@ -117,6 +129,7 @@ namespace Araz_Form
         {
             try
             {
+
                 return true;
             }
             catch (Exception)
@@ -163,7 +176,8 @@ namespace Araz_Form
                                 AllPriceBuy = item.AllPriceBuy,
                                 Count = item.Count,
                                 CountOne = item.CountOne,
-                                pkPriceID = item.pkPriceID
+                                pkPriceID = item.pkPriceID,
+                                percentdiscount =item.percentdiscount,
                             });
                     }
                 }
@@ -189,19 +203,37 @@ namespace Araz_Form
             CommonTools.Loading(true);
 
             GridView view = sender as GridView;
-
-            if (e.Column.FieldName == "Count" || e.Column.FieldName == "PriceBuy")
+            Int16 persenttotal = 0;
+            if (e.Column.FieldName == "Count" || e.Column.FieldName == "PriceBuy" || e.Column.FieldName == "percentdiscount")
             {
                 var column5ValueObj = view.GetFocusedRowCellValue("Count");
                 var column6ValueObj = view.GetFocusedRowCellValue("PriceBuy");
+                var column7ValueObj = view.GetFocusedRowCellValue("percentdiscount");
 
                 if (column5ValueObj != null && column6ValueObj != null)
                 {
                     if (decimal.TryParse(column5ValueObj.ToString(), out decimal column5Value) &&
-                        decimal.TryParse(column6ValueObj.ToString(), out decimal column6Value))
-                    {
-                        decimal result = column5Value * column6Value;
-                        view.SetRowCellValue(e.RowHandle, "AllPriceBuy", result);
+                        decimal.TryParse(column6ValueObj.ToString(), out decimal column6Value) && 
+                        decimal.TryParse(column7ValueObj.ToString(), out decimal column7Value))
+                    {                               
+                            decimal result = (column5Value * column6Value)-(column5Value * column6Value) * (column7Value / 100);
+                            view.SetRowCellValue(e.RowHandle, "AllPriceBuy", result);
+
+                        for (int i = 0; i < gvProduct.DataRowCount; i++)
+                        {
+                             persenttotal += Convert.ToInt16(gvProduct.GetRowCellValue(i, "percentdiscount"));
+                        }
+                        if (persenttotal > 0)
+                        { 
+                                txtdiscount.Enabled = false;
+                                txtPercent.Enabled = false;
+                        }
+                        else
+                        {
+                                txtdiscount.Enabled = true;
+                                txtPercent.Enabled = true;
+                        }
+                        
                     }
                 }
             }
@@ -220,7 +252,7 @@ namespace Araz_Form
             totalPrice = 0;
             for (int i = 0; i < gvProduct.DataRowCount; i++)
             {
-                totalPrice += Convert.ToDecimal(gvProduct.GetRowCellValue(i, "AllPriceBuy"));
+                totalPrice += Convert.ToDouble(gvProduct.GetRowCellValue(i, "AllPriceBuy"));
             }
             if (!string.IsNullOrEmpty(txtPercent.Text))
                 txtPrice.Text = (totalPrice - ((totalPrice * _percent) / 100)).ToString("N0");
@@ -228,7 +260,7 @@ namespace Araz_Form
                 txtPrice.Text = (totalPrice - _discount).ToString("N0");
             else
                 txtPrice.Text = totalPrice.ToString("N0");
-            _amount = Convert.ToDecimal(txtPrice.Text);
+            _amount = Convert.ToDouble(txtPrice.Text);
             txtPrice.Text = txtPrice.Text + " ریال";
         }
 
@@ -242,7 +274,7 @@ namespace Araz_Form
             {
                 txtdiscount.Enabled = false;
 
-                _percent = decimal.Parse(txtPercent.Text);
+                _percent = Convert.ToDouble(txtPercent.Text);
             }
             else
             {
@@ -257,7 +289,7 @@ namespace Araz_Form
             if (!string.IsNullOrEmpty(txtdiscount.Text))
             {
                 txtPercent.Enabled = false;
-                _discount = decimal.Parse(txtdiscount.Text);
+                _discount = Convert.ToDouble(txtdiscount.Text);
             }
             else
             {
@@ -271,89 +303,120 @@ namespace Araz_Form
         private void btnSaveAndPrint_Click(object sender, EventArgs e)
         {
             ErrorProvider.ClearErrors();
-
-           
+            var dtList = DARepository.ListToDataTable(new List<View_InvoiceBuyNumber>());
+            
 
             if (_mod != 3)
             {
                 if (string.IsNullOrEmpty(cmbPersonList.Text) || cmbPersonList.EditValue == null)
                     ErrorProvider.SetError(cmbPersonList, "لطفا یک شخص را انتخاب کنید ");
 
-                if (!dtpLoadingDate.GeorgianDate.HasValue || dtpLoadingDate.GeorgianDate.Value == null )
+                if (!dtpLoadingDate.GeorgianDate.HasValue || dtpLoadingDate.GeorgianDate.Value == null)
                 {
-                    ErrorProvider.SetError(dtpLoadingDate, "تاریخ را انتخاب کنید ");
+
+                    CommonTools.ShowMessage("تاریخ نمی تواند خالی باشد");
                     return;
+                    }
+                    else
+                { 
+                    int year = Convert.ToInt16(dtpLoadingDate.GeorgianDate.Value.ToPersianYear());
+                int financialYearNumber = Enums.GetFinancialYearNumber(year);
+
+                if (financialYearNumber != -1)
+                    fkfinancialYearNumber = financialYearNumber;
+                else
+                {
+                    CommonTools.ShowMessage($"سال {year} در داده‌ها موجود نیست.");
                 }
+                }
+
+
 
                 if (gcProduct.DataSource  == null)
                 
                     CommonTools.ShowMessage( "لیست محصولات نمیتواند خالی باشد");
                 else 
-                    gcProduct.DataSource = product;
-                //if (string.IsNullOrEmpty(txtBarCode.Text) || txtBarCode.Text == "")
-                //    ErrorProvider.SetError(txtBarCode, "نمیتواند خالی باشد");
+                     product = gcProduct.DataSource as List<View_Product>;
+              
+                }
 
-                //if (string.IsNullOrEmpty(cmbType.Text) || cmbType.EditValue == null)
-                //    ErrorProvider.SetError(cmbType, "لطفا یک سمت را انتخاب کنید ");
+    
 
-                //if (string.IsNullOrEmpty(txtCountOne.Text) || txtCountOne.Text == "")
-                //    ErrorProvider.SetError(txtCountOne, "نمیتواند خالی باشد");
 
-                //if (string.IsNullOrEmpty(txtBuy.Text) || txtBuy.Text == "")
-                //    ErrorProvider.SetError(txtBuy, "نمیتواند خالی باشد");
+            //if (string.IsNullOrEmpty(txtBarCode.Text) || txtBarCode.Text == "")
+            //    ErrorProvider.SetError(txtBarCode, "نمیتواند خالی باشد");
 
-                //if (string.IsNullOrEmpty(txtSell.Text) || txtSell.Text == "")
-                //    ErrorProvider.SetError(txtSell, "نمیتواند خالی باشد");
-            }
+            //if (string.IsNullOrEmpty(cmbType.Text) || cmbType.EditValue == null)
+            //    ErrorProvider.SetError(cmbType, "لطفا یک سمت را انتخاب کنید ");
+
+            //if (string.IsNullOrEmpty(txtCountOne.Text) || txtCountOne.Text == "")
+            //    ErrorProvider.SetError(txtCountOne, "نمیتواند خالی باشد");
+
+            //if (string.IsNullOrEmpty(txtBuy.Text) || txtBuy.Text == "")
+            //    ErrorProvider.SetError(txtBuy, "نمیتواند خالی باشد");
+
+            //if (string.IsNullOrEmpty(txtSell.Text) || txtSell.Text == "")
+            //    ErrorProvider.SetError(txtSell, "نمیتواند خالی باشد");
+
 
             if (ErrorProvider.HasErrors)
             {
                 return;
             }
-
             CommonTools.Loading(true);
-            //BaseRepositoryResponseViewModel res = null;
+            BaseRepositoryResponseViewModel res = null;
+            BaseRepositoryResponseViewModel res1 = null;
+            foreach (var productgrid in product)
+            {           
+
+                res = DARepository.ExcuteOperationalSP_New("dbo", "CrudInvoiceBuy",
+                   new ServiceOperatorParameter() { Name = "mod", Value = _mod },
+                   new ServiceOperatorParameter() { Name = "pkInvoiceBuyID", Value = _mod == 1 ? "-1" : this.pkinvoice.ToString() },
+                   new ServiceOperatorParameter() { Name = "fkFinnantialYear", Value = fkfinancialYearNumber },
+                   new ServiceOperatorParameter() { Name = "InvoiceBuyNumber", Value = invoicebuyNumber.ToString() },
+                   new ServiceOperatorParameter() { Name = "PurchaseInvoiceNumber", Value = string.IsNullOrEmpty(txtInvoiceBuyNumber.Text) ? "" : txtInvoiceBuyNumber.Text },
+                   new ServiceOperatorParameter() { Name = "fkPersonID", Value = (cmbPersonList.EditValue as View_Person) == null ? -1 : (cmbPersonList.EditValue as View_Person).pkPersonID },
+                   new ServiceOperatorParameter() { Name = "fkProductID", Value = productgrid.pkProductID },
+                   new ServiceOperatorParameter() { Name = "fkPrice", Value = productgrid.pkPriceID },
+                   new ServiceOperatorParameter() { Name = "DateInvoice", Value = dtpLoadingDate.GeorgianDate.Value },
+                   new ServiceOperatorParameter() { Name = "BuyInvoice", Value = productgrid.PriceBuy },
+                   new ServiceOperatorParameter() { Name = "Buyquantity", Value = productgrid.AllPriceBuy },
+                   new ServiceOperatorParameter() { Name = "Description", Value = string.IsNullOrEmpty(productgrid.Description) ? "" : productgrid.Description },
+                   new ServiceOperatorParameter() { Name = "EditToken", Value = "" },
+                   new ServiceOperatorParameter() { Name = "InsertUser", Value = 12345 },
+                   //new ServiceOperatorParameter() { Name = "InsertDate", Value = new DateTime() },
+                   new ServiceOperatorParameter() { Name = "InsertIP", Value = "193.168.2.5" },
+                   new ServiceOperatorParameter() { Name = "percentdiscount", Value = string.IsNullOrEmpty(txtPercent.Text) ? productgrid.percentdiscount.ToString() : txtPercent.Text },
+                   new ServiceOperatorParameter() { Name = "discountamount", Value = string.IsNullOrEmpty(txtdiscount.Text) ? "0" : txtdiscount.Text });
 
 
-            //res = DARepository.ExcuteOperationalSP_New("dbo", "CrudProduct",
-            //   new ServiceOperatorParameter() { Name = "mod", Value = _mod },
-            //   new ServiceOperatorParameter() { Name = "pkInvoiceBuyID", Value = _mod == 1 ? "-1" : this.pkinvoice.ToString() },
-            //   new ServiceOperatorParameter() { Name = "fkFinnantialYear", Value = (cmbNameGroup2.EditValue as View_Product) == null ? -1 : (cmbNameGroup2.EditValue as View_Product).pkGroup2 },
-            //   new ServiceOperatorParameter() { Name = "InvoiceBuyNumber", Value = string.IsNullOrEmpty(txtBarCode.Text) ? "" : txtBarCode.Text },
-            //   new ServiceOperatorParameter() { Name = "PurchaseInvoiceNumber", Value = string.IsNullOrEmpty(txtProductName.Text) ? "" : txtProductName.Text },
-            //   new ServiceOperatorParameter() { Name = "fkPersonID", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
-            //   new ServiceOperatorParameter() { Name = "fkProductID", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
-            //   new ServiceOperatorParameter() { Name = "fkPrice", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
-            //   new ServiceOperatorParameter() { Name = "DateInvoice", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
-            //   new ServiceOperatorParameter() { Name = "BuyInvoice", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
-            //   new ServiceOperatorParameter() { Name = "Buyquantity", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
-            //   new ServiceOperatorParameter() { Name = "Description", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
-            //   new ServiceOperatorParameter() { Name = "EditToken", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
-            //   new ServiceOperatorParameter() { Name = "InsertUser", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
-            //   new ServiceOperatorParameter() { Name = "InsertDate", Value = (cmbType.EditValue as View_Type) == null ? -1 : (cmbType.EditValue as View_Type).pkTypeID },
-            //   new ServiceOperatorParameter() { Name = "InsertIP", Value = string.IsNullOrEmpty(txtCountOne.Text) ? 0 : Convert.ToInt16(txtCountOne.Text) });
+
+                res1 = DARepository.ExcuteOperationalSP_New("dbo", "CrudPrice",
+                   new ServiceOperatorParameter() { Name = "mod", Value = _mod },
+                   new ServiceOperatorParameter() { Name = "pkPriceID", Value = _mod == 1 ? "-1" : productgrid.pkPriceID.ToString() },
+                   new ServiceOperatorParameter() { Name = "fkProductID", Value = productgrid.pkProductID.ToString() },
+                   new ServiceOperatorParameter() { Name = "PriceSell", Value =  0 },
+                   new ServiceOperatorParameter() { Name = "PriceBuy", Value =  productgrid.PriceBuy },
+                   new ServiceOperatorParameter() { Name = "Invoice", Value = pkinvoice.ToString() },
+                   new ServiceOperatorParameter() { Name = "CountSell", Value = 0 },
+                   new ServiceOperatorParameter() { Name = "CountBuy", Value = productgrid.Count });
 
 
-
-
-
-
-
-            CommonTools.Loading();
-
-            //if (CommonTools.ShowMessage(res))
-            //{
-            //    this._isSave = true;
-            //  //  FillDataProduct();
-            //   // ClearProduct();
-            //    this.Close();
-            //}
-            //else
-            //{
-            //    this._isSave = false;
-            //    this.hasError = true;
-            //}
-            return;
+                CommonTools.Loading();
+            }
+                if (CommonTools.ShowMessage(res))
+                {
+                    this._isSave = true;
+                    //  FillDataProduct();
+                    // ClearProduct();    
+                }
+                else
+                {
+                    this._isSave = false;
+                    this.hasError = true;
+                }
+            }
+            //return;
         }
-    }
+    
 }

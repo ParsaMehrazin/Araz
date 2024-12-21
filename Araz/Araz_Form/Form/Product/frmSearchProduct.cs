@@ -64,24 +64,25 @@ namespace Araz_Form
             var grp = (cmbGroup.EditValue as View_Product);
             string where = " WHERE 1 = 1 ";
             string select = "";
-            
+
             if (grp != null)
             {
                 select = "SELECT DISTINCT(ProductName),* FROM dbo.View_Product";
                 where = "Where ParentProductID = " + grp.pkGroup2;
-                var columns = DARepository.GetAllFromView<View_Product>(select, where).ToList();
-             
-                if (columns != null && grp.ParentGroup1!=null)
-                {
-                    foreach (var item in gvProductList.Columns.Where(p => p.Name.StartsWith("Check_")))
-                        item.Visible = columns.Any(p => "CHECK_" + p.ProductName.ToUpper() == item.Name.ToUpper());
-                }
+              
+               // var columns = DARepository.GetAllFromView<View_Product>(select, where).ToList();
             }
-            else
-            {
-                foreach (var item in gvProductList.Columns.Where(p => p.Name.StartsWith("Check_")))
-                    item.Visible = true;
-            }
+            //    if (columns != null && grp.ParentGroup1!=null)
+            //    {
+            //        foreach (var item in gvProductList.Columns.Where(p => p.Name.StartsWith("Check_")))
+            //            item.Visible = columns.Any(p => "CHECK_" + p.ProductName.ToUpper() == item.Name.ToUpper());
+            //    }
+            //}
+            //else
+            //{
+            //    foreach (var item in gvProductList.Columns.Where(p => p.Name.StartsWith("Check_")))
+            //        item.Visible = true;
+            //}
 
             if (!string.IsNullOrEmpty(txtProductName.Text))          
                 where = "Where ParentProductID = " + grp.pkGroup2 + " AND ProductName LIKE '%" + txtProductName.Text + "%'";

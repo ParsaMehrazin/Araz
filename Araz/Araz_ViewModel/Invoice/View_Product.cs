@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Araz_ViewModel
 {
-    public class View_Product
+    public class View_Product : View_InvoiceBuyNumber
     {
         public bool Selected { get; set; }
         public long pkGroup1 { get; set; }
@@ -21,18 +21,20 @@ namespace Araz_ViewModel
         public string ProductName { get; set; }
         public long? fkTypeID { get; set; }
         public string TypeName { get; set; }
-        public decimal? PriceSell { get; set; }
-        public decimal? PriceBuy { get; set; }
-        public decimal? PriceSellOne { get; set; }
-        public decimal? PriceBuyOne { get; set; }
-        public decimal? CountSell { get; set; }
-        public decimal? CountBuy { get; set; }
-        public decimal? AllPriceSell { get; set; }
-        public decimal? AllPriceBuy { get;set; }
-        public decimal? Count {  get; set; }
-        public decimal? CountOne { get; set; }
+        public double? PriceSell { get; set; }
+        public double? PriceBuy { get; set; }
+        public double? PriceSellOne { get; set; }
+        public double? PriceBuyOne { get; set; }
+        public double? CountSell { get; set; }
+        public double? CountBuy { get; set; }
+        public double? AllPriceSell { get; set; }
+        public double? AllPriceBuy { get;set; }
+        public double? Count {  get; set; }
+        public double? CountOne { get; set; }
         public long? pkPriceID { get; set; }
         public string Invoice { get; set; }
+        public long pkPersonID { get; set; }    
+
     }
 }
 

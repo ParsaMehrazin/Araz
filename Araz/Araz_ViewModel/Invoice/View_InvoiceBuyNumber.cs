@@ -18,12 +18,14 @@ namespace Araz_ViewModel
         public long fkPersonID { get; set; }
         public long fkProductID { get; set; }
         public long fkPrice { get; set; }
-        public decimal BuyInvoice { get; set; }
-        public decimal Buyquantity { get; set; }
+        public double? BuyInvoice { get; set; }
+        public double? Buyquantity { get; set; }
         public string Description { get; set; }
         public string EditToken { get; set; }
         public long InsertUser { get; set; }
         public DateTime InsertDate { get; set; }
         public string InsertIP { get; set; }
+        public int percentdiscount { get; set; }    
+        public double? discountamount { get; set; }
     }
 }
