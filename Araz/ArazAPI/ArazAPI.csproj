@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ArazWin\ArazWin.csproj" />
+    <ProjectReference Include="..\Araz_Form\Araz_Form.csproj" />
+    <ProjectReference Include="..\Araz_Repository\Araz_Repository.csproj" />
+    <ProjectReference Include="..\Araz_Utilities\Araz_Utilities.csproj" />
+    <ProjectReference Include="..\Araz_ViewModel\Araz_ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>

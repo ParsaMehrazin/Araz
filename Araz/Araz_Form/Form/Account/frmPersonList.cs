@@ -82,6 +82,7 @@ namespace Araz_Form
                 fpPersonDefine.OwnerControl = gcPersonList;
                 fpPersonDefine.ShowBeakForm(Control.MousePosition);
                 lcgPersonDefine.Text = "ثبت شخص جدید";
+                dtpPersianAgeDate.GeorgianDate = DateTime.Now;
                 CommonTools.Loading();
                 return true;
             }
@@ -109,7 +110,8 @@ namespace Araz_Form
                 cmbSex.EditValue = _Sex.Where(p => p == _Person.Sex).FirstOrDefault();
                 cmbSex.EditValue = _Person.Sex == null ? "" : _Sex.Where(p => p == _Person.Sex.ToString()).FirstOrDefault();
                 txtAge.Text = _Person.PersonAge.ToString();
-                txtAgeDate.Text = (_Person.AgeDate == null) ? "" : _Person.AgeDate.ToString();
+                //PersianAgeDate.Text = (_Person.AgeDate == null) ? "" : _Person.AgeDate.ToString();
+                dtpPersianAgeDate.GeorgianDate = DateTime.Now;
                 cmbEducation.EditValue = (cmbEducation.Properties.DataSource as List<View_Education>).Where(p => p.pkEducationID == _Person.fkEducationID).FirstOrDefault();
                 txtNationalCode.Text = _Person.NationalCode;
                 txtMobile.Text = _Person.Mobile;
@@ -203,7 +205,7 @@ namespace Araz_Form
             cmbSex.Text = "";
             cmbSex.EditValue = null;
             txtAge.Text = "";
-            txtAgeDate.Text = "";
+            dtpPersianAgeDate.Text = "";
             cmbEducation.EditValue = null;
             txtNationalCode.Text = "";
             txtMobile.Text = "";

@@ -1,0 +1,377 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "ArazAPI/1.0.0": {
+        "dependencies": {
+          "ArazWin": "1.0.0",
+          "Araz_Form": "1.0.0",
+          "Araz_Repository": "1.0.0",
+          "Araz_Utilities": "1.0.0",
+          "Araz_ViewModel": "1.0.0",
+          "Microsoft.AspNetCore.OpenApi": "9.0.0"
+        },
+        "runtime": {
+          "ArazAPI.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.OpenApi/9.0.0": {
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.17"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.52903"
+          }
+        }
+      },
+      "Microsoft.OpenApi/1.6.17": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "assemblyVersion": "1.6.17.0",
+            "fileVersion": "1.6.17.0"
+          }
+        }
+      },
+      "ArazWin/1.0.0": {
+        "dependencies": {
+          "Araz_Form": "1.0.0",
+          "Araz_Repository": "1.0.0",
+          "Araz_Utilities": "1.0.0",
+          "Araz_ViewModel": "1.0.0"
+        },
+        "runtime": {
+          "ArazWin.exe": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Araz_Form/1.0.0": {
+        "dependencies": {
+          "Araz_Repository": "1.0.0",
+          "Araz_Utilities": "1.0.0",
+          "Araz_ViewModel": "1.0.0"
+        },
+        "runtime": {
+          "Araz_Form.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Araz_Repository/1.0.0": {
+        "dependencies": {
+          "Araz_ViewModel": "1.0.0"
+        },
+        "runtime": {
+          "Araz_Repository.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Araz_Utilities/1.0.0": {
+        "runtime": {
+          "Araz_Utilities.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Araz_ViewModel/1.0.0": {
+        "runtime": {
+          "Araz_ViewModel.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "DevExpress.XtraBars.v22.2/22.2.3.0": {
+        "runtime": {
+          "DevExpress.XtraBars.v22.2.dll": {
+            "assemblyVersion": "22.2.3.0",
+            "fileVersion": "22.2.3.0"
+          }
+        }
+      },
+      "DevExpress.XtraEditors.v22.2/22.2.3.0": {
+        "runtime": {
+          "DevExpress.XtraEditors.v22.2.dll": {
+            "assemblyVersion": "22.2.3.0",
+            "fileVersion": "22.2.3.0"
+          }
+        }
+      },
+      "DevExpress.Data.v22.2/22.2.3.0": {
+        "runtime": {
+          "DevExpress.Data.v22.2.dll": {
+            "assemblyVersion": "22.2.3.0",
+            "fileVersion": "22.2.3.0"
+          }
+        }
+      },
+      "DevExpress.Utils.v22.2/22.2.3.0": {
+        "runtime": {
+          "DevExpress.Utils.v22.2.dll": {
+            "assemblyVersion": "22.2.3.0",
+            "fileVersion": "22.2.3.0"
+          }
+        }
+      },
+      "DevExpress.XtraLayout.v22.2/22.2.3.0": {
+        "runtime": {
+          "DevExpress.XtraLayout.v22.2.dll": {
+            "assemblyVersion": "22.2.3.0",
+            "fileVersion": "22.2.3.0"
+          }
+        }
+      },
+      "DevExpress.XtraGrid.v22.2/22.2.3.0": {
+        "runtime": {
+          "DevExpress.XtraGrid.v22.2.dll": {
+            "assemblyVersion": "22.2.3.0",
+            "fileVersion": "22.2.3.0"
+          }
+        }
+      },
+      "PersianDatePickerControl/1.0.0.0": {
+        "runtime": {
+          "PersianDatePickerControl.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "DevExpress.XtraTreeList.v22.2/22.2.3.0": {
+        "runtime": {
+          "DevExpress.XtraTreeList.v22.2.dll": {
+            "assemblyVersion": "22.2.3.0",
+            "fileVersion": "22.2.3.0"
+          }
+        }
+      },
+      "DevExpress.Data.Desktop.v22.2/22.2.3.0": {
+        "runtime": {
+          "DevExpress.Data.Desktop.v22.2.dll": {
+            "assemblyVersion": "22.2.3.0",
+            "fileVersion": "22.2.3.0"
+          }
+        }
+      },
+      "ICSharpCode.SharpZipLib/0.85.4.369": {
+        "runtime": {
+          "ICSharpCode.SharpZipLib.dll": {
+            "assemblyVersion": "0.85.4.369",
+            "fileVersion": "0.85.4.369"
+          }
+        }
+      },
+      "DevExpress.Drawing.v22.2/22.2.3.0": {
+        "runtime": {
+          "DevExpress.Drawing.v22.2.dll": {
+            "assemblyVersion": "22.2.3.0",
+            "fileVersion": "22.2.3.0"
+          }
+        }
+      },
+      "DevExpress.Printing.v22.2.Core/22.2.3.0": {
+        "runtime": {
+          "DevExpress.Printing.v22.2.Core.dll": {
+            "assemblyVersion": "22.2.3.0",
+            "fileVersion": "22.2.3.0"
+          }
+        }
+      },
+      "DevExpress.Sparkline.v22.2.Core/22.2.3.0": {
+        "runtime": {
+          "DevExpress.Sparkline.v22.2.Core.dll": {
+            "assemblyVersion": "22.2.3.0",
+            "fileVersion": "22.2.3.0"
+          }
+        }
+      },
+      "DevExpress.XtraPrinting.v22.2/22.2.3.0": {
+        "runtime": {
+          "DevExpress.XtraPrinting.v22.2.dll": {
+            "assemblyVersion": "22.2.3.0",
+            "fileVersion": "22.2.3.0"
+          }
+        }
+      },
+      "DevExpress.Pdf.v22.2.Core/22.2.3.0": {
+        "runtime": {
+          "DevExpress.Pdf.v22.2.Core.dll": {
+            "assemblyVersion": "22.2.3.0",
+            "fileVersion": "22.2.3.0"
+          }
+        }
+      },
+      "DevExpress.Pdf.v22.2.Drawing/22.2.3.0": {
+        "runtime": {
+          "DevExpress.Pdf.v22.2.Drawing.dll": {
+            "assemblyVersion": "22.2.3.0",
+            "fileVersion": "22.2.3.0"
+          }
+        }
+      },
+      "DevExpress.RichEdit.v22.2.Core/22.2.3.0": {
+        "runtime": {
+          "DevExpress.RichEdit.v22.2.Core.dll": {
+            "assemblyVersion": "22.2.3.0",
+            "fileVersion": "22.2.3.0"
+          }
+        }
+      },
+      "DevExpress.Office.v22.2.Core/22.2.3.0": {
+        "runtime": {
+          "DevExpress.Office.v22.2.Core.dll": {
+            "assemblyVersion": "22.2.3.0",
+            "fileVersion": "22.2.3.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ArazAPI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.OpenApi/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FqUK5j1EOPNuFT7IafltZQ3cakqhSwVzH5ZW1MhZDe4pPXs9sJ2M5jom1Omsu+mwF2tNKKlRAzLRHQTZzbd+6Q==",
+      "path": "microsoft.aspnetcore.openapi/9.0.0",
+      "hashPath": "microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512"
+    },
+    "Microsoft.OpenApi/1.6.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==",
+      "path": "microsoft.openapi/1.6.17",
+      "hashPath": "microsoft.openapi.1.6.17.nupkg.sha512"
+    },
+    "ArazWin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Araz_Form/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Araz_Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Araz_Utilities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Araz_ViewModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.XtraBars.v22.2/22.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.XtraEditors.v22.2/22.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.Data.v22.2/22.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.Utils.v22.2/22.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.XtraLayout.v22.2/22.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.XtraGrid.v22.2/22.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PersianDatePickerControl/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.XtraTreeList.v22.2/22.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.Data.Desktop.v22.2/22.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ICSharpCode.SharpZipLib/0.85.4.369": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.Drawing.v22.2/22.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.Printing.v22.2.Core/22.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.Sparkline.v22.2.Core/22.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.XtraPrinting.v22.2/22.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.Pdf.v22.2.Core/22.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.Pdf.v22.2.Drawing/22.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.RichEdit.v22.2.Core/22.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.Office.v22.2.Core/22.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "Microsoft.AspNetCore.OpenApi/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.17"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.OpenApi/1.6.17": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "ArazWin/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Araz_Form": "1.0.0",
+          "Araz_Repository": "1.0.0",
+          "Araz_Utilities": "1.0.0",
+          "Araz_ViewModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ArazWin.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ArazWin.dll": {}
+        }
+      },
+      "Araz_Form/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Araz_Repository": "1.0.0",
+          "Araz_Utilities": "1.0.0",
+          "Araz_ViewModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Araz_Form.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Araz_Form.dll": {}
+        }
+      },
+      "Araz_Repository/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Araz_ViewModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Araz_Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Araz_Repository.dll": {}
+        }
+      },
+      "Araz_Utilities/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Araz_Utilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Araz_Utilities.dll": {}
+        }
+      },
+      "Araz_ViewModel/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Araz_ViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Araz_ViewModel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.AspNetCore.OpenApi/9.0.0": {
+      "sha512": "FqUK5j1EOPNuFT7IafltZQ3cakqhSwVzH5ZW1MhZDe4pPXs9sJ2M5jom1Omsu+mwF2tNKKlRAzLRHQTZzbd+6Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.openapi/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.xml",
+        "microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.nuspec"
+      ]
+    },
+    "Microsoft.OpenApi/1.6.17": {
+      "sha512": "Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==",
+      "type": "package",
+      "path": "microsoft.openapi/1.6.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.1.6.17.nupkg.sha512",
+        "microsoft.openapi.nuspec"
+      ]
+    },
+    "ArazWin/1.0.0": {
+      "type": "project",
+      "path": "../ArazWin/ArazWin.csproj",
+      "msbuildProject": "../ArazWin/ArazWin.csproj"
+    },
+    "Araz_Form/1.0.0": {
+      "type": "project",
+      "path": "../Araz_Form/Araz_Form.csproj",
+      "msbuildProject": "../Araz_Form/Araz_Form.csproj"
+    },
+    "Araz_Repository/1.0.0": {
+      "type": "project",
+      "path": "../Araz_Repository/Araz_Repository.csproj",
+      "msbuildProject": "../Araz_Repository/Araz_Repository.csproj"
+    },
+    "Araz_Utilities/1.0.0": {
+      "type": "project",
+      "path": "../Araz_Utilities/Araz_Utilities.csproj",
+      "msbuildProject": "../Araz_Utilities/Araz_Utilities.csproj"
+    },
+    "Araz_ViewModel/1.0.0": {
+      "type": "project",
+      "path": "../Araz_ViewModel/Araz_ViewModel.csproj",
+      "msbuildProject": "../Araz_ViewModel/Araz_ViewModel.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "ArazWin >= 1.0.0",
+      "Araz_Form >= 1.0.0",
+      "Araz_Repository >= 1.0.0",
+      "Araz_Utilities >= 1.0.0",
+      "Araz_ViewModel >= 1.0.0",
+      "Microsoft.AspNetCore.OpenApi >= 9.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Programming\\Win\\Araz\\Araz\\ArazAPI\\ArazAPI.csproj",
+      "projectName": "ArazAPI",
+      "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\ArazAPI\\ArazAPI.csproj",
+      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+      "outputPath": "D:\\Programming\\Win\\Araz\\Araz\\ArazAPI\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://packagesource": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\ArazWin.csproj": {
+              "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\ArazWin.csproj"
+            },
+            "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Araz_Form.csproj": {
+              "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Araz_Form.csproj"
+            },
+            "D:\\Programming\\Win\\Araz\\Araz\\Araz_Repository\\Araz_Repository.csproj": {
+              "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Repository\\Araz_Repository.csproj"
+            },
+            "D:\\Programming\\Win\\Araz\\Araz\\Araz_Utilities\\Araz_Utilities.csproj": {
+              "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Utilities\\Araz_Utilities.csproj"
+            },
+            "D:\\Programming\\Win\\Araz\\Araz\\Araz_ViewModel\\Araz_ViewModel.csproj": {
+              "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_ViewModel\\Araz_ViewModel.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": {
+            "target": "Package",
+            "version": "[9.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

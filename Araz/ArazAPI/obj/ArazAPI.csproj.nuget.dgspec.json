@@ -1,0 +1,211 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Programming\\Win\\Araz\\Araz\\ArazAPI\\ArazAPI.csproj": {}
+  },
+  "projects": {
+    "D:\\Programming\\Win\\Araz\\Araz\\ArazAPI\\ArazAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Win\\Araz\\Araz\\ArazAPI\\ArazAPI.csproj",
+        "projectName": "ArazAPI",
+        "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\ArazAPI\\ArazAPI.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Win\\Araz\\Araz\\ArazAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://packagesource": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\ArazWin.csproj": {
+                "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\ArazWin.csproj"
+              },
+              "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Araz_Form.csproj": {
+                "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Araz_Form.csproj"
+              },
+              "D:\\Programming\\Win\\Araz\\Araz\\Araz_Repository\\Araz_Repository.csproj": {
+                "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Repository\\Araz_Repository.csproj"
+              },
+              "D:\\Programming\\Win\\Araz\\Araz\\Araz_Utilities\\Araz_Utilities.csproj": {
+                "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Utilities\\Araz_Utilities.csproj"
+              },
+              "D:\\Programming\\Win\\Araz\\Araz\\Araz_ViewModel\\Araz_ViewModel.csproj": {
+                "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_ViewModel\\Araz_ViewModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\ArazWin.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\ArazWin.csproj",
+        "projectName": "ArazWin",
+        "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\ArazWin\\ArazWin.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Araz_Form.csproj": {
+                "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Araz_Form.csproj"
+              },
+              "D:\\Programming\\Win\\Araz\\Araz\\Araz_Repository\\Araz_Repository.csproj": {
+                "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Repository\\Araz_Repository.csproj"
+              },
+              "D:\\Programming\\Win\\Araz\\Araz\\Araz_Utilities\\Araz_Utilities.csproj": {
+                "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Utilities\\Araz_Utilities.csproj"
+              },
+              "D:\\Programming\\Win\\Araz\\Araz\\Araz_ViewModel\\Araz_ViewModel.csproj": {
+                "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_ViewModel\\Araz_ViewModel.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Araz_Form.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Araz_Form.csproj",
+        "projectName": "Araz_Form",
+        "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Form\\Araz_Form.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\Programming\\Win\\Araz\\Araz\\Araz_Repository\\Araz_Repository.csproj": {
+                "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Repository\\Araz_Repository.csproj"
+              },
+              "D:\\Programming\\Win\\Araz\\Araz\\Araz_Utilities\\Araz_Utilities.csproj": {
+                "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Utilities\\Araz_Utilities.csproj"
+              },
+              "D:\\Programming\\Win\\Araz\\Araz\\Araz_ViewModel\\Araz_ViewModel.csproj": {
+                "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_ViewModel\\Araz_ViewModel.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\Programming\\Win\\Araz\\Araz\\Araz_Repository\\Araz_Repository.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Repository\\Araz_Repository.csproj",
+        "projectName": "Araz_Repository",
+        "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Repository\\Araz_Repository.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\Programming\\Win\\Araz\\Araz\\Araz_ViewModel\\Araz_ViewModel.csproj": {
+                "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_ViewModel\\Araz_ViewModel.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\Programming\\Win\\Araz\\Araz\\Araz_Utilities\\Araz_Utilities.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Utilities\\Araz_Utilities.csproj",
+        "projectName": "Araz_Utilities",
+        "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_Utilities\\Araz_Utilities.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\Programming\\Win\\Araz\\Araz\\Araz_ViewModel\\Araz_ViewModel.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\Win\\Araz\\Araz\\Araz_ViewModel\\Araz_ViewModel.csproj",
+        "projectName": "Araz_ViewModel",
+        "projectPath": "D:\\Programming\\Win\\Araz\\Araz\\Araz_ViewModel\\Araz_ViewModel.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    }
+  }
+}
