@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArazAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+912cd86edf7f0f893195c69751ad261864e74d3c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+396c0319ab099ee9039f32ee1cc5db9afd2bf448")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArazAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArazAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

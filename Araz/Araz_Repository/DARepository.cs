@@ -161,22 +161,22 @@ namespace Repository
 
                 case "varbinary(max)":
                     return SqlDbType.VarBinary;
-                    break;
+                   // break;
                 case "System.Int32":
                     return SqlDbType.Int;
-                    break;
+                   // break;
                 case "System.Int64":
                     return SqlDbType.BigInt;
-                    break;
+                   // break;
                 case "System.Int16":
                     return SqlDbType.TinyInt;
-                    break;
+                   // break;
                 case "System.String":
                     return SqlDbType.NVarChar;
-                    break;
+                   // break;
                 default:
                     return SqlDbType.NVarChar;
-                    break;
+                   // break;
             }
         }
 
@@ -230,7 +230,7 @@ namespace Repository
         {
             try
             {
-                string Result = "";
+                //string Result = "";
                 using (SqlConnection conn = new SqlConnection(CNN))
                 using (SqlCommand cmd = new SqlCommand(schema + "." + "sp_" + procidureName, conn))
                 {

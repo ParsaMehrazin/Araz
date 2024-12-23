@@ -18,8 +18,8 @@ namespace Araz_Form.Form.Product
 {
     public partial class frmProductDefine : DevExpress.XtraEditors.XtraForm
     {
-        string select = "";
-        string where = "";
+     //   string select = "";
+     //   string where = "";
         int _mod = -1;
         Int64 CountSell = 0;
         Int64 CountBuy = 0;
@@ -27,7 +27,7 @@ namespace Araz_Form.Form.Product
         Int64 pkproductid = -1;
         string invoice = "-1";
         Int64 pkPriceID = -1;
-        bool _isSave = false;
+       bool _isSave = false;
         bool hasError = false;
         View_Price _price = new View_Price();
         View_Product product = new View_Product();

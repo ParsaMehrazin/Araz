@@ -94,7 +94,7 @@ namespace Araz_Form.Form
                 CommonTools.Loading(true);     
                 this.Text = "ویرایش شخص جدید";
                 this.pkroleId = roles.pkRoleID;
-                if (roles.ParentRole!=null && roles.ParentRole!=0)
+                if ( roles != null && roles.ParentRole!=0)
                     cmbPersonRole.EditValue = (cmbPersonRole.Properties.DataSource as List<View_Role>).Where(p => p.pkRoleID == roles.ParentRole).FirstOrDefault();
                else
                     cmbPersonRole.EditValue = (cmbPersonRole.Properties.DataSource as List<View_Role>).Where(p => p.pkRoleID == 1).FirstOrDefault();
@@ -157,7 +157,7 @@ namespace Araz_Form.Form
 
         private void cmbPersonRole_EditValueChanged(object sender, EventArgs e)
         {
-            if (cmbPersonRole.EditValue != "-----تمام سمت ها-----")
+            if (cmbPersonRole.EditValue.ToString() != "-----تمام سمت ها-----")
                 parentrole = (cmbPersonRole.Properties.DataSource as List<View_Role>).FirstOrDefault().pkRoleID;
         }
     }

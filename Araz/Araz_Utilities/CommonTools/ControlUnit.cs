@@ -62,7 +62,7 @@ namespace Utilities
                 if (string.IsNullOrEmpty(loggedIP))
                 {
                     string MachineName = Dns.GetHostName();
-                    return Dns.GetHostByName(MachineName).AddressList[0].ToString();
+                    return Dns.GetHostEntry(MachineName).AddressList[0].ToString();// Dns.GetHostByName(MachineName)
                 }
                 else
                     return "";

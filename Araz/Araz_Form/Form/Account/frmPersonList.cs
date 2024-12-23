@@ -1,5 +1,6 @@
 ﻿using Araz_ViewModel;
 using DevExpress.CodeParser;
+using DevExpress.Xpo.DB;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors.Controls;
 using Repository;
@@ -327,7 +328,7 @@ namespace Araz_Form
                 fpRoleDefine.ShowBeakForm(Control.MousePosition);
                 this.Text = "ویرایش شخص جدید";
                 this.pkroleId = _Role.pkRoleID;                
-                if (_Role.ParentRole != null && _Role.ParentRole >0 )
+                if (_Role.ParentRole >0 )
                     cmbPersonRole.EditValue = (cmbPersonRole.Properties.DataSource as List<View_Role>).Where(p => p.pkRoleID == _Role.ParentRole).FirstOrDefault();
                 else
                     cmbPersonRole.EditValue = (cmbPersonRole.Properties.DataSource as List<View_Role>).Where(p => p.pkRoleID == 1).FirstOrDefault();
@@ -387,7 +388,7 @@ namespace Araz_Form
 
         private void cmbPersonRole_EditValueChanged(object sender, EventArgs e)
         {
-            if (cmbPersonRole.EditValue != "-----تمام سمت ها-----")
+            if (cmbPersonRole.EditValue.ToString() != "-----تمام سمت ها-----")
                 parentrole = (cmbPersonRole.Properties.DataSource as List<View_Role>).FirstOrDefault().pkRoleID;
         }
 
@@ -457,8 +458,7 @@ namespace Araz_Form
              new ServiceOperatorParameter() { Name = "PersonName", Value = string.IsNullOrEmpty(txtName.Text) ? "" : txtName.Text },
              new ServiceOperatorParameter() { Name = "PersonLastName", Value = string.IsNullOrEmpty(txtLastName.Text) ? "" : txtLastName.Text },
              new ServiceOperatorParameter() { Name = "Sex", Value = cmbSex.EditValue == null ? "آقا" : cmbSex.EditValue },
-             new ServiceOperatorParameter() { Name = "PersonAge", Value = "" },
-             new ServiceOperatorParameter() { Name = "AgeDate", Value = "" },
+             new ServiceOperatorParameter() { Name = "AgeDate", Value = dtpPersianAgeDate.GeorgianDate.Value },            
              new ServiceOperatorParameter() { Name = "fkEducationID", Value = (cmbEducation.EditValue as View_Education) == null ? -1 : (cmbEducation.EditValue as View_Education).pkEducationID },
              new ServiceOperatorParameter() { Name = "NationalCode", Value = string.IsNullOrEmpty(txtNationalCode.Text) ? "" : txtNationalCode.Text },
              new ServiceOperatorParameter() { Name = "Mobile", Value = string.IsNullOrEmpty(txtMobile.Text) ? "" : txtMobile.Text },
@@ -508,6 +508,30 @@ namespace Araz_Form
         private void btnPrintList_ItemClick(object sender, ItemClickEventArgs e)
         {
            
+        }
+
+        private void txtAge_EditValueChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void dtpPersianAgeDate_Click(object sender, EventArgs e)
+        {
+            var date = DateTime.Now;
+            int age = date.Year - dtpPersianAgeDate.GeorgianDate.Value.Year;
+            txtAge.Text = age.ToString();
+        }
+
+        private void dtpPersianAgeDate_Leave(object sender, EventArgs e)
+        {
+            var date = DateTime.Now;
+            int age = date.Year - dtpPersianAgeDate.GeorgianDate.Value.Year;
+            txtAge.Text = age.ToString();
+        }
+
+        private void dtpPersianAgeDate_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
