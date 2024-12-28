@@ -79,6 +79,7 @@ namespace Araz_Form
             {
                 CommonTools.Loading(true);
                 FillData_Person();
+                ClearPerson();               
                 _mod = 1;
                 fpPersonDefine.OwnerControl = gcPersonList;
                 fpPersonDefine.ShowBeakForm(Control.MousePosition);
@@ -201,10 +202,9 @@ namespace Araz_Form
         }
         public void ClearPerson()
         {
+            cmbRolePerson.EditValue= null;
             txtName.Text = "";
-            txtLastName.Text = "";
-            cmbSex.Text = "";
-            cmbSex.EditValue = null;
+            txtLastName.Text = "";          
             txtAge.Text = "";
             dtpPersianAgeDate.Text = "";
             cmbEducation.EditValue = null;
@@ -216,6 +216,14 @@ namespace Araz_Form
             cmbProvince.EditValue = null;
             cmbCity.EditValue = null;
             txtAddress.Text = "";
+            ErrorProvider.SetError(cmbRolePerson, string.Empty);
+            ErrorProvider.SetError(txtName, string.Empty);
+            ErrorProvider.SetError(txtLastName, string.Empty);
+            ErrorProvider.SetError(dtpPersianAgeDate, string.Empty);
+            ErrorProvider.SetError(cmbEducation, string.Empty);
+            ErrorProvider.SetError(cmbProvince, string.Empty);
+            ErrorProvider.SetError(cmbCity, string.Empty);
+           
         }
 
         #region Button Grid Person
@@ -408,28 +416,35 @@ namespace Araz_Form
         private void btnSave_Click(object sender, EventArgs e)
         {
             ErrorProvider.ClearErrors();
-
+      
             if (_mod != 3)
             {
                 if (string.IsNullOrEmpty(cmbRolePerson.Text) || cmbRolePerson.EditValue == null)
                     ErrorProvider.SetError(cmbRolePerson, "لطفا یک سمت را انتخاب کنید ");
 
                 if (string.IsNullOrEmpty(txtName.Text) || txtName.Text == "")
-                    ErrorProvider.SetError(txtName, "نمیتواند خالی باشد");
+                    ErrorProvider.SetError(txtName, "نام نمیتواند خالی باشد");
 
                 if (string.IsNullOrEmpty(txtLastName.Text) || txtLastName.Text == "")
-                    ErrorProvider.SetError(txtLastName, "نمیتواند خالی باشد");
+                    ErrorProvider.SetError(txtLastName, "نام خانوادگی نمیتواند خالی باشد");
 
 
                 if (string.IsNullOrEmpty(cmbEducation.Text) || cmbEducation.EditValue == null)
-                    ErrorProvider.SetError(cmbEducation, "لطفا یک سمت را انتخاب کنید ");
+                    ErrorProvider.SetError(cmbEducation, "لطفا تحصیلات را انتخاب کنید ");
 
                 if (string.IsNullOrEmpty(cmbProvince.Text) || cmbProvince.EditValue == null)
-                    ErrorProvider.SetError(cmbProvince, "لطفا یک سمت را انتخاب کنید ");
+                    ErrorProvider.SetError(cmbProvince, "لطفا یک استان را انتخاب کنید ");
 
+                if (!dtpPersianAgeDate.GeorgianDate.HasValue)
+                {
+                    ErrorProvider.SetError(txtAge, "تاریخ تولد نمی تواند خالی باشد");
+                }
+                 else if (dtpPersianAgeDate.GeorgianDate.Value.Year < 1)
+                        ErrorProvider.SetError(txtAge, "تاریخ تولد نمی تواند کمتر از 1 سال باشد  ");
+                
                 if ((cmbProvince.EditValue as View_City) != null)
                     if ((cmbCity.EditValue as View_City) == null)
-                        ErrorProvider.SetError(cmbCity, "نمیتواند خالی باشد");
+                        ErrorProvider.SetError(cmbCity, "شهر نمیتواند خالی باشد");
 
                 if (txtMobile.Text != "")
                     if (txtMobile.Text.Length != 11)
@@ -458,7 +473,7 @@ namespace Araz_Form
              new ServiceOperatorParameter() { Name = "PersonName", Value = string.IsNullOrEmpty(txtName.Text) ? "" : txtName.Text },
              new ServiceOperatorParameter() { Name = "PersonLastName", Value = string.IsNullOrEmpty(txtLastName.Text) ? "" : txtLastName.Text },
              new ServiceOperatorParameter() { Name = "Sex", Value = cmbSex.EditValue == null ? "آقا" : cmbSex.EditValue },
-             new ServiceOperatorParameter() { Name = "AgeDate", Value = dtpPersianAgeDate.GeorgianDate.Value },            
+             new ServiceOperatorParameter() { Name = "AgeDate", Value =  dtpPersianAgeDate.GeorgianDate.Value },            
              new ServiceOperatorParameter() { Name = "fkEducationID", Value = (cmbEducation.EditValue as View_Education) == null ? -1 : (cmbEducation.EditValue as View_Education).pkEducationID },
              new ServiceOperatorParameter() { Name = "NationalCode", Value = string.IsNullOrEmpty(txtNationalCode.Text) ? "" : txtNationalCode.Text },
              new ServiceOperatorParameter() { Name = "Mobile", Value = string.IsNullOrEmpty(txtMobile.Text) ? "" : txtMobile.Text },
@@ -517,16 +532,19 @@ namespace Araz_Form
 
         private void dtpPersianAgeDate_Click(object sender, EventArgs e)
         {
-            var date = DateTime.Now;
-            int age = date.Year - dtpPersianAgeDate.GeorgianDate.Value.Year;
-            txtAge.Text = age.ToString();
+            //var date = DateTime.Now;
+            //int age = date.Year - dtpPersianAgeDate.GeorgianDate.Value.Year;
+            //txtAge.Text = age.ToString();
         }
 
         private void dtpPersianAgeDate_Leave(object sender, EventArgs e)
         {
             var date = DateTime.Now;
-            int age = date.Year - dtpPersianAgeDate.GeorgianDate.Value.Year;
-            txtAge.Text = age.ToString();
+            if (dtpPersianAgeDate.GeorgianDate.HasValue)
+            {
+                int age = date.Year - dtpPersianAgeDate.GeorgianDate.Value.Year;
+                txtAge.Text = age.ToString();
+            }
         }
 
         private void dtpPersianAgeDate_Load(object sender, EventArgs e)

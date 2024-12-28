@@ -38,7 +38,7 @@ namespace Araz_Form
         
         int invoicebuyNumber = 0;
         int fkfinancialYearNumber = 0;
-      bool hasError = false;
+        bool hasError = false;
         bool _isSave = false;
         List<View_Product> product = new List<View_Product>();
         View_InvoiceBuyNumber _invoiceBuyNumbers = new View_InvoiceBuyNumber();
