@@ -87,14 +87,14 @@ namespace Araz_Form
         {
             CommonTools.Loading(true);
             cmbPersonList.Properties.DataSource = DARepository.GetAllFromView<View_Person>("SELECT * FROM dbo.View_Person", "").ToList();
-            select = "SELECT  TOP 1   *   FROM dbo.View_InvoiceBuy1403 AS i";
-            where = "WHERE (SELECT MAX(CAST(InvoiceBuyNumber AS INT)) FROM dbo.InvoiceBuy1403 ) = i.InvoiceBuyNumber";
+            select = "SELECT  TOP 1   *   FROM dbo.View_InvoiceBuy AS i";
+            where = "WHERE (SELECT MAX(CAST(InvoiceBuyNumber AS INT)) FROM dbo.InvoiceBuy ) = i.InvoiceBuyNumber";
             invoice = DARepository.GetAllFromView<View_InvoiceBuyNumber>(select, where).ToList().FirstOrDefault();
             invoicebuyNumber = Convert.ToInt16(invoice.InvoiceBuyNumber) + 1;
             txtInvoiceBuyNumber.Text = invoice.ComputedInvoiceBuyNumber.ToString() + (invoicebuyNumber).ToString();
 
 
-            _invoiceBuyNumbers = DARepository.GetAllFromView<View_InvoiceBuyNumber>("SELECT MAX(pkInvoiceBuyID) AS pkInvoiceBuyID FROM dbo.InvoiceBuy1403", "").FirstOrDefault();
+            _invoiceBuyNumbers = DARepository.GetAllFromView<View_InvoiceBuyNumber>("SELECT MAX(pkInvoiceBuyID) AS pkInvoiceBuyID FROM dbo.InvoiceBuy", "").FirstOrDefault();
             pkinvoice = _invoiceBuyNumbers.pkInvoiceBuyID + 1;
 
             CommonTools.Loading();

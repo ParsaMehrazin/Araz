@@ -5,10 +5,12 @@ using DevExpress.XtraBars;
 using DevExpress.XtraEditors.Controls;
 using Repository;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -111,9 +113,10 @@ namespace Araz_Form
                 txtLastName.Text = _Person.PersonLastName;
                 cmbSex.EditValue = _Sex.Where(p => p == _Person.Sex).FirstOrDefault();
                 cmbSex.EditValue = _Person.Sex == null ? "" : _Sex.Where(p => p == _Person.Sex.ToString()).FirstOrDefault();
-                txtAge.Text = _Person.PersonAge.ToString();
+                
                 //PersianAgeDate.Text = (_Person.AgeDate == null) ? "" : _Person.AgeDate.ToString();
-                dtpPersianAgeDate.GeorgianDate = DateTime.Now;
+                dtpPersianAgeDate.GeorgianDate = _Person.AgeDate;
+                txtAge.Text =(DateTime.Now.Year - dtpPersianAgeDate.GeorgianDate.Value.Year). ToString();
                 cmbEducation.EditValue = (cmbEducation.Properties.DataSource as List<View_Education>).Where(p => p.pkEducationID == _Person.fkEducationID).FirstOrDefault();
                 txtNationalCode.Text = _Person.NationalCode;
                 txtMobile.Text = _Person.Mobile;
@@ -188,16 +191,43 @@ namespace Araz_Form
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
+            //var _Roles = cmbRole.EditValue as View_Role;
+            //if (_Roles != null)
+            //{
+            //    var where = "";
+            //    var select = "SELECT * FROM dbo.View_Person";
+            //    if (_Roles.pkRoleID > 3)
+            //        where = "WHERE fkRoleID = " + _Roles.pkRoleID;
+            //    else if (_Roles.pkRoleID == 2)
+            //        where = "WHERE fkRoleID <>  " + 4;
+            //    gcPersonList.DataSource = DARepository.GetAllFromView<View_Person>(select, where).ToList();
+            //}
+
             var _Roles = cmbRole.EditValue as View_Role;
             if (_Roles != null)
             {
                 var where = "";
                 var select = "SELECT * FROM dbo.View_Person";
+
                 if (_Roles.pkRoleID > 3)
                     where = "WHERE fkRoleID = " + _Roles.pkRoleID;
                 else if (_Roles.pkRoleID == 2)
                     where = "WHERE fkRoleID <>  " + 4;
-                gcPersonList.DataSource = DARepository.GetAllFromView<View_Person>(select, where).ToList();
+
+                var persons = DARepository.GetAllFromView<View_Person>(select, where).ToList();
+
+               
+                foreach (var person in persons)
+                {
+                    if (person.AgeDate != null)
+                    {
+                        var persianCalendar = new PersianCalendar();
+                        person.ShamsiDate = person.AgeDate.ToPersian();            
+
+                    }
+                }
+
+                gcPersonList.DataSource = persons;
             }
         }
         public void ClearPerson()
@@ -522,8 +552,26 @@ namespace Araz_Form
 
         private void btnPrintList_ItemClick(object sender, ItemClickEventArgs e)
         {
-           
-        }
+            //var item = gvProductSeparation.GetFocusedRow() as View_ProductSeparation;
+
+            //if (item != null)
+            //{
+            //    string select = "SELECT * FROM View_InputEvidenceItem";
+            //    string where = " WHERE fkEvidence = " + item.pkEvidence + "or pkEvidenceItem= " + item.fkRelatedEvidenceItem;
+            //    var ds = DARepository.GetAllFromView<View_InputEvidenceItem>(select, where).ToList();
+
+            //    rptLabelForProducts rpt = new rptLabelForProducts(null);
+            //    rpt.CreateDocument();
+            //    rpt.PrintingSystem.ContinuousPageNumbering = true;
+            //    foreach (var t in ds)
+            //    {
+            //        rptLabelForProducts rpt1 = new rptLabelForProducts(t);
+            //        rpt1.CreateDocument();
+            //        rpt.Pages.AddRange(rpt1.Pages);
+            //    }
+            //    rpt.Pages.Remove(rpt.Pages[0]);
+            //    rpt.ShowPreviewDialog();
+            }
 
         private void txtAge_EditValueChanged(object sender, EventArgs e)
         {
@@ -549,6 +597,16 @@ namespace Araz_Form
 
         private void dtpPersianAgeDate_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnExpertExcelList_ItemClick(object sender, ItemClickEventArgs e)
+        {
+          
+               if (gvPersonList.DataSource != null) 
+                 CommonTools.ExportToExcel(gvPersonList);
+                else
+                 CommonTools.ShowMessage("داده ای وجود ندارد");
 
         }
     }

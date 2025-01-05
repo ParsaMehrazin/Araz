@@ -27,7 +27,8 @@ namespace Araz_ViewModel
         public string PostalCode { get; set; }                   //-----کد پستی
         public long? fkRoleID { get; set; }                      //-----آی دی سمت
         public string RoleName { get; set; }                   //-----سمت
-
+        public DateTime MiladiDate { get; set; } // تاریخ میلادی  
+        public string ShamsiDate { get; set; }
 
     }
 }

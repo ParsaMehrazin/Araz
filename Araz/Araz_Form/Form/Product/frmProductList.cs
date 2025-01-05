@@ -525,9 +525,9 @@ namespace Araz_Form
             var t = gvProductList.GetFocusedRow() as View_Product;
             if (t != null)
             {
-                select = "SELECT * FROM dbo.View_PersonDetails";
-                where = "where pkPersonID = " + t.pkPersonID;
-                gcPersonDetail.DataSource = DARepository.GetAllFromView<View_PersonDetails>(select, where).ToList();
+                select = "SELECT * FROM  dbo.View_ProductDetails";
+                where = "where pkProductID = " + t.pkProductID;
+                gcPersonDetail.DataSource = DARepository.GetAllFromView<View_ProductDetails>(select, where).ToList();
             }
 
         }

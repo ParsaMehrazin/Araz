@@ -45,8 +45,9 @@
     <Compile Include="Account\View_PersonDetails.cs" />
     <Compile Include="Invoice\View_InvoiceBuyNumber.cs" />
     <Compile Include="Invoice\View_Price.cs" />
-    <Compile Include="Invoice\View_Product.cs" />
+    <Compile Include="Product\View_Product.cs" />
     <Compile Include="Invoice\View_Type.cs" />
+    <Compile Include="Product\View_ProductDetails.cs" />
     <Compile Include="Region\View_City.cs" />
     <Compile Include="Account\View_Education.cs" />
     <Compile Include="Account\View_Person.cs" />
