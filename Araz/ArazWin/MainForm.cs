@@ -11,17 +11,16 @@ namespace ArazWin
     {
         private Timer timer;
         private bool VersionUpdated = true;
-
-        public MainForm()
+        long pkperson = 0;
+        public  MainForm(long model)
         {
             InitializeComponent();
 
             if (SplashScreenManager.Default == null || !SplashScreenManager.Default.IsSplashFormVisible)
                 SplashScreenManager.ShowForm(typeof(WaitingForm));
-
+            pkperson = model;
             ApplyPermission();
-            CheckDevMode();
-
+            CheckDevMode();            
             if (SplashScreenManager.Default != null && SplashScreenManager.Default.IsSplashFormVisible)
                 SplashScreenManager.CloseForm();
         }
@@ -162,6 +161,11 @@ namespace ArazWin
             frmInvoiceList frm = new frmInvoiceList();
             frm.MdiParent = this;
             frm.Show();
+        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+           
         }
     }
 }

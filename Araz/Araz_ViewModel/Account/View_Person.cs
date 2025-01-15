@@ -19,6 +19,7 @@ namespace Araz_ViewModel
         public string Tel { get; set; }                          //-----تلفن
         public string NationalCode { get; set; }                 //-----کد ملی
         public string Email { get; set; }                        //-----ایمیل
+        public string Password { get; set; }                     //-----رمز عبور
         public long? fkCityID { get; set; }                      //-----اف کا شهر 
         public long? fkProvinceID { get; set; }                  //-----اف کا استان
         public string Province { get; set; }                     //-----استان

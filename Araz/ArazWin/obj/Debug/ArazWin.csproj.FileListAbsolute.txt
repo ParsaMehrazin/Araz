@@ -84,3 +84,4 @@ D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraVerticalGrid.v22.2
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraNavBar.v22.2.xml
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraReports.v22.2.xml
 D:\Programming\Win\Araz\Araz\ArazWin\bin\Debug\DevExpress.XtraTreeMap.v22.2.xml
+D:\Programming\Win\Araz\Araz\ArazWin\obj\Debug\ArazWin.frmLoginAraz.resources

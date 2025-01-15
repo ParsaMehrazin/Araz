@@ -32,6 +32,7 @@ namespace Araz_Form
         Int64 parentrole = -1;
         public bool _isSave = false;
         public bool hasError = false;
+        string pass = "";
         int _mod = -1;
         View_Role roles = new View_Role();
         private List<string> _Sex;
@@ -112,8 +113,8 @@ namespace Araz_Form
                 txtName.Text = _Person.PersonName;
                 txtLastName.Text = _Person.PersonLastName;
                 cmbSex.EditValue = _Sex.Where(p => p == _Person.Sex).FirstOrDefault();
-                cmbSex.EditValue = _Person.Sex == null ? "" : _Sex.Where(p => p == _Person.Sex.ToString()).FirstOrDefault();
-                
+                cmbSex.EditValue = _Person.Sex == null ? "" : _Sex.Where(p => p == _Person.Sex.ToString()).FirstOrDefault();              
+                //txtPasswordPerson.Text = IdentityHelper.EncodePasswordMd5(_Person.Password);
                 //PersianAgeDate.Text = (_Person.AgeDate == null) ? "" : _Person.AgeDate.ToString();
                 dtpPersianAgeDate.GeorgianDate = _Person.AgeDate;
                 txtAge.Text =(DateTime.Now.Year - dtpPersianAgeDate.GeorgianDate.Value.Year). ToString();
@@ -178,7 +179,7 @@ namespace Araz_Form
                 }
             }
             else
-                CommonTools.ShowMessage("ردیفی برای حذف انتخاب نشده ");
+                CommonTools.ShowMessage("ردیفی برای حذف انتخاب نشده");
 
         }
         #endregion
@@ -240,9 +241,10 @@ namespace Araz_Form
             cmbEducation.EditValue = null;
             txtNationalCode.Text = "";
             txtMobile.Text = "";
-            txtTel.Text = "";
+            txtTel.Text = "";            
             txtPostalCode.Text = "";
             txtEmail.Text = "";
+            txtPasswordPerson.Text = "";
             cmbProvince.EditValue = null;
             cmbCity.EditValue = null;
             txtAddress.Text = "";
@@ -510,6 +512,7 @@ namespace Araz_Form
              new ServiceOperatorParameter() { Name = "Tel", Value = string.IsNullOrEmpty(txtTel.Text) ? "" : txtTel.Text },
              new ServiceOperatorParameter() { Name = "PostalCode", Value = string.IsNullOrEmpty(txtPostalCode.Text) ? "" : txtPostalCode.Text },
              new ServiceOperatorParameter() { Name = "Email", Value = string.IsNullOrEmpty(txtEmail.Text) ? "" : txtEmail.Text },
+             new ServiceOperatorParameter() { Name = "Password", Value =IdentityHelper.HashPassword(txtPasswordPerson.Text) },
              new ServiceOperatorParameter() { Name = "fkProvinceID", Value = (cmbProvince.EditValue as View_City) == null ? -1 : (cmbProvince.EditValue as View_City).ProvinceID },
              new ServiceOperatorParameter() { Name = "fkCityID", Value = (cmbCity.EditValue as View_City) == null ? -1 : (cmbCity.EditValue as View_City).CityID },
              new ServiceOperatorParameter() { Name = "Address", Value = string.IsNullOrEmpty(txtAddress.Text) ? "" : txtAddress.Text },
