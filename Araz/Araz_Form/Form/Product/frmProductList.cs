@@ -516,7 +516,7 @@ namespace Araz_Form
         private void btnPrintProduct_ItemClick(object sender, ItemClickEventArgs e)
         {
             var item = gcProductList.DataSource as View_Product;
-            frmSearchProduct frm = new frmSearchProduct(false);
+            frmSearchProduct frm = new frmSearchProduct(false, "");
             frm.ShowDialog();
         }
 

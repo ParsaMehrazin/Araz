@@ -334,7 +334,6 @@ namespace Araz_Form
         public void FillDataRole()
         {
             cmbPersonRole.Properties.DataSource = DARepository.GetAllFromView<View_Role>("select * from dbo.View_Role", "").ToList();
-
         }
 
         public bool modOneRole()
@@ -342,8 +341,7 @@ namespace Araz_Form
             try
             {
                 CommonTools.Loading(true);
-                _mod = 1;
-                
+                _mod = 1;                
                 fpRoleDefine.OwnerControl = gcPersonList;
                 fpRoleDefine.ShowBeakForm(Control.MousePosition);
                 this.Text = "ثبت شخص جدید";

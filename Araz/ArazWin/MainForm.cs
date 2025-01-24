@@ -130,7 +130,7 @@ namespace ArazWin
 
         private void BuyButton_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            frmInvoiceBuyDefine frm = new frmInvoiceBuyDefine(1,null);
+            frmInvoiceDefine frm = new frmInvoiceDefine(1,"Buy");
             frm.MdiParent = this;
             frm.Show();
         }
@@ -166,6 +166,13 @@ namespace ArazWin
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
            
+        }
+
+        private void SellButton_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmInvoiceDefine frm = new frmInvoiceDefine(1,"Sell");
+            frm.MdiParent = this;
+            frm.Show();
         }
     }
 }

@@ -44,7 +44,8 @@
   <ItemGroup>
     <Compile Include="Account\View_PersonDetails.cs" />
     <Compile Include="FinnantialYear\View_FinnantialYear.cs" />
-    <Compile Include="Invoice\View_InvoiceBuyNumber.cs" />
+    <Compile Include="Invoice\View_InvoiceSell.cs" />
+    <Compile Include="Invoice\View_InvoiceBuy.cs" />
     <Compile Include="Invoice\View_Price.cs" />
     <Compile Include="Product\View_Product.cs" />
     <Compile Include="Invoice\View_Type.cs" />

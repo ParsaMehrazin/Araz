@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Araz_ViewModel
 {
-    public class View_Product : View_InvoiceBuyNumber
+    public class View_Product : View_InvoiceBuy
     {
         public bool Selected { get; set; }
         public long pkGroup1 { get; set; }

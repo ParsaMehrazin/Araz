@@ -1,6 +1,6 @@
 ﻿namespace Araz_Form
 {
-    partial class frmInvoiceBuyDefine
+    partial class frmInvoiceDefine
     {
         /// <summary>
         /// Required designer variable.
@@ -52,7 +52,7 @@
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnSelectProduct = new DevExpress.XtraEditors.SimpleButton();
             this.btnSaveAndPrint = new DevExpress.XtraEditors.SimpleButton();
-            this.txtInvoiceBuyNumber = new DevExpress.XtraEditors.TextEdit();
+            this.txtInvoiceNumber = new DevExpress.XtraEditors.TextEdit();
             this.cmbPersonList = new DevExpress.XtraEditors.LookUpEdit();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.txtPrice = new DevExpress.XtraEditors.TextEdit();
@@ -87,7 +87,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnDeleteSelectGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPercent.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtdiscount.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtInvoiceBuyNumber.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInvoiceNumber.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPersonList.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrice.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPercent1.Properties)).BeginInit();
@@ -157,7 +157,7 @@
             this.layoutControl1.Controls.Add(this.simpleButton1);
             this.layoutControl1.Controls.Add(this.btnSelectProduct);
             this.layoutControl1.Controls.Add(this.btnSaveAndPrint);
-            this.layoutControl1.Controls.Add(this.txtInvoiceBuyNumber);
+            this.layoutControl1.Controls.Add(this.txtInvoiceNumber);
             this.layoutControl1.Controls.Add(this.cmbPersonList);
             this.layoutControl1.Controls.Add(this.simpleButton4);
             this.layoutControl1.Controls.Add(this.txtPrice);
@@ -420,21 +420,21 @@
             this.btnSaveAndPrint.Text = "ثبت و چاپ";
             this.btnSaveAndPrint.Click += new System.EventHandler(this.btnSaveAndPrint_Click);
             // 
-            // txtInvoiceBuyNumber
+            // txtInvoiceNumber
             // 
-            this.txtInvoiceBuyNumber.Location = new System.Drawing.Point(351, 45);
-            this.txtInvoiceBuyNumber.MenuManager = this.ribbon;
-            this.txtInvoiceBuyNumber.Name = "txtInvoiceBuyNumber";
-            this.txtInvoiceBuyNumber.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.txtInvoiceBuyNumber.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.txtInvoiceBuyNumber.Properties.Appearance.Options.UseBackColor = true;
-            this.txtInvoiceBuyNumber.Properties.Appearance.Options.UseForeColor = true;
-            this.txtInvoiceBuyNumber.Properties.Appearance.Options.UseTextOptions = true;
-            this.txtInvoiceBuyNumber.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.txtInvoiceBuyNumber.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.txtInvoiceBuyNumber.Size = new System.Drawing.Size(153, 20);
-            this.txtInvoiceBuyNumber.StyleController = this.layoutControl1;
-            this.txtInvoiceBuyNumber.TabIndex = 15;
+            this.txtInvoiceNumber.Location = new System.Drawing.Point(351, 45);
+            this.txtInvoiceNumber.MenuManager = this.ribbon;
+            this.txtInvoiceNumber.Name = "txtInvoiceNumber";
+            this.txtInvoiceNumber.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.txtInvoiceNumber.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.txtInvoiceNumber.Properties.Appearance.Options.UseBackColor = true;
+            this.txtInvoiceNumber.Properties.Appearance.Options.UseForeColor = true;
+            this.txtInvoiceNumber.Properties.Appearance.Options.UseTextOptions = true;
+            this.txtInvoiceNumber.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.txtInvoiceNumber.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.txtInvoiceNumber.Size = new System.Drawing.Size(153, 20);
+            this.txtInvoiceNumber.StyleController = this.layoutControl1;
+            this.txtInvoiceNumber.TabIndex = 15;
             // 
             // cmbPersonList
             // 
@@ -690,7 +690,7 @@
             // 
             this.layoutControlItem9.AppearanceItemCaption.ForeColor = System.Drawing.Color.Black;
             this.layoutControlItem9.AppearanceItemCaption.Options.UseForeColor = true;
-            this.layoutControlItem9.Control = this.txtInvoiceBuyNumber;
+            this.layoutControlItem9.Control = this.txtInvoiceNumber;
             this.layoutControlItem9.Enabled = false;
             this.layoutControlItem9.Location = new System.Drawing.Point(325, 0);
             this.layoutControlItem9.MaxSize = new System.Drawing.Size(240, 24);
@@ -759,7 +759,7 @@
             // 
             this.ErrorProvider.ContainerControl = this;
             // 
-            // frmInvoiceBuyDefine
+            // frmInvoiceDefine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -767,7 +767,7 @@
             this.Controls.Add(this.layoutControl1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
-            this.Name = "frmInvoiceBuyDefine";
+            this.Name = "frmInvoiceDefine";
             this.Ribbon = this.ribbon;
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StatusBar = this.ribbonStatusBar;
@@ -780,7 +780,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnDeleteSelectGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPercent.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtdiscount.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtInvoiceBuyNumber.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInvoiceNumber.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPersonList.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrice.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPercent1.Properties)).EndInit();
@@ -837,7 +837,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraEditors.SimpleButton btnSaveAndPrint;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
-        private DevExpress.XtraEditors.TextEdit txtInvoiceBuyNumber;
+        private DevExpress.XtraEditors.TextEdit txtInvoiceNumber;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup5;
         private DevExpress.XtraEditors.LookUpEdit cmbPersonList;

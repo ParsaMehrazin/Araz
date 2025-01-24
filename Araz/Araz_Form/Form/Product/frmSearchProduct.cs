@@ -23,13 +23,13 @@ namespace Araz_Form
         public List<View_Product> SelectedProducts = new List<View_Product>();
         View_Product product = new View_Product();
         private bool singleSelect = false;
-
-        public frmSearchProduct(bool SingleSelect )
+        string changes = "";
+        public frmSearchProduct(bool SingleSelect , string model )
         {
             InitializeComponent();
            // product = model;
             FillData();        
-            
+            changes = model;    
             singleSelect = SingleSelect;
             if (singleSelect)
             {
@@ -57,35 +57,24 @@ namespace Araz_Form
         }
 
 
-
+        string sell = "";
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             CommonTools.Loading(true);          
             var grp = (cmbGroup.EditValue as View_Product);
             string where = " WHERE 1 = 1 ";
             string select = "";
-
+            if (changes == "Sell")
+                 sell = " AND Count <> 0 ";
+            else
+                sell = "";
             if (grp != null)
             {
                 select = "SELECT DISTINCT(ProductName),* FROM dbo.View_Product";
-                where = "Where ParentProductID = " + grp.pkGroup2;
-              
-               // var columns = DARepository.GetAllFromView<View_Product>(select, where).ToList();
+                where = "Where ParentProductID = " + grp.pkGroup2 + sell;
             }
-            //    if (columns != null && grp.ParentGroup1!=null)
-            //    {
-            //        foreach (var item in gvProductList.Columns.Where(p => p.Name.StartsWith("Check_")))
-            //            item.Visible = columns.Any(p => "CHECK_" + p.ProductName.ToUpper() == item.Name.ToUpper());
-            //    }
-            //}
-            //else
-            //{
-            //    foreach (var item in gvProductList.Columns.Where(p => p.Name.StartsWith("Check_")))
-            //        item.Visible = true;
-            //}
-
             if (!string.IsNullOrEmpty(txtProductName.Text))          
-                where = "Where ParentProductID = " + grp.pkGroup2 + " AND ProductName LIKE '%" + txtProductName.Text + "%'";
+                where = "Where ParentProductID = " + grp.pkGroup2 + " AND ProductName LIKE '%" + txtProductName.Text + "%'" +  sell;
             gcProductList.DataSource = DARepository.GetAllFromView<View_Product>(select,where).ToList();
             CommonTools.Loading();
         }

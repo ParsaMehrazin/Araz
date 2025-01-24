@@ -111,7 +111,7 @@
             this.MainRibbonControl.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.MainRibbonControl.ShowSearchItem = true;
             this.MainRibbonControl.ShowToolbarCustomizeItem = false;
-            this.MainRibbonControl.Size = new System.Drawing.Size(1456, 158);
+            this.MainRibbonControl.Size = new System.Drawing.Size(1456, 162);
             this.MainRibbonControl.StatusBar = this.ribbonStatusBar;
             this.MainRibbonControl.Toolbar.ShowCustomizeItem = false;
             this.MainRibbonControl.Merge += new DevExpress.XtraBars.Ribbon.RibbonMergeEventHandler(this.MainRibbonControl_Merge);
@@ -119,10 +119,10 @@
             // backstageViewControl1
             // 
             this.backstageViewControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.backstageViewControl1.Location = new System.Drawing.Point(0, 158);
+            this.backstageViewControl1.Location = new System.Drawing.Point(0, 162);
             this.backstageViewControl1.Name = "backstageViewControl1";
             this.backstageViewControl1.OwnerControl = this.MainRibbonControl;
-            this.backstageViewControl1.Size = new System.Drawing.Size(1456, 583);
+            this.backstageViewControl1.Size = new System.Drawing.Size(1456, 577);
             this.backstageViewControl1.TabIndex = 3;
             this.backstageViewControl1.Text = "backstageViewControl1";
             this.backstageViewControl1.VisibleInDesignTime = true;
@@ -158,6 +158,7 @@
             this.SellButton.ImageOptions.Image = global::ArazWin.Properties.Resources.addfooter_16x16;
             this.SellButton.ImageOptions.LargeImage = global::ArazWin.Properties.Resources.addfooter_32x32;
             this.SellButton.Name = "SellButton";
+            this.SellButton.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.SellButton_ItemClick);
             // 
             // btnProduct2
             // 
@@ -323,10 +324,10 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 741);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 739);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.MainRibbonControl;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1456, 24);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1456, 26);
             // 
             // xtraTabbedMdiManager
             // 
@@ -374,13 +375,13 @@
             // pictureEdit
             // 
             this.pictureEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureEdit.Location = new System.Drawing.Point(0, 158);
+            this.pictureEdit.Location = new System.Drawing.Point(0, 162);
             this.pictureEdit.MenuManager = this.MainRibbonControl;
             this.pictureEdit.Name = "pictureEdit";
             this.pictureEdit.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit.Size = new System.Drawing.Size(1456, 583);
+            this.pictureEdit.Size = new System.Drawing.Size(1456, 577);
             this.pictureEdit.TabIndex = 3;
             // 
             // ribbonPageGroup9
