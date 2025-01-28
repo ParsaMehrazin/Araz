@@ -26,8 +26,7 @@ namespace Araz_Form
         string changes = "";
         public frmSearchProduct(bool SingleSelect , string model )
         {
-            InitializeComponent();
-           // product = model;
+            InitializeComponent();       
             FillData();        
             changes = model;    
             singleSelect = SingleSelect;

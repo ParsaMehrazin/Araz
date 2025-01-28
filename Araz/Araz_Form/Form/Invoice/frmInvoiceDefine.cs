@@ -153,7 +153,7 @@ namespace Araz_Form
                     invoicesell = DARepository.GetAllFromView<View_InvoiceSell>(select, where).ToList().FirstOrDefault();
                     if (invoicesell == null)
                     {
-                        txtInvoiceNumber.Text="Sell-"+DateTime.Now.ToPersianYear().ToString()+"-1";
+                        txtInvoiceNumber.Text = "Sell-" + DateTime.Now.ToPersianYear().ToString() + "-1";
                     }
                     else
                     {
@@ -202,8 +202,8 @@ namespace Araz_Form
         }
         private void btnSelectProduct_Click(object sender, EventArgs e)
         {
-            
-            frmSearchProduct frm = new frmSearchProduct(false,changes);
+
+            frmSearchProduct frm = new frmSearchProduct(false, changes);
 
             frm.ShowDialog();
 
@@ -393,16 +393,28 @@ namespace Araz_Form
                     }
                 }
 
-               // if (Convert.ToDouble(gvProduct.GetRowCellValue(i, "Count") == )
-
-
-
                 if (gcProduct.DataSource == null)
 
                     CommonTools.ShowMessage("لیست محصولات نمیتواند خالی باشد");
                 else
                     product = gcProduct.DataSource as List<View_Product>;
 
+                                
+                if (changes == "Sell")              
+                    {
+                        for (int i = 0; i < gvProduct.DataRowCount; i++)
+                        {
+                            var productID = gvProduct.GetRowCellValue(i, "pkProductID");
+                            select = "SELECT  *   FROM dbo.View_Product";
+                            where = "where pkProductID =" + productID;
+                            var item = DARepository.GetAllFromView<View_Product>(select, where).ToList().FirstOrDefault();
+                            if (Convert.ToInt32(gvProduct.GetRowCellValue(i, "Count")) > item.Count)
+                            {
+                                CommonTools.ShowMessage($"تعداد  {item.ProductName} وارد شده نمی تواند کمتر از موجودی کالا باشد ");
+                                return;
+                            }
+                        }
+                    }     
             }
 
 
