@@ -61,6 +61,7 @@
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.gcPersonDetail = new DevExpress.XtraGrid.GridControl();
             this.gvPersonDetail = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn28 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn16 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn18 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -73,7 +74,6 @@
             this.gridColumn25 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn26 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn27 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn28 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn29 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn30 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gcProductList = new DevExpress.XtraGrid.GridControl();
@@ -359,6 +359,7 @@
             // gvPersonDetail
             // 
             this.gvPersonDetail.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn28,
             this.gridColumn16,
             this.gridColumn17,
             this.gridColumn18,
@@ -371,72 +372,99 @@
             this.gridColumn25,
             this.gridColumn26,
             this.gridColumn27,
-            this.gridColumn28,
             this.gridColumn29,
             this.gridColumn30});
             this.gvPersonDetail.GridControl = this.gcPersonDetail;
             this.gvPersonDetail.Name = "gvPersonDetail";
             this.gvPersonDetail.OptionsView.ShowFooter = true;
             // 
+            // gridColumn28
+            // 
+            this.gridColumn28.Caption = "شهر";
+            this.gridColumn28.FieldName = "CityName";
+            this.gridColumn28.Name = "gridColumn28";
+            this.gridColumn28.Visible = true;
+            this.gridColumn28.VisibleIndex = 12;
+            this.gridColumn28.Width = 69;
+            // 
             // gridColumn16
             // 
-            this.gridColumn16.Caption = "نام";
-            this.gridColumn16.FieldName = "PersonName";
+            this.gridColumn16.Caption = "توسط";
+            this.gridColumn16.FieldName = "FullName";
             this.gridColumn16.Name = "gridColumn16";
             this.gridColumn16.Visible = true;
-            this.gridColumn16.VisibleIndex = 5;
+            this.gridColumn16.VisibleIndex = 0;
             // 
             // gridColumn17
             // 
+            this.gridColumn17.Caption = "شماره فاکتور خرید";
             this.gridColumn17.FieldName = "PurchaseInvoiceNumber";
             this.gridColumn17.Name = "gridColumn17";
             this.gridColumn17.Visible = true;
-            this.gridColumn17.VisibleIndex = 4;
+            this.gridColumn17.VisibleIndex = 2;
+            this.gridColumn17.Width = 105;
             // 
             // gridColumn18
             // 
+            this.gridColumn18.Caption = "شماره فاکتور فروش";
+            this.gridColumn18.FieldName = "PurchaseInvoiceNumberSell";
             this.gridColumn18.Name = "gridColumn18";
             this.gridColumn18.Visible = true;
             this.gridColumn18.VisibleIndex = 3;
+            this.gridColumn18.Width = 109;
             // 
             // gridColumn19
             // 
+            this.gridColumn19.Caption = "تعداد خرید";
+            this.gridColumn19.FieldName = "CountBuy";
             this.gridColumn19.Name = "gridColumn19";
             this.gridColumn19.Visible = true;
-            this.gridColumn19.VisibleIndex = 2;
+            this.gridColumn19.VisibleIndex = 6;
+            this.gridColumn19.Width = 69;
             // 
             // gridColumn20
             // 
+            this.gridColumn20.Caption = "تعداد فروش";
+            this.gridColumn20.FieldName = "CountSell";
             this.gridColumn20.Name = "gridColumn20";
             this.gridColumn20.Visible = true;
-            this.gridColumn20.VisibleIndex = 1;
+            this.gridColumn20.VisibleIndex = 5;
+            this.gridColumn20.Width = 69;
             // 
             // gridColumn21
             // 
+            this.gridColumn21.Caption = "مبلغ خرید";
+            this.gridColumn21.FieldName = "PriceBuy";
             this.gridColumn21.Name = "gridColumn21";
             this.gridColumn21.Visible = true;
-            this.gridColumn21.VisibleIndex = 0;
+            this.gridColumn21.VisibleIndex = 4;
+            this.gridColumn21.Width = 69;
             // 
             // gridColumn22
             // 
-            this.gridColumn22.Caption = "gridColumn22";
+            this.gridColumn22.Caption = "مبلغ فروش";
+            this.gridColumn22.FieldName = "PriceSell";
             this.gridColumn22.Name = "gridColumn22";
             this.gridColumn22.Visible = true;
-            this.gridColumn22.VisibleIndex = 6;
+            this.gridColumn22.VisibleIndex = 7;
+            this.gridColumn22.Width = 69;
             // 
             // gridColumn23
             // 
-            this.gridColumn23.Caption = "gridColumn23";
+            this.gridColumn23.Caption = "تاریخ خرید";
             this.gridColumn23.Name = "gridColumn23";
             this.gridColumn23.Visible = true;
-            this.gridColumn23.VisibleIndex = 7;
+            this.gridColumn23.VisibleIndex = 1;
+            this.gridColumn23.Width = 69;
             // 
             // gridColumn24
             // 
-            this.gridColumn24.Caption = "gridColumn24";
+            this.gridColumn24.Caption = "موجودی اولیه";
+            this.gridColumn24.FieldName = "CountOne";
             this.gridColumn24.Name = "gridColumn24";
             this.gridColumn24.Visible = true;
             this.gridColumn24.VisibleIndex = 8;
+            this.gridColumn24.Width = 69;
             // 
             // gridColumn25
             // 
@@ -444,6 +472,7 @@
             this.gridColumn25.Name = "gridColumn25";
             this.gridColumn25.Visible = true;
             this.gridColumn25.VisibleIndex = 9;
+            this.gridColumn25.Width = 69;
             // 
             // gridColumn26
             // 
@@ -451,6 +480,7 @@
             this.gridColumn26.Name = "gridColumn26";
             this.gridColumn26.Visible = true;
             this.gridColumn26.VisibleIndex = 10;
+            this.gridColumn26.Width = 69;
             // 
             // gridColumn27
             // 
@@ -458,13 +488,7 @@
             this.gridColumn27.Name = "gridColumn27";
             this.gridColumn27.Visible = true;
             this.gridColumn27.VisibleIndex = 11;
-            // 
-            // gridColumn28
-            // 
-            this.gridColumn28.Caption = "gridColumn28";
-            this.gridColumn28.Name = "gridColumn28";
-            this.gridColumn28.Visible = true;
-            this.gridColumn28.VisibleIndex = 12;
+            this.gridColumn27.Width = 69;
             // 
             // gridColumn29
             // 
@@ -472,6 +496,7 @@
             this.gridColumn29.Name = "gridColumn29";
             this.gridColumn29.Visible = true;
             this.gridColumn29.VisibleIndex = 13;
+            this.gridColumn29.Width = 69;
             // 
             // gridColumn30
             // 
@@ -479,6 +504,7 @@
             this.gridColumn30.Name = "gridColumn30";
             this.gridColumn30.Visible = true;
             this.gridColumn30.VisibleIndex = 14;
+            this.gridColumn30.Width = 77;
             // 
             // gcProductList
             // 

@@ -118,24 +118,7 @@ namespace Utilities
 
         }
 
-        //public static Byte[] ImageToByte(Image imageSource)
-        //{
 
-        //    using (var ms = new MemoryStream())
-        //    {
-        //        Save(ms, imageSource.RawFormat);
-        //        return ms.ToArray();
-        //    }
-
-
-        //}
-        //public static Image BytesToImage(byte[] bytes)
-        //{
-
-        //    MemoryStream ms = new MemoryStream(bytes);
-        //    Image img = Image.FromStream(ms);
-        //    return img;
-        //}
         public static bool ByteCompare(byte[] a1, byte[] a2)
         {
             if (a1 == a2)
@@ -305,108 +288,6 @@ namespace Utilities
             File.WriteAllBytes(str, _attachfile);
         }
 
-        //public static int DownloadAndCompressFiles(List<View_Attachment> ds, bool compress = false)
-        //{
-        //    int counter = 0;
-        //    int Downloaded = 0;
-        //    FolderBrowserDialog folderBrowserDialog1 = new FolderBrowserDialog();
-        //    if (folderBrowserDialog1.ShowDialog() != DialogResult.OK)
-        //        return 0;
-        //    string path = folderBrowserDialog1.SelectedPath + "\\";
-
-        //    foreach (var item in ds)
-        //    {
-        //        counter++;
-        //        string str = string.Empty;
-        //        item.FileExtention = counter.ToString("00") + "-" + item.FileExtention;
-        //        if (item.FileExtention.Contains(item.FileExtention))
-        //            str = string.Format("{0}{1}", path, item.FileExtention);
-        //        else
-        //            str = string.Format("{0}{1}.{2}", path, item.FileName, item.FileExtention);
-        //        str = str.Replace('?', 'X');
-        //        if (File.Exists(str))
-        //            File.Delete(str);
-        //        //var attach = DataManager.Repositories.DARepository.GetAllAttachment(" Where PkAttachment =" + item.PkAttachment).FirstOrDefault();
-        //        //if (attach != null)
-        //        //    File.WriteAllBytes(str, attach.FileContent);
-        //        Downloaded++;
-        //    }
-        //    return Downloaded;
-        //}
-
-        //public static bool PingHost(string nameOrAddress)
-        //{
-        //    bool pingable = false;
-        //    Ping pinger = null;
-        //    try
-        //    {
-        //        pinger = new Ping();
-        //        PingReply reply = pinger.Send(nameOrAddress);
-        //        pingable = reply.Status == IPStatus.Success;
-        //    }
-        //    catch (PingException)
-        //    {
-        //        // Discard PingExceptions and return false;
-        //        // Discard PingExceptions and return false;
-        //    }
-        //    finally
-        //    {
-        //        if (pinger != null)
-        //        {
-        //            pinger.Dispose();
-        //        }
-        //    }
-        //    return pingable;
-        //}
-
-        //public static string Decrypt(string encryptedText, string key)
-        //{
-        //    try
-        //    {
-        //        if (string.IsNullOrEmpty(key))
-        //            throw new ArgumentException("Key must have valid value.", nameof(key));
-        //        if (string.IsNullOrEmpty(encryptedText))
-        //            throw new ArgumentException("The encrypted text must have valid value.", nameof(encryptedText));
-
-        //        var combined = Convert.FromBase64String(encryptedText);
-        //        var buffer = new byte[combined.Length];
-        //        var hash = new SHA512CryptoServiceProvider();
-        //        var aesKey = new byte[24];
-        //        Buffer.BlockCopy(hash.ComputeHash(Encoding.UTF8.GetBytes(key)), 0, aesKey, 0, 24);
-
-        //        using (var aes = Aes.Create())
-        //        {
-        //            if (aes == null)
-        //                throw new ArgumentException("Parameter must not be null.", nameof(aes));
-
-        //            aes.Key = aesKey;
-
-        //            var iv = new byte[aes.IV.Length];
-        //            var ciphertext = new byte[buffer.Length - iv.Length];
-
-        //            Array.ConstrainedCopy(combined, 0, iv, 0, iv.Length);
-        //            Array.ConstrainedCopy(combined, iv.Length, ciphertext, 0, ciphertext.Length);
-
-        //            aes.IV = iv;
-
-        //            using (var decryptor = aes.CreateDecryptor(aes.Key, aes.IV))
-        //            using (var resultStream = new MemoryStream())
-        //            {
-        //                using (var aesStream = new CryptoStream(resultStream, decryptor, CryptoStreamMode.Write))
-        //                using (var plainStream = new MemoryStream(ciphertext))
-        //                {
-        //                    plainStream.CopyTo(aesStream);
-        //                }
-
-        //                return Encoding.UTF8.GetString(resultStream.ToArray());
-        //            }
-        //        }
-        //    }
-        //    catch (Exception)
-        //    {
-        //        return encryptedText;
-        //    }
-        //}
 
 
     }

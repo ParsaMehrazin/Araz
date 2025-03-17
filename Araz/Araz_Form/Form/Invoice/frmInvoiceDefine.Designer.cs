@@ -30,6 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnExit = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.u = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
@@ -49,12 +56,12 @@
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.txtPercent = new DevExpress.XtraEditors.TextEdit();
             this.txtdiscount = new DevExpress.XtraEditors.TextEdit();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnExitfrm = new DevExpress.XtraEditors.SimpleButton();
             this.btnSelectProduct = new DevExpress.XtraEditors.SimpleButton();
             this.btnSaveAndPrint = new DevExpress.XtraEditors.SimpleButton();
             this.txtInvoiceNumber = new DevExpress.XtraEditors.TextEdit();
             this.cmbPersonList = new DevExpress.XtraEditors.LookUpEdit();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnClearList = new DevExpress.XtraEditors.SimpleButton();
             this.txtPrice = new DevExpress.XtraEditors.TextEdit();
             this.txtPercent1 = new DevExpress.XtraEditors.TextEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -120,14 +127,74 @@
             this.ribbon.ExpandCollapseItem.Id = 0;
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
-            this.ribbon.SearchEditItem});
+            this.ribbon.SearchEditItem,
+            this.barButtonItem1,
+            this.barButtonItem2,
+            this.barButtonItem3,
+            this.barButtonItem4,
+            this.btnExit,
+            this.barButtonItem6,
+            this.barButtonItem7});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 1;
+            this.ribbon.MaxItemId = 8;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.u});
             this.ribbon.Size = new System.Drawing.Size(1274, 158);
             this.ribbon.StatusBar = this.ribbonStatusBar;
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "جدید";
+            this.barButtonItem1.Id = 1;
+            this.barButtonItem1.ImageOptions.Image = global::Araz_Form.Properties.Resources.addnewdatasource_16x16;
+            this.barButtonItem1.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.addnewdatasource_32x32;
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "ویرایش";
+            this.barButtonItem2.Id = 2;
+            this.barButtonItem2.ImageOptions.Image = global::Araz_Form.Properties.Resources.editdatasource_16x16;
+            this.barButtonItem2.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.editdatasource_32x32;
+            this.barButtonItem2.Name = "barButtonItem2";
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "حذف";
+            this.barButtonItem3.Id = 3;
+            this.barButtonItem3.ImageOptions.Image = global::Araz_Form.Properties.Resources.deletedatasource2_16x16;
+            this.barButtonItem3.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.deletedatasource2_32x32;
+            this.barButtonItem3.Name = "barButtonItem3";
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "چاپ فاکتور";
+            this.barButtonItem4.Id = 4;
+            this.barButtonItem4.ImageOptions.Image = global::Araz_Form.Properties.Resources.printer_16x16;
+            this.barButtonItem4.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.printer_32x32;
+            this.barButtonItem4.Name = "barButtonItem4";
+            // 
+            // btnExit
+            // 
+            this.btnExit.Caption = "خروج";
+            this.btnExit.Id = 5;
+            this.btnExit.ImageOptions.Image = global::Araz_Form.Properties.Resources.cancel_16x16;
+            this.btnExit.ImageOptions.LargeImage = global::Araz_Form.Properties.Resources.cancel_32x32;
+            this.btnExit.Name = "btnExit";
+            this.btnExit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnExit_ItemClick);
+            // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "barButtonItem6";
+            this.barButtonItem6.Id = 6;
+            this.barButtonItem6.Name = "barButtonItem6";
+            // 
+            // barButtonItem7
+            // 
+            this.barButtonItem7.Caption = "barButtonItem7";
+            this.barButtonItem7.Id = 7;
+            this.barButtonItem7.Name = "barButtonItem7";
             // 
             // u
             // 
@@ -138,8 +205,13 @@
             // 
             // ribbonPageGroup1
             // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem4);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnExit);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "عملیات";
             // 
             // ribbonStatusBar
             // 
@@ -154,12 +226,12 @@
             this.layoutControl1.Controls.Add(this.gcProduct);
             this.layoutControl1.Controls.Add(this.txtPercent);
             this.layoutControl1.Controls.Add(this.txtdiscount);
-            this.layoutControl1.Controls.Add(this.simpleButton1);
+            this.layoutControl1.Controls.Add(this.btnExitfrm);
             this.layoutControl1.Controls.Add(this.btnSelectProduct);
             this.layoutControl1.Controls.Add(this.btnSaveAndPrint);
             this.layoutControl1.Controls.Add(this.txtInvoiceNumber);
             this.layoutControl1.Controls.Add(this.cmbPersonList);
-            this.layoutControl1.Controls.Add(this.simpleButton4);
+            this.layoutControl1.Controls.Add(this.btnClearList);
             this.layoutControl1.Controls.Add(this.txtPrice);
             this.layoutControl1.Controls.Add(this.txtPercent1);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -252,6 +324,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete)});
             this.btnDeleteSelectGrid.Name = "btnDeleteSelectGrid";
             this.btnDeleteSelectGrid.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.btnDeleteSelectGrid.Click += new System.EventHandler(this.btnDeleteSelectGrid_Click);
             // 
             // gridColumn2
             // 
@@ -386,16 +459,17 @@
             this.txtdiscount.TabIndex = 10;
             this.txtdiscount.EditValueChanged += new System.EventHandler(this.txtdiscount_EditValueChanged);
             // 
-            // simpleButton1
+            // btnExitfrm
             // 
-            this.simpleButton1.ImageOptions.Image = global::Araz_Form.Properties.Resources.close_16x16;
-            this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(324, 477);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(96, 22);
-            this.simpleButton1.StyleController = this.layoutControl1;
-            this.simpleButton1.TabIndex = 11;
-            this.simpleButton1.Text = "خروج";
+            this.btnExitfrm.ImageOptions.Image = global::Araz_Form.Properties.Resources.close_16x16;
+            this.btnExitfrm.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnExitfrm.Location = new System.Drawing.Point(324, 477);
+            this.btnExitfrm.Name = "btnExitfrm";
+            this.btnExitfrm.Size = new System.Drawing.Size(96, 22);
+            this.btnExitfrm.StyleController = this.layoutControl1;
+            this.btnExitfrm.TabIndex = 11;
+            this.btnExitfrm.Text = "خروج";
+            this.btnExitfrm.Click += new System.EventHandler(this.btnExitfrm_Click);
             // 
             // btnSelectProduct
             // 
@@ -453,16 +527,17 @@
             this.cmbPersonList.StyleController = this.layoutControl1;
             this.cmbPersonList.TabIndex = 4;
             // 
-            // simpleButton4
+            // btnClearList
             // 
-            this.simpleButton4.ImageOptions.Image = global::Araz_Form.Properties.Resources.clear_16x16;
-            this.simpleButton4.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.simpleButton4.Location = new System.Drawing.Point(224, 477);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(96, 22);
-            this.simpleButton4.StyleController = this.layoutControl1;
-            this.simpleButton4.TabIndex = 17;
-            this.simpleButton4.Text = "پاک کردن لیست";
+            this.btnClearList.ImageOptions.Image = global::Araz_Form.Properties.Resources.clear_16x16;
+            this.btnClearList.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnClearList.Location = new System.Drawing.Point(224, 477);
+            this.btnClearList.Name = "btnClearList";
+            this.btnClearList.Size = new System.Drawing.Size(96, 22);
+            this.btnClearList.StyleController = this.layoutControl1;
+            this.btnClearList.TabIndex = 17;
+            this.btnClearList.Text = "پاک کردن لیست";
+            this.btnClearList.Click += new System.EventHandler(this.btnClearList_Click);
             // 
             // txtPrice
             // 
@@ -547,7 +622,7 @@
             // 
             // layoutControlItem6
             // 
-            this.layoutControlItem6.Control = this.simpleButton1;
+            this.layoutControlItem6.Control = this.btnExitfrm;
             this.layoutControlItem6.Location = new System.Drawing.Point(300, 0);
             this.layoutControlItem6.MaxSize = new System.Drawing.Size(100, 26);
             this.layoutControlItem6.MinSize = new System.Drawing.Size(100, 26);
@@ -559,7 +634,7 @@
             // 
             // layoutControlItem2
             // 
-            this.layoutControlItem2.Control = this.simpleButton4;
+            this.layoutControlItem2.Control = this.btnClearList;
             this.layoutControlItem2.Location = new System.Drawing.Point(200, 0);
             this.layoutControlItem2.MaxSize = new System.Drawing.Size(100, 26);
             this.layoutControlItem2.MinSize = new System.Drawing.Size(100, 26);
@@ -828,7 +903,7 @@
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
         private DevExpress.XtraEditors.TextEdit txtPercent;
         private DevExpress.XtraEditors.TextEdit txtdiscount;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btnExitfrm;
         private DevExpress.XtraEditors.SimpleButton btnSelectProduct;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
@@ -841,7 +916,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup5;
         private DevExpress.XtraEditors.LookUpEdit cmbPersonList;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private DevExpress.XtraEditors.SimpleButton btnClearList;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraEditors.TextEdit txtPrice;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
@@ -863,5 +938,12 @@
         private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider ErrorProvider;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem btnExit;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
     }
 }

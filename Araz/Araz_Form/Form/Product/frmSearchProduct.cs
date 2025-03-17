@@ -95,7 +95,7 @@ namespace Araz_Form
             gcSelection.DataSource = null;
         }
 
-
+         
 
 
         private void treeListLookUpEdit1TreeList_CustomDrawNodeIndicator_1(object sender, DevExpress.XtraTreeList.CustomDrawNodeIndicatorEventArgs e)
@@ -194,6 +194,31 @@ namespace Araz_Form
         {
             if (e.RowHandle >= 0)
                 e.Info.DisplayText = (e.RowHandle + 1).ToString();
+        }
+
+        private void allselect_Click(object sender, EventArgs e)
+        {            
+                var allProducts = gvProductList.DataSource as List<View_Product>;
+
+                if (allProducts != null)
+                {
+                    foreach (var product in allProducts)
+                    {
+                        if (!SelectedProducts.Any(p => p.pkProductID == product.pkProductID))
+                        {
+                            if (singleSelect)
+                                SelectedProducts.Clear();
+
+                            if (!SelectedProducts.Contains(product))
+                            {
+                                SelectedProducts.Add(product);
+                            }
+
+                            gcSelection.DataSource = null;
+                            gcSelection.DataSource = SelectedProducts;
+                        }
+                    }
+                }     
         }
     }
 }

@@ -10,14 +10,7 @@ namespace Utilities
     public static class DateTimeExtensions
     {
 
-        //public void ToPersian()
-        //{
 
-        //    string GregorianDate = "Thursday, October 24, 2013";
-        //    DateTime d = DateTime.Parse(GregorianDate);
-        //    PersianCalendar pc = new PersianCalendar();
-        //    Console.WriteLine(string.Format("{0}/{1}/{2}", pc.GetYear(d), pc.GetMonth(d), pc.GetDayOfMonth(d)));
-        //}
 
         public static string ToPersian(this DateTime dateTime)
         {

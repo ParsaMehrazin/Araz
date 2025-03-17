@@ -3,6 +3,7 @@ using DevExpress.CodeParser;
 using DevExpress.DashboardCommon.Viewer;
 using DevExpress.XtraBars;
 using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraLayout.Customization;
 using DevExpress.XtraPrinting.Native;
 using DevExpress.XtraSplashScreen;
 using Repository;
@@ -399,25 +400,26 @@ namespace Araz_Form
                 else
                     product = gcProduct.DataSource as List<View_Product>;
 
-                                
-                if (changes == "Sell")              
+
+                if (changes == "Sell")
+                {
+                    for (int i = 0; i < gvProduct.DataRowCount; i++)
                     {
-                        for (int i = 0; i < gvProduct.DataRowCount; i++)
+                        var productID = gvProduct.GetRowCellValue(i, "pkProductID");
+                        select = "SELECT  *   FROM dbo.View_Product";
+                        where = "where pkProductID =" + productID;
+                        var item = DARepository.GetAllFromView<View_Product>(select, where).ToList().FirstOrDefault();
+                        if (Convert.ToInt32(gvProduct.GetRowCellValue(i, "Count")) > item.Count)
                         {
-                            var productID = gvProduct.GetRowCellValue(i, "pkProductID");
-                            select = "SELECT  *   FROM dbo.View_Product";
-                            where = "where pkProductID =" + productID;
-                            var item = DARepository.GetAllFromView<View_Product>(select, where).ToList().FirstOrDefault();
-                            if (Convert.ToInt32(gvProduct.GetRowCellValue(i, "Count")) > item.Count)
-                            {
-                                CommonTools.ShowMessage($"تعداد  {item.ProductName} وارد شده نمی تواند کمتر از موجودی کالا باشد ");
-                                return;
-                            }
+                            CommonTools.ShowMessage($"تعداد  {item.ProductName} وارد شده نمی تواند کمتر از موجودی کالا باشد ");
+                            return;
                         }
-                    }     
+                    }
+                }
             }
 
 
+            var fkPrice =( DARepository.GetAllFromView<View_Price>("SELECT MAX(pkPriceID) as pkPriceID FROM  dbo.View_Price ", "").FirstOrDefault().pkPriceID )+1;
 
 
 
@@ -433,6 +435,15 @@ namespace Araz_Form
             {
                 foreach (var productgrid in product)
                 {
+                    res1 = DARepository.ExcuteOperationalSP_New("dbo", "CrudPrice",
+                     new ServiceOperatorParameter() { Name = "mod", Value = _mod },
+                     new ServiceOperatorParameter() { Name = "pkPriceID", Value = _mod == 1 ? "-1" : productgrid.pkPriceID.ToString() },
+                     new ServiceOperatorParameter() { Name = "fkProductID", Value = productgrid.pkProductID.ToString() },
+                     new ServiceOperatorParameter() { Name = "PriceSell", Value = 0 },
+                     new ServiceOperatorParameter() { Name = "PriceBuy", Value = productgrid.PriceBuy },
+                     new ServiceOperatorParameter() { Name = "Invoice", Value = pkinvoice.ToString() },
+                     new ServiceOperatorParameter() { Name = "CountSell", Value = 0 },
+                     new ServiceOperatorParameter() { Name = "CountBuy", Value = productgrid.Count });
 
                     res = DARepository.ExcuteOperationalSP_New("dbo", "CrudInvoiceBuy",
                        new ServiceOperatorParameter() { Name = "mod", Value = _mod },
@@ -442,7 +453,7 @@ namespace Araz_Form
                        new ServiceOperatorParameter() { Name = "PurchaseInvoiceNumber", Value = string.IsNullOrEmpty(txtInvoiceNumber.Text) ? "" : txtInvoiceNumber.Text },
                        new ServiceOperatorParameter() { Name = "fkPersonID", Value = (cmbPersonList.EditValue as View_Person) == null ? -1 : (cmbPersonList.EditValue as View_Person).pkPersonID },
                        new ServiceOperatorParameter() { Name = "fkProductID", Value = productgrid.pkProductID },
-                       new ServiceOperatorParameter() { Name = "fkPrice", Value = productgrid.pkPriceID },
+                       new ServiceOperatorParameter() { Name = "fkPrice", Value = _mod == 1 ? fkPrice.ToString() : productgrid.pkPriceID.ToString() },
                        new ServiceOperatorParameter() { Name = "DateInvoice", Value = dtpLoadingDate.GeorgianDate.Value },
                        new ServiceOperatorParameter() { Name = "BuyInvoice", Value = productgrid.PriceBuy },
                        new ServiceOperatorParameter() { Name = "Buyquantity", Value = productgrid.AllPriceBuy },
@@ -456,15 +467,7 @@ namespace Araz_Form
 
 
 
-                    res1 = DARepository.ExcuteOperationalSP_New("dbo", "CrudPrice",
-                       new ServiceOperatorParameter() { Name = "mod", Value = _mod },
-                       new ServiceOperatorParameter() { Name = "pkPriceID", Value = _mod == 1 ? "-1" : productgrid.pkPriceID.ToString() },
-                       new ServiceOperatorParameter() { Name = "fkProductID", Value = productgrid.pkProductID.ToString() },
-                       new ServiceOperatorParameter() { Name = "PriceSell", Value = 0 },
-                       new ServiceOperatorParameter() { Name = "PriceBuy", Value = productgrid.PriceBuy },
-                       new ServiceOperatorParameter() { Name = "Invoice", Value = pkinvoice.ToString() },
-                       new ServiceOperatorParameter() { Name = "CountSell", Value = 0 },
-                       new ServiceOperatorParameter() { Name = "CountBuy", Value = productgrid.Count });
+
 
 
                     CommonTools.Loading();
@@ -474,6 +477,15 @@ namespace Araz_Form
             {
                 foreach (var productgrid in product)
                 {
+                    res1 = DARepository.ExcuteOperationalSP_New("dbo", "CrudPrice",
+       new ServiceOperatorParameter() { Name = "mod", Value = _mod },
+       new ServiceOperatorParameter() { Name = "pkPriceID", Value = _mod == 1 ? "-1" : productgrid.pkPriceID.ToString() },
+       new ServiceOperatorParameter() { Name = "fkProductID", Value = productgrid.pkProductID.ToString() },
+       new ServiceOperatorParameter() { Name = "PriceBuy", Value = 0 },
+       new ServiceOperatorParameter() { Name = "PriceSell", Value = productgrid.PriceSell },
+       new ServiceOperatorParameter() { Name = "Invoice", Value = pkinvoice.ToString() },
+       new ServiceOperatorParameter() { Name = "CountBuy", Value = 0 },
+       new ServiceOperatorParameter() { Name = "CountSell", Value = productgrid.Count });
 
                     res = DARepository.ExcuteOperationalSP_New("dbo", "CrudInvoiceSell",
                        new ServiceOperatorParameter() { Name = "mod", Value = _mod },
@@ -483,7 +495,7 @@ namespace Araz_Form
                        new ServiceOperatorParameter() { Name = "PurchaseInvoiceNumber", Value = string.IsNullOrEmpty(txtInvoiceNumber.Text) ? "" : txtInvoiceNumber.Text },
                        new ServiceOperatorParameter() { Name = "fkPersonID", Value = (cmbPersonList.EditValue as View_Person) == null ? -1 : (cmbPersonList.EditValue as View_Person).pkPersonID },
                        new ServiceOperatorParameter() { Name = "fkProductID", Value = productgrid.pkProductID },
-                       new ServiceOperatorParameter() { Name = "fkPrice", Value = productgrid.pkPriceID },
+                       new ServiceOperatorParameter() { Name = "fkPrice", Value = _mod == 1 ? fkPrice.ToString() : productgrid.pkPriceID.ToString() },
                        new ServiceOperatorParameter() { Name = "DateInvoice", Value = dtpLoadingDate.GeorgianDate.Value },
                        new ServiceOperatorParameter() { Name = "SellInvoice", Value = productgrid.PriceSell },
                        new ServiceOperatorParameter() { Name = "Sellquantity", Value = productgrid.AllPriceSell },
@@ -497,15 +509,7 @@ namespace Araz_Form
 
 
 
-                    res1 = DARepository.ExcuteOperationalSP_New("dbo", "CrudPrice",
-                       new ServiceOperatorParameter() { Name = "mod", Value = _mod },
-                       new ServiceOperatorParameter() { Name = "pkPriceID", Value = _mod == 1 ? "-1" : productgrid.pkPriceID.ToString() },
-                       new ServiceOperatorParameter() { Name = "fkProductID", Value = productgrid.pkProductID.ToString() },
-                       new ServiceOperatorParameter() { Name = "PriceBuy", Value = 0 },
-                       new ServiceOperatorParameter() { Name = "PriceSell", Value = productgrid.PriceSell },
-                       new ServiceOperatorParameter() { Name = "Invoice", Value = pkinvoice.ToString() },
-                       new ServiceOperatorParameter() { Name = "CountBuy", Value = 0 },
-                       new ServiceOperatorParameter() { Name = "CountSell", Value = productgrid.Count });
+
 
 
                     CommonTools.Loading();
@@ -524,6 +528,33 @@ namespace Araz_Form
                 this._isSave = false;
                 this.hasError = true;
             }
+        }
+
+        private void btnExit_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnExitfrm_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnDeleteSelectGrid_Click(object sender, EventArgs e)
+        {
+            var t = gvProduct.GetFocusedRow() as View_Product;
+            if (t != null)
+            {
+                product.Remove(t);
+                gcProduct.DataSource = null;
+                gcProduct.DataSource = product;
+            }
+        }
+
+        private void btnClearList_Click(object sender, EventArgs e)
+        {
+            product.Clear();
+            gcProduct.DataSource = null;
         }
         //return;
     }

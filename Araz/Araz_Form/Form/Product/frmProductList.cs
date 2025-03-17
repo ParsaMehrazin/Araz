@@ -491,7 +491,7 @@ namespace Araz_Form
             {
                 if (e.Button.Kind == ButtonPredefines.Glyph)
                 {
-                   
+                     item = cmbflGroupName.EditValue as View_Product; 
                     FillDataGroup();
                     ModTwoGroup2(item , item2);
                     if (this._isSave)
